@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.devjev.nl/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/lol/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/posts/my-first-post/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/omg/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/posts/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/powershell/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/</loc>
+    <lastmod>2020-05-13T10:54:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/categories/</loc>
+  </url>
+  
+</urlset>
