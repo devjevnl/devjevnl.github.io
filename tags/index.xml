@@ -1,0 +1,35 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/</link>
+        <description>Tags - Tag - DevJev.NL</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 May 2020 13:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure DevOps</title>
+    <link>https://www.devjev.nl/tags/azure-devops/</link>
+    <pubDate>Wed, 13 May 2020 13:42:15 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Blog</title>
+    <link>https://www.devjev.nl/tags/blog/</link>
+    <pubDate>Wed, 13 May 2020 13:42:15 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/blog/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>GitHub Pages</title>
+    <link>https://www.devjev.nl/tags/github-pages/</link>
+    <pubDate>Wed, 13 May 2020 13:42:15 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/github-pages/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Hugo</title>
+    <link>https://www.devjev.nl/tags/hugo/</link>
+    <pubDate>Wed, 13 May 2020 13:42:15 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/hugo/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>
