@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevJev.NL</title>
+    <link>https://www.devjev.nl/</link>
+    <description>Recent content on DevJev.NL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 May 2020 13:42:15 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://www.devjev.nl/posts/my-first-post/</link>
+      <pubDate>Fri, 15 May 2020 13:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://www.devjev.nl/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.devjev.nl/about/</guid>
+      <description>Experience Jev Suchoi has extensive experience as among others a Solution Architect, Cloud Consultant, Security Consultant, Tech Lead, Infrastructure Engineer, DevOps Engineer and Developer. In his work for different organizations he has accumulated extensive knowledge of Azure, Azure Active Directory and Azure DevOps. With a developer background Jev is able to fully incorporate development principles when designing and implementing cloud solutions. As an automation &amp;amp; security specialist he is a firm believer of the following concepts &amp;amp; principles;</description>
+    </item>
+    
+  </channel>
+</rss>
