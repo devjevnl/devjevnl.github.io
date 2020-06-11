@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.devjev.nl/about/</loc>
+    <lastmod>2020-06-10T17:44:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://www.devjev.nl/pt-br/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.devjev.nl/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://www.devjev.nl/pt-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.devjev.nl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://www.devjev.nl/pt-br/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.devjev.nl/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://www.devjev.nl/pt-br/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.devjev.nl/tags/"
+                />
+  </url>
+  
+</urlset>
