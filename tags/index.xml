@@ -6,7 +6,7 @@
     <description>Recent content in Tags on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 May 2020 13:42:15 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 13:42:15 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Tag 1</title>
       <link>https://www.devjev.nl/tags/tag-1/</link>
-      <pubDate>Fri, 15 May 2020 13:42:15 +0200</pubDate>
+      <pubDate>Wed, 15 Jul 2020 13:42:15 +0200</pubDate>
       
       <guid>https://www.devjev.nl/tags/tag-1/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Tag 2</title>
       <link>https://www.devjev.nl/tags/tag-2/</link>
-      <pubDate>Fri, 15 May 2020 13:42:15 +0200</pubDate>
+      <pubDate>Wed, 15 Jul 2020 13:42:15 +0200</pubDate>
       
       <guid>https://www.devjev.nl/tags/tag-2/</guid>
       <description></description>
