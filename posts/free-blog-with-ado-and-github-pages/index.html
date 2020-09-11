@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+
+  
+  <meta name="author" content="Jev Suchoi">
+  <meta name="description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages">
+  <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Set by step guide for a free and easy way to set up a low maintenance blog"/>
+<meta name="twitter:description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages"/>
+
+  <meta property="og:title" content="Set by step guide for a free and easy way to set up a low maintenance blog" />
+<meta property="og:description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/" />
+<meta property="article:published_time" content="2020-09-10T18:42:15+02:00" />
+<meta property="article:modified_time" content="2020-09-11T14:47:16+02:00" />
+
+
+  
+  <base href="https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/">
+  
+  <title>
+  Set by step guide for a free and easy way to set up a low maintenance blog · DevJev.NL
+</title>
+
+  
+  <link rel="canonical" href="https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/">
+  
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+  
+  
+  
+  <link rel="stylesheet" href="https://www.devjev.nl/css/coder.min.cefcae32d597aabf73dbd69114994b69ab7ac71b0ed1b5d4f8fcec44cd5e853d.css" integrity="sha256-zvyuMtWXqr9z29aRFJlLaat6xxsO0bXU&#43;PzsRM1ehT0="
+    crossorigin="anonymous" media="screen" />
+  
+
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.devjev.nl/css/coder-dark.min.0efab6bbe7b21f0b438d68c6210426682dc48dc7d6e1d89b2bcb1f70433d223e.css" integrity="sha256-Dvq2u&#43;eyHwtDjWjGIQQmaC3EjcfW4dibK8sfcEM9Ij4="
+    crossorigin="anonymous" media="screen" />
+  
+  
+
+  
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://www.devjev.nl/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://www.devjev.nl/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://www.devjev.nl/images/favicon-16x16.png">
+  <link rel="manifest" href="https://www.devjev.nl/site.webmanifest">
+  <link rel="shortcut icon" href="https://www.devjev.nl/favicon.ico?v=00Bg8oYJjl">
+  <meta name="msapplication-TileColor" content="#3388bb">
+  <meta name="msapplication-TileImage" content="/images/mstile-150x150.png?v=00Bg8oYJjl">
+  <meta name="msapplication-config"
+    content="https://www.devjev.nl/browserconfig.xml">
+  <meta name="theme-color" content="#3388bb">
+
+  <meta name="generator" content="Hugo 0.74.3" />
+</head>
+
+<body class="">
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.devjev.nl/">
+      Jev Suchoi
+    </a>
+    
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/posts/">Posts</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/tags/">Tags</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/categories/">Categories</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/about/">About</a>
+      </li>
+      
+      
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Set by step guide for a free and easy way to set up a low maintenance blog</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-09-10T18:42:15&#43;02:00'>
+                September 10, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              15-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.devjev.nl/categories/how-to/">How to</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.devjev.nl/tags/step-by-step/">Step by step</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/azure-devops/">Azure DevOps</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/github-pages/">GitHub Pages</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/hugo/">Hugo</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+          <img src='https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/header-img.png' alt="Featured image"/>
+        
+        <h1 id="introduction">Introduction</h1>
+<p>I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.</p>
+<p>However the need to somehow catalog IT related solutions and ideas has not died down. This is specially the case during moments when I needed it the most and could not find the link or the solution itself knowing I solved the issue at hand a couple of month ago. Although on multiple occasions I have entertained the idea of recreating a new blog but never put it into action simply due to the amount of effort required for maintaining a blog. After my first blogging experience the CMS like systems with extensions and add-ins and the tools for writing the content itself never appealed to me and kept me from giving it another go.</p>
+<p>A couple of months ago I discovered static site generators. The idea of generating a static site from Markdown really appealed to me.  Markdown is something I have used for years as part of documentation for the scripts and solutions I have developed. Markdown makes writing documentation approachable and inviting. In my case this approach appeals to me even more as I can use Visual Studio Code for writing blog content. Combined with a CICD pipeline which takes care of building and posting the content motivated me to give a blog another go. I am eager to share any solutions I find with the future me and anyone who finds the blog.</p>
+<p>I cant think of a more fitting subject to start the blog with then a step by step guide describing how I created this blog.</p>
+<h2 id="requirements">Requirements</h2>
+<p>These are the tools I used to realize my current blog set-up. At the core I am using Hugo as my static content generator and GitHub Pages for hosting the static content. All other tools are supplemental to realize the core set-up and can be replaced by alternatives.</p>
+<ul>
+<li><a href="https://code.visualstudio.com/">VS Code</a></li>
+<li><a href="https://chocolatey.org/">Chocolatey</a></li>
+<li><a href="https://git-scm.com/downloads">Git</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li>Azure DevOps Organization - <a href="https://azure.microsoft.com/en-us/services/devops/?nav=min">create one for free here</a></li>
+<li><a href="https://pages.github.com/">GitHub Pages</a> - <a href="https://github.com/join">create a GitHub account here</a></li>
+<li>Domain name (optional) -&gt; You should</li>
+</ul>
+<h2 id="the-set-up">The set-up</h2>
+<p>Keep in mind that my goals for this set-up are:</p>
+<ul>
+<li>It must be low threshold from a usage perspective.</li>
+<li>The maintenance effort must be zero to none.</li>
+</ul>
+<p>As already mentioned in the Requirements chapter I am using <a href="https://gohugo.io/">Hugo</a> as the static content generator to meet my first goal. To meet my second goal I am running everything inside an Azure DevOps pipeline which publishes the generated blog to my GitHub account. The overall set-up looks like this:</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/overall-view.png" alt="overall-view"></p>
+<p>This set-up allows for a trigger based release of content. So each time I push changes into the master branch the pipeline kicks in and ensures that the change is pushed to the output GitHub repository. The pipeline to achieve this is as follows:</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/pipeline-view.png" alt="pipeline-view"></p>
+<p>As mentioned in the title I will do my best to explain the set-up step by step. However if a manual already exists for a specific part of configuration I will simply reference it (via a link). To structure this guide I have created a separate chapter for each step. In addition I have also split the really big steps into subchapters. The result is as follows:</p>
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#the-set-up">The set-up</a>
+<ul>
+<li><a href="#github-pages-repository">GitHub Pages repository</a></li>
+<li><a href="#azure-devops---hugo-blog-repository">Azure DevOps - Hugo blog repository</a>
+<ul>
+<li><a href="#azure-devops-project">Azure DevOps project</a></li>
+<li><a href="#cicd-repository">CICD repository</a></li>
+<li><a href="#hugo-installation-and-configuration">Hugo Installation and Configuration</a></li>
+</ul>
+</li>
+<li><a href="#azure-devops---yaml-pipeline">Azure DevOps - Yaml pipeline</a>
+<ul>
+<li><a href="#checkout">Checkout</a></li>
+<li><a href="#run-hugotask1">Run HugoTask@1</a></li>
+<li><a href="#publish-artifact">Publish Artifact</a></li>
+<li><a href="#checkout-1">Checkout</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#run-githubpagespublish1">Run GitHubPagesPublish@1</a></li>
+<li><a href="#add-yaml-file-as-pipeline-in-azure-devops">Add YAML file as pipeline in Azure DevOps</a></li>
+</ul>
+</li>
+<li><a href="#domain-name-configuration-optional">Domain name configuration (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="github-pages-repository">GitHub Pages repository</h3>
+<p><strong>NOTE:</strong> You need to have a GitHub account before you can continue with this chapter. You can create one <a href="https://github.com/join">here</a>.</p>
+<p>Head over to GitHub and <a href="https://github.com/new">create a new repo</a>. When creating the repo it&rsquo;s really important to name it properly. The difference between a regular repo and a Pages repo is in the way the repo is named. So to create a Pages repo make sure to name is as follows: <em>username</em>.github.io. In my case, my GitHub account/username is <strong>devjevnl</strong> so my GitHub Pages repo is named devjevnl.github.io</p>
+<p>Additional information (like the different type of GitHub Pages) and detailed instructions are available at the <a href="https://pages.github.com/">GitHub Pages</a> site.</p>
+<p>After creating the GitHub Pages repo leave it as it as is for now. It will be used in later chapters.</p>
+<h3 id="azure-devops---hugo-blog-repository">Azure DevOps - Hugo blog repository</h3>
+<p>This chapter covers the creation of the Azure DevOps project, setting up the CICD repository and the actual installation and configuration of the Hugo engine.</p>
+<h4 id="azure-devops-project">Azure DevOps project</h4>
+<p><strong>NOTE:</strong> You need to have an Azure DevOps account before you can continue with this chapter. You can create one for free <a href="https://azure.microsoft.com/en-us/services/devops/">here</a>.</p>
+<ul>
+<li>Open your Azure DevOps and click on +New Project.</li>
+<li>Give your project a name and a description.</li>
+<li>Ensure that visibility is set to private.</li>
+<li>Leave the Advanced setting to their default.</li>
+<li>Click +Create.</li>
+</ul>
+<h4 id="cicd-repository">CICD repository</h4>
+<p>To keep the instructions as simple as possible I am going to use the default repo available in the newly created project.</p>
+<p><strong>NOTE:</strong> I use VS Code for this step but if you have an alternative editor you can of course use that one.</p>
+<ul>
+<li>Navigate to Repos of your project</li>
+<li>Clone the default repo (in my case by clicking the Clone is VS Code button)</li>
+<li>Create two folders, one named <code>pipelines</code> and one named <code>src</code> in the just cloned repo</li>
+</ul>
+<p>The next step is to install the Hugo engine.</p>
+<h4 id="hugo-installation-and-configuration">Hugo Installation and Configuration</h4>
+<p>There are various methods for installing Hugo. All of these methods are documented on the <a href="https://gohugo.io/getting-started/installing">installation page of Hugo</a>. For this blog I used the chocolatey approach. First make sure to install chocolatey by following the installation steps available on <a href="https://chocolatey.org/install">chocolatey.org</a>. Then follow the <a href="https://gohugo.io/getting-started/installing">Chocolatey (Windows)</a> steps on the Hugo installation page.</p>
+<p>After installation make sure to type <code>hugo -h</code> in the console window to ensure the installation process has been successful. The result should be that Hugo help is showing, see following example.</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/hugo-h-result.png" alt="hugo-h-result"></p>
+<p>With everything in place it should be possible to create a Hugo blog site. Open up VS Code again and make sure you have the Terminal visible. You should be in the root folder of your repo. Navigate one folder down by typing the following in the Terminal:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"> <span style="color:#fff;font-weight:bold">cd </span>.\src\
+</code></pre></div><p>Type the command as show below. It will create a sub-folder under <code>\src\</code> named <code>devjev_blog</code> with a generated Hugo site inside it. Make sure to replace devjev_blog with a title to your liking.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo new site devjev_blog
+</code></pre></div><p>I don&rsquo;t want to go into great detail about how to fully configure and utilize Hugo as this is done extensively within the installation manual of Hugo. However to showcase the potential of this solution. I want to quickly run trough some basic configuration and a &ldquo;Hello World&rdquo; blog post.</p>
+<p>So lets continue the set-up by adding a theme and creating the blog-post placeholder. This is done by executing the following commands</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#fff;font-weight:bold">cd </span>devjev_blog [change this to your folder name]
+git init
+git submodule add https<span style="color:#f00">:</span>//github.com/budparr/gohugo-theme-ananke.git themes/ananke
+hugo new posts/hello-world.<span style="color:#fff;font-weight:bold">md
+</span></code></pre></div><p>Enable the theme editing the config.toml file and adding the following line as a ne line to the file.</p>
+<p><strong>NOTE:</strong> It should also be possible with command line command: echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &raquo; config.toml. But for me this results in a malformed .toml file. So I had to fix it manually.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">theme = <span style="color:#0ff;font-weight:bold">&#34;ananke&#34;</span>
+</code></pre></div><p>Open the hello-world.md file And add some text to it. My example is as follows:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
+title: &#34;Hello World&#34;
+date: 2020-07-31T15:59:39+02:00
+draft: true
+---
+
+This is a Hugo great Hello.
+
+</code></pre></div><p>Test the Hugo config by the following command and opening the local URL Hugo generated for you. In my case:  http://localhost:1313/.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo serve -D
+</code></pre></div><p>Hugo basic config has been completed. Now lets move on to the more interesting parts. You can play around with styles and additional config later ;-)</p>
+<h3 id="azure-devops---yaml-pipeline">Azure DevOps - Yaml pipeline</h3>
+<p>Now that Hugo is running locally and GitHub Pages repo has been configured its time to recreate the same set-up as part of the Azure DevOps pipeline.</p>
+<p>Create a new yaml pipeline file in the pipelines folder of the CICD Git repo created as part of the <a href="#cicd-repository">CICD repository</a> step. You can call it something like &lsquo;hugo-blog.yml&rsquo;.
+The details about yaml pipelines in Azure DevOps can be found <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;tabs=schema%2Cparameter-schema">here</a>. In this chapter I will cover the specific pipeline features required for the Hugo engine to automatically build and publish the content.</p>
+<p>Lets start by creating a trigger, since the default branching config has remained as it is the trigger should include the <code>master</code> branch. The trigger looks like this:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#fff;font-weight:bold">trigger</span>:
+  <span style="color:#fff;font-weight:bold">branches</span>:
+    <span style="color:#fff;font-weight:bold">include</span>:
+      - master
+
+</code></pre></div><p>Next, the stages of the pipeline should be defined. In this case two stages, one for running Hugo engine which generates the static content and a second one to publish the content to the GitHub pages repo. Make sure to leave an empty line after the trigger and prior to adding the two stages as shown below.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#fff;font-weight:bold">trigger</span>:
+  <span style="color:#fff;font-weight:bold">branches</span>:
+    <span style="color:#fff;font-weight:bold">include</span>:
+      - master
+
+<span style="color:#fff;font-weight:bold">stages</span>:
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Generating Blog Content&#34;</span>
+
+
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;PublishHugoContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Publishing Blog Content&#34;</span>
+
+</code></pre></div><p>Now let&rsquo;s add a job to the <code>GenerateBlogContent</code> stage. Within the job an image to execute the job must be specified, in this case the <code>windows-latest</code>. The job looks like following:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#fff;font-weight:bold">trigger</span>:
+  <span style="color:#fff;font-weight:bold">branches</span>:
+    <span style="color:#fff;font-weight:bold">include</span>:
+      - master
+
+<span style="color:#fff;font-weight:bold">stages</span>:
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Generating Blog Content&#34;</span>
+    <span style="color:#fff;font-weight:bold">jobs</span>:
+      - <span style="color:#fff;font-weight:bold">job</span>:
+        <span style="color:#fff;font-weight:bold">pool</span>:
+          <span style="color:#fff;font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-latest&#34;</span>
+
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;PublishHugoContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Publishing Blog Content&#34;</span>
+
+</code></pre></div><p>Next let&rsquo;s populate the job. Each job consist out of steps. In this case this job consist from three steps, namely;</p>
+<ul>
+<li>Checkout</li>
+<li>Run HugoTask@1</li>
+<li>Publish artifact</li>
+</ul>
+<h4 id="checkout">Checkout</h4>
+<p>This is a fairly straightforward step its purpose is to checkout source code. While nondeployment jobs automatically check out source code, the default behavior of these such jobs is not to checkout submodules. Sine the Hugo theme is a submodule this step is specified with the property <code>submodules</code> set to true. More information on this step can be found <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;tabs=schema%2Cparameter-schema#checkout">here</a></p>
+<h4 id="run-hugotask1">Run HugoTask@1</h4>
+<p>This step is a task of the type <code>HugoTask@1</code>, this is the task in which the Hugo engine runs and converts the Hugo solution and markdown files into static content. The task type used for this step can be installed into your Azure DevOps environment via the following <a href="https://marketplace.visualstudio.com/items?itemName=giuliovdev.hugo-extension">link</a>. As input this task requires a source directory from which to get the Hugo solution including the markdown files. And a destination directory to which write the rendered static pages. In addition I have <code>extendedVersion</code> set to true as my Hugo theme is requires SCSS/SASS support. The source directory should point to the subfolder of  <code>/src/</code> created earlier when configuring Hugo. Basically pointing t your Hugo &lsquo;root&rsquo; folder.</p>
+<h4 id="publish-artifact">Publish Artifact</h4>
+<p>This step is a simple publish step used to publish the output from step two as an artifact. In the example below I called the artifact <code>hugo-blog-content</code> but you can call it anything you like. Just make sure when referencing the Artifact you use this exact name.</p>
+<p>The populated job looks like following:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#fff;font-weight:bold">trigger</span>:
+  <span style="color:#fff;font-weight:bold">branches</span>:
+    <span style="color:#fff;font-weight:bold">include</span>:
+      - master
+
+<span style="color:#fff;font-weight:bold">stages</span>:
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Generating Blog Content&#34;</span>
+    <span style="color:#fff;font-weight:bold">jobs</span>:
+      - <span style="color:#fff;font-weight:bold">job</span>:
+        <span style="color:#fff;font-weight:bold">pool</span>:
+          <span style="color:#fff;font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-latest&#34;</span>
+
+        <span style="color:#fff;font-weight:bold">workspace</span>:
+          <span style="color:#fff;font-weight:bold">clean</span>: all
+
+        <span style="color:#fff;font-weight:bold">steps</span>:
+          - <span style="color:#fff;font-weight:bold">checkout</span>: self
+            <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Checkout repository including submodules&#34;</span>
+            <span style="color:#fff;font-weight:bold">submodules</span>: <span style="color:#fff;font-weight:bold">true</span>
+
+          - <span style="color:#fff;font-weight:bold">task</span>: HugoTask@<span style="color:#ff0;font-weight:bold">1</span>
+            <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Executing Hugo Task&#34;</span>
+            <span style="color:#fff;font-weight:bold">inputs</span>:
+              <span style="color:#fff;font-weight:bold">source</span>: <span style="color:#0ff;font-weight:bold">&#39;$(System.DefaultWorkingDirectory)/src/[YOUR_HUGO_SOLUTION_FOLDER]&#39;</span>
+              <span style="color:#fff;font-weight:bold">destination</span>: <span style="color:#0ff;font-weight:bold">&#39;$(Build.ArtifactStagingDirectory)&#39;</span>
+              <span style="color:#fff;font-weight:bold">extendedVersion</span>: <span style="color:#fff;font-weight:bold">true</span>
+
+          - <span style="color:#fff;font-weight:bold">publish</span>: <span style="color:#0ff;font-weight:bold">&#34;$(Build.ArtifactStagingDirectory)&#34;</span>
+            <span style="color:#fff;font-weight:bold">artifact</span>: <span style="color:#0ff;font-weight:bold">&#34;hugo-blog-content&#34;</span>
+
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;PublishHugoContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Publishing Blog Content&#34;</span>
+</code></pre></div><p>Next lets construct the Publish Hugo Content stage. As shown in the example below this stage is a bit different from the generate stage. It has variables defined and is configured to depend on the generate stage. Let&rsquo;s break it down.<br>
+Because this is the stage where content gets published to GitHub Pages the credentials for GitHub must be stored somewhere, to do so safely I am using a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml">variables group</a>. You can name it whatever you like, but again make sure to reference it by the name you give it. You can create such a variables group in the Library section of Pipelines. This is how mine looks:</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/variables-group.png" alt="variables-group"></p>
+<p>As visible in the above image the following input values are required:</p>
+<ul>
+<li>github-email - [The email address you want associated with the commit to the GitHub Pages branch]</li>
+<li>github-personal-access-token - [Your personal access token, <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">steps on to how to generate one</a>]</li>
+<li>github-repository-name [The name of the GitHub repository that you want to publish pages to]</li>
+<li>github-username [your GitHub Username, e.g. DevJevNL (mine)]</li>
+</ul>
+<p>Now that the variables group is created and populated with the required secrets lets continue deconstructing the pipeline code.</p>
+<p>Next is the <code>condition</code> which ensures that the publishing only happens when the master branch build is successful. After the variables group is specified a display name for this stage is set by setting the <code>diplayName</code> property. Then a dependency is added which ensures that the previous stage has been executed successfully. There isn&rsquo;t much sense in publishing if there is nothing to publish. The condition follows next. The current condition configuration is to ensure that the master branch has been **&lsquo;built&rsquo;*- successfully.<br>
+After specifying the stage settings the jobs is specified, nothing special happens here its the same specification as already mentioned in the description of the previous stage. However compared to the job in previous stage this one has different steps, namely;</p>
+<ul>
+<li>Checkout</li>
+<li>Download</li>
+<li>Run GitHubPagesPublish@1</li>
+</ul>
+<h4 id="checkout-1">Checkout</h4>
+<p>As mentioned earlier nondeployment jobs automatically check out source code. So this step is specified to ensure this does not happen because the content that will be published is generated by the previous step and is made available as an artifact.</p>
+<h4 id="download">Download</h4>
+<p>This task downloads the artifact from an earlier stage or from a different pipeline. In this case from the <code>GenerateBlogContent</code>. More information about this task can be found <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?view=azure-devops">here</a>. Its important that the name of the artifact is an exact match with the one specified in the <code>GenerateBlogContent</code> stage.</p>
+<h4 id="run-githubpagespublish1">Run GitHubPagesPublish@1</h4>
+<p>Next is the actual task that does the publishing. As already mentioned at the start of this post I am using the <a href="https://marketplace.visualstudio.com/items?itemName=AccidentalFish.githubpages-publish">GitHub Pages Publish</a> task from the publisher <strong>&lsquo;Accidental Fish&rsquo;</strong>. This is where the variables group I just created will be put to use.
+The variables are as follows:</p>
+<ul>
+<li>docPath: folder path of the artifact to publish</li>
+<li>githubusername: GitHub username as specified in the variables group, i.e. $(github-username)</li>
+<li>githubemail: The email address you want associated with the commit to the GitHub pages branch, i.e. $(github-email)</li>
+<li>githubaccesstoken: The personal access token, i.e. $(github-personal-access-token)</li>
+<li>repositoryname: The name of the GitHub Pages repository, i.e. $(github-repository-name)</li>
+<li>branchname: unless you have added branches, this should be &ldquo;master&rdquo;</li>
+<li>commitmessage: The message you want associated with the commit - this defaults to &ldquo;Automated Release $(Release.ReleaseId)&rdquo;</li>
+</ul>
+<p>When everything is put together the complete pipeline should look like this:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Generating Blog Content&#34;</span>
+    <span style="color:#fff;font-weight:bold">jobs</span>:
+      - <span style="color:#fff;font-weight:bold">job</span>:
+        <span style="color:#fff;font-weight:bold">pool</span>:
+          <span style="color:#fff;font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-latest&#34;</span>
+
+        <span style="color:#fff;font-weight:bold">workspace</span>:
+          <span style="color:#fff;font-weight:bold">clean</span>: all
+
+        <span style="color:#fff;font-weight:bold">steps</span>:
+          - <span style="color:#fff;font-weight:bold">checkout</span>: self
+            <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Checkout Hugo Git Repo and Theme repo&#34;</span>
+            <span style="color:#fff;font-weight:bold">submodules</span>: <span style="color:#fff;font-weight:bold">true</span>
+
+          - <span style="color:#fff;font-weight:bold">task</span>: HugoTask@<span style="color:#ff0;font-weight:bold">1</span>
+            <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Executing Hugo Task&#34;</span>
+            <span style="color:#fff;font-weight:bold">inputs</span>:
+              <span style="color:#fff;font-weight:bold">source</span>: <span style="color:#0ff;font-weight:bold">&#39;$(System.DefaultWorkingDirectory)/src/[YOUR_HUGO_SOLUTION_FOLDER]&#39;</span>
+              <span style="color:#fff;font-weight:bold">destination</span>: <span style="color:#0ff;font-weight:bold">&#39;$(Build.ArtifactStagingDirectory)&#39;</span>
+              <span style="color:#fff;font-weight:bold">extendedVersion</span>: <span style="color:#fff;font-weight:bold">true</span>
+
+          - <span style="color:#fff;font-weight:bold">publish</span>: <span style="color:#0ff;font-weight:bold">&#34;$(Build.ArtifactStagingDirectory)&#34;</span>
+            <span style="color:#fff;font-weight:bold">artifact</span>: <span style="color:#0ff;font-weight:bold">&#34;hugo-blog-content&#34;</span>
+
+  - <span style="color:#fff;font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;PublishHugoContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">variables</span>:
+      - <span style="color:#fff;font-weight:bold">group</span>: <span style="color:#0ff;font-weight:bold">&#34;blg-hugo-devjevnl-vars&#34;</span>
+    <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Publishing Blog Content&#34;</span>
+    <span style="color:#fff;font-weight:bold">dependsOn</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+    <span style="color:#fff;font-weight:bold">condition</span>: and(succeeded(), eq(variables[<span style="color:#0ff;font-weight:bold">&#39;Build.SourceBranch&#39;</span>], <span style="color:#0ff;font-weight:bold">&#39;refs/heads/master&#39;</span>))
+    <span style="color:#fff;font-weight:bold">jobs</span>:
+      - <span style="color:#fff;font-weight:bold">job</span>:
+        <span style="color:#fff;font-weight:bold">pool</span>:
+          <span style="color:#fff;font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-2019&#34;</span>
+
+        <span style="color:#fff;font-weight:bold">steps</span>:
+          - <span style="color:#fff;font-weight:bold">checkout</span>: none
+          - <span style="color:#fff;font-weight:bold">download</span>: current
+            <span style="color:#fff;font-weight:bold">artifact</span>: <span style="color:#0ff;font-weight:bold">&#34;hugo-blog-content&#34;</span>
+
+          - <span style="color:#fff;font-weight:bold">task</span>: GitHubPagesPublish@<span style="color:#ff0;font-weight:bold">1</span>
+            <span style="color:#fff;font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Executing GitHub Pages Publish&#34;</span>
+            <span style="color:#fff;font-weight:bold">inputs</span>:
+              <span style="color:#fff;font-weight:bold">docPath</span>: <span style="color:#0ff;font-weight:bold">&#34;$(Pipeline.Workspace)/hugo-blog-content/*&#34;</span>
+              <span style="color:#fff;font-weight:bold">githubusername</span>: <span style="color:#0ff;font-weight:bold">&#34;$(github-username)&#34;</span>
+              <span style="color:#fff;font-weight:bold">githubemail</span>: <span style="color:#0ff;font-weight:bold">&#34;$(github-email)&#34;</span>
+              <span style="color:#fff;font-weight:bold">githubaccesstoken</span>: <span style="color:#0ff;font-weight:bold">&#34;$(github-personal-access-token)&#34;</span>
+              <span style="color:#fff;font-weight:bold">repositoryname</span>: <span style="color:#0ff;font-weight:bold">&#34;$(github-repository-name)&#34;</span>
+              <span style="color:#fff;font-weight:bold">branchname</span>: <span style="color:#0ff;font-weight:bold">&#34;master&#34;</span>
+              <span style="color:#fff;font-weight:bold">commitmessage</span>: <span style="color:#0ff;font-weight:bold">&#34;CICD Pipeline $(Build.BuildNumber): $(Build.SourceVersionMessage)&#34;</span>
+
+</code></pre></div><p>That&rsquo;s it, the pipeline code is done. Don&rsquo;t forget to commit and push the additions. The next and final step for the pipeline creation process would be to implement the pipeline in Azure DevOps.</p>
+<h4 id="add-yaml-file-as-pipeline-in-azure-devops">Add YAML file as pipeline in Azure DevOps</h4>
+<p>The pipeline code should be available in the Azure DevOps repo (assuming the Git commit and push commands have been executed). Navigate to you Azure DevOps organization.
+In the left hand menu click on <code>Pipelines</code> the select the <code>Pipelines</code> sub-option</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-1.png" alt="add-yaml-pipeline-step-1"></p>
+<p>Click on <code>New Pipeline</code> button located in the right top corner.</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-2.png" alt="add-yaml-pipeline-step-2"></p>
+<p>Select the <code>Azure Repos Git</code> option</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-3.png" alt="add-yaml-pipeline-step-3"></p>
+<p>Click on the repository created in the earlier steps. If your Azure DevOps environment is empty there should only be one repo visible.</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-4.png" alt="add-yaml-pipeline-step-4"></p>
+<p>Select the <code>Existing Azure Pipelines YAML file option</code></p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-5.png" alt="add-yaml-pipeline-step-5"></p>
+<p>Leave the branch to the default value, this should be <code>master</code>. In the path dropdown box select the .yml file as created in the previous steps. And finally in the bottom right corner click on the create button to finalize creating the pipeline.</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-6.png" alt="add-yaml-pipeline-step-6"></p>
+<p>Review the YAML code and if everything looks good, click run to execute the pipeline.</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/add-yaml-pipeline-step-7.png" alt="add-yaml-pipeline-step-7"></p>
+<p>The blog is now ready for content! Each time you push changes to the master branch by adding blog posts, the pipeline is triggered to generate static content and push it to GitHub Pages which hosts the content. So if you would navigate to your-gihub-account.github.io you should see the Hugo blog. While technically optional I consider having a personal domain name a must. The great thing about GitHub Pages is that this is supported without any cost (with the exception of buying the domain name of course).</p>
+<h3 id="domain-name-configuration-optional">Domain name configuration (optional)</h3>
+<p>So as putting the icing on the cake lets walk trough the steps of configuring a domain name for the GitHub Pages repo created earlier. Navigate to GitHub and login with your account then select the your-gihub-account.github.io repository an click the Settings option. In my case I opened the devjevnl.github.io repo and selected then option. Then scrolled down to the GitHub Pages section. This is where the custom domain configuration is done, the steps are quite simple and described in a separate <a href="https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">GitHub Learn more guide</a>. So I am not going to cover it here as the GitHub guide is always up do date and in my opinion quite clear.</p>
+<p>When the domain name configuration is done correctly it should look something like the this:</p>
+<p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/cunstom-domain-config.png" alt="custom-domain-config"></p>
+<p>As I finial remark on this subject I would really recommend enabling the enforce HTTPS option.</p>
+<p>So by now you should have an up and running blog which is fully free (with the exception of your domain name if you chose to implement one) and is ran for you by automation. Happy blogging!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+    </div>
+
+    
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Let's automate the boring!</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+  </main>
+
+  
+  <script src="https://www.devjev.nl/js/custom.js"></script>
+  
+
+  
+
+  
+
+</body>
+
+</html>

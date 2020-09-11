@@ -6,9 +6,55 @@
     <description>Recent content in Tags on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 10 Sep 2020 18:42:15 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Azure DevOps</title>
+      <link>https://www.devjev.nl/tags/azure-devops/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://www.devjev.nl/tags/blog/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub Pages</title>
+      <link>https://www.devjev.nl/tags/github-pages/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://www.devjev.nl/tags/hugo/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Step by step</title>
+      <link>https://www.devjev.nl/tags/step-by-step/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/step-by-step/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

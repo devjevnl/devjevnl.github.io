@@ -3,20 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.devjev.nl/about/</loc>
-    <lastmod>2020-09-11T14:22:50+02:00</lastmod>
+    <loc>https://www.devjev.nl/tags/azure-devops/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/blog/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.devjev.nl/categories/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.devjev.nl/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/github-pages/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/categories/how-to/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/hugo/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/posts/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/tags/step-by-step/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.devjev.nl/tags/</loc>
+    <lastmod>2020-09-11T14:47:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.devjev.nl/about/</loc>
+    <lastmod>2020-09-11T14:22:50+02:00</lastmod>
   </url>
   
 </urlset>
