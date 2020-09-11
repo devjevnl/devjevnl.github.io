@@ -6,19 +6,9 @@
     <description>Recent content in Categories on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jul 2020 13:42:15 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Theory</title>
-      <link>https://www.devjev.nl/categories/theory/</link>
-      <pubDate>Wed, 15 Jul 2020 13:42:15 +0200</pubDate>
-      
-      <guid>https://www.devjev.nl/categories/theory/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

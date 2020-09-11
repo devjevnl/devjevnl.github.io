@@ -3,48 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.devjev.nl/about/</loc>
+    <lastmod>2020-09-11T14:22:50+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.devjev.nl/categories/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.devjev.nl/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/posts/my-first-post/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/posts/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/tags/tag-1/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/tags/tag-2/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.devjev.nl/tags/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/categories/theory/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/about/</loc>
-    <lastmod>2020-07-21T09:18:36+02:00</lastmod>
   </url>
   
 </urlset>
