@@ -6,10 +6,19 @@
     <description>Recent content in Azure DevOps on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Sep 2020 18:42:15 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/azure-devops/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub vs Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/github-vs-ado/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/posts/github-vs-ado/</guid>
+      <description>Introduction Quite recent one of our clients has asked if it might be worth wile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&amp;rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was quite enthusiastic (I didn&amp;rsquo;t expect that :) ). Due to enthusiastic response I decided to share this information.</description>
+    </item>
     
     <item>
       <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>

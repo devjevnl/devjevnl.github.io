@@ -6,7 +6,7 @@
     <description>Recent content in Tags on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Sep 2020 18:42:15 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,45 @@
     <item>
       <title>Azure DevOps</title>
       <link>https://www.devjev.nl/tags/azure-devops/</link>
-      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
       
       <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison</title>
+      <link>https://www.devjev.nl/tags/comparison/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/comparison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://www.devjev.nl/tags/github/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High Level</title>
+      <link>https://www.devjev.nl/tags/high-level/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/high-level/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Versus</title>
+      <link>https://www.devjev.nl/tags/versus/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/tags/versus/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on DevJev.NL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Sep 2020 18:42:15 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub vs Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/github-vs-ado/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+      <guid>https://www.devjev.nl/posts/github-vs-ado/</guid>
+      <description>Introduction Quite recent one of our clients has asked if it might be worth wile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&amp;rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was quite enthusiastic (I didn&amp;rsquo;t expect that :) ). Due to enthusiastic response I decided to share this information.</description>
+    </item>
     
     <item>
       <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
@@ -18,24 +27,6 @@
       
       <guid>https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/</guid>
       <description>Introduction I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&amp;rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.devjev.nl/posts/invoke-azrestmethod/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.devjev.nl/posts/invoke-azrestmethod/</guid>
-      <description>https://techcommunity.microsoft.com/t5/azure-tools/how-to-manage-azure-resources-with-the-new-powershell-invoke/ba-p/1540306 https://docs.microsoft.com/en-us/powershell/module/az.accounts/invoke-azrestmethod?view=azps-4.6.1</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.devjev.nl/posts/search-azgraph/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.devjev.nl/posts/search-azgraph/</guid>
-      <description>Placeholder</description>
     </item>
     
   </channel>
