@@ -17,7 +17,8 @@
       <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
       
       <guid>https://www.devjev.nl/posts/github-vs-ado/</guid>
-      <description>Introduction Quite recent one of our clients has asked if it might be worth wile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&amp;rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was quite enthusiastic (I didn&amp;rsquo;t expect that :) ). Due to enthusiastic response I decided to share this information.</description>
+      <description>Introduction Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&amp;rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.
+Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.</description>
     </item>
     
     <item>
