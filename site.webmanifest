@@ -1,0 +1,19 @@
+{
+  "name": "Cl\u00e9ment Pannetier",
+  "short_name": "Cl\u00e9ment Pannetier",
+  "icons": [
+    {
+      "src": "/images/android-icon-192x192.png?v=00Bg8oYJjl",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-icon-152x152.png?v=00Bg8oYJjl",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#3388bb",
+  "background_color": "#3388bb",
+  "display": "standalone"
+}

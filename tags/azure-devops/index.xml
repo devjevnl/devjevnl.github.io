@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Azure DevOps on DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/azure-devops/</link>
+        <description>Recent content in Azure DevOps on DevJev.NL</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 06 Nov 2020 13:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.devjev.nl/tags/azure-devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+<title>GitHub vs Azure DevOps</title>
+<link>https://www.devjev.nl/posts/github-vs-ado/</link>
+<pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      
+<description>A high level comparison between GitHub and Azure DevOps</description>
+<tags>GitHub,Azure DevOps,Versus,Comparison,High Level</tags>
+</item>
+    
+    <item>
+<title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
+<link>https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/</link>
+<pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      
+<description>A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages</description>
+<tags>Step by step,Blog,Azure DevOps,GitHub Pages,Hugo</tags>
+</item>
+    
+  </channel>
+</rss>
