@@ -1,130 +1,94 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.devjev.nl/tags/azure-devops/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/categories/azure-devops/</loc>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/hack/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/posts/hacking-azure-devops/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.devjev.nl/tags/lateral-attack/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/i-am-in-your-pipeline-reading-all-your-secrets/</loc>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/pipelines/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/posts/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/secret-exfiltration/</loc>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/security/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/security/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/variable-exfiltration/</loc>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/zero-trust/</loc>
+    <lastmod>2022-01-30T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/hacking-azure-devops/</loc>
+    <lastmod>2021-05-19T12:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/lateral-attack/</loc>
+    <lastmod>2021-05-19T12:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/unconventional/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-05-19T12:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/comparison/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/comparison/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/github/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/posts/github-vs-ado/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/high-level/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/versus/</loc>
-    <lastmod>2021-05-19T12:53:37+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-11-06T13:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/blog/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/github-pages/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/how-to/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/hugo/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/tags/step-by-step/</loc>
-    <lastmod>2020-11-14T15:30:47+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-09-10T18:42:15+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/about/</loc>
-    <lastmod>2020-09-11T14:22:50+02:00</lastmod>
   </url>
-  
 </urlset>

@@ -21,10 +21,10 @@
     <meta property="og:title" content="Set by step guide for a free and easy way to set up a low maintenance blog" />
 <meta property="og:description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/" />
-<meta property="og:image" content="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/header-img.png" />
+<meta property="og:url" content="https://www.devjev.nl/posts/free-blog-with-ado-and-github-pages/" /><meta property="og:image" content="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/header-img.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-09-10T18:42:15+02:00" />
-<meta property="article:modified_time" content="2020-11-14T15:30:47+01:00" />
+<meta property="article:modified_time" content="2020-09-10T18:42:15+02:00" />
+
 
 
     
@@ -73,7 +73,7 @@
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.76.2" />
+    <meta name="generator" content="Hugo 0.92.0" />
   </head>
 
   
@@ -261,20 +261,20 @@
 <p>After installation make sure to type <code>hugo -h</code> in the console window to ensure the installation process has been successful. The result should be that Hugo help is showing, see following example.</p>
 <p><img src="https://www.devjev.nl/images/free-blog-with-ado-and-github-pages/hugo-h-result.png" alt="hugo-h-result"></p>
 <p>With everything in place it should be possible to create a Hugo blog site. Open up VS Code again and make sure you have the Terminal visible. You should be in the root folder of your repo. Navigate one folder down by typing the following in the Terminal:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"> <span style="color:#fff;font-weight:bold">cd </span>.\src\
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"> <span style="color:#fff;font-weight:bold">cd </span>.\src\
 </code></pre></div><p>Type the command as show below. It will create a sub-folder under <code>\src\</code> named <code>devjev_blog</code> with a generated Hugo site inside it. Make sure to replace devjev_blog with a title to your liking.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo new site devjev_blog
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo new site devjev_blog
 </code></pre></div><p>I don&rsquo;t want to go into great detail about how to fully configure and utilize Hugo as this is done extensively within the installation manual of Hugo. However to showcase the potential of this solution. I want to quickly run trough some basic configuration and a &ldquo;Hello World&rdquo; blog post.</p>
 <p>So lets continue the set-up by adding a theme and creating the blog-post placeholder. This is done by executing the following commands</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#fff;font-weight:bold">cd </span>devjev_blog [change this to your folder name]
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#fff;font-weight:bold">cd </span>devjev_blog [change this to your folder name]
 git init
-git submodule add https<span style="color:#f00">:</span>//github.com/budparr/gohugo-theme-ananke.git themes/ananke
-hugo new posts/hello-world.<span style="color:#fff;font-weight:bold">md
+git submodule add https<span style="color:#f00">:</span>//github.com/budparr/<span style="color:#fff;font-weight:bold">gohugo-theme</span>-ananke.git themes/ananke
+hugo new posts/<span style="color:#fff;font-weight:bold">hello-world</span>.<span style="color:#fff;font-weight:bold">md
 </span></code></pre></div><p>Enable the theme editing the config.toml file and adding the following line as a ne line to the file.</p>
 <p><strong>NOTE:</strong> It should also be possible with command line command: echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &raquo; config.toml. But for me this results in a malformed .toml file. So I had to fix it manually.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">theme = <span style="color:#0ff;font-weight:bold">&#34;ananke&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">theme = <span style="color:#0ff;font-weight:bold">&#34;ananke&#34;</span>
 </code></pre></div><p>Open the hello-world.md file And add some text to it. My example is as follows:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
 title: &#34;Hello World&#34;
 date: 2020-07-31T15:59:39+02:00
 draft: true
@@ -283,21 +283,21 @@ draft: true
 This is a Hugo great Hello.
 
 </code></pre></div><p>Test the Hugo config by the following command and opening the local URL Hugo generated for you. In my case:  http://localhost:1313/.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo serve -D
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">hugo serve -D
 </code></pre></div><p>Hugo basic config has been completed. Now lets move on to the more interesting parts. You can play around with styles and additional config later ;-)</p>
 <h3 id="azure-devops---yaml-pipeline">Azure DevOps - Yaml pipeline</h3>
 <p>Now that Hugo is running locally and GitHub Pages repo has been configured its time to recreate the same set-up as part of the Azure DevOps pipeline.</p>
 <p>Create a new yaml pipeline file in the pipelines folder of the CICD Git repo created as part of the <a href="#cicd-repository">CICD repository</a> step. You can call it something like &lsquo;hugo-blog.yml&rsquo;.
 The details about yaml pipelines in Azure DevOps can be found <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;tabs=schema%2Cparameter-schema">here</a>. In this chapter I will cover the specific pipeline features required for the Hugo engine to automatically build and publish the content.</p>
 <p>Lets start by creating a trigger, since the default branching config has remained as it is the trigger should include the <code>master</code> branch. The trigger looks like this:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="font-weight:bold">trigger</span>:
   <span style="font-weight:bold">branches</span>:
     <span style="font-weight:bold">include</span>:
       - master
 
 </code></pre></div><p>Next, the stages of the pipeline should be defined. In this case two stages, one for running Hugo engine which generates the static content and a second one to publish the content to the GitHub pages repo. Make sure to leave an empty line after the trigger and prior to adding the two stages as shown below.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="font-weight:bold">trigger</span>:
   <span style="font-weight:bold">branches</span>:
     <span style="font-weight:bold">include</span>:
@@ -312,7 +312,7 @@ The details about yaml pipelines in Azure DevOps can be found <a href="https://d
     <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Publishing Blog Content&#34;</span>
 
 </code></pre></div><p>Now let&rsquo;s add a job to the <code>GenerateBlogContent</code> stage. Within the job an image to execute the job must be specified, in this case the <code>windows-latest</code>. The job looks like following:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="font-weight:bold">trigger</span>:
   <span style="font-weight:bold">branches</span>:
     <span style="font-weight:bold">include</span>:
@@ -342,7 +342,7 @@ The details about yaml pipelines in Azure DevOps can be found <a href="https://d
 <h4 id="publish-artifact">Publish Artifact</h4>
 <p>This step is a simple publish step used to publish the output from step two as an artifact. In the example below I called the artifact <code>hugo-blog-content</code> but you can call it anything you like. Just make sure when referencing the Artifact you use this exact name.</p>
 <p>The populated job looks like following:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">trigger</span>:
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="font-weight:bold">trigger</span>:
   <span style="font-weight:bold">branches</span>:
     <span style="font-weight:bold">include</span>:
       - master
@@ -410,7 +410,7 @@ The variables are as follows:</p>
 <li>commitmessage: The message you want associated with the commit - this defaults to &ldquo;Automated Release $(Release.ReleaseId)&rdquo;</li>
 </ul>
 <p>When everything is put together the complete pipeline should look like this:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  - <span style="font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">  - <span style="font-weight:bold">stage</span>: <span style="color:#0ff;font-weight:bold">&#34;GenerateBlogContent&#34;</span>
     <span style="font-weight:bold">displayName</span>: <span style="color:#0ff;font-weight:bold">&#34;Generating Blog Content&#34;</span>
     <span style="font-weight:bold">jobs</span>:
       - <span style="font-weight:bold">job</span>:

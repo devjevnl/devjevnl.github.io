@@ -7,10 +7,19 @@
         <description>Recent content on DevJev.NL</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 19 May 2021 12:00:00 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 30 Jan 2022 08:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+<title>I am in your pipeline reading all your secrets!</title>
+<link>https://www.devjev.nl/posts/i-am-in-your-pipeline-reading-all-your-secrets/</link>
+<pubDate>Sun, 30 Jan 2022 08:00:00 +0100</pubDate>
+      
+<description>Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important</description>
+<tags>Azure DevOps,Pipelines,Hack,Security,Variable Exfiltration,Secret Exfiltration,Zero Trust</tags>
+</item>
     
     <item>
 <title>Hacking Azure DevOps</title>
