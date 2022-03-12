@@ -13,11 +13,11 @@
     
     
     <item>
-<title>Configure pipeline permissions or your service connection credentials are mine!</title>
-<link>https://www.devjev.nl/posts/configure-pipeline-permissions-or-your-service-connection-credentials-are-mine/</link>
+<title>Configure pipeline permissions to secure service connection credentials</title>
+<link>https://www.devjev.nl/posts/configure-pipeline-permissions-to-secure-service-connection-credentials/</link>
 <pubDate>Sat, 12 Mar 2022 21:00:00 +0100</pubDate>
       
-<description>How secure are you service connection credentials</description>
+<description>A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline</description>
 <tags>Azure DevOps,Pipelines,Hack,Security,Security,Service connection,Secret,Zero Trust,Credentials,Service Connection security,Pipeline permissions</tags>
 </item>
     
