@@ -190,7 +190,7 @@
           <img src='https://www.devjev.nl/images/your-service-connection-credentials-are-mine/header-img.jpg' alt="Featured image"/>
         
         <p>Like with the two previous posts <a href="hacking-azure-devops.md">Hacking Azure DevOps</a> and <a href="i-am-in-your-pipeline-reading-all-your-secrets.md">I am in your pipeline reading all your secrets!</a> I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.<br>
-In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed trough this service connection.<br>
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.<br>
 Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.</p>
 <p>But lets start with creating an out of the box Azure Resource Manager service connection.</p>
 <h2 id="new-service-connection">New Service Connection</h2>
@@ -212,7 +212,7 @@ Like I mentioned in the  previous posts, without proper security configuration f
 <p><img src="https://www.devjev.nl/images/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg" alt="new-service-connection-principal"></p>
 <p>To facilitate the service connection an App registration is created under the identity of the currently logged in account. We will ignore the awful looking naming that has been done to the App registration ;-). In addition a secret is also created to facilitate the use of this App registration by the service connection we just created in Azure DevOps. Click on the Certificates and secrets option in the left hand menu, the secret in question should be visible. This is also show in the following image.</p>
 <p><img src="https://www.devjev.nl/images/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg" alt="new-service-connection-principal-secret"></p>
-<p>In addition this aAp registration is also added as contributor to the resource group or any other scope that is selected during hte creation process. In the case of this example I have selected the resource group called demo-scraper. Have a look at the following image.</p>
+<p>In addition this app registration is also added as contributor to the resource group or any other scope that is selected during the creation process. In the case of this example I have selected the resource group called demo-ado-scraper. Have a look at the following image.</p>
 <p><img src="https://www.devjev.nl/images/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg" alt="new-service-connection-principal-permissions"></p>
 <p>So an App registration with a secret is created and contributor permissions are applied to the selected scope. Meaning that if it would be possible to obtain the App registration details including secret from within a pipeline, it would allow an attacker to at the very least gain contributor permissions over all the resources available under the selected permissions scope. In my case that would be the resource group.<br>
 Lets have have a look how we can achieve this.</p>
@@ -231,7 +231,7 @@ The clue lies within the warning that is given when using the <code>Connect-AzAc
 <p>It tells us that when logging in using an App registration with a secret this secret is stored inside a file on the system. This file can be retrieved and parsed. The following script does exactly that.</p>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-1.ps1"></script>
 
-<p>Take a closer look at the file we just retrieved, you will notice that each context is stored under its own name. We can get the name of our current context by simply using <code>\$contextName = \$(Get-AzContext).Name</code> command. With the context name sorted its simply down to sifting trough the json properties. And the ones we where interested in are as follows.</p>
+<p>Take a closer look at the file we just retrieved, you will notice that each context is stored under its own name. We can get the name of our current context by simply using <code>\$contextName = \$(Get-AzContext).Name</code> command. With the context name sorted its simply down to sifting through the json properties. And the ones we where interested in are as follows.</p>
 <ul>
 <li>The app registration Id is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Account.Id </code></li>
 <li>The app registration secret is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Account.ExtendedProperties.ServicePrincipalSecret</code></li>
