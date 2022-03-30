@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.devjev.nl/categories/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/change/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/domain/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/m365/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/categories/microsoft-365/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/office-365/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/rename/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/root-url/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/sharepoint/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/sharepoint-online/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/tenant/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/update/</loc>
+    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/azure/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
@@ -11,13 +59,7 @@
     <loc>https://www.devjev.nl/categories/azure-devops/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.devjev.nl/categories/</loc>
-    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.devjev.nl/tags/credentials/</loc>
-    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.devjev.nl/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/hack/</loc>
@@ -27,9 +69,6 @@
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/pipelines/</loc>
-    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.devjev.nl/posts/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/secret/</loc>
@@ -45,9 +84,6 @@
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/service-connection-security/</loc>
-    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.devjev.nl/tags/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/posts/your-service-connection-credentials-are-mine/</loc>

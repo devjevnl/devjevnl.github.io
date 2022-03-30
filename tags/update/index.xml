@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Update on DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/update/</link>
+        <description>Recent content in Update on DevJev.NL</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 30 Mar 2022 22:42:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.devjev.nl/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+<title>Change the SharePoint domain name in your Microsoft 365 Tenant</title>
+<link>https://www.devjev.nl/posts/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</link>
+<pubDate>Wed, 30 Mar 2022 22:42:00 +0200</pubDate>
+      
+<description>How to rename your SharePoint Online url</description>
+<tags>SharePoint,Domain,Root url,Tenant,M365,Rename,Change,Update,SharePoint Online,Office 365</tags>
+</item>
+    
+  </channel>
+</rss>
