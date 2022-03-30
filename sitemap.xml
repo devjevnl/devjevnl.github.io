@@ -14,9 +14,6 @@
     <loc>https://www.devjev.nl/categories/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.devjev.nl/posts/configure-pipeline-permissions-to-secure-service-connection-credentials/</loc>
-    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://www.devjev.nl/tags/credentials/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
@@ -51,6 +48,9 @@
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/</loc>
+    <lastmod>2022-03-12T21:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/your-service-connection-credentials-are-mine/</loc>
     <lastmod>2022-03-12T21:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/zero-trust/</loc>
