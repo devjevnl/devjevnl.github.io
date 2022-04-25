@@ -2,16 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.devjev.nl/tags/azure/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
     <loc>https://www.devjev.nl/categories/</loc>
-    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/cloud/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/categories/cloud-governance/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/naming/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/naming-convention/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/resource-naming/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/resources/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/tags/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions/</loc>
+    <lastmod>2022-04-25T10:00:00+02:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/change/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.devjev.nl/posts/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</loc>
+    <loc>https://www.devjev.nl/posts/1_todo_think_in_eclosures_not_landing_zones/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.devjev.nl/</loc>
+    <loc>https://www.devjev.nl/posts/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/domain/</loc>
@@ -26,9 +59,6 @@
     <loc>https://www.devjev.nl/tags/office-365/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
-    <loc>https://www.devjev.nl/posts/</loc>
-    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
-  </url><url>
     <loc>https://www.devjev.nl/tags/rename/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
@@ -39,9 +69,6 @@
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/sharepoint-online/</loc>
-    <lastmod>2022-03-30T22:42:00+02:00</lastmod>
-  </url><url>
-    <loc>https://www.devjev.nl/tags/</loc>
     <lastmod>2022-03-30T22:42:00+02:00</lastmod>
   </url><url>
     <loc>https://www.devjev.nl/tags/tenant/</loc>
