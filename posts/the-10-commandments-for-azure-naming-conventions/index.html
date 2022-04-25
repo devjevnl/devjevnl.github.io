@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Jev Suchoi">
-    <meta name="description" content="Comparing cloud development options">
+    <meta name="description" content="The basics for any naming convention in Azure">
     <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
 
     
@@ -16,10 +16,10 @@
 <meta name="twitter:image" content="https://www.devjev.nl/images/the-10-commandments-for-azure-naming-conventions/header-img.jpg"/>
 
 <meta name="twitter:title" content="The 10 commandments for Azure naming conventions"/>
-<meta name="twitter:description" content="Comparing cloud development options"/>
+<meta name="twitter:description" content="The basics for any naming convention in Azure"/>
 
     <meta property="og:title" content="The 10 commandments for Azure naming conventions" />
-<meta property="og:description" content="Comparing cloud development options" />
+<meta property="og:description" content="The basics for any naming convention in Azure" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions/" /><meta property="og:image" content="https://www.devjev.nl/images/the-10-commandments-for-azure-naming-conventions/header-img.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-25T10:00:00+02:00" />
@@ -73,7 +73,7 @@
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.97.2" />
+    <meta name="generator" content="Hugo 0.97.3" />
   </head>
 
   
@@ -152,7 +152,9 @@
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</a></div>
+    <a href="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/categories/naming-conventions/">Naming Conventions</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
@@ -202,9 +204,9 @@
 <li>Carefully consider use of names that may conflict with keywords in common programming languages. Such names may be used but will likely trigger additional scrutiny during review. Use them judiciously and sparingly.</li>
 <li>Ensure that the chosen case type (kebab-case-example, snake_case_example, camelCaseExample, PascalCaseExample, etc) is usable in as many systems, products and tools and stick with it. For example, some web-based systems don&rsquo;t allow snake_case as it uses underscores and there are others that don&rsquo;t allow for hyphens making kebab-case undesirable.</li>
 <li>Avoid using organizational structures as departments or business units of companies &amp; organizations in a naming convention. Companies get merged and restructured on a regular basis, so nothing is as fleeting as a department name or a business unit within a company.</li>
-<li>Assume that a name is immutable and cannot be renamed. Azure resource names are by desing immutable so using this a the basis for any Azure related naming convention is a solid approach as it prevents drift with regards to consistency over various products.</li>
+<li>Assume that a name is immutable and cannot be renamed. Azure resource names are like that by design so using this as the reference for any Azure related naming convention is a solid approach as it prevents drift with regards to consistency of the naming convention spanning various products.</li>
 </ol>
-<p>Thank you for reading and keep an eye out for the next blog post of this series!</p>
+<p>Thank you for reading, and keep an eye out for the next blog post of this series!</p>
 
       </div>
 

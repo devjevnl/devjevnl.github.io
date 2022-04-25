@@ -2,14 +2,14 @@
 <rss version="2.0"
     xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Resources on DevJev.NL</title>
-        <link>https://www.devjev.nl/tags/resources/</link>
-        <description>Recent content in Resources on DevJev.NL</description>
+        <title>Naming Conventions on DevJev.NL</title>
+        <link>https://www.devjev.nl/categories/naming-conventions/</link>
+        <description>Recent content in Naming Conventions on DevJev.NL</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Mon, 25 Apr 2022 10:00:00 +0200</lastBuildDate>
     
-	<atom:link href="https://www.devjev.nl/tags/resources/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.devjev.nl/categories/naming-conventions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
