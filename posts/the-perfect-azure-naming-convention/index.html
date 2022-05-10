@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Jev Suchoi">
+    <meta name="description" content="Azure resource naming convention">
+    <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
+
+    
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/images/the-perfect-azure-naming-convention/featured-img.svg"/>
+
+<meta name="twitter:title" content="The perfect Azure naming convention"/>
+<meta name="twitter:description" content="Azure resource naming convention"/>
+
+    <meta property="og:title" content="The perfect Azure naming convention" />
+<meta property="og:description" content="Azure resource naming convention" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/the-perfect-azure-naming-convention/" /><meta property="og:image" content="https://www.devjev.nl/images/the-perfect-azure-naming-convention/featured-img.svg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-10T06:42:15+02:00" />
+<meta property="article:modified_time" content="2022-05-10T06:42:15+02:00" />
+
+
+
+    
+      <base href="https://www.devjev.nl/posts/the-perfect-azure-naming-convention/">
+    
+    <title>
+  The perfect Azure naming convention · DevJev.NL
+</title>
+
+    
+      <link rel="canonical" href="https://www.devjev.nl/posts/the-perfect-azure-naming-convention/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+        
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J3E897NYLC');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC"></script>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.devjev.nl/css/coder.min.cefcae32d597aabf73dbd69114994b69ab7ac71b0ed1b5d4f8fcec44cd5e853d.css" integrity="sha256-zvyuMtWXqr9z29aRFJlLaat6xxsO0bXU&#43;PzsRM1ehT0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.devjev.nl/css/coder-dark.min.0efab6bbe7b21f0b438d68c6210426682dc48dc7d6e1d89b2bcb1f70433d223e.css" integrity="sha256-Dvq2u&#43;eyHwtDjWjGIQQmaC3EjcfW4dibK8sfcEM9Ij4=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.98.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.devjev.nl/">
+      Jev Suchoi
+    </a>
+    
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/posts/">Posts</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/tags/">Tags</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/categories/">Categories</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/about/">About</a>
+      </li>
+      
+      
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">The perfect Azure naming convention</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-05-10T06:42:15&#43;02:00'>
+                May 10, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/categories/naming-conventions/">Naming Conventions</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.devjev.nl/tags/naming/">Naming</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/naming-convention/">Naming convention</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/azure/">Azure</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/resources/">Resources</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/cloud/">Cloud</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/resource-naming/">Resource naming</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+          <img src='https://www.devjev.nl/images/the-perfect-azure-naming-convention/featured-img.svg' alt="Featured image"/>
+        
+        <p>This post is the 2nd in the <a href="https://www.devjev.nl/categories/naming-conventions/">series</a> where I am sharing my view points about Azure related naming conventions. With this post I want to share approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="the-10-commandments-for-azure-naming-conventions.md">previous post</a>. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
+<h2 id="naming-convention-background">Naming convention background</h2>
+<p>A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as <strong>cattle</strong> and <strong>not</strong> as <strong>pets</strong>. Supporting the transition from the traditional approach of treating infrastructure as pets <em>&ldquo;unique snowflakes&rdquo;</em> with names and emotional attachments, to a Cloud native model whereby if a problem with infrastructure is found the infrastructure in question (or its configuration) is &ldquo;simply&rdquo; destroyed and replaced (infrastructure as code). This approach is a must to provision and manage the complex and rather large amount of components &amp; configurations the current day Cloud resources are consisting of.<br>
+In addition Azure resource names are immutable (meaning that they cannot be changed af ter creation) and in some cases not reusable for a set period of time (purge protection). So it is crucial to name resources with longevity in mind and to avoid extensive rework and downtime in later stages.</p>
+<p>Therefore the purpose of this this naming convention is to ensure resource names reflect a logical structure allowing for all kind of automation, scripting and Infrastructure as Code to find, read and process this complex and large amount of resources &amp; configurations with as little and simple logic as possible. Ensuring proper performance, low effort maintainability and drift control.</p>
+<h3 id="resource-tagging-a-naming-conventions-best-friend">Resource tagging, a naming conventions best friend</h3>
+<p>By prioritizing automation operators might get into trouble processing resources by their names. Therefore any naming convention should always be implemented in conjunction with a proper <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging">tagging strategy</a>. Since most resources can be tagged with up to 50 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging">resource tags</a> which are mutable and are unlike the resource names not subjected to limiting <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules">naming rules and restrictions</a> an operator is be able to filter, search, find and process resources based on their tags effortlessly (check out the following screenshot examples). Resulting in a best of both worlds scenario. And of course tagging is the first the to implementing cost management but thats a different story :).</p>
+<p>Example: Filtering resources<br>
+<img src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png" alt="filtering-resources-by-tags"></p>
+<p>Example: Search resources<br>
+<img src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png" alt="search-resources-by-tags"></p>
+<p>Example: Visual summary view<br>
+<img src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png" alt="visual-summary-view"></p>
+<h2 id="naming-convention-explained">Naming convention explained</h2>
+<p>This naming convention arranges components <a href="https://en.wiktionary.org/wiki/sizewise">sizewise</a>, starting with the largest possible relative component, and moving to an ever smaller component up to the point of the sub-resource (examples of sub-resources are noted below). The sub-resource is the smallest component for this naming convention. Practically this naming convention is very similar to <a href="https://en.wikipedia.org/wiki/Metric_system">the metric system</a>.</p>
+<p>Some sub-resource examples:</p>
+<ul>
+<li>A network card part of a virtual machine</li>
+<li>A disk part of a virtual machine</li>
+<li>A managed identity of a resource</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> As mentioned in the previous chapter the naming convention has longevity of resources in mind. Some resource types can be configured for fail over and be recovered in a different region then the original one. Therefore the region (location) of a resource is not included in the naming convention. In addition, the region of a resources has been quite present in almost all <em>portal.azure.com</em> views and is one of the default properties of a resource object.</p>
+</blockquote>
+<p>Because sizewise organizing of resources also ties into the order of Azure logical containers (management groups, subscriptions and resource groups) the sizewise order slightly changes depending on what is considered an environment. Is an environment defined by a subscription or a resource group? Or even a management group?</p>
+<p>In the following image the sizewise approach is visualized with a subscription as an environment.</p>
+<p><img src="https://www.devjev.nl/images/the-perfect-azure-naming-convention/sizewise-subscription-env.svg" alt="sizewise-subscription-env"></p>
+<p>And in the next image an example is depicted of this approach. This example consists from a workload called Digital Solutions, with a production environment which contains a payment processing application that runs a virtual machine with a network card attached to it.</p>
+<p><img src="https://www.devjev.nl/images/the-perfect-azure-naming-convention/sizewise-example.svg" alt="sizewise-example"></p>
+<p>Lets go ahead and try to implement the sizewise approach, putting this example to practice.</p>
+<h2 id="workload-naming-convention-in-practice">Workload naming convention in practice</h2>
+<p>In addition to the sizewise approach I keep the following common guidelines in mind:</p>
+<ul>
+<li>All words must be in lower case</li>
+<li>With the exception of hyphens spaces and special characters are not allowed</li>
+<li>Where possible, kebab-case should be used. Hyphens can be removed for services where only alphanumeric characters are allowed e.g. Storage Accounts</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations">Recommended abbreviations for Azure resource types</a> should be used for the <code>&lt;service-name-suffix&gt;</code> and <code>&lt;sub-resource-name-suffix&gt;</code></li>
+</ul>
+<h3 id="subscriptions-as-environments">Subscriptions as environments</h3>
+<p>If a subscription is considered as an environment resources should be named using the following convention:<br>
+<code>&lt;workload-name-affix&gt;-&lt;environment&gt;-&lt;application&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Workload name affix: dc - Digital Solutions
+</span></span><span style="display:flex;"><span>Environment: prd - Production environment
+</span></span><span style="display:flex;"><span>Application: ppa - Payment Processing Application
+</span></span><span style="display:flex;"><span>Resource type: vm - Virtual Machine
+</span></span><span style="display:flex;"><span>Instance number: 001 - First vm part of this environment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Using this information the result should look as follows:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001 (Virtual Machine #1)
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001-nic001 (The 1st NIC belonging to VM#1)
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001-nic002 (The 2nd NIC belonging to VM#2)
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001-mi001 (Managed Identity belonging to VM#1)
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001-dsk001 (The OS Disk belonging to VM#1)
+</span></span><span style="display:flex;"><span>dc-prd-ppa-vm001-dsk002 (The Data Disk belonging to VM#1)
+</span></span></code></pre></div><h3 id="resource-groups-as-environments">Resource groups as environments</h3>
+<p>If a resource group is considered as and environment resources should be named using the following convention:<br>
+<code>&lt;workload-name-affix&gt;-&lt;application-suffix&gt;-&lt;environment&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Workload name: ds - Digital Solutions
+</span></span><span style="display:flex;"><span>Application: ppa - Payment Processing Application
+</span></span><span style="display:flex;"><span>Environment: prd - Production environment
+</span></span><span style="display:flex;"><span>Resource type: vm - Virtual Machine
+</span></span><span style="display:flex;"><span>Instance number: 001 - First vm in this environment
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Using this information the result should look as follows:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001 (Virtual Machine #1)
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001-nic001 (The 1st NIC belonging to VM#1)
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001-nic002 (The 2nd NIC belonging to VM#2)
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001-mi001 (Managed Identity belonging to VM#1)
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001-dsk001 (The OS Disk belonging to VM#1)
+</span></span><span style="display:flex;"><span>ds-ppa-prd-vm001-dsk002 (The Data Disk belonging to VM#1)
+</span></span></code></pre></div><h2 id="environment-acronymsenvironment-abbreviations"><a href="#environment-abbreviations">Environment Acronyms</a></h2>
+<p>To support the above elaborated naming convention the I have defined the following environment acronym&rsquo;s. Currently I have limited these to the following two versions. A single letter and a 3 letter one.</p>
+<blockquote>
+<p><strong>Note:</strong> if other acronyms within the naming convention consist from more then 3 character the single letter acronym for the environment is advised.</p>
+</blockquote>
+<p>Single letter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>E -&gt; Experiment environment
+</span></span><span style="display:flex;"><span>D -&gt; Development environment
+</span></span><span style="display:flex;"><span>T -&gt; Test environment
+</span></span><span style="display:flex;"><span>A -&gt; Acceptance environment
+</span></span><span style="display:flex;"><span>P -&gt; Production environment
+</span></span></code></pre></div><p>Three letter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>exp -&gt; Experimental environment
+</span></span><span style="display:flex;"><span>dev -&gt; Development environment
+</span></span><span style="display:flex;"><span>qua -&gt; Quality Assurance environment
+</span></span><span style="display:flex;"><span>uat -&gt; User Acceptance Testing environment
+</span></span><span style="display:flex;"><span>prd -&gt; Production environment
+</span></span></code></pre></div><blockquote>
+<p><strong>Note:</strong> You have probably notice there isn&rsquo;t a sandbox environment present here but its named Experimental. The reason for this difference is that I consider a sandbox environment as something that has been set-up temporary and/or for individual use and with only the required components while an experimental environment is a complete environment targeted to be used by multiple teams.</p>
+</blockquote>
+<h2 id="closing-statement-and-further-reading">Closing statement and further reading</h2>
+<p>Thanks for reading this post, if you haven&rsquo;t please check out <a href="the-10-commandments-for-azure-naming-conventions.md">previous post</a> on this subject and I cant wait to share my next post of this series. If you are interested please check out following documentation from Microsoft on this topic.</p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations">Resource abbreviations</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/">Resource tagging</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming">Resource naming</a> &lt;- the proposed example naming convention is by my account outdated but the rest is still relevant</li>
+<li><a href="%5Dhttps://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules">Resource naming rules</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Let's automate the boring!</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      <script src="https://www.devjev.nl/js/custom.js"></script>
+    
+
+    
+
+  </body>
+
+</html>
