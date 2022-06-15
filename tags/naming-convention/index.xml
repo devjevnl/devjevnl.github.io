@@ -7,10 +7,19 @@
         <description>Recent content in Naming convention on DevJev.NL</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 10 May 2022 06:42:15 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jun 2022 18:00:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/naming-convention/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+<title>A naming convention to bring order to variable groups</title>
+<link>https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups/</link>
+<pubDate>Wed, 15 Jun 2022 18:00:00 +0200</pubDate>
+      
+<description>Azure DevOps variable group naming convention</description>
+<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Variable group</tags>
+</item>
     
     <item>
 <title>The perfect Azure naming convention</title>

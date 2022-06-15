@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>DevOps on DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/devops/</link>
+        <description>Recent content in DevOps on DevJev.NL</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 15 Jun 2022 18:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.devjev.nl/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+<title>A naming convention to bring order to variable groups</title>
+<link>https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups/</link>
+<pubDate>Wed, 15 Jun 2022 18:00:00 +0200</pubDate>
+      
+<description>Azure DevOps variable group naming convention</description>
+<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Variable group</tags>
+</item>
+    
+  </channel>
+</rss>
