@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Jev Suchoi">
+    <meta name="description" content="Git branch naming convention">
+    <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
+
+    
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/images/git-gud-with-branch-naming/git-gud-with-branch-naming.png"/>
+
+<meta name="twitter:title" content="Git gud with branch naming"/>
+<meta name="twitter:description" content="Git branch naming convention"/>
+
+    <meta property="og:title" content="Git gud with branch naming" />
+<meta property="og:description" content="Git branch naming convention" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/" /><meta property="og:image" content="https://www.devjev.nl/images/git-gud-with-branch-naming/git-gud-with-branch-naming.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-29T16:42:15+02:00" />
+<meta property="article:modified_time" content="2022-06-29T16:42:15+02:00" />
+
+
+
+    
+      <base href="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/">
+    
+    <title>
+  Git gud with branch naming · DevJev.NL
+</title>
+
+    
+      <link rel="canonical" href="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+        
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J3E897NYLC');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC"></script>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.devjev.nl/css/coder.min.cefcae32d597aabf73dbd69114994b69ab7ac71b0ed1b5d4f8fcec44cd5e853d.css" integrity="sha256-zvyuMtWXqr9z29aRFJlLaat6xxsO0bXU&#43;PzsRM1ehT0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.devjev.nl/css/coder-dark.min.0efab6bbe7b21f0b438d68c6210426682dc48dc7d6e1d89b2bcb1f70433d223e.css" integrity="sha256-Dvq2u&#43;eyHwtDjWjGIQQmaC3EjcfW4dibK8sfcEM9Ij4=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.98.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.devjev.nl/">
+      Jev Suchoi
+    </a>
+    
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/posts/">Posts</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/tags/">Tags</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/categories/">Categories</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/about/">About</a>
+      </li>
+      
+      
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Git gud with branch naming</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-06-29T16:42:15&#43;02:00'>
+                June 29, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/categories/naming-conventions/">Naming Conventions</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.devjev.nl/tags/naming/">Naming</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/naming-convention/">Naming convention</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/azure-devops/">Azure DevOps</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/devops/">DevOps</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/cloud/">Cloud</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/branch/">Branch</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/branching/">Branching</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/git/">Git</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/github/">Github</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+          <img src='https://www.devjev.nl/images/git-gud-with-branch-naming/git-gud-with-branch-naming.png' alt="Featured image"/>
+        
+        <p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="https://www.devjev.nl/categories/naming-conventions/">naming convention series</a>.</p>
+<blockquote>
+<p>Other posts part of the  <a href="https://www.devjev.nl/categories/naming-conventions/">naming convention series</a>:</p>
+<ul>
+<li><a href="https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions">The 10 commandments for Azure naming conventions</a></li>
+<li><a href="https://www.devjev.nl/posts/the-perfect-azure-naming-convention">The perfect azure naming convention</a></li>
+<li><a href="https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups">A naming convention to bring order to variable groups</a></li>
+</ul>
+</blockquote>
+<p>When working in large teams managing branches can quickly become a hassle.Comparing branches to figure out their feature set is a time consuming and error prone activity which should be avoided as it increases the of releasing wrong or even broken functionality increases significantly.<br>
+The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
+However teams that do not have these tools available to them would need to rely on just the naming convention to
+help organizing and ordering branches.</p>
+<p>A friend of mine recently investigated a project. Just one of their repo&rsquo;s had over 600 active branches. The names where all over the place, here is a small example of their a part of their naming for a feature branch:</p>
+<p><img src="https://www.devjev.nl/images/git-gud-with-branch-naming/feature-branch-names-example.png" alt="feature-branch-names-example"></p>
+<h2 id="establish-branch-types">Establish branch types</h2>
+<p>First step is to identify and agree on the type of branches your team will use as this can vary based on the preferred branching strategy.
+Generally speaking the following branches should cover most commonly used strategies</p>
+<ul>
+<li>develop</li>
+<li>main</li>
+<li>hotfix</li>
+<li>feature</li>
+<li>release</li>
+</ul>
+<p>The branches with an infinite longevity like main, master, and development can be excluded from any naming convention as their names are set only once during their lifetime. However the branches of a short longevity and which exists in multitude should be subjected to a naming convention. Lets have a look at these type of branches.</p>
+<h2 id="hotfix-branch">Hotfix branch</h2>
+<p>Hotfix branches are always prefixed by &lsquo;hotfix&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the hotfix identifier. The hotfix identifier should <strong>always</strong> correspond to a backlog item number of the bug or hotfix in question. If the team prefers a more descriptive approach the name of the hotfix can be used as a suffix. However I am against just using the name without any identifier as teh name of a backlog item can be subjected to change</p>
+<p>An example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hotfix/BFP-1301
+</span></span><span style="display:flex;"><span>hotfix/113209
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hotfix/BFP-1301-empty-array-with-new-item
+</span></span><span style="display:flex;"><span>hotfix/113209-enforcing-tls-onapp-service
+</span></span></code></pre></div><h2 id="feature-branch">Feature branch</h2>
+<p>Feature branches are always prefixed by &lsquo;feature&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the feature identifier. Similar to the hotfix branch the feature identifier should <strong>always</strong> correspond to a backlog item number. And based on the teams preference a descriptive suffix can be added.</p>
+<p>An example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>feature/BFP-1301-empty-array-with-new-item
+</span></span><span style="display:flex;"><span>feature/113209-enforcing-tls-onapp-service
+</span></span></code></pre></div><p><strong>Note:</strong> <code>The backlog item does not have to be of type feature as it is not a direct correlation to a backlog item of the type feature but a reference to a functionality feature. So it can be of any type e.g. task, user story or even a subtask.</code></p>
+<h2 id="release-branch">Release branch</h2>
+<p>Release branches are always prefixed by &lsquo;release&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the release version number. As a fan of the <a href="https://semver.org/">semantic versioning approach</a> I like to use it when requirements and constraints allow for it in one form or another.</p>
+<p>An example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>release/9.13.27
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>With build version included
+</span></span><span style="display:flex;"><span>release/1.2.7+8540
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>With pre-release denotation
+</span></span><span style="display:flex;"><span>release/1.0.0-alpha
+</span></span></code></pre></div><h2 id="wrapping-up">Wrapping up</h2>
+<p>And that is all I have to share on this topic.
+Thanks for reading this post and if you haven&rsquo;t please check out my <a href="https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups">previous post</a> on this subject.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Let's automate the boring!</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      <script src="https://www.devjev.nl/js/custom.js"></script>
+    
+
+    
+
+  </body>
+
+</html>

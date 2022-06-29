@@ -2,14 +2,14 @@
 <rss version="2.0"
     xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Github on DevJev.NL</title>
-        <link>https://www.devjev.nl/tags/github/</link>
-        <description>Recent content in Github on DevJev.NL</description>
+        <title>Branch on DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/branch/</link>
+        <description>Recent content in Branch on DevJev.NL</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Wed, 29 Jun 2022 16:42:15 +0200</lastBuildDate>
     
-	<atom:link href="https://www.devjev.nl/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.devjev.nl/tags/branch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
 <description>Git branch naming convention</description>
 <tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Branch,Branching,Git,Github</tags>
-</item>
-    
-    <item>
-<title>GitHub vs Azure DevOps</title>
-<link>https://www.devjev.nl/posts/github-vs-ado/</link>
-<pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
-      
-<description>A high level comparison between GitHub and Azure DevOps</description>
-<tags>GitHub,Azure DevOps,Versus,Comparison,High Level</tags>
 </item>
     
   </channel>

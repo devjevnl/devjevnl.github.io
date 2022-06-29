@@ -7,10 +7,19 @@
         <description>Recent content in Naming convention on DevJev.NL</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 15 Jun 2022 18:00:00 +0200</lastBuildDate>
+        <lastBuildDate>Wed, 29 Jun 2022 16:42:15 +0200</lastBuildDate>
     
 	<atom:link href="https://www.devjev.nl/tags/naming-convention/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+<title>Git gud with branch naming</title>
+<link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
+<pubDate>Wed, 29 Jun 2022 16:42:15 +0200</pubDate>
+      
+<description>Git branch naming convention</description>
+<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Branch,Branching,Git,Github</tags>
+</item>
     
     <item>
 <title>A naming convention to bring order to variable groups</title>
