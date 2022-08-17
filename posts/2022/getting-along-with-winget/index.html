@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Jev Suchoi">
+    <meta name="description" content="Using Winget to install my favorite software">
+    <meta name="keywords" content="Automnation, PowerShell, ARM, YAML, Pipelines, Azure DevOps, Cloud, Microsoft, Azure, blog, developer, personal">
+
+    
+
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/images/2022/getting-along-with-winget/getting-along-with-winget.jpg"/>
+
+<meta name="twitter:title" content="Getting along with winget"/>
+<meta name="twitter:description" content="Using Winget to install my favorite software"/>
+
+    <meta property="og:title" content="Getting along with winget" />
+<meta property="og:description" content="Using Winget to install my favorite software" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/getting-along-with-winget/" /><meta property="og:image" content="https://www.devjev.nl/images/2022/getting-along-with-winget/getting-along-with-winget.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-17T08:00:00+02:00" />
+<meta property="article:modified_time" content="2022-08-17T08:00:00+02:00" />
+
+
+
+    
+      <base href="https://www.devjev.nl/posts/2022/getting-along-with-winget/">
+    
+    <title>
+  Getting along with winget · DevJev.NL
+</title>
+
+    
+      <link rel="canonical" href="https://www.devjev.nl/posts/2022/getting-along-with-winget/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+        
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J3E897NYLC');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC"></script>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.devjev.nl/css/coder.min.cefcae32d597aabf73dbd69114994b69ab7ac71b0ed1b5d4f8fcec44cd5e853d.css" integrity="sha256-zvyuMtWXqr9z29aRFJlLaat6xxsO0bXU&#43;PzsRM1ehT0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.devjev.nl/css/coder-dark.min.0efab6bbe7b21f0b438d68c6210426682dc48dc7d6e1d89b2bcb1f70433d223e.css" integrity="sha256-Dvq2u&#43;eyHwtDjWjGIQQmaC3EjcfW4dibK8sfcEM9Ij4=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.98.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.devjev.nl/">
+      Jev Suchoi
+    </a>
+    
+    <span id="dark-mode-toggle" class="menu-button float-right">
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+                3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+                13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"></path>
+      </svg>
+    </span>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/posts/">Posts</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/tags/">Tags</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/categories/">Categories</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://www.devjev.nl/about/">About</a>
+      </li>
+      
+      
+      <li class="navigation-item separator">
+        <span>|</span>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Getting along with winget</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-08-17T08:00:00&#43;02:00'>
+                August 17, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.devjev.nl/categories/tooling/">Tooling</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.devjev.nl/tags/winget/">winget</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/package-management/">package management</a>
+      <span class="separator">•</span>
+    <a href="https://www.devjev.nl/tags/development-box-setup/">development box setup</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+          <img src='https://www.devjev.nl/images/2022/getting-along-with-winget/getting-along-with-winget.jpg' alt="Featured image"/>
+        
+        <p>During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell.
+As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into <a href="https://docs.microsoft.com/en-us/windows/package-manager/">winget</a>. I hope you will enjoy both the basics and the advanced configuration experience shared via this post.</p>
+<p>So, for folks who are unfamiliar with Winget, Winget or <code>Windows Package Manager</code> is a comprehensive package manager solution that consists of a command line tool and set of services for installing applications on Windows 10 and Windows 11. It is bundled with Windows 11 and modern versions of Windows 10 by default as the App Installer.</p>
+<blockquote>
+<p>In case it&rsquo;s missing on you machine, simply download it via the <a href="https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab">Microsoft store</a>. And also make sure you have the latest version by going into the Microsoft store and looking for any updates for the &lsquo;App Installer&rsquo;.</p>
+</blockquote>
+<h1 id="basics-install-and-search">Basics, install and search</h1>
+<p>The very first step was to have a look at all the available commands for <code>winget</code>. To do so I simply opened Command Prompt and typed: <code>winget --help</code>
+The result is shown in the next screenshot.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img1.png" alt="winget-commands"></p>
+<p>In my current case I only need to have <a href="https://git-scm.com/">Git</a> and <a href="https://code.visualstudio.com/">VSCode</a> installed. Based on the available commands pulled up via <code>winget --help</code> I should either search for the packages using <code>winget search</code> or proceed to installing by using <code>winget install</code>.</p>
+<p>The install command <code>winget install --help</code> looks more promising as it says: <em>Installs the selected package, either found by searching a configured source or directly from a manifest. By default, the query must case-insensitively match the id, name, or moniker of the package. Other fields can be used by passing their appropriate option.</em></p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img2.png" alt="winget-commands"></p>
+<p>Using the following lines lets give &lsquo;winget install&rsquo; a go:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>winget install VSCode
+</span></span><span style="display:flex;"><span>winget install Git
+</span></span></code></pre></div><p>As shown in the next screenshot, by running these commands VSCode got installed directly but for Git I had to use <code>winget install --id Git.Git</code> as &lsquo;Git&rsquo; term returned multiple hits.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img3.png" alt="winget-commands"></p>
+<p>Me being curios I decided to also check out the search command <code>winget search &lt;appname&gt;</code>. As shown in the next screenshot, it works like expected.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img5.png" alt="winget-commands"></p>
+<p>As you can see both Git and VSCode got installed successfully.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img4.png" alt="winget-commands"></p>
+<p>And this is it for the basic usage of Winget. Winget is by default available on any up to date Windows 10/11 machine and in basic usage very accessible. Anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In my specific case this means that the wide array of installation options offered by Git will be all set to the installation defaults. For VSCode the &ldquo;Open with Code&rdquo; context wont be set as the installation default does not have these checked. For those who are interested in how I managed to solve this and get the control I need during the installation process, make sure to read the next section of this post.</p>
+<h1 id="advanced-override-command">Advanced, override command</h1>
+<p>The <code>winget install</code> documentation shows that an <code>--overrride</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>
+<p>Unfortunately getting the the required input options for this command turned out to be lots of interwebs searches, <a href="https://jrsoftware.org/ishelp/">Inno Setup</a> documentation digging combined with trial and error. So the best approach I discovered so far is to run the installer with <code>/?</code> to get the installer help. As shown for the Git installer in the following image.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img7.png" alt="winget-commands"></p>
+<p>And simply going trough the available parameters and identifying the most interesting ones (marked in the above screenshot).</p>
+<ul>
+<li><code>/SILENT</code> Instructs the installer to be silent <em>&lt;- Enables installations that do not require settings to be specified via the installer GUI</em></li>
+<li><code>/SAVEINF</code> Instructs the installer to save installation settings to the specified file</li>
+<li><code>/LOADINF</code> Instructs the installer to load the settings from the specified file</li>
+</ul>
+<p>Saving and loading the custom installation options made sense so time to run with these parameters.
+First the save command combined with the Git installer <code>Git-2.37.1-64-bit.exe /SAVEINF=C:\temp\GitInstallParams.inf</code>. This resulted in the following .inf file.</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img8.png" alt="winget-commands"></p>
+<blockquote>
+<p>P.S. I am not sure why I went with the .inf file extension. As I understand any file extension should work here.</p>
+</blockquote>
+<p>Since the .inf file looked promising it was time to combine all the parameters into a single command line and running it, Combined command line:
+<code>winget install -e --id Git.Git --override &quot;/SILENT /LOADINF=C:/temp/GitInstallParams.inf&quot;</code></p>
+<p>And as shown in the following screenshots running this command results in a successful installation!</p>
+<p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img9.png" alt="winget-commands">
+<img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img10.png" alt="winget-commands"></p>
+<p>To top it all off a quick check of the git config which seems to confirm a successful installation with the intended installation configuration.
+<img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img10.png" alt="winget-commands"></p>
+<p>Success! I and hopefully whoever reads this post is now able to use Winget and still achieve custom installation configuration.</p>
+<h1 id="limitations">Limitations</h1>
+<p>While I really love the simplicity, accessibility and the fact that Winget comes pre-installed on recent Windows machines it should come as no surprise there are also downsides to both Winget in general and the explained approach with <code>--overrride</code> command. This chapter contains a short list of the ones I encountered.</p>
+<ul>
+<li>As of writing this post Winget only supports .zip installer in the preview build</li>
+<li>The <code>winget upgrade --all</code> command does not respect the configuration set with the <code>--overrride</code> (this behavior seems to differ per application)</li>
+<li>The bulk commands <code>winget export</code> and <code>winget import</code> don&rsquo;t offer any support for the  <code>--overrride</code> input, meaning that bulk installation can only be done with default installation options</li>
+<li>Winget lacks a auto update feature to automatically update all or a selected set of packages. Thankfully someone from the community stepped in and created one <a href="https://github.com/Romanitho/Winget-AutoUpdate">Winget-AutoUpdate</a></li>
+</ul>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Use the Winget tool</a></li>
+<li><a href="https://github.com/microsoft/winget-pkgs">The manifests for all winget packages</a></li>
+<li><a href="https://github.com/Romanitho/Winget-AutoUpdate">Winget-AutoUpdate</a></li>
+<li><a href="https://github.com/microsoft/winget-cli/discussions/1798">Example of /mergetasks alternative</a></li>
+<li>[Using command line arguments](<a href="https://docs.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows">https://docs.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows</a></li>
+<li><a href="https://jrsoftware.org/ishelp/">Inno Setup</a></li>
+</ul>
+<h1 id="wrapping-up">Wrapping up</h1>
+<p>And that is that, thanks for reading this post. If you liked it don&rsquo;t be shy to browse trough all of them <a href="https://www.devjev.nl/posts">posts</a>.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Let's automate the boring!</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      <script src="https://www.devjev.nl/js/custom.js"></script>
+    
+
+    
+
+  </body>
+
+</html>

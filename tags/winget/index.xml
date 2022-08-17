@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>winget on DevJev.NL</title>
+        <link>https://www.devjev.nl/tags/winget/</link>
+        <description>Recent content in winget on DevJev.NL</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Wed, 17 Aug 2022 08:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.devjev.nl/tags/winget/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+<title>Getting along with winget</title>
+<link>https://www.devjev.nl/posts/2022/getting-along-with-winget/</link>
+<pubDate>Wed, 17 Aug 2022 08:00:00 +0200</pubDate>
+      
+<description>Using Winget to install my favorite software</description>
+<tags>winget,package management,development box setup</tags>
+</item>
+    
+  </channel>
+</rss>
