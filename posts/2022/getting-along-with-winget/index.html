@@ -73,7 +73,7 @@
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.devjev.nl/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
   </head>
 
   
@@ -173,7 +173,7 @@
 As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into <a href="https://docs.microsoft.com/en-us/windows/package-manager/">winget</a>. I hope you will enjoy both the basics and the advanced configuration experience shared via this post.</p>
 <p>So, for folks who are unfamiliar with Winget, Winget or <code>Windows Package Manager</code> is a comprehensive package manager solution that consists of a command line tool and set of services for installing applications on Windows 10 and Windows 11. It is bundled with Windows 11 and modern versions of Windows 10 by default as the App Installer.</p>
 <blockquote>
-<p>In case it&rsquo;s missing on you machine, simply download it via the <a href="https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab">Microsoft store</a>. And also make sure you have the latest version by going into the Microsoft store and looking for any updates for the &lsquo;App Installer&rsquo;.</p>
+<p>In case it&rsquo;s missing on your machine, simply download it via the <a href="https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab">Microsoft store</a>. And also make sure you have the latest version by going into the Microsoft store and looking for any updates for the &lsquo;App Installer&rsquo;.</p>
 </blockquote>
 <h1 id="basics-install-and-search">Basics, install and search</h1>
 <p>The very first step was to have a look at all the available commands for <code>winget</code>. To do so I simply opened Command Prompt and typed: <code>winget --help</code>
@@ -187,13 +187,13 @@ The result is shown in the next screenshot.</p>
 </span></span><span style="display:flex;"><span>winget install Git
 </span></span></code></pre></div><p>As shown in the next screenshot, by running these commands VSCode got installed directly but for Git I had to use <code>winget install --id Git.Git</code> as &lsquo;Git&rsquo; term returned multiple hits.</p>
 <p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img3.png" alt="winget-commands"></p>
-<p>Me being curios I decided to also check out the search command <code>winget search &lt;appname&gt;</code>. As shown in the next screenshot, it works like expected.</p>
+<p>Me being curious I decided to also check out the search command <code>winget search &lt;appname&gt;</code>. As shown in the next screenshot, it works like expected.</p>
 <p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img5.png" alt="winget-commands"></p>
 <p>As you can see both Git and VSCode got installed successfully.</p>
 <p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img4.png" alt="winget-commands"></p>
 <p>And this is it for the basic usage of Winget. Winget is by default available on any up to date Windows 10/11 machine and in basic usage very accessible. Anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In my specific case this means that the wide array of installation options offered by Git will be all set to the installation defaults. For VSCode the &ldquo;Open with Code&rdquo; context wont be set as the installation default does not have these checked. For those who are interested in how I managed to solve this and get the control I need during the installation process, make sure to read the next section of this post.</p>
 <h1 id="advanced-override-command">Advanced, override command</h1>
-<p>The <code>winget install</code> documentation shows that an <code>--overrride</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>
+<p>The <code>winget install</code> documentation shows that an <code>--override</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>
 <p>Unfortunately getting the the required input options for this command turned out to be lots of interwebs searches, <a href="https://jrsoftware.org/ishelp/">Inno Setup</a> documentation digging combined with trial and error. So the best approach I discovered so far is to run the installer with <code>/?</code> to get the installer help. As shown for the Git installer in the following image.</p>
 <p><img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img7.png" alt="winget-commands"></p>
 <p>And simply going trough the available parameters and identifying the most interesting ones (marked in the above screenshot).</p>
@@ -217,11 +217,11 @@ First the save command combined with the Git installer <code>Git-2.37.1-64-bit.e
 <img src="https://www.devjev.nl/images/2022/getting-along-with-winget/img10.png" alt="winget-commands"></p>
 <p>Success! I and hopefully whoever reads this post is now able to use Winget and still achieve custom installation configuration.</p>
 <h1 id="limitations">Limitations</h1>
-<p>While I really love the simplicity, accessibility and the fact that Winget comes pre-installed on recent Windows machines it should come as no surprise there are also downsides to both Winget in general and the explained approach with <code>--overrride</code> command. This chapter contains a short list of the ones I encountered.</p>
+<p>While I really love the simplicity, accessibility and the fact that Winget comes pre-installed on recent Windows machines it should come as no surprise there are also downsides to both Winget in general and the explained approach with <code>--override</code> command. This chapter contains a short list of the ones I encountered.</p>
 <ul>
 <li>As of writing this post Winget only supports .zip installer in the preview build</li>
-<li>The <code>winget upgrade --all</code> command does not respect the configuration set with the <code>--overrride</code> (this behavior seems to differ per application)</li>
-<li>The bulk commands <code>winget export</code> and <code>winget import</code> don&rsquo;t offer any support for the  <code>--overrride</code> input, meaning that bulk installation can only be done with default installation options</li>
+<li>The <code>winget upgrade --all</code> command does not respect the configuration set with the <code>--override</code> (this behavior seems to differ per application)</li>
+<li>The bulk commands <code>winget export</code> and <code>winget import</code> don&rsquo;t offer any support for the  <code>--override</code> input, meaning that bulk installation can only be done with default installation options</li>
 <li>Winget lacks a auto update feature to automatically update all or a selected set of packages. Thankfully someone from the community stepped in and created one <a href="https://github.com/Romanitho/Winget-AutoUpdate">Winget-AutoUpdate</a></li>
 </ul>
 <h1 id="references">References</h1>
