@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Your service connection credentials are mine - </title><meta name="Description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline"><meta property="og:title" content="Your service connection credentials are mine" />
+<meta property="og:description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-12T21:00:00+01:00" />
+<meta property="article:modified_time" content="2022-03-12T21:00:00+01:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"/>
+<meta name="twitter:title" content="Your service connection credentials are mine"/>
+<meta name="twitter:description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><link rel="next" href="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Your service connection credentials are mine",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/your-service-connection-credentials-are-mine\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/your-service-connection-credentials-are-mine\/featured-image.jpg",
+                            "width":  890 ,
+                            "height":  368 
+                        }],"genre": "posts","keywords": "Azure DevOps, Pipelines, Hack, Security, Service connection, Secret, Zero Trust, Credentials, Service Connection security, Pipeline permissions","wordcount":  1018 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2022\/your-service-connection-credentials-are-mine\/","datePublished": "2022-03-12T21:00:00+01:00","dateModified": "2022-03-12T21:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Your service connection credentials are mine</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security</a>&nbsp;<a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-12">2022-03-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1018 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"
+        data-srcset="/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg, /posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"
+        title="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#new-service-connection">New Service Connection</a></li>
+    <li><a href="#service-connection-un-the-hood">Service connection un the hood</a></li>
+    <li><a href="#getting-the-app-registration-secret">Getting the App registration secret</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Like with the two previous posts <a href="/posts/2022/hacking-azure-devops" rel="">Hacking Azure DevOps</a>
+ and <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets" rel="">I am in your pipeline reading all your secrets!</a>
+ I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.<br>
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.<br>
+Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.</p>
+<p>But lets start with creating an out of the box Azure Resource Manager service connection.</p>
+<h2 id="new-service-connection">New Service Connection</h2>
+<p>In your Azure DevOps project click on the setting icon in the bottom left corner. Next in the <code>setting</code> menu select the <code>service connection</code> option. On the new page in the top right corner click on the <code>New Service Connection</code> button. A list of the available service connection type should be visible on you right hand side. Select the <code>Azure Resource Manager</code> as shown in the following image and click next.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg" title="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg" data-sub-html="<h2>New service connection - Azure resource manager</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg, /posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/1-new-service-connection.svg" />
+    </a><figcaption class="image-caption">New service connection - Azure resource manager</figcaption>
+    </figure>
+<p>Next, as shown in the following image select the recommended option <code>Service principal (automatic)</code> and click next.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg" title="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg" data-sub-html="<h2>New service connection - select automatic</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg, /posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/2-new-service-connection-automatic.svg" />
+    </a><figcaption class="image-caption">New service connection - select automatic</figcaption>
+    </figure>
+<p>On the next page you should be able to see the subscriptions and resource groups to which your current account has access. Select the preferred subscription and resource group and click save. It should look as follows.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg" title="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg" data-sub-html="<h2>New Azure service connection</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg, /posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/3-new-service-connection-subscription.svg" />
+    </a><figcaption class="image-caption">New Azure service connection</figcaption>
+    </figure>
+<div class="details admonition Note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">You need at least owner permissions on a single resource group and your user must be able to register applications in the Azure AD to which your subscription is linked. In case more trouble shooting is required please have a look at MS docs <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops" target="_blank" rel="noopener noreffer">Troubleshoot ARM service connections</a></div>
+        </div>
+    </div>
+<p>When done correctly the newly created service connection should be visible in the list. See following example.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg" title="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg" data-sub-html="<h2>Successfully created service connection</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg, /posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/4-new-service-connection-created.svg" />
+    </a><figcaption class="image-caption">Successfully created service connection</figcaption>
+    </figure>
+<h2 id="service-connection-un-the-hood">Service connection un the hood</h2>
+<p>Now that we have our service connection created, lets have a look under the hood. Click on the newly created service connection and the click on the managed service principal option as show in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg" title="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg" data-sub-html="<h2>New service connection properties</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg, /posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/5-new-service-connection-properties.svg" />
+    </a><figcaption class="image-caption">New service connection properties</figcaption>
+    </figure>
+<p>You should be redirected to Azure AD page of the underlying App Registration as show in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg" title="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg" data-sub-html="<h2>New service connection principal</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg, /posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/6-new-service-connection-principal.svg" />
+    </a><figcaption class="image-caption">New service connection principal</figcaption>
+    </figure>
+<p>To facilitate the service connection an App registration is created under the identity of the currently logged in account. We will ignore the awful looking naming that has been done to the App registration ;-). In addition a secret is also created to facilitate the use of this App registration by the service connection we just created in Azure DevOps. Click on the Certificates and secrets option in the left hand menu, the secret in question should be visible. Naturally the secret value is <em>hidden</em>. This is also show in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg" title="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg" data-sub-html="<h2>New service connection principal secret</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg, /posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/7-new-service-connection-principal-secret.svg" />
+    </a><figcaption class="image-caption">New service connection principal secret</figcaption>
+    </figure>
+<p>In addition this app registration is also added as contributor to the resource group or any other scope that is selected during the creation process. In the case of this example I have selected the resource group called demo-ado-scraper. Have a look at the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg" title="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg" data-sub-html="<h2>New service connection principal permissions</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg, /posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/8-new-service-connection-principal-permissions.svg" />
+    </a><figcaption class="image-caption">New service connection principal permissions</figcaption>
+    </figure>
+<p>So an App registration with a secret is created and contributor permissions are applied to the selected scope. Meaning that if it would be possible to obtain the App registration details including secret from within a pipeline, it would allow an attacker to at the very least gain contributor permissions over all the resources available under the selected permissions scope. In my case that would be the resource group.<br>
+Lets have have a look how we can achieve this.</p>
+<h2 id="getting-the-app-registration-secret">Getting the App registration secret</h2>
+<p>Ideally to get any kind of authentication and authorization going the following values would be required.</p>
+<ul>
+<li>Secret set for the the service connection app registration</li>
+<li>App registration Id of the service connection app registration</li>
+<li>Tenant Id of the service connection app registration</li>
+</ul>
+<p>Since it is actually possible to get all 3 values using PowerShell a simple pipeline with a Powershell task which exposes the <code>SYSTEM_ACCESSTOKEN</code> should be more then sufficient to get the job done.
+The clue lies within the warning that is given when using the <code>Connect-AzAccount -ServicePrincipal</code> which reads as following</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Warning<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The provided service principal secret will be included in the &lsquo;AzureRmContext.json&rsquo; file found in the user profile ( C:\Users\DevJev.Azure ). Please ensure that this directory has appropriate protections.</div>
+        </div>
+    </div>
+<p>It tells us that when logging in using an App registration with a secret this secret is stored inside a file on the system. This file can be retrieved and parsed. The following script does exactly that.</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-1.ps1"></script>
+
+<p>Take a closer look at the file we just retrieved, you will notice that each context is stored under its own name. We can get the name of our current context by simply using <code>\$contextName = \$(Get-AzContext).Name</code> command. With the context name sorted its simply down to sifting through the json properties. And the ones we where interested in are as follows.</p>
+<ul>
+<li>The app registration Id is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Account.Id </code></li>
+<li>The app registration secret is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Account.ExtendedProperties.ServicePrincipalSecret</code></li>
+<li>The tenant Id is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Tenant.Id</code></li>
+</ul>
+<p>The full script combined with the yaml task is as follows.</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-2.ps1"></script>
+
+<p>When the above task is executed in a pipeline the pipeline output will contain the Base64 encoded strings for each of the variable values. As show in the following clipping.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" title="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" data-sub-html="<h2>Pipeline result</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg, /posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" />
+    </a><figcaption class="image-caption">Pipeline result</figcaption>
+    </figure>
+<p>After using the decoding script from <a href="/posts/i-am-in-your-pipeline-reading-all-your-secrets/" rel="">I am in your pipeline reading all your secrets!</a>
+ post the decoded values are as how in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg" title="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg" data-sub-html="<h2>Pipeline result decoded</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg, /posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/10-pipeline-result-decoded.svg" />
+    </a><figcaption class="image-caption">Pipeline result decoded</figcaption>
+    </figure>
+<p>With these values exfiltrated an attacker is now able to access your Azure resources at with contributor permissions. For example by using the <code>Connect-AzAccount</code></p>
+<figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg" title="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg" data-sub-html="<h2>Example connect</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg"
+            data-srcset="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg, /posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg 1.5x, /posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/your-service-connection-credentials-are-mine/11-example-connect.svg" />
+    </a><figcaption class="image-caption">Example connect</figcaption>
+    </figure>
+<p>Please make sure to secure your pipeline access and use this blog post as an example to grow understanding in your organization about why pipeline security is a crucial security topic.
+Thank you for taking the time to read this post!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/hack/">Hack</a>,&nbsp;<a href="/tags/security/">Security</a>,&nbsp;<a href="/tags/service-connection/">Service connection</a>,&nbsp;<a href="/tags/secret/">Secret</a>,&nbsp;<a href="/tags/zero-trust/">Zero Trust</a>,&nbsp;<a href="/tags/credentials/">Credentials</a>,&nbsp;<a href="/tags/service-connection-security/">Service Connection security</a>,&nbsp;<a href="/tags/pipeline-permissions/">Pipeline permissions</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" class="prev" rel="prev" title="I am in your pipeline reading all your secrets!"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>I am in your pipeline reading all your secrets!</a>
+            <a href="/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" class="next" rel="next" title="Change the SharePoint domain name in your Microsoft 365 Tenant">Change the SharePoint domain name in your Microsoft 365 Tenant<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Comparison on DevJev.NL</title>
+        <title>Comparison - Category - </title>
         <link>https://www.devjev.nl/categories/comparison/</link>
-        <description>Recent content in Comparison on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Fri, 06 Nov 2020 13:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/categories/comparison/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>GitHub vs Azure DevOps</title>
-<link>https://www.devjev.nl/posts/github-vs-ado/</link>
-<pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
-      
-<description>A high level comparison between GitHub and Azure DevOps</description>
-<tags>GitHub,Azure DevOps,Versus,Comparison,High Level</tags>
+        <description>Comparison - Category - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 06 Nov 2020 13:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/comparison/" rel="self" type="application/rss+xml" /><item>
+    <title>GitHub vs Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2020/github-vs-ado/</link>
+    <pubDate>Fri, 06 Nov 2020 13:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2020/github-vs-ado/</guid>
+    <description><![CDATA[Introduction Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.
+Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>

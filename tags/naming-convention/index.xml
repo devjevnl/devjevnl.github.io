@@ -1,52 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Naming convention on DevJev.NL</title>
+        <title>Naming convention - Tag - </title>
         <link>https://www.devjev.nl/tags/naming-convention/</link>
-        <description>Recent content in Naming convention on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Wed, 29 Jun 2022 16:42:15 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/naming-convention/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>Git gud with branch naming</title>
-<link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
-<pubDate>Wed, 29 Jun 2022 16:42:15 +0200</pubDate>
-      
-<description>Git branch naming convention</description>
-<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Branch,Branching,Git,Github</tags>
+        <description>Naming convention - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/naming-convention/" rel="self" type="application/rss+xml" /><item>
+    <title>Git gud with branch naming</title>
+    <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
+    <description><![CDATA[With this post I want to share my approach to Git branch naming. This is the 4th and final post in the naming convention series .
+Tip Check out the full naming convention series :
+The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity.]]></description>
 </item>
-    
-    <item>
-<title>A naming convention to bring order to variable groups</title>
-<link>https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups/</link>
-<pubDate>Wed, 15 Jun 2022 18:00:00 +0200</pubDate>
-      
-<description>Azure DevOps variable group naming convention</description>
-<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Variable group</tags>
+<item>
+    <title>A naming convention to bring order to variable groups</title>
+    <link>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</link>
+    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</guid>
+    <description><![CDATA[With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
+Tip Check out the full naming convention series :
+The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.]]></description>
 </item>
-    
-    <item>
-<title>The perfect Azure naming convention</title>
-<link>https://www.devjev.nl/posts/the-perfect-azure-naming-convention/</link>
-<pubDate>Tue, 10 May 2022 06:42:15 +0200</pubDate>
-      
-<description>Azure resource naming convention</description>
-<tags>Naming,Naming convention,Azure,Resources,Cloud,Resource naming</tags>
+<item>
+    <title>The perfect Azure naming convention</title>
+    <link>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</link>
+    <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
+    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
+Tip Check out the full naming convention series :
+The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
 </item>
-    
-    <item>
-<title>The 10 commandments for Azure naming conventions</title>
-<link>https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions/</link>
-<pubDate>Mon, 25 Apr 2022 10:00:00 +0200</pubDate>
-      
-<description>The basics for any naming convention in Azure</description>
-<tags>Naming,Naming convention,Azure,Resources,Cloud,Resource naming</tags>
+<item>
+    <title>The 10 commandments for Azure naming conventions</title>
+    <link>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</link>
+    <pubDate>Mon, 25 Apr 2022 10:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
+    <description><![CDATA[There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small series of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>

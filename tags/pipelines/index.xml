@@ -1,43 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Pipelines on DevJev.NL</title>
+        <title>Pipelines - Tag - </title>
         <link>https://www.devjev.nl/tags/pipelines/</link>
-        <description>Recent content in Pipelines on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Sat, 12 Mar 2022 21:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/pipelines/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>Your service connection credentials are mine</title>
-<link>https://www.devjev.nl/posts/your-service-connection-credentials-are-mine/</link>
-<pubDate>Sat, 12 Mar 2022 21:00:00 +0100</pubDate>
-      
-<description>A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline</description>
-<tags>Azure DevOps,Pipelines,Hack,Security,Security,Service connection,Secret,Zero Trust,Credentials,Service Connection security,Pipeline permissions</tags>
+        <description>Pipelines - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</lastBuildDate><atom:link href="https://www.devjev.nl/tags/pipelines/" rel="self" type="application/rss+xml" /><item>
+    <title>Your service connection credentials are mine</title>
+    <link>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</link>
+    <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
+    <description><![CDATA[Like with the two previous posts Hacking Azure DevOps and I am in your pipeline reading all your secrets! I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime.]]></description>
 </item>
-    
-    <item>
-<title>I am in your pipeline reading all your secrets!</title>
-<link>https://www.devjev.nl/posts/i-am-in-your-pipeline-reading-all-your-secrets/</link>
-<pubDate>Sun, 30 Jan 2022 08:00:00 +0100</pubDate>
-      
-<description>Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important</description>
-<tags>Azure DevOps,Pipelines,Hack,Security,Variable Exfiltration,Secret Exfiltration,Zero Trust</tags>
+<item>
+    <title>I am in your pipeline reading all your secrets!</title>
+    <link>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</link>
+    <pubDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
+    <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
+Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
 </item>
-    
-    <item>
-<title>Hacking Azure DevOps</title>
-<link>https://www.devjev.nl/posts/hacking-azure-devops/</link>
-<pubDate>Wed, 19 May 2021 12:00:00 +0200</pubDate>
-      
-<description>Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization</description>
-<tags>Azure DevOps,Pipelines,Hack,Security,Lateral Attack,Unconventional</tags>
+<item>
+    <title>Hacking Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
+    <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
+    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
+So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>

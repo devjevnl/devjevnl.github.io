@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>The 10 commandments for Azure naming conventions - </title><meta name="Description" content="The basics for any naming convention in Azure"><meta property="og:title" content="The 10 commandments for Azure naming conventions" />
+<meta property="og:description" content="The basics for any naming convention in Azure" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-25T10:00:00+02:00" />
+<meta property="article:modified_time" content="2022-04-25T10:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg"/>
+<meta name="twitter:title" content="The 10 commandments for Azure naming conventions"/>
+<meta name="twitter:description" content="The basics for any naming convention in Azure"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" /><link rel="next" href="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The 10 commandments for Azure naming conventions",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/the-10-commandments-for-azure-naming-conventions\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-10-commandments-for-azure-naming-conventions\/featured-image.jpg",
+                            "width":  655 ,
+                            "height":  368 
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming","wordcount":  712 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-10-commandments-for-azure-naming-conventions\/","datePublished": "2022-04-25T10:00:00+02:00","dateModified": "2022-04-25T10:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "The basics for any naming convention in Azure"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The 10 commandments for Azure naming conventions</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-04-25">2022-04-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;712 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg"
+        data-srcset="/posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg, /posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg 1.5x, /posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/2022/the-10-commandments-for-azure-naming-conventions/featured-image.jpg"
+        title="The basics for any naming convention in Azure" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-is-a-proper-naming-convention-important">Why is a proper naming convention important?</a></li>
+    <li><a href="#the-10-commandments">The 10 commandments</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small <a href="/categories/naming-conventions/" rel="">series</a>
+ of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h2 id="why-is-a-proper-naming-convention-important">Why is a proper naming convention important?</h2>
+<p>A naming convention is a set of rules for choosing the character sequence to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation. <a href="https://en.wikipedia.org/wiki/Naming_convention_%28programming%29" target="_blank" rel="noopener noreffer">source - Wikipedia</a>
+</p>
+<p>By adoption naming conventions on important and widely used area&rsquo;s we strife to achieve the following benefits:</p>
+<ul>
+<li>To reduce the effort needed to read and understand source code.</li>
+<li>To enable code reviews to focus on issues more important than syntax and naming standards.</li>
+<li>To enable code quality review tools to focus their reporting mainly on significant issues other than syntax and style preferences.</li>
+<li>To provide additional information (i.e., metadata) about the use to which an identifier is put.</li>
+<li>To help formalize expectations and promote consistency within a development team.</li>
+<li>To enable the use of automated refactoring or search and replace tools with minimal potential for error.</li>
+<li>To enhance the aesthetic and professional appearance of work product.</li>
+<li>To provide meaningful data to be used in project handovers.</li>
+<li>To provide better understanding in case of code reuse after a long interval of time.</li>
+</ul>
+<h2 id="the-10-commandments">The 10 commandments</h2>
+<p>It is important to ensure that automation is able to process objects without creating exceptions for parsing rules and at the same time all developers, engineers and architects should also be able to easily understand the names of all objects. Depending on the objects to which a naming convention applies the focus should either lean more towards automation or towards people (I will elaborate my view on this in the following blog posts of this series). But generally speaking this still should be be achievable by using the following 10 naming commandments.</p>
+<ol>
+<li>Names used should be in correct American English. Why American English? Well because that is the established international language for programming.</li>
+<li>Commonly accepted short forms or abbreviations of long words should be used for brevity. For example, API is preferred over Application Programming Interface.</li>
+<li>Use intuitive, familiar terminology where possible. For example, when describing removing (and destroying) a resource, delete is preferred over erase</li>
+<li>Use the same name or term for the same concept, including for concepts shared across subject domains.</li>
+<li>Avoid name overloading. Use different names for different concepts.</li>
+<li>Avoid overly general names that are ambiguous in a larger ecosystem. They can lead to misunderstanding of objects. Rather, choose specific names that accurately describe the object. For example, when script that automates a number of test actions don&rsquo;t call it automation call it specific like test-automation</li>
+<li>Carefully consider use of names that may conflict with keywords in common programming languages. Such names may be used but will likely trigger additional scrutiny during review. Use them judiciously and sparingly.</li>
+<li>Ensure that the chosen case type (kebab-case-example, snake_case_example, camelCaseExample, PascalCaseExample, etc) is usable in as many systems, products and tools and stick with it. For example, some web-based systems don&rsquo;t allow snake_case as it uses underscores and there are others that don&rsquo;t allow for hyphens making kebab-case undesirable.</li>
+<li>Avoid using organizational structures as departments or business units of companies &amp; organizations in a naming convention. Companies get merged and restructured on a regular basis, so nothing is as fleeting as a department name or a business unit within a company.</li>
+<li>Assume that a name is immutable and cannot be renamed. Azure resource names are like that by design so using this as the reference for any Azure related naming convention is a solid approach as it prevents drift with regards to consistency of the naming convention spanning various products.</li>
+</ol>
+<p>Thank you for reading, and don&rsquo;t forget to check out the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">next blog post</a>
+ of this series!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-04-25</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource naming</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" class="prev" rel="prev" title="Change the SharePoint domain name in your Microsoft 365 Tenant"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Change the SharePoint domain name in your Microsoft 365 Tenant</a>
+            <a href="/posts/2022/the-perfect-azure-naming-convention/" class="next" rel="next" title="The perfect Azure naming convention">The perfect Azure naming convention<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

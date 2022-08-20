@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GoHugo - Category - </title>
+        <link>https://www.devjev.nl/categories/gohugo/</link>
+        <description>GoHugo - Category - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/gohugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
+    <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
+    <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
+    <description><![CDATA[Introduction I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog.]]></description>
+</item>
+</channel>
+</rss>

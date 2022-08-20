@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>I am in your pipeline reading all your secrets! - </title><meta name="Description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important"><meta property="og:title" content="I am in your pipeline reading all your secrets!" />
+<meta property="og:description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-30T08:00:00+01:00" />
+<meta property="article:modified_time" content="2022-01-30T08:00:00+01:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"/>
+<meta name="twitter:title" content="I am in your pipeline reading all your secrets!"/>
+<meta name="twitter:description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><link rel="prev" href="https://www.devjev.nl/posts/2021/hacking-azure-devops/" /><link rel="next" href="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "I am in your pipeline reading all your secrets!",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/i-am-in-your-pipeline-reading-all-your-secrets\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/i-am-in-your-pipeline-reading-all-your-secrets\/featured-image.jpg",
+                            "width":  1327 ,
+                            "height":  496 
+                        }],"genre": "posts","keywords": "Pipelines, Hack, Security, Variable Exfiltration, Secret Exfiltration, Zero Trust","wordcount":  995 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2022\/i-am-in-your-pipeline-reading-all-your-secrets\/","datePublished": "2022-01-30T08:00:00+01:00","dateModified": "2022-01-30T08:00:00+01:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">I am in your pipeline reading all your secrets!</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security</a>&nbsp;<a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-01-30">2022-01-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;995 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"
+        data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"
+        title="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#available-variables">Available variables</a></li>
+    <li><a href="#creating-variables">Creating variables</a>
+      <ul>
+        <li><a href="#pipeline-variables">Pipeline variables</a></li>
+        <li><a href="#library-group-variables">Library group variables</a></li>
+        <li><a href="#key-vault-linked-pipeline-variables">Key Vault linked pipeline variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#runtime-magic">Runtime magic</a>
+      <ul>
+        <li><a href="#retrieving-secret-values">Retrieving secret values</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.</p>
+<p>Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines. And why in some cases it&rsquo;s better to set-up private build agents.</p>
+<h2 id="available-variables">Available variables</h2>
+<p>Currently Azure DevOps support the following ways to deal with variables.</p>
+<ul>
+<li>Write variables inline inside the YAML - Inline variables</li>
+<li>Set variables when starting a pipeline run - Queue time variables</li>
+<li>Set variables during pipeline creation - Pipeline variables</li>
+<li>Store variables in variable groups - Library group variables</li>
+<li>Link Key Vault to a variable group - Key Vault linked variables</li>
+</ul>
+<p>Since access to git repositories is considered standard for a user with contributor permissions and queue time variables only exists for a single run it does not make much sense to demonstrate these two types. Next step is to create the remaining four types.</p>
+<h2 id="creating-variables">Creating variables</h2>
+<p>To create all four mentioned variables we are going to use an account with project administrator permissions. Making sure we are creating everything from an administrator perspective.</p>
+<h3 id="pipeline-variables">Pipeline variables</h3>
+<p>First the pipeline variables. These variables are set during creation or editing of a pipeline. Either on an existing pipeline or for a new one we can simply click on the variables button to bring the variable window up and click on <code>New Variables</code> as shown in the following images.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg" data-sub-html="<h2>New pipeline variables button</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variables_buttons.svg" />
+    </a><figcaption class="image-caption">New pipeline variables button</figcaption>
+    </figure>
+<p>For this example the following variable is added and marked as secret.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg" data-sub-html="<h2>New pipeline variables</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/new_pipeline_variable.svg" />
+    </a><figcaption class="image-caption">New pipeline variables</figcaption>
+    </figure>
+<h3 id="library-group-variables">Library group variables</h3>
+<p>Library group variables are part of a variable group. Simply create a variable group by clicking on <code>Variables</code> and then <code>+Variable group</code>.</p>
+<p>For this example the following variable is added and again marked as secret.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg" data-sub-html="<h2>Library group variables</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/library_group_variables.svg" />
+    </a><figcaption class="image-caption">Library group variables</figcaption>
+    </figure>
+<h3 id="key-vault-linked-pipeline-variables">Key Vault linked pipeline variables</h3>
+<p>Basically this is the same set-up as the regular library group variables but this library group is linked with Key Vault. Meaning that selected Key Vault values can be managed in a Key Vault while used via the variable group in question.</p>
+<p>For this example I have created two variables inside a demo Key Vault and linked them to the variable group as follows.</p>
+<p><figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg" data-sub-html="<h2>Two Key Vault secrets</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/two_keyvault_secrets.svg" />
+    </a><figcaption class="image-caption">Two Key Vault secrets</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg" data-sub-html="<h2>Key Vault variable group</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/keyvault_variable_group.svg" />
+    </a><figcaption class="image-caption">Key Vault variable group</figcaption>
+    </figure></p>
+<h2 id="runtime-magic">Runtime magic</h2>
+<p>To try and read the variables we are going to switch to a project contributor user. This user has the regular out of the box <em>project contributer</em> permission but with a bit stricter variable group permissions. The two variable groups used in the previous steps have had their permissions changed so that <em>project contributers</em> don&rsquo;t have access to these groups. In the following image the difference in permission to variable groups is shown.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg" data-sub-html="<h2>Variable groups permission</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/variable_groups_permission.svg" />
+    </a><figcaption class="image-caption">Variable groups permission</figcaption>
+    </figure>
+<p>So from a <em>project contributor</em> perspective prior to be able to read any variables we need to first find out which groups with which variables are present within the project. This can be done by calling the Azure DevOps API from within a pipeline as within the pipeline we can use the <code>SYSTEM_ACCESSTOKEN</code> of the project or even the project collection Build Service. This service is used during pipeline runtime so by default it has quite a large number of permissions. The script to get what we need looks als following.</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=variable-group-secrets.ps1"></script>
+
+<p>Result of this script looks as follows.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" data-sub-html="<h2>All variable group secrets</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" />
+    </a><figcaption class="image-caption">All variable group secrets</figcaption>
+    </figure>
+<p>Looking at the script output we can see that the variable group <em>my-demojev-vars</em> contains a marked as secret (&ldquo;isSecret&rdquo;: true) variable called <em>very-secret-secret</em> and that the variable group <em>my-shuttle-kv-vars</em> has <em>test-keyvault-secret</em> one and two variables marked as secret.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Variable values of variables which are not marked as secret are already visible by simply calling this api without doing anything special. Don&rsquo;t worry their values are not real.</div>
+        </div>
+    </div>
+<h3 id="retrieving-secret-values">Retrieving secret values</h3>
+<p>To retrieve the marked as secret (&ldquo;isSecret&rdquo;: true) values we must make sure that the variable groups are referenced inside the pipeline. Then its simply just converting the values to Base64 encoded strings to bypass the pipeline output GUI and doing a write-output on each of them. It would of course also be possible to send the values to other places like an API or a storage account directly from the pipeline.</p>
+<p>First add both variable groups to the pipeline in question</p>
+<p>Then add the following two lines for each variable into an in-line PowerShell pipeline task.</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=convert-to-base64.ps1"></script>
+
+<p>Final result of a full pipeline would look as follows.</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=full-pipeline.yml"></script>
+
+<p>When the above pipeline is executed the pipeline output will contain the Base64 encoded strings for each of the variable values. As show in the following clipping.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" data-sub-html="<h2>Pipeline output</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" />
+    </a><figcaption class="image-caption">Pipeline output</figcaption>
+    </figure>
+<p>The only thing that remains is to convert the Base64 encoded strings back to see the values. This can be done using the following PowerShell script</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=decode-from-base64.ps1"></script>
+
+<p>Looking at the following image with the decoded results the secured / marked as secret variable values and of course regular variable values to which developers don&rsquo;t have access to can still be retrieved by combining pipeline access with 50ish lines of PowerShell.</p>
+<figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" data-sub-html="<h2>Decoded results</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg"
+            data-srcset="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg 1.5x, /posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" />
+    </a><figcaption class="image-caption">Decoded results</figcaption>
+    </figure>
+<h1 id="wrapping-up">Wrapping up</h1>
+<p>Often organizations are hyper focused strict rules and policies for access to key&rsquo;s and secrets, unfortunately only focusing on one part of a supply chain is as shown with this example is no longer a sufficient strategy.</p>
+<p>If after reading this post you are still wondering what potential harm can be done with all the information exposed trough reading variables in runtime, then please also read my previous blog post on this subject <a href="/posts/hacking-azure-devops/" rel="">Hacking Azure DevOps</a>
+. Otherwise please use this blog post to double check your Azure DevOps pipeline and variable group security configuration.<br>
+Thank you for taking the time to read this post!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/hack/">Hack</a>,&nbsp;<a href="/tags/security/">Security</a>,&nbsp;<a href="/tags/variable-exfiltration/">Variable Exfiltration</a>,&nbsp;<a href="/tags/secret-exfiltration/">Secret Exfiltration</a>,&nbsp;<a href="/tags/zero-trust/">Zero Trust</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2021/hacking-azure-devops/" class="prev" rel="prev" title="Hacking Azure DevOps"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hacking Azure DevOps</a>
+            <a href="/posts/2022/your-service-connection-credentials-are-mine/" class="next" rel="next" title="Your service connection credentials are mine">Your service connection credentials are mine<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

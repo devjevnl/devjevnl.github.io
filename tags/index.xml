@@ -1,16 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags on DevJev.NL</title>
+        <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
-        <description>Recent content in Tags on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Wed, 17 Aug 2022 08:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
+        <description>Tags - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure DevOps</title>
+    <link>https://www.devjev.nl/tags/azure-devops/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Branch</title>
+    <link>https://www.devjev.nl/tags/branch/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/branch/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Branching</title>
+    <link>https://www.devjev.nl/tags/branching/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/branching/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud</title>
+    <link>https://www.devjev.nl/tags/cloud/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/cloud/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>DevOps</title>
+    <link>https://www.devjev.nl/tags/devops/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Git</title>
+    <link>https://www.devjev.nl/tags/git/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/git/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>GitHub</title>
+    <link>https://www.devjev.nl/tags/github/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/github/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Naming convention</title>
+    <link>https://www.devjev.nl/tags/naming-convention/</link>
+    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/naming-convention/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Naming</title>
+    <link>https://www.devjev.nl/tags/naming/</link>
+    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/naming/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Variable group</title>
+    <link>https://www.devjev.nl/tags/variable-group/</link>
+    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/variable-group/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Secret Exfiltration on DevJev.NL</title>
+        <title>Secret Exfiltration - Tag - </title>
         <link>https://www.devjev.nl/tags/secret-exfiltration/</link>
-        <description>Recent content in Secret Exfiltration on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Sun, 30 Jan 2022 08:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/secret-exfiltration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>I am in your pipeline reading all your secrets!</title>
-<link>https://www.devjev.nl/posts/i-am-in-your-pipeline-reading-all-your-secrets/</link>
-<pubDate>Sun, 30 Jan 2022 08:00:00 +0100</pubDate>
-      
-<description>Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important</description>
-<tags>Azure DevOps,Pipelines,Hack,Security,Variable Exfiltration,Secret Exfiltration,Zero Trust</tags>
+        <description>Secret Exfiltration - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</lastBuildDate><atom:link href="https://www.devjev.nl/tags/secret-exfiltration/" rel="self" type="application/rss+xml" /><item>
+    <title>I am in your pipeline reading all your secrets!</title>
+    <link>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</link>
+    <pubDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
+    <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
+Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>

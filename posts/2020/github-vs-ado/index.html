@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>GitHub vs Azure DevOps - </title><meta name="Description" content="A high level comparison between GitHub and Azure DevOps"><meta property="og:title" content="GitHub vs Azure DevOps" />
+<meta property="og:description" content="A high level comparison between GitHub and Azure DevOps" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2020/github-vs-ado/" /><meta property="og:image" content="https://www.devjev.nl/posts/2020/github-vs-ado/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-06T13:00:00+02:00" />
+<meta property="article:modified_time" content="2020-11-06T13:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2020/github-vs-ado/featured-image.png"/>
+<meta name="twitter:title" content="GitHub vs Azure DevOps"/>
+<meta name="twitter:description" content="A high level comparison between GitHub and Azure DevOps"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2020/github-vs-ado/" /><link rel="prev" href="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/" /><link rel="next" href="https://www.devjev.nl/posts/2021/hacking-azure-devops/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "GitHub vs Azure DevOps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2020\/github-vs-ado\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2020\/github-vs-ado\/featured-image.png",
+                            "width":  1327 ,
+                            "height":  496 
+                        }],"genre": "posts","keywords": "GitHub, Azure DevOps, Versus, Comparison, High Level","wordcount":  795 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2020\/github-vs-ado\/","datePublished": "2020-11-06T13:00:00+02:00","dateModified": "2020-11-06T13:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "A high level comparison between GitHub and Azure DevOps"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">GitHub vs Azure DevOps</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/comparison/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Comparison</a>&nbsp;<a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/github/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>GitHub</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-11-06">2020-11-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;795 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2020/github-vs-ado/featured-image.png"
+        data-srcset="/posts/2020/github-vs-ado/featured-image.png, /posts/2020/github-vs-ado/featured-image.png 1.5x, /posts/2020/github-vs-ado/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2020/github-vs-ado/featured-image.png"
+        title="A high level comparison between GitHub and Azure DevOps" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#github-vs-azure-devops">GitHub vs Azure DevOps</a>
+      <ul>
+        <li><a href="#generic-pros">Generic pro&rsquo;s</a></li>
+        <li><a href="#most-notable-pros">Most notable pro&rsquo;s</a></li>
+        <li><a href="#cons">Cons</a></li>
+      </ul>
+    </li>
+    <li><a href="#final-mention">Final mention</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
+<p>Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.</p>
+<p>Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.</p>
+<h2 id="github-vs-azure-devops">GitHub vs Azure DevOps</h2>
+<p>Since the day Microsoft acquired GitHub they have started working towards brining these tools closed to each other. My personal opinion is that in the long run they will be merged and a single tool will remain.
+This can be seen in Microsoft&rsquo;s imagery about their product positioning. A good example is the following image used in one of the <a href="https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/" target="_blank" rel="noopener noreffer">blogs posts</a>
+ on <a href="https://devblogs.microsoft.com/" target="_blank" rel="noopener noreffer">Microsoft Developer Blogs</a>
+.</p>
+<figure><a class="lightgallery" href="/posts/2020/github-vs-ado/github-product-positioning.png" title="/posts/2020/github-vs-ado/github-product-positioning.png" data-thumbnail="/posts/2020/github-vs-ado/github-product-positioning.png" data-sub-html="<h2>GitHub product positioning</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2020/github-vs-ado/github-product-positioning.png"
+            data-srcset="/posts/2020/github-vs-ado/github-product-positioning.png, /posts/2020/github-vs-ado/github-product-positioning.png 1.5x, /posts/2020/github-vs-ado/github-product-positioning.png 2x"
+            data-sizes="auto"
+            alt="/posts/2020/github-vs-ado/github-product-positioning.png" width="1429" height="874" />
+    </a><figcaption class="image-caption">GitHub product positioning</figcaption>
+    </figure>
+<p>In addition <a href="https://medium.com" target="_blank" rel="noopener noreffer">Medium.com</a>
+ has a great <a href="https://medium.com/devops-cloud-it-career/azure-devops-or-github-c83fe1eced4d" target="_blank" rel="noopener noreffer">article</a>
+ on the same subject where Sasha Rosenbaum (GitHub product manager) is quoted stating that in the end there will be one product. However it will take a long long time.</p>
+<p>Please not that the pro&rsquo;s listed in this chapter are not all applicable to all pricing plans.</p>
+<h3 id="generic-pros">Generic pro&rsquo;s</h3>
+<ul>
+<li>
+<p>Microsoft&rsquo;s own (public) source code is published in GitHub.</p>
+</li>
+<li>
+<p>GitHub has a huge and quite active community.</p>
+</li>
+<li>
+<p>GitHub has a far larger and more versatile offer of add-ins on it&rsquo;s Marketplace.</p>
+</li>
+<li>
+<p>GitHub integrates nearly seamless with Azure DevOps, to the point that its even possible to use Azure DevOps board backlog items directly in GitHub.</p>
+</li>
+<li>
+<p>Like Azure DevOps GitHub also come equipped with Azure integration via Azure Pipelines.</p>
+</li>
+</ul>
+<h3 id="most-notable-pros">Most notable pro&rsquo;s</h3>
+<ul>
+<li>
+<p>GitHub has dependency scanning where you get notifications and automatic pull requests when you have dependency vulnerabilities in third party packages <a href="https://github.com/features/security" target="_blank" rel="noopener noreffer">source</a>
+.</p>
+</li>
+<li>
+<p>GitHub has secret scanning that watches public and private (currently in beta for private repos) repositories for known secret formats and immediately notifies either the secret provider or private repository admins when secrets are found <a href="https://github.com/features/security" target="_blank" rel="noopener noreffer">source</a>
+.</p>
+</li>
+<li>
+<p>GitHub has the ability to find security issues as you code <a href="https://github.com/features/security" target="_blank" rel="noopener noreffer">source</a>
+.</p>
+</li>
+<li>
+<p>GitHub has GitHub Actions, an extensive workflow automation solution with CI/CD incorporated into it. It&rsquo;s like CI/CD on steroids.</p>
+</li>
+<li>
+<p>GitHub has GitHubPages which is a feature to host and generate static HTML web pages from markdown documentation that is hosted inside your GitHub repositories.</p>
+</li>
+</ul>
+<h3 id="cons">Cons</h3>
+<ul>
+<li>
+<p>In&rsquo;s unclear where GitHub stores the data geographically (although I did not reach out to GitHub to ask this directly), this could be an issue for some organizations from a compliance perspective.</p>
+</li>
+<li>
+<p>Native backlog features of GitHub are ok for a small/simple project but are lacking functionality for Scrum based team. This can be solved by purchasing a more advanced 3rd party solution from GitHubs marketplace.</p>
+</li>
+<li>
+<p>Single sign-on &amp; automatic user provisioning features are only available as part of the Enterprise plan while Azure DevOps fully integrates with Azure Active Directory with a couple of simple clicks even in the <em>&ldquo;free&rdquo;</em> version.</p>
+</li>
+</ul>
+<h2 id="final-mention">Final mention</h2>
+<p>The security features mentioned as part of the pro&rsquo;s are only available as part of the Enterprise plan. Azure DevOps also has a set of security features available as part of the <a href="https://secdevtools.azurewebsites.net/" target="_blank" rel="noopener noreffer">Microsoft Security Code Analysis product</a>
+. However these must be purchased <a href="https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-onboard" target="_blank" rel="noopener noreffer">separately</a>
+ via a Microsoft partner. Since this is not an in depth comparison I did not take the time to compare the security features. Perhaps I might do so in a separate blog post.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I love the way GitHub has been able to position itself, it&rsquo;s well know within the technical community and as an open source hosting platform while at the same time offering Enterprise grade solutions for the Enterprise market. Integration with Azure DevOps is done really well. Combining best from both products, allowing companies to use portfolio management over multiple projects and supporting Scrum like development within those project via Azure Boards and utilizing the security tools and workflow automation as offered by GitHub at the same time. And because of the way licensing works within Azure DevOps there is near to no overlap in licensing cost when these products are used side by side.</p>
+<p>As noted in the cons it would be great to see information about the geographical location as part GitHub&rsquo;s product pages. I do think its a shame that Single sign-on feature is not available as par of the Team pricing offer. In the world of Cloud Identity is a key feature for security and its a shame its reserved for Enterprise as better security benefits us all.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-11-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/github/">GitHub</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/versus/">Versus</a>,&nbsp;<a href="/tags/comparison/">Comparison</a>,&nbsp;<a href="/tags/high-level/">High Level</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2020/free-blog-with-ado-and-github-pages/" class="prev" rel="prev" title="Set by step guide for a free and easy way to set up a low maintenance blog"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Set by step guide for a free and easy way to set up a low maintenance blog</a>
+            <a href="/posts/2021/hacking-azure-devops/" class="next" rel="next" title="Hacking Azure DevOps">Hacking Azure DevOps<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

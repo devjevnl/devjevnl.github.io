@@ -1,25 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Variable group on DevJev.NL</title>
+        <title>Variable group - Tag - </title>
         <link>https://www.devjev.nl/tags/variable-group/</link>
-        <description>Recent content in Variable group on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Wed, 15 Jun 2022 18:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/variable-group/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>A naming convention to bring order to variable groups</title>
-<link>https://www.devjev.nl/posts/a-naming-convention-to-bring-order-to-variable-groups/</link>
-<pubDate>Wed, 15 Jun 2022 18:00:00 +0200</pubDate>
-      
-<description>Azure DevOps variable group naming convention</description>
-<tags>Naming,Naming convention,Azure DevOps,DevOps,Cloud,Variable group</tags>
+        <description>Variable group - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/variable-group/" rel="self" type="application/rss+xml" /><item>
+    <title>A naming convention to bring order to variable groups</title>
+    <link>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</link>
+    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</guid>
+    <description><![CDATA[With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
+Tip Check out the full naming convention series :
+The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>

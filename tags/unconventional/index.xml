@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Unconventional on DevJev.NL</title>
+        <title>Unconventional - Tag - </title>
         <link>https://www.devjev.nl/tags/unconventional/</link>
-        <description>Recent content in Unconventional on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Wed, 19 May 2021 12:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/unconventional/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>Hacking Azure DevOps</title>
-<link>https://www.devjev.nl/posts/hacking-azure-devops/</link>
-<pubDate>Wed, 19 May 2021 12:00:00 +0200</pubDate>
-      
-<description>Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization</description>
-<tags>Azure DevOps,Pipelines,Hack,Security,Lateral Attack,Unconventional</tags>
+        <description>Unconventional - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 May 2021 12:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/unconventional/" rel="self" type="application/rss+xml" /><item>
+    <title>Hacking Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
+    <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
+    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
+So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>
