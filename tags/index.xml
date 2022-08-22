@@ -3,7 +3,31 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>development box setup</title>
+    <link>https://www.devjev.nl/tags/development-box-setup/</link>
+    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/development-box-setup/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>package management</title>
+    <link>https://www.devjev.nl/tags/package-management/</link>
+    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/package-management/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>winget</title>
+    <link>https://www.devjev.nl/tags/winget/</link>
+    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/winget/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/tags/azure-devops/</link>
     <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
@@ -57,30 +81,6 @@
     <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/github/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Naming convention</title>
-    <link>https://www.devjev.nl/tags/naming-convention/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/naming-convention/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Naming</title>
-    <link>https://www.devjev.nl/tags/naming/</link>
-    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/naming/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Variable group</title>
-    <link>https://www.devjev.nl/tags/variable-group/</link>
-    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/variable-group/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -3,7 +3,15 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Tooling</title>
+    <link>https://www.devjev.nl/categories/tooling/</link>
+    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/tooling/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Cloud Governance</title>
     <link>https://www.devjev.nl/categories/cloud-governance/</link>
     <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
@@ -73,14 +81,6 @@
     <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/gohugo/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>How to</title>
-    <link>https://www.devjev.nl/categories/how-to/</link>
-    <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/how-to/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

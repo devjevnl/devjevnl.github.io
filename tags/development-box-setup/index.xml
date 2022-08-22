@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>development box setup on DevJev.NL</title>
+        <title>development box setup - Tag - </title>
         <link>https://www.devjev.nl/tags/development-box-setup/</link>
-        <description>Recent content in development box setup on DevJev.NL</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
-        <lastBuildDate>Wed, 17 Aug 2022 08:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://www.devjev.nl/tags/development-box-setup/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-<title>Getting along with winget</title>
-<link>https://www.devjev.nl/posts/2022/getting-along-with-winget/</link>
-<pubDate>Wed, 17 Aug 2022 08:00:00 +0200</pubDate>
-      
-<description>Using Winget to install my favorite software</description>
-<tags>winget,package management,development box setup</tags>
+        <description>development box setup - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/development-box-setup/" rel="self" type="application/rss+xml" /><item>
+    <title>Getting along with winget - basic packed management</title>
+    <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</link>
+    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</guid>
+    <description><![CDATA[During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell. As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into winget . I hope you will enjoy both the basics and the advanced configuration experience shared via this post.]]></description>
 </item>
-    
-  </channel>
+</channel>
 </rss>
