@@ -3,7 +3,16 @@
         <title>package management - Tag - </title>
         <link>https://www.devjev.nl/tags/package-management/</link>
         <description>package management - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/package-management/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/package-management/" rel="self" type="application/rss+xml" /><item>
+    <title>Getting along with winget - advanced package installation</title>
+    <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</link>
+    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</guid>
+    <description><![CDATA[In my previous post I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.
+Winget Advanced installation, the override command The winget install documentation shows that an --override option is available, with an input &ldquo;A string that will be passed directly to the installer&rdquo;.]]></description>
+</item>
+<item>
     <title>Getting along with winget - basic packed management</title>
     <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</link>
     <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>

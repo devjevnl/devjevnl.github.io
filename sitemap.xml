@@ -2,15 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/development-box-setup/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/package-management/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/tooling/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/winget/</loc><lastmod>2022-08-22T07:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/development-box-setup/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/package-management/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/tooling/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/winget/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</loc><lastmod>2022-08-30T07:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/branch/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/branching/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
