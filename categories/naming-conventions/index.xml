@@ -3,7 +3,17 @@
         <title>Naming Conventions - Category - </title>
         <link>https://www.devjev.nl/categories/naming-conventions/</link>
         <description>Naming Conventions - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/naming-conventions/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/naming-conventions/" rel="self" type="application/rss+xml" /><item>
+    <title>The ideal management group naming convention</title>
+    <link>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</link>
+    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
+    <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
+Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
+The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming Naming convention explained If you are wondering about reasons for this approach to naming please have a look at the (Naming convention background)[/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background] chapter of the The perfect azure naming convention .]]></description>
+</item>
+<item>
     <title>Git gud with branch naming</title>
     <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
     <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
@@ -29,7 +39,7 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
-    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
+    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
 Tip Check out the full naming convention series :
 The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
 </item>

@@ -2,32 +2,34 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/cloud-governance/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/management-group/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/naming-convention/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/naming-conventions/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/resource-naming/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/development-box-setup/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/package-management/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/tooling/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/winget/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</loc><lastmod>2022-08-30T07:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/branch/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/branching/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/cloud-governance/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/devops/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/git/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/github/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/naming-convention/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/naming-conventions/</loc><lastmod>2022-06-29T16:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/naming/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/variable-group/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/resource-naming/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/resources/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</loc><lastmod>2022-04-25T10:00:00&#43;02:00</lastmod></url><url>

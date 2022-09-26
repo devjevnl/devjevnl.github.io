@@ -3,18 +3,10 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Tooling</title>
-    <link>https://www.devjev.nl/categories/tooling/</link>
-    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/tooling/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Cloud Governance</title>
     <link>https://www.devjev.nl/categories/cloud-governance/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/cloud-governance/</guid>
     <description><![CDATA[]]></description>
@@ -22,9 +14,17 @@
 <item>
     <title>Naming Conventions</title>
     <link>https://www.devjev.nl/categories/naming-conventions/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/naming-conventions/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Tooling</title>
+    <link>https://www.devjev.nl/categories/tooling/</link>
+    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/tooling/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>

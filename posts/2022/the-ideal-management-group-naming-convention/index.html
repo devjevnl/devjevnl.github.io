@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>The ideal management group naming convention - </title><meta name="Description" content="Azure management group naming convention"><meta property="og:title" content="The ideal management group naming convention" />
+<meta property="og:description" content="Azure management group naming convention" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-26T06:42:15+02:00" />
+<meta property="article:modified_time" content="2022-09-26T06:42:15+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"/>
+<meta name="twitter:title" content="The ideal management group naming convention"/>
+<meta name="twitter:description" content="Azure management group naming convention"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The ideal management group naming convention",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/featured-image.png",
+                            "width":  800 ,
+                            "height":  644 
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Management Group, Cloud, Resource naming","wordcount":  532 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/","datePublished": "2022-09-26T06:42:15+02:00","dateModified": "2022-09-26T06:42:15+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Azure management group naming convention"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The ideal management group naming convention</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-26">2022-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;532 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"
+        data-srcset="/posts/2022/the-ideal-management-group-naming-convention/featured-image.png, /posts/2022/the-ideal-management-group-naming-convention/featured-image.png 1.5x, /posts/2022/the-ideal-management-group-naming-convention/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"
+        title="Azure management group naming convention" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#naming-convention-explained">Naming convention explained</a></li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>A new post and a new addition to the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+. With this post I want to share my approach to naming <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">Azure Management groups</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h2 id="naming-convention-explained">Naming convention explained</h2>
+<p>If you are wondering about reasons for this approach to naming please have a look at the (Naming convention background)[/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background] chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+. With that out of hte way lets dig in.</p>
+<p>Azure management groups are used to efficiently manage access, policies, and compliance by grouping subscriptions together. While a single directory supports up to 10.000 management groups, the management group tree can support up to six levels. This is excluding the root level. Because of the combination of the 6 level limit, the maximum of 10.000 per directory and the limit to a single directory there is an relatively simple and logical approach to naming management groups. And I am going to show it.</p>
+<p>Lets start with the single directory limit. For organization that haver multiple directories it will be important to understand to which directory a certain management groups belongs. This is primarily hte case from an automation point of view as the Azure portal already takes care of it by making you select a directory first. So the prefix would need to be the abbreviation of directory in question.</p>
+<p>Example:</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=directory-prefix.txt"></script>
+
+<p>The directory abbreviation is followed by the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations#general" target="_blank" rel="noopener noreffer">Microsofts management group abbreviation</a>
+  <code>mg</code> combined with a serial number.
+This number is where it gets interesting. Since there is a limit of 6 layers it would be logical  to actually number each layer.</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>The length of the serial number depends greatly on the size of the organization and it&rsquo;s directories For example:</p>
+<p>A 4 digit serial number would limit each Management group layer to 999 Management groups and a total maximum of 5994 Management groups.</p>
+<p>In most cases a small organization would suffice with a 3 digit serial number, a regular organization would suffice with a 4 digit serial number and an enterprise would likely need 5.</p>
+</div>
+        </div>
+    </div>
+<p>Example with both a 4 and a 5 digit serial number:</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=number-suffix.txt"></script>
+
+<p>Combining the defined prefix and suffix results the following Management group naming convention</p>
+<script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=management-group-naming-convention.txt"></script>
+
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Warning<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">When a Management group is created two values are needed as input. A Management group ID and a Management group display name. When designing a naming convention make sure to keep in mind that the Management group ID cannot be modified after creation. This is luckely not the case for the Management group display name.</div>
+        </div>
+    </div>
+<figure><a class="lightgallery" href="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png" title="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png" data-thumbnail="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png" data-sub-html="<h2>An example of a 3 digit serial number Management group structure</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png"
+            data-srcset="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png, /posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png 1.5x, /posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-ideal-management-group-naming-convention/example-management-group-structure.png" width="524" height="797" />
+    </a><figcaption class="image-caption">An example of a 3 digit serial number Management group structure</figcaption>
+    </figure>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>And there you have it, the ideal Management group naming convention. If you are interested in knowing more about management groups check out Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">What are Azure management groups?</a>
+ page at <a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreffer">https://learn.microsoft.com/</a>
+</p>
+<p>As always, a big <strong>Thank you!</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/management-group/">Management Group</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource naming</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2022/getting-along-with-winget-advanced-installation/" class="prev" rel="prev" title="Getting along with winget - advanced package installation"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Getting along with winget - advanced package installation</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

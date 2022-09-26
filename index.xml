@@ -3,9 +3,19 @@
         <title></title>
         <link>https://www.devjev.nl/</link>
         <description>Jev Suchoi&#39;s personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>The ideal management group naming convention</title>
+    <link>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</link>
+    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
+    <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
+Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
+The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming Naming convention explained If you are wondering about reasons for this approach to naming please have a look at the (Naming convention background)[/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background] chapter of the The perfect azure naming convention .]]></description>
+</item>
+<item>
     <title>Getting along with winget - advanced package installation</title>
     <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</link>
     <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
@@ -48,7 +58,7 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
-    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
+    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
 Tip Check out the full naming convention series :
 The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
 </item>
@@ -85,15 +95,6 @@ In this post I want to show how an Azure Resource Manager service connection con
     <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
     <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
 Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
-</item>
-<item>
-    <title>Hacking Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
-    <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
-So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
 </item>
 </channel>
 </rss>
