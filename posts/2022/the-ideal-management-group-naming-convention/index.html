@@ -32,7 +32,7 @@
                             "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/featured-image.png",
                             "width":  800 ,
                             "height":  644 
-                        }],"genre": "posts","keywords": "Naming convention, Azure, Management Group, Cloud, Resource naming","wordcount":  532 ,
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Management Group, Cloud, Resource naming","wordcount":  589 ,
         "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/","datePublished": "2022-09-26T06:42:15+02:00","dateModified": "2022-09-26T06:42:15+02:00","publisher": {
             "@type": "Organization",
             "name": "Jev"},"author": {
@@ -108,7 +108,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The ideal management group naming convention</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-26">2022-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;532 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-26">2022-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;589 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -152,31 +152,33 @@
         </div>
     </div>
 <h2 id="naming-convention-explained">Naming convention explained</h2>
-<p>If you are wondering about reasons for this approach to naming please have a look at the (Naming convention background)[/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background] chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-. With that out of hte way lets dig in.</p>
+<p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
+ chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+. With that out of the way lets dig in.</p>
 <p>Azure management groups are used to efficiently manage access, policies, and compliance by grouping subscriptions together. While a single directory supports up to 10.000 management groups, the management group tree can support up to six levels. This is excluding the root level. Because of the combination of the 6 level limit, the maximum of 10.000 per directory and the limit to a single directory there is an relatively simple and logical approach to naming management groups. And I am going to show it.</p>
-<p>Lets start with the single directory limit. For organization that haver multiple directories it will be important to understand to which directory a certain management groups belongs. This is primarily hte case from an automation point of view as the Azure portal already takes care of it by making you select a directory first. So the prefix would need to be the abbreviation of directory in question.</p>
+<p>Lets start with the single directory limit. For organizations that have multiple directories it will be important to understand to which directory a certain Management group belongs. Primarily this would be most important from an automation point of view as the Azure portal already takes care of it by making you select a directory first. So the prefix would need to be the abbreviation of directory in question.</p>
 <p>Example:</p>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=directory-prefix.txt"></script>
 
-<p>The directory abbreviation is followed by the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations#general" target="_blank" rel="noopener noreffer">Microsofts management group abbreviation</a>
-  <code>mg</code> combined with a serial number.
-This number is where it gets interesting. Since there is a limit of 6 layers it would be logical  to actually number each layer.</p>
+<p>The directory abbreviation is then followed by the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations#general" target="_blank" rel="noopener noreffer">Microsofts management group abbreviation</a>
+ <code>mg</code> which is combined with a serial number. To make overall naming consistent this approach is similar to the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+ which covers resource naming. This number is where it gets interesting. Since there is a limit of 6 layers it would be logical to actually number each layer by using the first digit as a layer indicator.<br>
+<br>
+Example with both a 4 and a 5 digit serial number:
+<script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=number-suffix.txt"></script>
+</p>
+<p>The length of the serial number depends greatly on the size of the organization and it&rsquo;s directories.</p>
 <div class="details admonition info open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>The length of the serial number depends greatly on the size of the organization and it&rsquo;s directories For example:</p>
-<p>A 4 digit serial number would limit each Management group layer to 999 Management groups and a total maximum of 5994 Management groups.</p>
+            <div class="admonition-content"><p>A 4 digit serial number would limit each Management group layer to 999 Management groups and a total maximum of 5994 Management groups.</p>
 <p>In most cases a small organization would suffice with a 3 digit serial number, a regular organization would suffice with a 4 digit serial number and an enterprise would likely need 5.</p>
 </div>
         </div>
     </div>
-<p>Example with both a 4 and a 5 digit serial number:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=number-suffix.txt"></script>
-
-<p>Combining the defined prefix and suffix results the following Management group naming convention</p>
+<p>Combining the defined prefix and suffix results the following Management group naming convention:</p>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=management-group-naming-convention.txt"></script>
 
 <div class="details admonition warning open">
@@ -200,8 +202,9 @@ This number is where it gets interesting. Since there is a limit of 6 layers it 
 <h2 id="wrapping-up">Wrapping up</h2>
 <p>And there you have it, the ideal Management group naming convention. If you are interested in knowing more about management groups check out Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">What are Azure management groups?</a>
  page at <a href="https://learn.microsoft.com/" target="_blank" rel="noopener noreffer">https://learn.microsoft.com/</a>
+. And for more practical info on this subject check out the post from Wesley Camargo <a href="https://camargo-wes.medium.com/how-to-deploy-management-groups-with-azure-bicep-and-azure-devops-7a2e20240a6" target="_blank" rel="noopener noreffer">How to deploy Management Groups with Azure Bicep and Azure DevOps</a>
 </p>
-<p>As always, a big <strong>Thank you!</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
 .</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">

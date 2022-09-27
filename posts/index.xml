@@ -11,7 +11,7 @@
     <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
     <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
 Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming Naming convention explained If you are wondering about reasons for this approach to naming please have a look at the (Naming convention background)[/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background] chapter of the The perfect azure naming convention .]]></description>
+The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming Naming convention explained If you are wondering about reasons for this approach to naming please have a look at the Naming convention background chapter of the The perfect azure naming convention .]]></description>
 </item>
 <item>
     <title>Getting along with winget - advanced package installation</title>
