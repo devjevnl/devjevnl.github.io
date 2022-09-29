@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>The ideal management group naming convention - </title><meta name="Description" content="Azure management group naming convention"><meta property="og:title" content="The ideal management group naming convention" />
+        <title>The ideal Management group naming convention - </title><meta name="Description" content="Azure management group naming convention"><meta property="og:title" content="The ideal Management group naming convention" />
 <meta property="og:description" content="Azure management group naming convention" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"/><meta property="article:section" content="posts" />
@@ -13,7 +13,7 @@
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/featured-image.png"/>
-<meta name="twitter:title" content="The ideal management group naming convention"/>
+<meta name="twitter:title" content="The ideal Management group naming convention"/>
 <meta name="twitter:description" content="Azure management group naming convention"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -22,7 +22,7 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "The ideal management group naming convention",
+        "headline": "The ideal Management group naming convention",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -32,7 +32,7 @@
                             "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/featured-image.png",
                             "width":  800 ,
                             "height":  644 
-                        }],"genre": "posts","keywords": "Naming convention, Azure, Management Group, Cloud, Resource naming","wordcount":  589 ,
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Management Group, Cloud, Resource naming","wordcount":  604 ,
         "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-ideal-management-group-naming-convention\/","datePublished": "2022-09-26T06:42:15+02:00","dateModified": "2022-09-26T06:42:15+02:00","publisher": {
             "@type": "Organization",
             "name": "Jev"},"author": {
@@ -105,10 +105,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The ideal management group naming convention</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The ideal Management group naming convention</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-26">2022-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;589 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-26">2022-09-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;604 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -124,7 +124,10 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#naming-convention-explained">Naming convention explained</a></li>
+    <li><a href="#what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</a></li>
+    <li><a href="#why-is-azure-directory-abbreviation-important">Why is Azure directory abbreviation important</a></li>
+    <li><a href="#how-to-abbreviate-azure-management-groups">How to abbreviate Azure Management groups</a></li>
+    <li><a href="#the-ideal-azure-management-group-naming-convention">The ideal Azure Management group naming convention</a></li>
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
@@ -151,16 +154,18 @@
 </div>
         </div>
     </div>
-<h2 id="naming-convention-explained">Naming convention explained</h2>
+<h2 id="what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</h2>
 <p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
  chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
 . With that out of the way lets dig in.</p>
 <p>Azure management groups are used to efficiently manage access, policies, and compliance by grouping subscriptions together. While a single directory supports up to 10.000 management groups, the management group tree can support up to six levels. This is excluding the root level. Because of the combination of the 6 level limit, the maximum of 10.000 per directory and the limit to a single directory there is an relatively simple and logical approach to naming management groups. And I am going to show it.</p>
-<p>Lets start with the single directory limit. For organizations that have multiple directories it will be important to understand to which directory a certain Management group belongs. Primarily this would be most important from an automation point of view as the Azure portal already takes care of it by making you select a directory first. So the prefix would need to be the abbreviation of directory in question.</p>
+<h2 id="why-is-azure-directory-abbreviation-important">Why is Azure directory abbreviation important</h2>
+<p>For organizations that have multiple directories it will be important to understand to which directory a certain Management group belongs. This would be most important from an automation point of view as the Azure portal already takes care of it by making you select a directory first. So the prefix would need to be the abbreviation of directory in question.</p>
 <p>Example:</p>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=directory-prefix.txt"></script>
 
-<p>The directory abbreviation is then followed by the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations#general" target="_blank" rel="noopener noreffer">Microsofts management group abbreviation</a>
+<h2 id="how-to-abbreviate-azure-management-groups">How to abbreviate Azure Management groups</h2>
+<p>The directory abbreviation is then followed by the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations#general" target="_blank" rel="noopener noreffer">Microsofts Management group abbreviation</a>
  <code>mg</code> which is combined with a serial number. To make overall naming consistent this approach is similar to the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
  which covers resource naming. This number is where it gets interesting. Since there is a limit of 6 layers it would be logical to actually number each layer by using the first digit as a layer indicator.<br>
 <br>
@@ -178,6 +183,7 @@ Example with both a 4 and a 5 digit serial number:
 </div>
         </div>
     </div>
+<h2 id="the-ideal-azure-management-group-naming-convention">The ideal Azure Management group naming convention</h2>
 <p>Combining the defined prefix and suffix results the following Management group naming convention:</p>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/dddeb05749630d79f3a14b4cd36efec1.js?file=management-group-naming-convention.txt"></script>
 
