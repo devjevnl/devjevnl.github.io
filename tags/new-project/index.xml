@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>New Project - Tag - </title>
+        <link>https://www.devjev.nl/tags/new-project/</link>
+        <description>New Project - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/new-project/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a new Project in Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
+    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</guid>
+    <description><![CDATA[This is the 2nd post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to create a new Project in Azure DevOps.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+</channel>
+</rss>

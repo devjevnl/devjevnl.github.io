@@ -2,15 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/new-organization/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-10-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/new-project/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</loc><lastmod>2022-11-06T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/new-organization/</loc><lastmod>2022-11-06T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/cloud/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/cloud-governance/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>

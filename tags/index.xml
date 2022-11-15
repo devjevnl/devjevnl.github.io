@@ -3,10 +3,10 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 21 Oct 2022 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/tags/azure-devops/</link>
-    <pubDate>Fri, 21 Oct 2022 21:00:00 &#43;0200</pubDate>
+    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
@@ -14,15 +14,23 @@
 <item>
     <title>Fundamentals</title>
     <link>https://www.devjev.nl/tags/fundamentals/</link>
-    <pubDate>Fri, 21 Oct 2022 21:00:00 &#43;0200</pubDate>
+    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/fundamentals/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
+    <title>New Project</title>
+    <link>https://www.devjev.nl/tags/new-project/</link>
+    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/new-project/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>New Organization</title>
     <link>https://www.devjev.nl/tags/new-organization/</link>
-    <pubDate>Fri, 21 Oct 2022 21:00:00 &#43;0200</pubDate>
+    <pubDate>Sun, 06 Nov 2022 21:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/new-organization/</guid>
     <description><![CDATA[]]></description>
@@ -73,14 +81,6 @@
     <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/development-box-setup/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>package management</title>
-    <link>https://www.devjev.nl/tags/package-management/</link>
-    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/package-management/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
