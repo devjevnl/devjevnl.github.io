@@ -3,7 +3,16 @@
         <title>Azure DevOps - Tag - </title>
         <link>https://www.devjev.nl/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a new Azure Service Connection in Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
+    <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
+    <description><![CDATA[This is the 4th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps . In this post the I will demonstrate how to create an Azure Service Connection in an Azure DevOps Project.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+<item>
     <title>How to create a new Project in Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>

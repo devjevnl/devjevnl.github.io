@@ -3,7 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>How to create a new Azure Service Connection in Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
+    <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
+    <description><![CDATA[This is the 4th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps . In this post the I will demonstrate how to create an Azure Service Connection in an Azure DevOps Project.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+<item>
     <title>How to create a new Project in Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
@@ -87,14 +96,6 @@ The 10 commandments for Azure naming conventions A naming convention to bring or
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
     <description><![CDATA[There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small series of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.]]></description>
-</item>
-<item>
-    <title>Change the SharePoint domain name in your Microsoft 365 Tenant</title>
-    <link>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</link>
-    <pubDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</guid>
-    <description><![CDATA[Back when all the Cloud and SaaS offerings where a brand new concept most IT administrators ended up choosing the domain name of a tenant. This choice would be then reflected in the SharePoint Online url and the only way to change it was to create brand new tenant. Either due to the somewhat poor choice from the IT administrators, due to mergers, rebranding or acquisitions some organization ended up with lets say less desirable domain name for their SharePoint URL.]]></description>
 </item>
 </channel>
 </rss>

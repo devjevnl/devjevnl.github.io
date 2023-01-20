@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>How to create a new Azure Service Connection in Azure DevOps - </title><meta name="Description" content="How to create a new Azure Service Connection in Azure DevOps"><meta property="og:title" content="How to create a new Azure Service Connection in Azure DevOps" />
+<meta property="og:description" content="How to create a new Azure Service Connection in Azure DevOps" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-20T08:00:00+02:00" />
+<meta property="article:modified_time" content="2023-01-20T08:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png"/>
+<meta name="twitter:title" content="How to create a new Azure Service Connection in Azure DevOps"/>
+<meta name="twitter:description" content="How to create a new Azure Service Connection in Azure DevOps"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to create a new Azure Service Connection in Azure DevOps",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-create-a-new-azure-service-connection-in-azure-devops\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-create-a-new-azure-service-connection-in-azure-devops\/featured-image.png",
+                            "width":  800 ,
+                            "height":  422 
+                        }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, New Service Connection","wordcount":  1247 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-create-a-new-azure-service-connection-in-azure-devops\/","datePublished": "2023-01-20T08:00:00+02:00","dateModified": "2023-01-20T08:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "How to create a new Azure Service Connection in Azure DevOps"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to create a new Azure Service Connection in Azure DevOps</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-20">2023-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1247 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png"
+        data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/featured-image.png"
+        title="How to create a new Azure Service Connection in Azure DevOps" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-an-azure-service-connection">What is an Azure Service Connection</a></li>
+    <li><a href="#how-to-create-a-new-azure-service-connection-in-azure-devops">How to create a new Azure Service Connection in Azure DevOps</a></li>
+    <li><a href="#the-two-parts-of-an-azure-service-connection">The two parts of an Azure Service Connection</a>
+      <ul>
+        <li><a href="#first-part---azure-devops-configuration">First part - Azure DevOps Configuration</a></li>
+        <li><a href="#second-part---azure-active-directory-app-registration">Second part - Azure Active Directory App Registration</a></li>
+      </ul>
+    </li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>This is the 4th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+. In this post the I will demonstrate how to create an <code>Azure Service Connection</code> in an Azure DevOps Project.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
+<h2 id="what-is-an-azure-service-connection">What is an Azure Service Connection</h2>
+<p>An Azure Service Connection or officially called &lsquo;Azure Resource Manager Service Connection&rsquo; allows for Pipelines in Azure DevOps to connect to Azure for the purpose of executing Azure Resource Manager related tasks. For example, to deploy infrastructure using the Infrastructure as Code method. There are 4 authentication methods available to choose from when creating an Azure Service Connection. Each method allows Pipelines in Azure DevOps to connect to Azure using its own authentication approach.</p>
+<ul>
+<li>Service principal (automatic)</li>
+<li>Service principal (manual)</li>
+<li>Managed identity</li>
+<li>Publishing Profile</li>
+</ul>
+<p>Since the Service principal (automatic) method is marked as <em>recommended</em> in Azure DevOps I will cover this method as it would fit best in being part of the <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ category.<br>
+When used, this method creates a n Azure Service connection that is composed of two parts. One part resides in Azure DevOps and the other one resides in Azure Active Directory.<br>
+The first part contains all the necessary configuration to be able to use the service connection as part of Pipelines in Azure DevOps. The second part is actually an <a href="https://learn.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals" target="_blank" rel="noopener noreffer">App registration</a>
+ (see it as a traditional service account). This app registration is created in the background during the Azure Service Connection creation process. The next chapters depict and explain both the first and the second part.</p>
+<h2 id="how-to-create-a-new-azure-service-connection-in-azure-devops">How to create a new Azure Service Connection in Azure DevOps</h2>
+<p>Before jumping in, lets get the prerequisites clear.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Prerequisites<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>In the Azure DevOps Project you need to be signed in as the owner of the Azure Pipelines Organization</li>
+<li>In Azure you need to be signed in as the owner of an Azure Subscription (the one you want the service connection connect to)</li>
+<li>If multiple accounts are used for the previous two points make sure you sign-in with both accounts in the same browser instance</li>
+<li>In Azure Active Directory the user in question must have Directory Read role assigned</li>
+<li>In Azure Active Directory the user in question must have at least one of the following roles, which role is needed depends on the type of user and the <code>Users can register applications</code> setting.
+<ul>
+<li>Application Administrator</li>
+<li>Application Developer</li>
+<li>Cloud Application Administrator</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+    </div>
+<ol>
+<li>Make sure you are on the landing page of the Azure DevOps project in question. Click in the top left bottom corner on  <code>Project settings</code> link.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png" data-sub-html="<h2>Project settings</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_1.png" width="1087" height="803" />
+       </a><figcaption class="image-caption">Project settings</figcaption>
+       </figure></li>
+<li>In the left hand navigation menu click on <code>Service connections</code>.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png" data-sub-html="<h2>Service connections</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_2.png" width="449" height="1104" />
+       </a><figcaption class="image-caption">Service connections</figcaption>
+       </figure></li>
+<li>Now click on the <code>Create service connection</code> button in the middle of the screen.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png" data-sub-html="<h2>Create service connections</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_3.png" width="1282" height="1075" />
+       </a><figcaption class="image-caption">Create service connections</figcaption>
+       </figure></li>
+<li>On the <code>New service connection</code> page select the <code>Azure Resource Manager</code> option, then scroll all teh way down and click <code>Next</code>.
+<a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_4.png" width="752" height="1068" />
+       </a>
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png" data-sub-html="<h2>New service connections</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_5.png" width="736" height="377" />
+       </a><figcaption class="image-caption">New service connections</figcaption>
+       </figure></li>
+<li>Make sure the <code>Service principal (automatic)</code> option is selected and click next.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png" data-sub-html="<h2>New Azure service connection</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_6.png" width="472" height="358" />
+       </a><figcaption class="image-caption">New Azure service connection</figcaption>
+       </figure></li>
+<li>Leave the scope set to <code>Subscription</code>.</li>
+<li>In the <code>Subscription</code> dropdown select the desired subscription.</li>
+<li>Leave the <code>Resource group</code> dropdown empty to set the Service Connection permission scope at whole subscription level or if lesser scope is desired select an appropriate resource group.</li>
+<li>Give the service connection a logical name and provide a proper description.</li>
+<li>Uncheck the checkbox <code>Grant access permission to all pipelines</code> as if left the service connection will be usable by all pipelines which can be a security risk.</li>
+<li>Ensure that the results from steps 6 to 10 look similar to the following image and click the <code>Save</code> button.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png" data-sub-html="<h2>Filled New Azure service connection</h2>">
+            <img
+                class="lazyload"
+                src="/svg/loading.min.svg"
+                data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png"
+                data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png 2x"
+                data-sizes="auto"
+                alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_7.png" width="728" height="685" />
+        </a><figcaption class="image-caption">Filled New Azure service connection</figcaption>
+        </figure></li>
+<li>The Azure Service Connection is now created and is visible on the main screen.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png" data-sub-html="<h2>Newly created Azure service connection</h2>">
+            <img
+                class="lazyload"
+                src="/svg/loading.min.svg"
+                data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png"
+                data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png 2x"
+                data-sizes="auto"
+                alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_8.png" width="761" height="393" />
+        </a><figcaption class="image-caption">Newly created Azure service connection</figcaption>
+        </figure></li>
+</ol>
+<h2 id="the-two-parts-of-an-azure-service-connection">The two parts of an Azure Service Connection</h2>
+<p>With the service connection present lets have a look at the  earlier mentioned &rsquo;two parts&rsquo; that make up an Azure Service Connection.</p>
+<h3 id="first-part---azure-devops-configuration">First part - Azure DevOps Configuration</h3>
+<ol>
+<li>Repeat step 1. and 2. from the previous steps and navigate to <code>Service connections</code>.</li>
+<li>Click on the service connection that was created during previous steps, you should see a similar screen as show below.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png" data-sub-html="<h2>Newly created Azure service connection</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_9.png" width="1275" height="437" />
+       </a><figcaption class="image-caption">Newly created Azure service connection</figcaption>
+       </figure></li>
+<li>In the top right corner click on <code>Edit</code>.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png" data-sub-html="<h2>Azure Service Connection Edit button</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_10.png" width="1275" height="437" />
+       </a><figcaption class="image-caption">Azure Service Connection Edit button</figcaption>
+       </figure></li>
+<li>The in the previous chapter mentioned &lsquo;first part&rsquo; that resides in Azure DevOps is now shown. As mentioned it contains the configuration settings.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png" data-sub-html="<h2>First part fo the Azure service connection</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_11.png" width="569" height="731" />
+       </a><figcaption class="image-caption">First part fo the Azure service connection</figcaption>
+       </figure>
+Note the <code>Verify</code> button. This button is used to verify that the credentials used to connect this Service Connection to Azure are still valid. Keep this button in the back on your mind as it has an additional function which I will explain further on in this post.</li>
+<li>Close the <code>Edit service connection</code> view to exit the first part of the Azure Service Connection.</li>
+</ol>
+<h3 id="second-part---azure-active-directory-app-registration">Second part - Azure Active Directory App Registration</h3>
+<ol>
+<li>Click on the <code>Manage Service Principal</code> link under the Service connection details.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png" data-sub-html="<h2>Manage Service Principal</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_12.png" width="1275" height="437" />
+       </a><figcaption class="image-caption">Manage Service Principal</figcaption>
+       </figure></li>
+<li>This links directly to the App registration that is the &lsquo;second part&quot; of an Azure Service Connection. Result is shown in the following image.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png" data-sub-html="<h2>Second part the App registration</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_13.png" width="1035" height="690" />
+       </a><figcaption class="image-caption">Second part the App registration</figcaption>
+       </figure></li>
+<li>Whats is show here is the actual identity that is granted permissions to the Subscription, as you can see in the following image this identity has Contributor permissions to the Azure Subscription in question. In case you are wondering how to quickly check permissions. From the Azure Service Connection screen use the <code>Manage service connection roles</code> located above the <code>Manage Service Principal</code> link.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png" data-sub-html="<h2>Second part the App registration</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_14.png" width="1001" height="357" />
+       </a><figcaption class="image-caption">Second part the App registration</figcaption>
+       </figure></li>
+<li>Notice it&rsquo;s dreadfully awful name. This name is composed of the name of the Azure DevOps Organization, followed by the Azure DevOps Project and finally the guid of the subscription. The problem with this combination is that it is reused. So when you create multiple Azure Service Connections to the same subscription they will all have the same name and will be impossible to keep apart. So I strongly recommend renaming the App registration by navigating to the <code>Branding &amp; properties</code> option, adapting the <code>Name</code> field to something more unique, for example the name of the service connection and saving the changes.
+<figure><a class="lightgallery" href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png" title="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png" data-thumbnail="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png" data-sub-html="<h2>Change the Name of the App registration</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png"
+               data-srcset="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png 1.5x, /posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png 2x"
+               data-sizes="auto"
+               alt="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/img_15.png" width="1079" height="1026" />
+       </a><figcaption class="image-caption">Change the Name of the App registration</figcaption>
+       </figure></li>
+<li>Now navigate to the <code>Certificates &amp; secrets</code> option. You should find the client secret that has been created to authenticate the Azure Service Connection. By default this secret is valid for 2 years. Now remember the <code>Verify</code> button from the previous chapter? This is the moment to use it. In case this secret is already expired or is close to becoming expired, simply navigate to the settings where the <code>Verify</code> button and click it to refresh the service connection secret for another two years.</li>
+</ol>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>And there you have it, <em>How to create a new Azure Service Connection in Azure DevOps</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops" target="_blank" rel="noopener noreffer">Connect to Microsoft Azure</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&amp;tabs=yaml#azure-resource-manager-service-connection" target="_blank" rel="noopener noreffer">Manage service connections</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-application-access-policies?view=azure-devops" target="_blank" rel="noopener noreffer">Change application connection &amp; security policies for your organization</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#cloud-application-administrator" target="_blank" rel="noopener noreffer">Azure AD built-in roles</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-20</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-service-connection/">New Service Connection</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2022/how-to-create-a-new-project-in-azure-devops/" class="prev" rel="prev" title="How to create a new Project in Azure DevOps"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>How to create a new Project in Azure DevOps</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>
