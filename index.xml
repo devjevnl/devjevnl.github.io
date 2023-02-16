@@ -3,9 +3,18 @@
         <title></title>
         <link>https://www.devjev.nl/</link>
         <description>Jev Suchoi&#39;s personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps</title>
+    <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
+    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</guid>
+    <description><![CDATA[This is the 3rd post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will introduce you to the Azure DevOps Demo Generator tool by using it ot to create a new Project in Azure DevOps.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+<item>
     <title>How to create a new Azure Service Connection in Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
     <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
@@ -90,14 +99,6 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
 Tip Check out the full naming convention series :
 The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
-</item>
-<item>
-    <title>The 10 commandments for Azure naming conventions</title>
-    <link>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</link>
-    <pubDate>Mon, 25 Apr 2022 10:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
-    <description><![CDATA[There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small series of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.]]></description>
 </item>
 </channel>
 </rss>

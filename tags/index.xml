@@ -3,20 +3,36 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/tags/azure-devops/</link>
-    <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
+    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
+    <title>Azure DevOps Demo Generator</title>
+    <link>https://www.devjev.nl/tags/azure-devops-demo-generator/</link>
+    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops-demo-generator/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Fundamentals</title>
     <link>https://www.devjev.nl/tags/fundamentals/</link>
-    <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
+    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/fundamentals/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>New Project</title>
+    <link>https://www.devjev.nl/tags/new-project/</link>
+    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/new-project/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -25,14 +41,6 @@
     <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/new-service-connection/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>New Project</title>
-    <link>https://www.devjev.nl/tags/new-project/</link>
-    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/new-project/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -73,14 +81,6 @@
     <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/naming-convention/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Resource naming</title>
-    <link>https://www.devjev.nl/tags/resource-naming/</link>
-    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/resource-naming/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
