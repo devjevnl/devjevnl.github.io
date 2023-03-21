@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "C:/dev/github/devjevnl/devjevnl.github.io.sources/src/hugo_devjevnl_blog",
+	"sourceRoot": "C:/dev/gh/devjevnl/devjevnl.github.io.sources/src/hugo_devjevnl_blog",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",

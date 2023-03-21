@@ -2,15 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/library-for-azure-pipelines/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops-demo-generator/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/new-project/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</loc><lastmod>2023-02-15T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</loc><lastmod>2023-01-20T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/new-service-connection/</loc><lastmod>2023-01-20T08:00:00&#43;02:00</lastmod></url><url>

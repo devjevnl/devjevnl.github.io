@@ -3,7 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>How to use Library for Azure Pipelines</title>
+    <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
+    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
+    <description><![CDATA[This is the 6th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to use Library for Azure Pipelines.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+<item>
     <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
@@ -87,16 +96,6 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <description><![CDATA[With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
 Tip Check out the full naming convention series :
 The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.]]></description>
-</item>
-<item>
-    <title>The perfect Azure naming convention</title>
-    <link>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</link>
-    <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
-    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
 </item>
 </channel>
 </rss>

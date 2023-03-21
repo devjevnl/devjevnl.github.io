@@ -3,7 +3,16 @@
         <title>Azure DevOps - Tag - </title>
         <link>https://www.devjev.nl/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+    <title>How to use Library for Azure Pipelines</title>
+    <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
+    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
+    <description><![CDATA[This is the 6th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to use Library for Azure Pipelines.
+Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+</item>
+<item>
     <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
@@ -87,14 +96,6 @@ So in this post I want to showcase how a possible attacker can use a compromised
     <guid>https://www.devjev.nl/posts/2020/github-vs-ado/</guid>
     <description><![CDATA[Introduction Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.
 Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.]]></description>
-</item>
-<item>
-    <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
-    <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
-    <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
-    <description><![CDATA[Introduction I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog.]]></description>
 </item>
 </channel>
 </rss>
