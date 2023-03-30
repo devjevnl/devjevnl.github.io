@@ -9,7 +9,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/featured-image.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-05-10T06:42:15+02:00" />
-<meta property="article:modified_time" content="2022-12-15T06:42:15+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+<meta property="article:modified_time" content="2022-05-10T06:42:15+02:00" /><meta property="og:site_name" content="DevJev.NL" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/featured-image.png"/>
 <meta name="twitter:title" content="The perfect Azure naming convention"/>
@@ -31,8 +31,8 @@
                             "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/featured-image.png",
                             "width":  655 ,
                             "height":  368 
-                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming","wordcount":  1059 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/","datePublished": "2022-05-10T06:42:15+02:00","dateModified": "2022-12-15T06:42:15+02:00","publisher": {
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming","wordcount":  1317 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/","datePublished": "2022-05-10T06:42:15+02:00","dateModified": "2022-05-10T06:42:15+02:00","publisher": {
             "@type": "Organization",
             "name": "Jev"},"author": {
                 "@type": "Person",
@@ -107,8 +107,8 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The perfect Azure naming convention</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-10">2022-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1059 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-10">2022-05-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1317 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -132,6 +132,7 @@
     <li><a href="#workload-naming-convention-in-practice">Workload naming convention in practice</a>
       <ul>
         <li><a href="#subscriptions-as-environments">Subscriptions as environments</a></li>
+        <li><a href="#subscriptions-as-environments---additional-examples">Subscriptions as environments - additional examples</a></li>
         <li><a href="#resource-groups-as-environments">Resource groups as environments</a></li>
       </ul>
     </li>
@@ -198,9 +199,12 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
         title="visual-summary-view" /></p>
 <h2 id="naming-convention-explained">Naming convention explained</h2>
 <p>Technically this naming convention arranges components <a href="https://en.wiktionary.org/wiki/sizewise" target="_blank" rel="noopener noreffer">sizewise</a>
- but to simply visualize it the components are arranged in the form of a stacking doll, a.k.a a <a href="https://en.wikipedia.org/wiki/Matryoshka_doll" target="_blank" rel="noopener noreffer">Matroska</a>
-. Therefore I like to call this the Matroska approach.</p>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-sub-html="<h2>matroska</h2>">
+ which also the approach <a href="https://en.wikipedia.org/wiki/Metric_system" target="_blank" rel="noopener noreffer">the metric system</a>
+ uses. To visualize this in a clear way for everyone disregarding individual knowledge of <a href="https://en.wiktionary.org/wiki/sizewise" target="_blank" rel="noopener noreffer">sizewise</a>
+ and <a href="https://en.wikipedia.org/wiki/Metric_system" target="_blank" rel="noopener noreffer">the metric system</a>
+, the components are arranged in the form of a stacking doll, a.k.a a <a href="https://en.wikipedia.org/wiki/Matryoshka_doll" target="_blank" rel="noopener noreffer">Matroska</a>
+ or stacking dolls. Like the ones shown in the next image.</p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-sub-html="<h2>Matroska / Stacking dolls</h2>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -208,10 +212,9 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
             data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska.png, /posts/2022/the-perfect-azure-naming-convention/matroska.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska.png 2x"
             data-sizes="auto"
             alt="/posts/2022/the-perfect-azure-naming-convention/matroska.png" width="1059" height="636" />
-    </a><figcaption class="image-caption">matroska</figcaption>
+    </a><figcaption class="image-caption">Matroska / Stacking dolls</figcaption>
     </figure>
-<p>Starting with the biggest component, and moving to an ever smaller one. Up to the point of the sub-resource (examples of sub-resources are noted below) as sub-resource is the smallest component for this naming convention. Practically this naming convention is very similar to <a href="https://en.wikipedia.org/wiki/Metric_system" target="_blank" rel="noopener noreffer">the metric system</a>
-.</p>
+<p>Starting with the biggest component, and moving to an ever smaller one. Up to the point of the sub-resource (examples of sub-resources are noted below) as sub-resource is the smallest component for this naming convention.</p>
 <p>Some sub-resource examples:</p>
 <ul>
 <li>A network card part of a virtual machine</li>
@@ -223,11 +226,14 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
             <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">As mentioned in the previous chapter the naming convention has longevity of resources in mind. Some resource types can be configured for fail over and be recovered in a different region then the original one. Therefore the region (location) of a resource is not included in the naming convention. In addition, the region of a resources has been quite present in almost all <em>portal.azure.com</em> views and is one of the default properties of a resource object.</div>
+            <div class="admonition-content">As mentioned in the previous chapter the naming convention has longevity of resources in mind. Some resource types can be configured for fail over and be recovered in a different region then the original one.<br>
+Therefore the region (location) of a resource is not included in the naming convention. On top of that, the region is a field that is present in almost all <em>portal.azure.com</em> views and is one of the default properties of a resource object.
+Simply put: adding it to the naming convention will be quite an overkill.</div>
         </div>
     </div>
-<p>Because organizing of resources in a Matroska manner also ties into the order of Azure logical containers (management groups, subscriptions and resource groups) the actual order slightly changes depending on what is considered an environment. Is an environment defined as a subscription or as a resource group? Or in some cases even as a management group?</p>
-<p>This is how the Matroska naming convention would look like when a subscription defines an environment.
+<p>The order the naming convention will slightly change if depending on what is considered an environment. If a subscription is considered an environment the order is as show in the next image. If the resource group would be considered as an environment the <em>environment</em> acronym and the <em>application / component</em> acronym would switch places (have a look at the <a href="#resource-groups-as-environments" rel="">resource groups as environments</a>
+ example).</p>
+<p>This is how the <strong>Matroska naming convention</strong> would look like for a set-up where subscriptions are considered environments.
 <figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-as-environment.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-as-environment.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-as-environment.png" data-sub-html="<h2>Matroska with a subscription as an environment</h2>">
         <img
             class="lazyload"
@@ -238,8 +244,15 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
             alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-as-environment.png" width="1144" height="636" />
     </a><figcaption class="image-caption">Matroska with a subscription as an environment</figcaption>
     </figure></p>
-<p>The following image show an implemented example of this approach. It consists from a workload called <code>Digital Solutions</code>, with a <code>production</code> environment which contains a <code>payment processing</code> application that runs a <code>virtual machine</code> that has a <code>network interface</code>.</p>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" data-sub-html="<h2>Example of a Matroska with a subscription as an environment</h2>">
+<p>And an implemented example would look like the next image. This image contains the following:</p>
+<ul>
+<li>A workload called <code>Digital Solutions</code></li>
+<li>The <code>production</code> environment</li>
+<li>A <code>payment processing</code> application</li>
+<li>Which includes <code>virtual machine</code></li>
+<li>That has a <code>network interface</code> defined.</li>
+</ul>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" data-sub-html="<h2>Example of the Matroska naming convention with a subscription as an environment</h2>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -247,11 +260,11 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
             data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png, /posts/2022/the-perfect-azure-naming-convention/matroska-example.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-example.png 2x"
             data-sizes="auto"
             alt="/posts/2022/the-perfect-azure-naming-convention/matroska-example.png" width="1121" height="636" />
-    </a><figcaption class="image-caption">Example of a Matroska with a subscription as an environment</figcaption>
+    </a><figcaption class="image-caption">Example of the <strong>Matroska naming convention</strong> with a subscription as an environment</figcaption>
     </figure>
-<p>Lets go ahead and try to implement the Matroska approach, putting this example to practice.</p>
+<p>Lets go ahead put the above shown example to practice by implementing the <strong>Matroska naming convention</strong>.</p>
 <h2 id="workload-naming-convention-in-practice">Workload naming convention in practice</h2>
-<p>In addition to the Matroska approach I keep the following common guidelines in mind:</p>
+<p>When using the <strong>Matroska naming convention</strong> I also try to keep the following common guidelines in mind:</p>
 <ul>
 <li>All words must be in lower case</li>
 <li>With the exception of hyphens (-), spaces and special characters are not allowed</li>
@@ -260,17 +273,97 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
  should be used for the <code>&lt;service-name-suffix&gt;</code> and <code>&lt;sub-resource-name-suffix&gt;</code></li>
 </ul>
 <h3 id="subscriptions-as-environments">Subscriptions as environments</h3>
-<p>If a subscription is considered as an environment the Matroska naming convention should be as follows:</p>
+<p>In this example a subscription is considered as an environment so the <strong>Matroska naming convention</strong> definitions is follows:</p>
 <p><code>&lt;workload-name-affix&gt;-&lt;environment&gt;-&lt;application&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
-<p>Example:</p>
+<p><strong>Implementation:</strong><br>
+To implement this definition lets take it step by step. First we note down the definition, then we populate the values in definition and as the last step we convert the values to proper acronyms.
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - subscriptions as environments</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-implementation.jpeg" width="1721" height="1160" />
+    </a><figcaption class="image-caption">Matroska naming convention implementation - <strong>subscriptions as environments</strong></figcaption>
+    </figure></p>
+<p><strong>Example:</strong><br>
+With the 3 steps done we can take the output fro mthe implementation step and apply it, the result is the example shown in the following image.
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg" data-sub-html="<h2>Matroska naming convention example - subscriptions as environments</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-env-example.jpeg" width="1135" height="1024" />
+    </a><figcaption class="image-caption">Matroska naming convention example - <strong>subscriptions as environments</strong></figcaption>
+    </figure></p>
+<p><strong>Code snippet:</strong>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=subscriptions-as-environments.txt"></script>
-
+</p>
+<h3 id="subscriptions-as-environments---additional-examples">Subscriptions as environments - additional examples</h3>
+<p>Here are some additional examples of the most comment resources / resource containers with subscriptions as environments approach.</p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a subscription example</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" width="1135" height="341" />
+    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>subscription</strong> example</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a resource group example</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" width="1135" height="341" />
+    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>resource group</strong> example</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="resource-vnet-example.jpeg" title="resource-vnet-example.jpeg" data-thumbnail="resource-vnet-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a vnet example</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="resource-vnet-example.jpeg"
+            data-srcset="resource-vnet-example.jpeg, resource-vnet-example.jpeg 1.5x, resource-vnet-example.jpeg 2x"
+            data-sizes="auto"
+            alt="resource-vnet-example.jpeg" />
+    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>vnet</strong> example</figcaption>
+    </figure>
 <h3 id="resource-groups-as-environments">Resource groups as environments</h3>
-<p>If a resource group is considered as and environment the Matroska naming convention should be as follows:</p>
+<p>In this example a resource group is considered as an environment so the <strong>Matroska naming convention</strong> definitions is follows:</p>
 <p><code>&lt;workload-name-affix&gt;-&lt;application-suffix&gt;-&lt;environment&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
-<p>Example:</p>
+<p><strong>Implementation:</strong><br>
+Same approach as with in the subscription example, first we note down the definition, then we populate the values in definition and as the last step we convert the values to proper acronyms. See following image.
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - resource groups as environments</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-implementation.jpeg" width="1721" height="1160" />
+    </a><figcaption class="image-caption">Matroska naming convention implementation - <strong>resource groups as environments</strong></figcaption>
+    </figure></p>
+<p><strong>Example:</strong><br>
+With the 3 steps done we can take the output from the implementation step and apply it, the result is the example shown in the following image.
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg" data-sub-html="<h2>Matroska naming convention example - resource groups as environments</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg"
+            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-env-example.jpeg" width="1135" height="1024" />
+    </a><figcaption class="image-caption">Matroska naming convention example - <strong>resource groups as environments</strong></figcaption>
+    </figure></p>
+<p><strong>Code snippet:</strong>
 <script type="application/javascript" src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=resource-groups-as-environments.txt"></script>
-
+</p>
 <h2 id="environment-acronymsenvironment-abbreviations"><a href="#environment-abbreviations" rel="">Environment Acronyms</a>
 </h2>
 <p>To support the above elaborated naming convention the I have defined the following environment acronym&rsquo;s. Currently I have limited these to the following two versions. A single letter and a 3 letter one.</p>
@@ -313,7 +406,7 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-12-15</span>
+                <span>Updated on 2022-05-10</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
