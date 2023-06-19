@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Secure Development - Category - </title>
+        <link>https://www.devjev.nl/categories/secure-development/</link>
+        <description>Secure Development - Category - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/secure-development/" rel="self" type="application/rss+xml" /><item>
+    <title>Sleep Worry-Free: The best tips for Local Secrets Management</title>
+    <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
+    <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
+    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management. I use them to prevent / limit leaking of secrets while developing Azure infrastructure. And consider them as part of my security hygiene during the development process.
+Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
+</item>
+</channel>
+</rss>
