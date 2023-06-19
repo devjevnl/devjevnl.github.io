@@ -11,7 +11,7 @@
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management. I use them to prevent / limit leaking of secrets while developing Azure infrastructure. And consider them as part of my security hygiene during the development process.
+    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
 Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
 </item>
 <item>
