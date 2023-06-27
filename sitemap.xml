@@ -2,20 +2,23 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud-automation/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud-security/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud-automation/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud-security/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/local-dev/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/powershell/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/secretmanagement/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/secretstore/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/secure-development/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/security-hygiene/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/way-of-working/</loc><lastmod>2023-06-27T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/json/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/local-dev/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/powershell/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/secure-development/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/security-hygiene/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/way-of-working/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>

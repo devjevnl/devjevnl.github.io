@@ -3,7 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Don&#39;t spill the beans - keep your secrets secure</title>
+    <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
+    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
+    <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
+Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
+</item>
+<item>
     <title>Sleep Worry-Free: The best tips for Local Secrets Management</title>
     <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
@@ -85,16 +94,6 @@ Winget Advanced installation, the override command The winget install documentat
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</guid>
     <description><![CDATA[During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell. As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into winget . I hope you will enjoy both the basics and the advanced configuration experience shared via this post.]]></description>
-</item>
-<item>
-    <title>Git gud with branch naming</title>
-    <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
-    <description><![CDATA[With this post I want to share my approach to Git branch naming. This is the 4th and final post in the naming convention series .
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity.]]></description>
 </item>
 </channel>
 </rss>

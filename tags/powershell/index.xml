@@ -3,7 +3,16 @@
         <title>PowerShell - Tag - </title>
         <link>https://www.devjev.nl/tags/powershell/</link>
         <description>PowerShell - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/powershell/" rel="self" type="application/rss+xml" /><item>
+    <title>Don&#39;t spill the beans - keep your secrets secure</title>
+    <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
+    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
+    <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
+Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
+</item>
+<item>
     <title>Sleep Worry-Free: The best tips for Local Secrets Management</title>
     <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
