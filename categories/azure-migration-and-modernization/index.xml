@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Azure Migration and Modernization - Category - </title>
+        <link>https://www.devjev.nl/categories/azure-migration-and-modernization/</link>
+        <description>Azure Migration and Modernization - Category - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure-migration-and-modernization/" rel="self" type="application/rss+xml" /><item>
+    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
+    <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
+    <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
+</item>
+</channel>
+</rss>

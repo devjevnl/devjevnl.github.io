@@ -3,10 +3,26 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Migration and Modernization</title>
+    <link>https://www.devjev.nl/categories/azure-migration-and-modernization/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/azure-migration-and-modernization/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Adoption Framework</title>
+    <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/cloud-adoption-framework/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>PowerShell</title>
     <link>https://www.devjev.nl/categories/powershell/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/powershell/</guid>
     <description><![CDATA[]]></description>
@@ -14,7 +30,7 @@
 <item>
     <title>Secure Development</title>
     <link>https://www.devjev.nl/categories/secure-development/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/secure-development/</guid>
     <description><![CDATA[]]></description>
@@ -65,22 +81,6 @@
     <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/azure/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps</title>
-    <link>https://www.devjev.nl/categories/azure-devops/</link>
-    <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/azure-devops/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Security</title>
-    <link>https://www.devjev.nl/categories/security/</link>
-    <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/security/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

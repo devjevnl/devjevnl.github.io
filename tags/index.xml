@@ -3,10 +3,66 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure DevOps</title>
+    <link>https://www.devjev.nl/tags/azure-devops/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure DevOps Demo Generator</title>
+    <link>https://www.devjev.nl/tags/azure-devops-demo-generator/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops-demo-generator/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Migration and Modernization</title>
+    <link>https://www.devjev.nl/tags/azure-migration-and-modernization/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-migration-and-modernization/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Backlog</title>
+    <link>https://www.devjev.nl/tags/backlog/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/backlog/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Adoption Framework</title>
+    <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/cloud-adoption-framework/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft</title>
+    <link>https://www.devjev.nl/tags/microsoft/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/microsoft/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Template</title>
+    <link>https://www.devjev.nl/tags/template/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/template/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Cloud Automation</title>
     <link>https://www.devjev.nl/tags/cloud-automation/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/cloud-automation/</guid>
     <description><![CDATA[]]></description>
@@ -14,7 +70,7 @@
 <item>
     <title>Cloud Security</title>
     <link>https://www.devjev.nl/tags/cloud-security/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/cloud-security/</guid>
     <description><![CDATA[]]></description>
@@ -22,65 +78,9 @@
 <item>
     <title>Local Dev</title>
     <link>https://www.devjev.nl/tags/local-dev/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/local-dev/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>PowerShell</title>
-    <link>https://www.devjev.nl/tags/powershell/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/powershell/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>SecretManagement</title>
-    <link>https://www.devjev.nl/tags/secretmanagement/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/secretmanagement/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>SecretStore</title>
-    <link>https://www.devjev.nl/tags/secretstore/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/secretstore/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Security Hygiene</title>
-    <link>https://www.devjev.nl/tags/security-hygiene/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/security-hygiene/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Way of Working</title>
-    <link>https://www.devjev.nl/tags/way-of-working/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/way-of-working/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Json</title>
-    <link>https://www.devjev.nl/tags/json/</link>
-    <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/json/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps</title>
-    <link>https://www.devjev.nl/tags/azure-devops/</link>
-    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

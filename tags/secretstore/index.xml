@@ -3,10 +3,10 @@
         <title>SecretStore - Tag - </title>
         <link>https://www.devjev.nl/tags/secretstore/</link>
         <description>SecretStore - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/secretstore/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/secretstore/" rel="self" type="application/rss+xml" /><item>
     <title>Don&#39;t spill the beans - keep your secrets secure</title>
     <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
     <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.

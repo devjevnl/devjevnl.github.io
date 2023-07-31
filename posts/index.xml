@@ -3,10 +3,18 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
+    <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
+    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
+    <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
+</item>
+<item>
     <title>Don&#39;t spill the beans - keep your secrets secure</title>
     <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
-    <pubDate>Tue, 27 Jun 2023 21:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
     <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
@@ -86,14 +94,6 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</guid>
     <description><![CDATA[In my previous post I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.
 Winget Advanced installation, the override command The winget install documentation shows that an --override option is available, with an input &ldquo;A string that will be passed directly to the installer&rdquo;.]]></description>
-</item>
-<item>
-    <title>Getting along with winget - basic packed management</title>
-    <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</link>
-    <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</guid>
-    <description><![CDATA[During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell. As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into winget . I hope you will enjoy both the basics and the advanced configuration experience shared via this post.]]></description>
 </item>
 </channel>
 </rss>
