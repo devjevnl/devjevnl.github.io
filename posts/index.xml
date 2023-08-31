@@ -3,7 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources</title>
+    <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
+    <pubDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
+    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
+Last year I wrote a series of posts covering the naming convention topic. The perfect azure naming convention covered the Azure resources.]]></description>
+</item>
+<item>
     <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
@@ -85,15 +94,6 @@ Since it much more fun to do research and play with technology in collaboration 
     <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
 Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
 The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming What are Management groups and theirs limits If you are wondering about reasons for this approach to naming please have a look at the Naming convention background chapter of the The perfect azure naming convention .]]></description>
-</item>
-<item>
-    <title>Getting along with winget - advanced package installation</title>
-    <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</link>
-    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</guid>
-    <description><![CDATA[In my previous post I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.
-Winget Advanced installation, the override command The winget install documentation shows that an --override option is available, with an input &ldquo;A string that will be passed directly to the installer&rdquo;.]]></description>
 </item>
 </channel>
 </rss>

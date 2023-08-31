@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources - </title><meta name="Description" content="A quick and Easy Way to Add Renamable Display Names to Azure Resources"><meta property="og:title" content="A quick and Easy Way to Add Renamable Display Names to Azure Resources" />
+<meta property="og:description" content="A quick and Easy Way to Add Renamable Display Names to Azure Resources" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-01T02:00:00+02:00" />
+<meta property="article:modified_time" content="2023-08-01T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png"/>
+<meta name="twitter:title" content="A quick and Easy Way to Add Renamable Display Names to Azure Resources"/>
+<meta name="twitter:description" content="A quick and Easy Way to Add Renamable Display Names to Azure Resources"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/" /><link rel="prev" href="https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "A quick and Easy Way to Add Renamable Display Names to Azure Resources",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2023\/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2023\/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources\/featured-image.png",
+                            "width":  1164 ,
+                            "height":  852 
+                        }],"genre": "posts","keywords": "Cloud Security, Cloud Automation, PowerShell, Json, Way of Working, Local Dev, Security Hygiene","wordcount":  472 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2023\/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources\/","datePublished": "2023-08-01T02:00:00+02:00","dateModified": "2023-08-01T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "A quick and Easy Way to Add Renamable Display Names to Azure Resources"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">A quick and Easy Way to Add Renamable Display Names to Azure Resources</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/secure-development/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Secure Development</a>&nbsp;<a href="/categories/powershell/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>PowerShell</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-01">2023-08-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;472 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png"
+        data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/featured-image.png"
+        title="A quick and Easy Way to Add Renamable Display Names to Azure Resources" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-add-renamable-display-names-to-azure-resources">How to add renamable display names to Azure resources</a></li>
+    <li><a href="#practical-applications">Practical applications</a></li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
+<p>Last year I wrote a <a href="/categories/naming-conventions/" rel="">series</a>
+ of posts covering the <a href="/categories/naming-conventions/" rel="">naming convention</a>
+ topic. <a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+ covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.</p>
+<h2 id="how-to-add-renamable-display-names-to-azure-resources">How to add renamable display names to Azure resources</h2>
+<p>There should be little surprise that the renamable display name is a <code>resource tag</code>. In this specific case it&rsquo;s a special (hidden) tag called <code>hidden-title</code>. When this tag is added it&rsquo;s value is used as the display name for the resource in question in the Azure portal. Even if the tag is hidden it can be still set using the Azure portal, but it disappears in the portal as soon as you leave the tags page. To change the value via the portal, add it again with the new value then wait a minute and do a Forced Reload (Ctrl F5).
+Naturally adding this tag is also possible using infrastructure as code (Bicep, Terraform, ARM, etc&hellip;) or scripting (PowerShell, Azure CLI, etc&hellip;). Check out the following images to see both approaches and their result.</p>
+<figure><a class="lightgallery" href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png" title="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png" data-thumbnail="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png" data-sub-html="<h2>Renamable display names via the portal</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png"
+            data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-portal.png" width="1224" height="458" />
+    </a><figcaption class="image-caption">Renamable display names via the portal</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png" title="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png" data-thumbnail="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png" data-sub-html="<h2>Renamable display names via scripting</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png"
+            data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-script.png" width="780" height="278" />
+    </a><figcaption class="image-caption">Renamable display names via scripting</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png" title="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png" data-thumbnail="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png" data-sub-html="<h2>Renamable display names result</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png"
+            data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-result.png" width="872" height="604" />
+    </a><figcaption class="image-caption">Renamable display names result</figcaption>
+    </figure>
+<p>For convenience a snippet of the above used code.
+<script type="application/javascript" src="https://gist.github.com/devjevnl/6c34367f2f9a0f8336be04c9d6483bd8.js?file=set-tags.ps1"></script>
+</p>
+<p>Did I also mention that this also works on resource groups?</p>
+<figure><a class="lightgallery" href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png" title="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png" data-thumbnail="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png" data-sub-html="<h2>Yes, it also works on resource groups</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png"
+            data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png" width="727" height="274" />
+    </a><figcaption class="image-caption">Yes, it also works on resource groups</figcaption>
+    </figure>
+<p>By now you are probably wondering if is this a supported feature? Well, yes! The documentation for this feature is unfortunately similar to the tag and a bit hidden. You cna check it out yourself <a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-structure#tags" target="_blank" rel="noopener noreffer">here</a>
+.</p>
+<h2 id="practical-applications">Practical applications</h2>
+<p>I am still firmly convinced a proper naming convention is a must for any Cloud environment and Azure resource names should be treated as ID&rsquo;s due to their immutable nature. However this is a good addition which can help smoothen the transition for any organization from a traditional <a href="https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/" target="_blank" rel="noopener noreffer">pets to a cattle approach</a>
+ without sacrificing pet names 😉.</p>
+<figure><a class="lightgallery" href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg" title="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg" data-thumbnail="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg" data-sub-html="<h2>No real dogs where harmed as this image is AI generated</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg"
+            data-srcset="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg 1.5x, /posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/dog-with-ear-tag.jpeg" width="1024" height="1024" />
+    </a><figcaption class="image-caption">No real dogs where harmed as this image is AI generated</figcaption>
+    </figure>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>I hope you found this neat trick to add renamable display names to Azure resources useful.  If you are interested in the reference material used to make this post, please visit the following links.</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-structure#tags" target="_blank" rel="noopener noreffer">Microsoft docs - hidden-title tag</a>
+</li>
+<li><a href="https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/" target="_blank" rel="noopener noreffer">Pets vs cattle explained</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-08-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud-security/">Cloud Security</a>,&nbsp;<a href="/tags/cloud-automation/">Cloud Automation</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/json/">Json</a>,&nbsp;<a href="/tags/way-of-working/">Way of Working</a>,&nbsp;<a href="/tags/local-dev/">Local Dev</a>,&nbsp;<a href="/tags/security-hygiene/">Security Hygiene</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/" class="prev" rel="prev" title="Mastering Cloud Adoption Framework: Quick Start Backlog essentials"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>
