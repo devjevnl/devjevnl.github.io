@@ -4,18 +4,18 @@
     ><url>
             <loc>https://www.devjev.nl/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud-automation/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud-security/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/json/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/local-dev/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/cloud-governance/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/naming-convention/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/naming-conventions/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/powershell/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/secure-development/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/security-hygiene/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/resource-display-name/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/resource-naming/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/resources/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/way-of-working/</loc><lastmod>2023-08-01T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops-demo-generator/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-migration-and-modernization/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
@@ -26,9 +26,18 @@
             <loc>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/microsoft/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/template/</loc><lastmod>2023-07-31T08:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud-automation/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud-security/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/local-dev/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/powershell/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/secretmanagement/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/secretstore/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/secure-development/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/security-hygiene/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/way-of-working/</loc><lastmod>2023-06-26T05:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/json/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</loc><lastmod>2023-06-19T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-devops-fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/fundamentals/</loc><lastmod>2023-03-21T21:00:00&#43;02:00</lastmod></url><url>
@@ -41,13 +50,7 @@
             <loc>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</loc><lastmod>2022-11-15T10:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</loc><lastmod>2022-12-15T21:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/new-organization/</loc><lastmod>2022-12-15T21:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/cloud-governance/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/management-group/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/naming-convention/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/naming-conventions/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/resource-naming/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</loc><lastmod>2022-09-26T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/development-box-setup/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</loc><lastmod>2022-08-30T08:00:00&#43;02:00</lastmod></url><url>
@@ -64,7 +67,6 @@
             <loc>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/naming/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/variable-group/</loc><lastmod>2022-06-15T18:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/resources/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</loc><lastmod>2022-05-10T06:42:15&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</loc><lastmod>2022-04-25T10:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
@@ -77,7 +79,6 @@
             <loc>https://www.devjev.nl/tags/sharepoint-online/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/tenant/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/update/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/azure/</loc><lastmod>2022-03-12T21:00:00&#43;01:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-devops/</loc><lastmod>2022-03-12T21:00:00&#43;01:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/credentials/</loc><lastmod>2022-03-12T21:00:00&#43;01:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/hack/</loc><lastmod>2022-03-12T21:00:00&#43;01:00</lastmod></url><url>
