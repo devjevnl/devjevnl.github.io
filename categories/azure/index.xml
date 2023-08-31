@@ -3,7 +3,26 @@
         <title>Azure - Category - </title>
         <link>https://www.devjev.nl/categories/azure/</link>
         <description>Azure - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources</title>
+    <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
+    <pubDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
+    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
+Last year I wrote a series of posts covering the naming convention topic. The perfect azure naming convention covered the Azure resources.]]></description>
+</item>
+<item>
+    <title>The perfect Azure naming convention</title>
+    <link>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</link>
+    <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
+    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
+Tip Check out the full naming convention series :
+The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
+</item>
+<item>
     <title>Your service connection credentials are mine</title>
     <link>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</link>
     <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>

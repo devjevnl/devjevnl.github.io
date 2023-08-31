@@ -3,16 +3,7 @@
         <title>PowerShell - Category - </title>
         <link>https://www.devjev.nl/categories/powershell/</link>
         <description>PowerShell - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/powershell/" rel="self" type="application/rss+xml" /><item>
-    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources</title>
-    <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
-    <pubDate>Tue, 01 Aug 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
-Last year I wrote a series of posts covering the naming convention topic. The perfect azure naming convention covered the Azure resources.]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/powershell/" rel="self" type="application/rss+xml" /><item>
     <title>Don&#39;t spill the beans - keep your secrets secure</title>
     <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
     <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
