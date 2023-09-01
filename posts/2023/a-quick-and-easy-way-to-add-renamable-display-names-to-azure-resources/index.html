@@ -31,7 +31,7 @@
                             "url": "https:\/\/www.devjev.nl\/posts\/2023\/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources\/featured-image.png",
                             "width":  1164 ,
                             "height":  852 
-                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming, Resource Display Name","wordcount":  472 ,
+                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming, Resource Display Name","wordcount":  540 ,
         "url": "https:\/\/www.devjev.nl\/posts\/2023\/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources\/","datePublished": "2023-08-29T02:00:00+02:00","dateModified": "2023-08-29T02:00:00+02:00","publisher": {
             "@type": "Organization",
             "name": "Jev"},"author": {
@@ -107,7 +107,7 @@
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">A quick and Easy Way to Add Renamable Display Names to Azure Resources</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
 </span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-29">2023-08-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;472 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-29">2023-08-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;540 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -180,7 +180,19 @@ Naturally adding this tag is also possible using infrastructure as code (Bicep, 
             alt="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/hidden-tag-resource-group.png" width="727" height="274" />
     </a><figcaption class="image-caption">Yes, it also works on resource groups</figcaption>
     </figure>
-<p>By now you are probably wondering if is this a supported feature? Well, yes! The documentation for this feature is unfortunately similar to the tag and a bit hidden. You cna check it out yourself <a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-structure#tags" target="_blank" rel="noopener noreffer">here</a>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Keep in mind that since the display name is a tag the <a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources#limitations" target="_blank" rel="noopener noreffer">limitations</a>
+ that apply to the tags are applicable.</div>
+        </div>
+    </div>
+<p>By now you are probably wondering if is this a supported feature? Yes its a supported feature, but the main purpose of this feature is to provide resource display names for <a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards" target="_blank" rel="noopener noreffer">Azure dashboards</a>
+ views. And to make sense of data in dashboards the same display names are also made visible in the Azure portal.
+The documentation for this feature is unfortunately similarly to the tag itself, hidden&hellip;. So I dug the links up for your convenience, check them out <a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules#microsoftportal" target="_blank" rel="noopener noreffer">here</a>
+ and <a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-structure#tags" target="_blank" rel="noopener noreffer">here</a>
 .</p>
 <h2 id="practical-applications">Practical applications</h2>
 <p>I am still firmly convinced a proper naming convention is a must for any Cloud environment and Azure resource names should be treated as ID&rsquo;s due to their immutable nature. However this is a good addition which can help smoothen the transition for any organization from a traditional <a href="https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/" target="_blank" rel="noopener noreffer">pets to a cattle approach</a>
@@ -201,6 +213,8 @@ Naturally adding this tag is also possible using infrastructure as code (Bicep, 
 <li><a href="https://learn.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-structure#tags" target="_blank" rel="noopener noreffer">Microsoft docs - hidden-title tag</a>
 </li>
 <li><a href="https://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/" target="_blank" rel="noopener noreffer">Pets vs cattle explained</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources#limitations" target="_blank" rel="noopener noreffer">Tags</a>
 </li>
 </ul>
 <p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
