@@ -3,8 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+    <description><![CDATA[With this post I want to share my new GitHub repository -&gt; Starter Kit for an Azure IaC repository . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.]]></description>
+</item>
+<item>
+    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨</title>
     <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
     <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -13,7 +21,7 @@
 Last year I wrote a series of posts covering the naming convention topic. The perfect azure naming convention covered the Azure resources.]]></description>
 </item>
 <item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
+    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -21,7 +29,7 @@ Last year I wrote a series of posts covering the naming convention topic. The pe
     <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
 </item>
 <item>
-    <title>Don&#39;t spill the beans - keep your secrets secure</title>
+    <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
     <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
     <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -30,7 +38,7 @@ Last year I wrote a series of posts covering the naming convention topic. The pe
 Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
 </item>
 <item>
-    <title>Sleep Worry-Free: The best tips for Local Secrets Management</title>
+    <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
     <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -39,7 +47,7 @@ Modules explained Since this approach to Secrets Management depends on the two j
 Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
 </item>
 <item>
-    <title>How to use Library for Azure Pipelines</title>
+    <title>How to use Library for Azure Pipelines 📗</title>
     <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
     <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -48,7 +56,7 @@ Use Case When you are either building new Azure Infrastructure or debugging an e
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 <item>
-    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps</title>
+    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</title>
     <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -57,7 +65,7 @@ Since it much more fun to do research and play with technology in collaboration 
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 <item>
-    <title>How to create a new Azure Service Connection in Azure DevOps</title>
+    <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
     <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
     <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -84,16 +92,6 @@ Since it much more fun to do research and play with technology in collaboration 
 Azure DevOps Fundamentals Azure DevOps Advanced Azure DevOps Expert Starting with the basic of basics of Azure DevOps Fundamentals :
 How to create an Organization in Azure DevOps?
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
-</item>
-<item>
-    <title>The ideal Management group naming convention</title>
-    <link>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</link>
-    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
-    <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
-Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming What are Management groups and theirs limits If you are wondering about reasons for this approach to naming please have a look at the Naming convention background chapter of the The perfect azure naming convention .]]></description>
 </item>
 </channel>
 </rss>

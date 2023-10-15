@@ -3,12 +3,36 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Azure</title>
     <link>https://www.devjev.nl/categories/azure/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Git</title>
+    <link>https://www.devjev.nl/categories/git/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/git/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Infrastructure as Code</title>
+    <link>https://www.devjev.nl/categories/infrastructure-as-code/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/infrastructure-as-code/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Starter kit</title>
+    <link>https://www.devjev.nl/categories/starter-kit/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/starter-kit/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -57,30 +81,6 @@
     <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/secure-development/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps Fundamentals</title>
-    <link>https://www.devjev.nl/categories/azure-devops-fundamentals/</link>
-    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Tooling</title>
-    <link>https://www.devjev.nl/categories/tooling/</link>
-    <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/tooling/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft 365</title>
-    <link>https://www.devjev.nl/categories/microsoft-365/</link>
-    <pubDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/microsoft-365/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

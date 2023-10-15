@@ -3,84 +3,84 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>ARM</title>
+    <link>https://www.devjev.nl/tags/arm/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/arm/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure</title>
     <link>https://www.devjev.nl/tags/azure/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/azure/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Cloud</title>
-    <link>https://www.devjev.nl/tags/cloud/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <title>Bicep</title>
+    <link>https://www.devjev.nl/tags/bicep/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/cloud/</guid>
+    <guid>https://www.devjev.nl/tags/bicep/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Naming convention</title>
-    <link>https://www.devjev.nl/tags/naming-convention/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <title>Git repository</title>
+    <link>https://www.devjev.nl/tags/git-repository/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/naming-convention/</guid>
+    <guid>https://www.devjev.nl/tags/git-repository/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Resource Display Name</title>
-    <link>https://www.devjev.nl/tags/resource-display-name/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <title>IaC</title>
+    <link>https://www.devjev.nl/tags/iac/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/resource-display-name/</guid>
+    <guid>https://www.devjev.nl/tags/iac/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Resource naming</title>
-    <link>https://www.devjev.nl/tags/resource-naming/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <title>Infrastructure as Code</title>
+    <link>https://www.devjev.nl/tags/infrastructure-as-code/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/resource-naming/</guid>
+    <guid>https://www.devjev.nl/tags/infrastructure-as-code/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Resources</title>
-    <link>https://www.devjev.nl/tags/resources/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
+    <title>PowerShell</title>
+    <link>https://www.devjev.nl/tags/powershell/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/resources/</guid>
+    <guid>https://www.devjev.nl/tags/powershell/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Azure DevOps</title>
-    <link>https://www.devjev.nl/tags/azure-devops/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <title>starter kit</title>
+    <link>https://www.devjev.nl/tags/starter-kit/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <guid>https://www.devjev.nl/tags/starter-kit/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Azure DevOps Demo Generator</title>
-    <link>https://www.devjev.nl/tags/azure-devops-demo-generator/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <title>Template</title>
+    <link>https://www.devjev.nl/tags/template/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-devops-demo-generator/</guid>
+    <guid>https://www.devjev.nl/tags/template/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Azure Migration and Modernization</title>
-    <link>https://www.devjev.nl/tags/azure-migration-and-modernization/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
+    <title>Terraform</title>
+    <link>https://www.devjev.nl/tags/terraform/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-migration-and-modernization/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Backlog</title>
-    <link>https://www.devjev.nl/tags/backlog/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/backlog/</guid>
+    <guid>https://www.devjev.nl/tags/terraform/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

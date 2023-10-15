@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>starter kit - Tag - </title>
+        <link>https://www.devjev.nl/tags/starter-kit/</link>
+        <description>starter kit - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/starter-kit/" rel="self" type="application/rss+xml" /><item>
+    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+    <description><![CDATA[With this post I want to share my new GitHub repository -&gt; Starter Kit for an Azure IaC repository . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.]]></description>
+</item>
+</channel>
+</rss>

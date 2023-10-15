@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑 - </title><meta name="Description" content="Azure IaC repository structure starter kit"><meta property="og:title" content="Chaos to Order: Structuring IaC repository Like a Boss! 👑" />
+<meta property="og:description" content="Azure IaC repository structure starter kit" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-15T02:00:00+02:00" />
+<meta property="article:modified_time" content="2023-10-15T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png"/>
+<meta name="twitter:title" content="Chaos to Order: Structuring IaC repository Like a Boss! 👑"/>
+<meta name="twitter:description" content="Azure IaC repository structure starter kit"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/" /><link rel="prev" href="https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Chaos to Order: Structuring IaC repository Like a Boss! 👑",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2023\/chaos-to-order-structuring-iac-repository-like-a-boss\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2023\/chaos-to-order-structuring-iac-repository-like-a-boss\/featured-image.png",
+                            "width":  800 ,
+                            "height":  240 
+                        }],"genre": "posts","keywords": "Template, starter kit, Git repository, IaC, Bicep, Terraform, ARM, Azure, Infrastructure as Code, PowerShell","wordcount":  1805 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2023\/chaos-to-order-structuring-iac-repository-like-a-boss\/","datePublished": "2023-10-15T02:00:00+02:00","dateModified": "2023-10-15T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Azure IaC repository structure starter kit"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Chaos to Order: Structuring IaC repository Like a Boss! 👑</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/starter-kit/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Starter kit</a>&nbsp;<a href="/categories/infrastructure-as-code/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Infrastructure as Code</a>&nbsp;<a href="/categories/git/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Git</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-15">2023-10-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1805 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png"
+        data-srcset="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png, /posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png 1.5x, /posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/featured-image.png"
+        title="Azure IaC repository structure starter kit" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-a-starter-kit">Why a starter kit?</a></li>
+    <li><a href="#the-starter-kit">The starter kit</a></li>
+    <li><a href="#docs">Docs</a></li>
+    <li><a href="#pipeline-gallery">Pipeline gallery</a></li>
+    <li><a href="#pipelines">Pipelines</a></li>
+    <li><a href="#src">Src</a>
+      <ul>
+        <li><a href="#iac">IaC</a></li>
+        <li><a href="#params">Params</a></li>
+        <li><a href="#policies">Policies</a></li>
+        <li><a href="#scripts">Scripts</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
+. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>
+<h2 id="why-a-starter-kit">Why a starter kit?</h2>
+<p>The goal of this repository is to help engineers reduce their start-up time by providing the necessary structure. The goal of this post is to elaborate on the repository structure and provide some background information.</p>
+<h2 id="the-starter-kit">The starter kit</h2>
+<p>The starter kit is composed of 5 top level folders with <code>📂.vscode</code> folder which contains my configuration for Visual Studio Code. The <code>📜extensions.json</code> file contains the extensions needed by most Microsoft Azure IaC projects. The most notable config in the <code>📜settings.json</code> is the tab size, PowerShell code formatting and the horizontal editor rulers set to 80, 100 and 120 characters. These ruler settings represent the <a href="https://learn.microsoft.com/en-us/powershell/scripting/community/contributing/general-markdown?view=powershell-7.3#limit-line-length-to-100-characters" target="_blank" rel="noopener noreffer">Guidance for contributing to Microsoft Docs</a>
+ and the <a href="https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/rules/avoidlonglines?view=ps-modules" target="_blank" rel="noopener noreffer">PSScriptAnalyzer rule AvoidLongLines</a>
+. Like all other parts of the starter kit, feel free to change settings to your liking.
+In addition to the top level folders the starter kit also has a generic <code>📜.gitignore</code> and the main <code>📜.README.md</code> which contains the description for this kit. Obviously the <code>📜LICENSE</code> file is not part of the starter kit.<br>
+Each folder is described in a separate chapter of this blog post, enjoy the read!</p>
+<p>The main tree view of the <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
+ is shown below.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦azure-iac-repo-structure-starter-kit
+</span></span><span class="line"><span class="cl"> ┣ 📂.vscode
+</span></span><span class="line"><span class="cl"> ┣ 📂docs
+</span></span><span class="line"><span class="cl"> ┣ 📂pipeline-gallery
+</span></span><span class="line"><span class="cl"> ┣ 📂pipelines
+</span></span><span class="line"><span class="cl"> ┣ 📂src
+</span></span><span class="line"><span class="cl"> ┣ 📂tools
+</span></span><span class="line"><span class="cl"> ┣ 📜.gitignore
+</span></span><span class="line"><span class="cl"> ┣ 📜LICENSE
+</span></span><span class="line"><span class="cl"> ┗ 📜README.md
+</span></span></code></pre></div><h2 id="docs">Docs</h2>
+<p>Moving trough the top level folders, the first one is the <code>📂docs</code> folder. This is the folder to keep all the technical documentation considered relevant for the IaC files and scripts. Following hte everything as code mantra the documentation must be written in Markdown. Each markdown file should cover a single topic and should be named accordingly. Since each project tends to have it&rsquo;s own documentation requirements, the documentation folder is not further structured into subfolders.</p>
+<h2 id="pipeline-gallery">Pipeline gallery</h2>
+<p>The <code>pipeline-gallery</code> folder is the place to keep all the pipeline templates. Usage of pipeline templates encourages reusability by bootstrapping new pipelines. In addition the use of pipeline templates positively impacts the maintainability and testing of pipelines as each template cna be tested in isolation. As the concept of this folder is based on the <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener noreffer">DRY principle</a>
+ the added value of this folder depends on the reusability scale of the pipelines templates. If your needs require the reuse the templates across multiple repositories opting for a specific repository with an Artifacts feed might be a more suited option.</p>
+<p>For consistency reasons the folder is structured into two subfolders which are based on the pipeline type. With the <code>📂jobs</code> folder for all the job templates and the <code>📂steps</code> folder for all the step templates. Populated with files, it looks something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦pipeline-gallery
+</span></span><span class="line"><span class="cl"> ┣ 📂jobs
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜deploySolution.yml
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜deployInfrastructure.yml
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜staticAnalysis.yml
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜codeQualityValidation.yml
+</span></span><span class="line"><span class="cl"> ┣ 📂steps
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜buildSolution.yml
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜staticAnalysis.yml
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜publishSolutionArtifacts.yml
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜buildBicep.yml
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h2 id="pipelines">Pipelines</h2>
+<p>The <code>pipelines</code> folder is the place to keep all the pipeline definitions. Each pipeline definition is placed inside a subfolder which is named after the pipeline. Depending on the design of the pipeline, there are
+two options to choose from:</p>
+<ul>
+<li>A single multistage <code>📜.yml</code> file that contains all the stages or environments.</li>
+<li>Multitude of <code>📜.yml</code> files to represent each stage or environment.</li>
+</ul>
+<p>And finally a <code>📜readme.md</code> that contains technical  documentation elaborating on the specifics of the respective pipeline is required. Populated with files, it looks something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦pipelines
+</span></span><span class="line"><span class="cl"> ┣ 📂 management
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜 managementStructure.yml
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜 readme.md
+</span></span><span class="line"><span class="cl"> ┣ 📂 workload
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜 deploy-workload.yml
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜 readme.md
+</span></span><span class="line"><span class="cl"> ┣ 📂 microservice-deploy
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜 deploy-microservice.yml
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜 readme.md
+</span></span><span class="line"><span class="cl"> ┗ 📜 readme.md
+</span></span></code></pre></div><h2 id="src">Src</h2>
+<p>The <code>src</code> folder is the place to keep all the source code. The heart of the repository and the folder with the deepest structure. Due to the depth of this folder each subfolder will be described in a separate chapter.
+But first lets cover the top level folders.</p>
+<ul>
+<li><code>📂iac</code> (Infrastructure as Code) directory contains a structured folder hierarchy for managing Infrastructure as Code templates, such as ARM, Terraform, and Bicep.\</li>
+<li><code>📂policies</code> directory is home to all policy and initiative definitions.\</li>
+<li><code>📂params</code> (Parameters) directory is intended to store non-sensitive configuration and parameter files.</li>
+<li><code>📂scripts</code> directory is organized with a folder structure designed for the effective management of (PowerShell) scripts.</li>
+</ul>
+<p>The folder structure looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦src
+</span></span><span class="line"><span class="cl"> ┣ 📂iac
+</span></span><span class="line"><span class="cl"> ┣ 📂params
+</span></span><span class="line"><span class="cl"> ┣ 📂policies
+</span></span><span class="line"><span class="cl"> ┣ 📂scripts
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h3 id="iac">IaC</h3>
+<p>The target folder for storing Infrastructure as Code files. Based on my personal experience I ended up dividing all IaC files into two categories, namely: <code>📂az-modules</code> and <code>📂az-controllers</code>.
+Where the <code>📂az-modules</code> are the building blocks of the infrastructure and <code>📂az-controllers</code> are the orchestrators of the modules.</p>
+<p>The folder structure looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦iac
+</span></span><span class="line"><span class="cl"> ┣ 📂az-controllers
+</span></span><span class="line"><span class="cl"> ┣ 📂az-modules
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h4 id="controllers">Controllers</h4>
+<p>As mentioned this folder contains IaC files that are purposed to as orchestrators. Meaning IaC files which are intended to utilize one or more modules to deploy resources.
+Each controller is placed in a similar named folder. The controller folder contains two subfolders: <code>📂samples</code> and <code>📂test</code>.</p>
+<ul>
+<li><code>📂samples</code> folder contains a script which can be used to deploy the controller from a local machine (without the use of a pipeline).</li>
+<li><code>📂test</code> folder contains all the test related materials. Like unit tests, scenario specific parameter files, and a <code>📜readme.md</code> file that describes the controller and its usage.</li>
+</ul>
+<p>The module file itself is typically named equally to the folder but this is based on personal preference. Populated with files, it looks something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦az-controllers
+</span></span><span class="line"><span class="cl"> ┣ 📂defender-plans
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜defender-plans.bicep
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┣ 📂subscription-vending
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜subscription-vending.bicep
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h4 id="modules">Modules</h4>
+<p>As mentioned this folder contains IaC files that are used as a unit of code reuse. A module file can contain a single resource or set of resources, and can be called
+from controllers. This allows deployments to be constructed from small, manageable components, and to reuse common pieces.</p>
+<p>For the purposes of traceability and discoverability, each module is organized in a folder structure that aligns with the <a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types" target="_blank" rel="noopener noreffer">Azure Resource Provider</a>
+ structure. E.g. <code>Microsoft.Storage/storageaccounts</code>. An additional advantage of this approach is that the required <code>Azure Resource Providers</code> are immediately visible.
+Furthermore, automation can be established to manage any drift in the providers, based on the modules.\</p>
+<p>Like the controller the module folder contains two subfolders: <code>📂samples</code> and <code>📂test</code>.</p>
+<ul>
+<li><code>📂samples</code> folder contains a script which can be used to deploy the controller from a local machine (without the use of a pipeline).</li>
+<li><code>📂test</code> folder contains all the test related materials. Like unit tests, scenario specific parameter files, and a <code>📜readme.md</code> file that describes the controller and its usage.</li>
+</ul>
+<p>The module itself is typically named <code>📜deploy.bicep</code> but this is based on personal preference. Populated with files, it looks something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦az-modules
+</span></span><span class="line"><span class="cl"> ┣ 📂Microsoft.KeyVault
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📂vaults
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📜deploy.bicep
+</span></span><span class="line"><span class="cl"> ┃   ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┣ 📂Microsoft.Network
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📂dnszones
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┣ 📜deploy.bicep
+</span></span><span class="line"><span class="cl"> ┃ ┃ ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📂virtualnetworks
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📜deploy.bicep
+</span></span><span class="line"><span class="cl"> ┃   ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┣ 📂Microsoft.Storage
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📂storageaccounts
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂samples
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜localDeploy.ps1
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📂test
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜happy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┣ 📜invalid-setting.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┃ ┗ 📜unhappy-flow.params.json
+</span></span><span class="line"><span class="cl"> ┃   ┣ 📜deploy.bicep
+</span></span><span class="line"><span class="cl"> ┃   ┗ 📜readme.md
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h3 id="params">Params</h3>
+<p>The purpose of this folder is to provide a centralized location for all parameter files, making them easier to manage and maintain.</p>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Warning<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Parameter files should <strong>NOT</strong> contain any secrets and other sensitive information!</div>
+        </div>
+    </div>
+<h3 id="policies">Policies</h3>
+<p>In some cases this is a optional folder as not all projects require the use of policies. Depending on the number of policies and the complexity of their design, the policies folder can be structured split into two subfolders: <code>📂initiatives</code> and <code>📂policies</code>.</p>
+<h3 id="scripts">Scripts</h3>
+<p>A centralized location for all scripts, making them easier to manage and maintain. The folder is organized based on the <a href="https://github.com/PoshCode/PowerShellPracticeAndStyle/blob/master/Best-Practices/Building-Reusable-Tools.md" target="_blank" rel="noopener noreffer">PoshCode - PowerShellPracticeAndStyle</a>
+. Similar to the IaC folder this folder is organized into <code>📂controllers</code> and <code>📂functions</code>. In this case the <code>📂functions</code> are the building blocks and the <code>📂controllers</code> are the orchestrators.
+Each controller script should be placed in a separate file. The file name should represent the purpose of the controller script. Each function should be placed in a separate file. The file name should be the same as the function name.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">It&rsquo;s important to mention that all code scripts should always be written with the <a href="https://en.wikipedia.org/wiki/SOLID" target="_blank" rel="noopener noreffer">SOLID principle</a>
+ and <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener noreffer">DRY principle</a>
+ in mind.</div>
+        </div>
+    </div>
+<p>The folder structure looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦scripts
+</span></span><span class="line"><span class="cl"> ┣ 📂controllers
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜roleDefinitionsForWorkloads.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜subscriptionVending.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜policyDefinitions.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜roleAssignmentsForWorkloads.ps1
+</span></span><span class="line"><span class="cl"> ┣ 📂functions
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜New-AzAdApp.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜Set-AzRoleAssignment.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┣ 📜New-AdoAuthenticationToken.ps1
+</span></span><span class="line"><span class="cl"> ┃ ┗ 📜Confirm-AdoGroupMembership.ps1
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h2 id="tools">Tools</h2>
+<p>This is the main directory for any and all utility files. The utilities are categorized into three subdirectories:</p>
+<ul>
+<li><code>📂helpers</code> directory is purposed for utility scripts which are essential for development and maintenance anything inside the <code>📂src</code> folder. For example, a helper to establish local debugging.</li>
+<li><code>📂private</code> directory is designated for private and personal scripts used during the debugging and building processes. For example, private configuration files like I explained in an earlier post <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/" rel="">/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</a>
+.</li>
+<li><code>📂references</code> directory serves as a storage for unused but potentially valuable files. For example, a script that has been decommissioned from the main source but is yet valuable.</li>
+</ul>
+<p>The folder structure looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">📦tools
+</span></span><span class="line"><span class="cl"> ┣ 📂helpers
+</span></span><span class="line"><span class="cl"> ┣ 📂private
+</span></span><span class="line"><span class="cl"> ┣ 📂references
+</span></span><span class="line"><span class="cl"> ┗ 📜readme.md
+</span></span></code></pre></div><h2 id="wrapping-up">Wrapping up</h2>
+<p>I hope you found the explanation of the <code>Azure iac repo structure starter kit</code> educational and the starter kit useful. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<ul>
+<li><a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types" target="_blank" rel="noopener noreffer">Azure Resource Provider</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/scripting/community/contributing/overview?view=powershell-7.3" target="_blank" rel="noopener noreffer">Contributing to PowerShell documentation</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/rules/readme?view=ps-modules" target="_blank" rel="noopener noreffer">PSScriptAnalyzer</a>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/SOLID" target="_blank" rel="noopener noreffer">SOLID principle</a>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener noreffer">DRY principle</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-10-15</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/template/">Template</a>,&nbsp;<a href="/tags/starter-kit/">starter kit</a>,&nbsp;<a href="/tags/git-repository/">Git repository</a>,&nbsp;<a href="/tags/iac/">IaC</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/terraform/">Terraform</a>,&nbsp;<a href="/tags/arm/">ARM</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/infrastructure-as-code/">Infrastructure as Code</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/" class="prev" rel="prev" title="A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

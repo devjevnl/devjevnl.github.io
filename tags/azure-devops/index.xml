@@ -4,7 +4,7 @@
         <link>https://www.devjev.nl/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
+    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -12,7 +12,7 @@
     <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
 </item>
 <item>
-    <title>How to use Library for Azure Pipelines</title>
+    <title>How to use Library for Azure Pipelines 📗</title>
     <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
     <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -21,7 +21,7 @@
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 <item>
-    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps</title>
+    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</title>
     <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
     <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
@@ -30,7 +30,7 @@ Since it much more fun to do research and play with technology in collaboration 
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 <item>
-    <title>How to create a new Azure Service Connection in Azure DevOps</title>
+    <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
     <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
     <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>

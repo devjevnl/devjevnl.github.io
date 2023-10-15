@@ -3,8 +3,16 @@
         <title>Template - Tag - </title>
         <link>https://www.devjev.nl/tags/template/</link>
         <description>Template - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/template/" rel="self" type="application/rss+xml" /><item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/template/" rel="self" type="application/rss+xml" /><item>
+    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+    <description><![CDATA[With this post I want to share my new GitHub repository -&gt; Starter Kit for an Azure IaC repository . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.]]></description>
+</item>
+<item>
+    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
