@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>PowerShell Prowess: The 3 commands you need to know 👈 - </title><meta name="Description" content="The most essential PowerShell Commands"><meta property="og:title" content="PowerShell Prowess: The 3 commands you need to know 👈" />
+<meta property="og:description" content="The most essential PowerShell Commands" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/feature%20image%20large.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-29T02:00:00+02:00" />
+<meta property="article:modified_time" content="2023-10-29T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/feature%20image%20large.png"/>
+<meta name="twitter:title" content="PowerShell Prowess: The 3 commands you need to know 👈"/>
+<meta name="twitter:description" content="The most essential PowerShell Commands"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/" /><link rel="prev" href="https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell Prowess: The 3 commands you need to know 👈",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2023\/powershell-prowess-the-3-commands-you-need-to-know\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2023\/powershell-prowess-the-3-commands-you-need-to-know\/featured-image.png",
+                            "width":  1100 ,
+                            "height":  850 
+                        }],"genre": "posts","keywords": "Need to know, PowerShell, Get-Member, Select-Object, Type Accelerators, .FullName","wordcount":  704 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2023\/powershell-prowess-the-3-commands-you-need-to-know\/","datePublished": "2023-10-29T02:00:00+02:00","dateModified": "2023-10-29T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "The most essential PowerShell Commands"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">PowerShell Prowess: The 3 commands you need to know 👈</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/powershell/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>PowerShell</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-29">2023-10-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;704 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/featured-image.png"
+        data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/featured-image.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/featured-image.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/featured-image.png"
+        title="The most essential PowerShell Commands" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#unveiling-object-properties-and-methods-with-get-member">Unveiling Object Properties and Methods with Get-Member</a>
+      <ul>
+        <li><a href="#get-member-example">Get-Member Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#tailoring-object-output-with-select-object">Tailoring Object Output with Select-Object</a>
+      <ul>
+        <li><a href="#select-object-example">Select-Object Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-full-namespace-of-a-data-type-with-datatypefullname">The Full Name(space) of a Data Type with [DataType].FullName</a>
+      <ul>
+        <li><a href="#datatypefullname-example">[DataType].FullName Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.</p>
+<h2 id="unveiling-object-properties-and-methods-with-get-member">Unveiling Object Properties and Methods with Get-Member</h2>
+<p>The official documentation states: <em>The Get-Member cmdlet gets the members, the properties and methods, of objects.</em> Making it the Swiss army knife for exploring
+the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.</p>
+<p>Why you need to know <code>Get-Member</code>:</p>
+<ol>
+<li>Object Exploration -&gt; When working with PowerShell objects it&rsquo;s crucial to understand the object you are dealing with. <code>Get-Member</code> helps to uncover the object&rsquo;s properties, methods, and other characteristics.</li>
+<li>Discover Object Type -&gt; <code>Get-Member</code> can be used to determine the type of an object. This is especially useful when working with pipelines, as different cmdlets return objects of varying types.</li>
+</ol>
+<h3 id="get-member-example">Get-Member Example</h3>
+<p>In this example the <code>Get-MgUser</code> cmdlet is used to retrieve a user from the Microsoft Graph. Note the result:</p>
+<figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png" data-sub-html="<h2>Get-MgUser cmdlet returns the bare minimal properties</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-01.png" width="982" height="103" />
+    </a><figcaption class="image-caption"><code>Get-MgUser</code> cmdlet returns the bare minimal properties</figcaption>
+    </figure>
+<p>Now note the <code>Get-Member</code> output:
+<figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png" data-sub-html="<h2>By pipeing the command to Get-Member all properties, methods, and other characteristics are now visible and explorable</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/get-member-02.png" width="1132" height="1098" />
+    </a><figcaption class="image-caption">By pipeing the command to <code>Get-Member</code> all properties, methods, and other characteristics are now visible and explorable</figcaption>
+    </figure></p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Easily overlooked, but as mentioned the <code>Get-Member</code> cmdlet also returns the objects <strong>TypeName</strong>.</div>
+        </div>
+    </div>
+<h2 id="tailoring-object-output-with-select-object">Tailoring Object Output with Select-Object</h2>
+<p>The official documentation states: <em>Selects objects or object properties.</em> The cherry picker for displaying and formatting specific properties of an objects. Making it an invaluable for formatting and refining data.</p>
+<p>This is a versatile command that enables customization of the properties of an object&rsquo;s output.</p>
+<p>Why you need to know <code>Select-Object</code>:</p>
+<ol>
+<li>Data Shaping -&gt; Tailoring object output to specific needs by including, excluding ordering and filtering properties. This is crucial for creating neat and organized objects.</li>
+<li>Efficient Scripting -&gt; When working with complex objects, displaying all available properties with <code>Select-Object -Property *</code> helps by making output transparent and easier to work with.</li>
+</ol>
+<h3 id="select-object-example">Select-Object Example</h3>
+<p>The example is a continuation of the previous one. First all properties are listed. Then a selection is made of the preferred properties. Finally the selected properties for the last 3 objects are returned.</p>
+<p><figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png" data-sub-html="<h2>Listing all properties using the -Property * command</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-01.png" width="1067" height="659" />
+    </a><figcaption class="image-caption">Listing all properties using the <code>-Property *</code> command</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png" data-sub-html="<h2>Selecting specific properties</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-02.png" width="1687" height="180" />
+    </a><figcaption class="image-caption">Selecting specific properties</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png" data-sub-html="<h2>Returning the selected properties from the last 3 objects</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/select-object-03.png" width="1409" height="484" />
+    </a><figcaption class="image-caption">Returning the selected properties from the last 3 objects</figcaption>
+    </figure></p>
+<h2 id="the-full-namespace-of-a-data-type-with-datatypefullname">The Full Name(space) of a Data Type with [DataType].FullName</h2>
+<p>Outside of folder and file paths this method is a less known one and requires a bit more explanation. PowerShell uses a concept called <code>Type Accelerators</code> to make it easier to work with .NET types. A <code>Type Accelerator</code> is a shortcut for a .NET type. For example <code>[int]</code> is a shortcut for the .NET type <code>System.Int32</code>. While the intent of the type accelerators is to shorten the names of .NET types there are reasons to use the full name of a type. Such is the case when using the <code>New-Object</code> cmdlet to create an instance of a .NET type which can be retrieved by using the <code>[DataType].FullName</code> method.
+Another consideration for using the full name comes from the best practice to avoid aliases (PSAvoidUsingCmdletAliases), since the type accelerators are aliases for .NET types some PowerShell devs (like myself) prefer using the .NET types.</p>
+<h3 id="datatypefullname-example">[DataType].FullName Example</h3>
+<p>To get a list of all available type accelerators use the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">[</span><span class="no">PSObject</span><span class="p">].</span><span class="py">Assembly</span><span class="p">.</span><span class="py">GetType</span><span class="p">(</span><span class="s2">&#34;System.Management.Automation.TypeAccelerators&#34;</span><span class="p">)::</span><span class="n">Get</span>
+</span></span></code></pre></div><p><figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png" data-sub-html="<h2>List of all Type Accelerators</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-01.png" width="848" height="713" />
+    </a><figcaption class="image-caption">List of all Type Accelerators</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png" title="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png" data-thumbnail="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png" data-sub-html="<h2>Example of the most common Type Accelerators full names</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png"
+            data-srcset="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png 1.5x, /posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png 2x"
+            data-sizes="auto"
+            alt="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/full-name-02.png" width="666" height="212" />
+    </a><figcaption class="image-caption">Example of the most common Type Accelerators full names</figcaption>
+    </figure></p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>That&rsquo;s all folks! I hope you found the <code>Get-Member</code>, <code>Select-Object</code> and the DataType Accelerators <code>.FullName</code> commands as useful and need to know as I do. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<p>Get-Member</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7.3" target="_blank" rel="noopener noreffer">learn.microsoft.com - Get-Member</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=SQwY4f1a1VM" target="_blank" rel="noopener noreffer">YouTube video by David Dalton - Exploring PowerShell objects with Get-Member</a>
+</li>
+<li><a href="https://techcommunity.microsoft.com/t5/itops-talk-blog/powershell-basics-getting-more-information-with-get-member/ba-p/285407" target="_blank" rel="noopener noreffer">PowerShell Basics: Getting More Information with Get-Member</a>
+</li>
+</ul>
+<p>Select-Object</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-object?view=powershell-7.3" target="_blank" rel="noopener noreffer">learn.microsoft.com - Select-Object</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=W5usXA2vcqs" target="_blank" rel="noopener noreffer">YouTube video by David Dalton - Choosing properties with Select-Object</a>
+</li>
+<li><a href="https://lazyadmin.nl/powershell/select-object/" target="_blank" rel="noopener noreffer">Rudy Mens - How to use PowerShell Select-Object</a>
+</li>
+</ul>
+<p>[DataType].FullName</p>
+<ul>
+<li><a href="https://adamtheautomator.com/powershell-data-types/" target="_blank" rel="noopener noreffer">PowerShell Data Types &amp; Type Accelerators: A Tutorial</a>
+</li>
+<li><a href="https://poshcode.gitbook.io/powershell-practice-and-style/style-guide/code-layout-and-formatting" target="_blank" rel="noopener noreffer">PowerShell practice and style</a>
+</li>
+<li><a href="https://devblogs.microsoft.com/scripting/simplify-your-script-by-creating-powershell-type-accelerators/" target="_blank" rel="noopener noreffer">Simplify Your Script by Creating PowerShell Type Accelerators</a>
+</li>
+<li><a href="https://4sysops.com/archives/using-powershell-type-accelerators/#:~:text=PowerShell%20type%20accelerators%20are%20just,new%20objects%20of%20the%20class." target="_blank" rel="noopener noreffer">Using PowerShell type accelerators</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-10-29</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/need-to-know/">Need to know</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/get-member/">Get-Member</a>,&nbsp;<a href="/tags/select-object/">Select-Object</a>,&nbsp;<a href="/tags/type-accelerators/">Type Accelerators</a>,&nbsp;<a href="/tags/.fullname/">.FullName</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/" class="prev" rel="prev" title="Chaos to Order: Structuring IaC repository Like a Boss! 👑"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Chaos to Order: Structuring IaC repository Like a Boss! 👑</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

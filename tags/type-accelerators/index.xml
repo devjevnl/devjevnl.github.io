@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Type Accelerators - Tag - </title>
+        <link>https://www.devjev.nl/tags/type-accelerators/</link>
+        <description>Type Accelerators - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/type-accelerators/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
+    <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
+    <description><![CDATA[Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.
+Unveiling Object Properties and Methods with Get-Member The official documentation states: The Get-Member cmdlet gets the members, the properties and methods, of objects. Making it the Swiss army knife for exploring the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.]]></description>
+</item>
+</channel>
+</rss>

@@ -3,7 +3,16 @@
         <title>PowerShell - Category - </title>
         <link>https://www.devjev.nl/categories/powershell/</link>
         <description>PowerShell - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/powershell/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/powershell/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
+    <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
+    <description><![CDATA[Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.
+Unveiling Object Properties and Methods with Get-Member The official documentation states: The Get-Member cmdlet gets the members, the properties and methods, of objects. Making it the Swiss army knife for exploring the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.]]></description>
+</item>
+<item>
     <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
     <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
     <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>

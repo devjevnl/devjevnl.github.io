@@ -3,7 +3,55 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>.FullName</title>
+    <link>https://www.devjev.nl/tags/.fullname/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/.fullname/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Get-Member</title>
+    <link>https://www.devjev.nl/tags/get-member/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/get-member/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Need to know</title>
+    <link>https://www.devjev.nl/tags/need-to-know/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/need-to-know/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>PowerShell</title>
+    <link>https://www.devjev.nl/tags/powershell/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/powershell/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Select-Object</title>
+    <link>https://www.devjev.nl/tags/select-object/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/select-object/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Type Accelerators</title>
+    <link>https://www.devjev.nl/tags/type-accelerators/</link>
+    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/type-accelerators/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>ARM</title>
     <link>https://www.devjev.nl/tags/arm/</link>
     <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
@@ -33,54 +81,6 @@
     <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/git-repository/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>IaC</title>
-    <link>https://www.devjev.nl/tags/iac/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/iac/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Infrastructure as Code</title>
-    <link>https://www.devjev.nl/tags/infrastructure-as-code/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/infrastructure-as-code/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>PowerShell</title>
-    <link>https://www.devjev.nl/tags/powershell/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/powershell/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Starter Kit</title>
-    <link>https://www.devjev.nl/tags/starter-kit/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/starter-kit/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Template</title>
-    <link>https://www.devjev.nl/tags/template/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/template/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Terraform</title>
-    <link>https://www.devjev.nl/tags/terraform/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/terraform/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
