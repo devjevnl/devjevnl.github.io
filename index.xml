@@ -3,9 +3,18 @@
         <title></title>
         <link>https://www.devjev.nl/</link>
         <description>Jev Suchoi&#39;s personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&#39;s the Best of Both Worlds! 🌐🛠️</title>
+    <link>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</link>
+    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</guid>
+    <description><![CDATA[Did you know that you can run your Azure DevOps jobs in a container? This is a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. First a recap of Microsoft Hosted Agents and Self-Hosted Agents.
+What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft.]]></description>
+</item>
+<item>
     <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
     <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
     <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
@@ -82,15 +91,6 @@ Since it much more fun to do research and play with technology in collaboration 
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
     <description><![CDATA[This is the 4th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps . In this post the I will demonstrate how to create an Azure Service Connection in an Azure DevOps Project.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
-</item>
-<item>
-    <title>How to create a new Project in Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
-    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</guid>
-    <description><![CDATA[This is the 2nd post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to create a new Project in Azure DevOps.
 Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 </channel>
