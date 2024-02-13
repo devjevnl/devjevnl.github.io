@@ -7,13 +7,14 @@
         <title>Don&#39;t spill the beans - keep your secrets secure 🤫 - </title><meta name="Description" content="Don&#39;t spill the beans - keep your secrets secure"><meta property="og:title" content="Don&#39;t spill the beans - keep your secrets secure 🤫" />
 <meta property="og:description" content="Don&#39;t spill the beans - keep your secrets secure" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-06-26T05:00:00+02:00" />
 <meta property="article:modified_time" content="2023-06-26T05:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"/>
-<meta name="twitter:title" content="Don&#39;t spill the beans - keep your secrets secure 🤫"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png" /><meta name="twitter:title" content="Don&#39;t spill the beans - keep your secrets secure 🤫"/>
 <meta name="twitter:description" content="Don&#39;t spill the beans - keep your secrets secure"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -177,7 +178,7 @@ By default the store requires a password for unlocking it, this is done to provi
 <li>Microsoft.PowerShell.SecretManagement</li>
 </ul>
 <p>For this I used a simple ForEach loop which checks if the modules are already installed both are loaded if not both are installed and then loaded. The snippet I use is as follows:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=set-up-your-secure-store.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=set-up-your-secure-store.ps1"></script>
 
 <h2 id="register-a-new-vault">Register a new vault</h2>
 <p>To register a new vault a <code>SecureString</code> password is required. This password is exported into an XML file and encrypted by Windows Data Protection (DPAPI) using the <code>Export-Clixml</code> command. Next a new vault is created using the <code>Register-SecretVault</code> command. To complete the registration of the vault the just created password is used to secure it and the following configurations values are also set.</p>
@@ -189,7 +190,7 @@ By default the store requires a password for unlocking it, this is done to provi
 <li>Confirm &lt;- Prompts you for confirmation before running the cmdlet. I set it to $false since I intend to execute it via an automation script.</li>
 </ul>
 <p>I combine the above settings into a function based on the following snippet:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=register-a-new-vault.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=register-a-new-vault.ps1"></script>
 
 <h2 id="use-the-new-vault">Use the new vault</h2>
 <p>The first step to start using the newly created vault is to make sure it&rsquo;s unlocked. For this the password used during the creation must be provided using the <code>Unlock-SecretStore</code> command. With the vault unlocked the <code>Set-Secret</code> and <code>Get-Secret</code> can be used to store and retrieve secrets.</p>
@@ -206,19 +207,19 @@ By default the store requires a password for unlocking it, this is done to provi
 <p>Check-out the next examples as these contain the snippets I used at one time or another for development and debugging.</p>
 <h3 id="unlock-the-vault">Unlock the vault</h3>
 <p>Simply use <code>Unlock-SecretStore</code> command, but make sure to provide path to your secure store password xml file.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-unlock-vault.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-unlock-vault.ps1"></script>
 
 <h3 id="add-secrets-to-the-vault">Add secrets to the vault</h3>
 <p>Use the <code>Set-Secret</code> command to add secrets to the vault.
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-set-secret.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-set-secret.ps1"></script>
 </p>
 <h3 id="connect-azaccount-with-vault-secrets">Connect-AzAccount with vault secrets</h3>
 <p>Get the app id, app secret and the tenant id secrets and pass these into the Connect-AzAccount. The app secret does not need to be read as plain text and should be passed as <code>System.Security.SecureString</code> directly.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-az-connect.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-az-connect.ps1"></script>
 
 <h3 id="azure-devops-api-with-vault-secrets">Azure DevOps API with vault secrets</h3>
 <p>Get the PAT token from the vault, craft a authentication header using the token and simply execute <code>Invoke-RestMethod</code>.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-ado-connect.ps1"></script>
+<script src="https://gist.github.com/devjevnl/24640123dfe48636887b70786fb16916.js?file=use-the-new-vault-ado-connect.ps1"></script>
 
 <h2 id="wrapping-up">Wrapping up</h2>
 <p>I hope you enjoyed this post and now have a better understanding of the possibilities to manage secrets locally during debugging. If you are interested in the reference material used to make this post, please visit the following links. As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>

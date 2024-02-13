@@ -7,13 +7,14 @@
         <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤 - </title><meta name="Description" content="Sleep Worry-Free: The best tips for Local Secrets Management"><meta property="og:title" content="Sleep Worry-Free: The best tips for Local Secrets Management 💤" />
 <meta property="og:description" content="Sleep Worry-Free: The best tips for Local Secrets Management" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" /><meta property="og:image" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-06-19T02:00:00+02:00" />
 <meta property="article:modified_time" content="2023-06-19T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png"/>
-<meta name="twitter:title" content="Sleep Worry-Free: The best tips for Local Secrets Management 💤"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png" /><meta name="twitter:title" content="Sleep Worry-Free: The best tips for Local Secrets Management 💤"/>
 <meta name="twitter:description" content="Sleep Worry-Free: The best tips for Local Secrets Management"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -136,7 +137,7 @@
             </div><div class="content" id="content"><p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
 <h2 id="use-case">Use Case</h2>
 <p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=Example-Snippet"></script>
+<script src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=Example-Snippet"></script>
 
 <p>In this example the secret is part of a temporary or a one time use script created to establish a connection with Azure. Which is needed to for example carry out a deployment. What happens after such a script is used is where the risks lie. More often then not the secrets are left part of the script with the intent to remove them later on, however due to various reasons like time pressure this never happens and in some cases another debug snippet is added to the same or a new file with in some cases new set of secrets.</p>
 <p>Secrets used in such way have become un-managed and pose a potential security security risk. Take the following scenario&rsquo;s as examples of how this can cause the secrets to be leaked.</p>
@@ -156,12 +157,12 @@
             <div class="admonition-content">This example show only a relevant subset of the whole repository folder structure.</div>
         </div>
     </div>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=folder-structure.html"></script>
+<script src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=folder-structure.html"></script>
 
 <p>The <code>tools</code> and <code>references</code> folders contain any tools and any reference material used by the code in the rest of the repo. The <code>personalScripts</code> folder is the folder that is used by the team and me for any temporary and one time use script. Such as snippets to connect to Azure, Azure DevOps or as a simplified controller to call external functions during debugging.<br>
 I always start by adding this folder <code>.gitignore</code> to ensure no accidental check-in&rsquo;s which result in secret leaking. The <code>readme.md</code> in this folder is excluded from <code>.gitignore</code> and is part of source controlled files. It contains a description of how to use this set-up.</p>
 <p>This is the <code>.gitignore</code> snippet for such a set-up:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=.gitignore"></script>
+<script src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=.gitignore"></script>
 
 <h3 id="jevsprivateconfigjson">jevs.private.config.json</h3>
 <p>This is the file I use to store all relevant credentials, secrets and other type of GUID and id&rsquo;s which are relevant for the task at hand. I use json as it is really easy to work with when combining it with PowerShell. Putting all the sensitive information which is required for my task in a single file and combining it with <code>.gitignore</code> guardrails allows me have <code>Managed Secrets</code>.</p>
@@ -173,11 +174,11 @@ I always start by adding this folder <code>.gitignore</code> to ensure no accide
             <div class="admonition-content">All files containing <code>.private.config.</code> are omitted from source control explicitly.</div>
         </div>
     </div>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=jevs.private.config.json"></script>
+<script src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=jevs.private.config.json"></script>
 
 <h3 id="jevs-playgroundps1">Jevs-Playground.ps1</h3>
 <p>This is my throw away / one time use PowerShell script which a I modify to fit my task at hand. It contains a header region which is relatively static as this region loads the values from the just mentioned <code>jevs.private.config.json.</code>.  The script can be seen next.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=Jevs-Playground.ps1"></script>
+<script src="https://gist.github.com/devjevnl/980670f9d9eea93455d4382fae00fe55.js?file=Jevs-Playground.ps1"></script>
 
 <h2 id="wrapping-up">Wrapping up</h2>
 <p>And there you have it, the best tips I can share from my own experience about managing secrets in a local (dev) environment. As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>

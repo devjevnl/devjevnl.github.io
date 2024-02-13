@@ -7,13 +7,14 @@
         <title>Set by step guide for a free and easy way to set up a low maintenance blog - </title><meta name="Description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages"><meta property="og:title" content="Set by step guide for a free and easy way to set up a low maintenance blog" />
 <meta property="og:description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/" /><meta property="og:image" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/" /><meta property="og:image" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/featured-image.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-09-10T18:42:15+02:00" />
 <meta property="article:modified_time" content="2020-09-10T18:42:15+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/featured-image.png"/>
-<meta name="twitter:title" content="Set by step guide for a free and easy way to set up a low maintenance blog"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/featured-image.png" /><meta name="twitter:title" content="Set by step guide for a free and easy way to set up a low maintenance blog"/>
 <meta name="twitter:description" content="A simple approach to automating a completely free an low maintenance blog using Azure DevOps, Hugo &amp; GitHub Pages"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -279,24 +280,24 @@
     </a><figcaption class="image-caption">Command result hugo h</figcaption>
     </figure>
 <p>With everything in place it should be possible to create a Hugo blog site. Open up VS Code again and make sure you have the Terminal visible. You should be in the root folder of your repo. Navigate one folder down by typing the following in the Terminal:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=cd.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=cd.txt"></script>
 
 <p>Type the command as show below. It will create a sub-folder under <code>\src\</code> named <code>devjev_blog</code> with a generated Hugo site inside it. Make sure to replace devjev_blog with a title to your liking.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-new-site.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-new-site.txt"></script>
 
 <p>I don&rsquo;t want to go into great detail about how to fully configure and utilize Hugo as this is done extensively within the installation manual of Hugo. However to showcase the potential of this solution. I want to quickly run trough some basic configuration and a &ldquo;Hello World&rdquo; blog post.</p>
 <p>So lets continue the set-up by adding a theme and creating the blog-post placeholder. This is done by executing the following commands</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-new-theme-new-post.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-new-theme-new-post.txt"></script>
 
 <p>Enable the theme editing the config.toml file and adding the following line as a ne line to the file.</p>
 <p><strong>NOTE:</strong> It should also be possible with command line command: echo &rsquo;theme = &ldquo;ananke&rdquo;&rsquo; &raquo; config.toml. But for me this results in a malformed .toml file. So I had to fix it manually.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-set-new-theme.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-set-new-theme.txt"></script>
 
 <p>Open the hello-world.md file and add some text to it. My example is as follows:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-configure-post.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-configure-post.txt"></script>
 
 <p>Test the Hugo config by the following command and opening the local URL Hugo generated for you. In my case:  http://localhost:1313/.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-serve.txt"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=hugo-serve.txt"></script>
 
 <p>Hugo basic config has been completed. Now lets move on to the more interesting parts. You can play around with styles and additional config later ;-)</p>
 <h3 id="azure-devops---yaml-pipeline">Azure DevOps - Yaml pipeline</h3>
@@ -306,13 +307,13 @@
 The details about yaml pipelines in Azure DevOps can be found <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&amp;tabs=schema%2Cparameter-schema" target="_blank" rel="noopener noreffer">here</a>
 . In this chapter I will cover the specific pipeline features required for the Hugo engine to automatically build and publish the content.</p>
 <p>Lets start by creating a trigger, since the default branching config has remained as it is the trigger should include the <code>master</code> branch. The trigger looks like this:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-trigger.yml"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-trigger.yml"></script>
 
 <p>Next, the stages of the pipeline should be defined. In this case two stages, one for running Hugo engine which generates the static content and a second one to publish the content to the GitHub pages repo. Make sure to leave an empty line after the trigger and prior to adding the two stages as shown below.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-stages.yml"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-stages.yml"></script>
 
 <p>Now let&rsquo;s add a job to the <code>GenerateBlogContent</code> stage. Within the job an image to execute the job must be specified, in this case the <code>windows-latest</code>. The job looks like following:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-job.yml"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-job.yml"></script>
 
 <p>Next let&rsquo;s populate the job. Each job consist out of steps. In this case this job consist from three steps, namely;</p>
 <ul>
@@ -329,7 +330,7 @@ The details about yaml pipelines in Azure DevOps can be found <a href="https://d
 <h4 id="publish-artifact">Publish Artifact</h4>
 <p>This step is a simple publish step used to publish the output from step two as an artifact. In the example below I called the artifact <code>hugo-blog-content</code> but you can call it anything you like. Just make sure when referencing the Artifact you use this exact name.</p>
 <p>The populated job looks like following:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-publish-artifact.yml"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-publish-artifact.yml"></script>
 
 <p>Next lets construct the Publish Hugo Content stage. As shown in the example below this stage is a bit different from the generate stage. It has variables defined and is configured to depend on the generate stage. Let&rsquo;s break it down.<br>
 Because this is the stage where content gets published to GitHub Pages the credentials for GitHub must be stored somewhere, to do so safely I am using a <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml" target="_blank" rel="noopener noreffer">variables group</a>
@@ -379,7 +380,7 @@ The variables are as follows:</p>
 <li>commitmessage: The message you want associated with the commit - this defaults to &ldquo;Automated Release $(Release.ReleaseId)&rdquo;</li>
 </ul>
 <p>When everything is put together the complete pipeline should look like this:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-publish-content.yml"></script>
+<script src="https://gist.github.com/devjevnl/a12afb5e3a48a2caf38a07824e7bad06.js?file=yaml-pipeline-publish-content.yml"></script>
 
 <p>That&rsquo;s it, the pipeline code is done. Don&rsquo;t forget to commit and push the additions. The next and final step for the pipeline creation process would be to implement the pipeline in Azure DevOps.</p>
 <h4 id="add-yaml-file-as-pipeline-in-azure-devops">Add YAML file as pipeline in Azure DevOps</h4>

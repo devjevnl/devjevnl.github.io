@@ -7,13 +7,14 @@
         <title>Hacking Azure DevOps - </title><meta name="Description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"><meta property="og:title" content="Hacking Azure DevOps" />
 <meta property="og:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/" /><meta property="og:image" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/" /><meta property="og:image" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/featured-image.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-19T12:00:00+02:00" />
 <meta property="article:modified_time" content="2021-05-19T12:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/featured-image.jpg"/>
-<meta name="twitter:title" content="Hacking Azure DevOps"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/featured-image.jpg" /><meta name="twitter:title" content="Hacking Azure DevOps"/>
 <meta name="twitter:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -261,20 +262,20 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <p>To explain how this is possible I am going to use an yaml pipeline that will execute a set of PowerShell scripts which will make calls to the Azure DevOps rest API using the pipeline identity.</p>
 <h3 id="authentication-header">Authentication header</h3>
 <p>First lets start by creating an authentication header using this pipeline identity. Azure DevOps pipelines have a set of predefined variables available for use during run-time, these contain all kinds of handy information. One of these is the <code>$(System.AccessToken)</code> or when using PowerShell <code>$($env:SYSTEM_ACCESSTOKEN)</code>. This variable contains the mentioned pipeline identity token. So using this token it is possible to craft an authentication header which will contain the security context of the pipeline identity token. In PowerShell this will look something like shown in the following snippet.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=authenticate-header-for-ado-api.ps1"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=authenticate-header-for-ado-api.ps1"></script>
 
 <h3 id="list-all-azure-devops-projects">List all Azure DevOps projects</h3>
 <p>The first step is to list all Azure DevOps projects within the DemoJev Organization. For this I used the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-6.1" target="_blank" rel="noopener noreffer">Projects - List API</a>
 . See following snippet.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.ps1"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.ps1"></script>
 
 <h4 id="putting-the-projects-api-call-to-practice">Putting the projects API call to practice</h4>
 <p>To call the API I have incorporated the authentication header into the API call by simply passing as <code>-Headers $httHeaders</code>. I am not going into details about the yaml pipeline as it should be pretty straight forward. However it is important to note the last two lines of this snippet. These two lines allow for the pipeline identity token to be passed to the task in question. Without this addition the token wont be accessible within the task.</p>
 <p>Making the system token available to a Azure DevOps task.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=system-access-token.yml"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=system-access-token.yml"></script>
 
 <p>The API call in practice</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.yml"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.yml"></script>
 
 <p>When executed, the pipeline should displaying all Azure DevOps Projects and their ID&rsquo;s. As shown in the following image.</p>
 <figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" title="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-sub-html="<h2>Hack listing ado projects</h2>">
@@ -290,11 +291,11 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <h3 id="get-all-git-repos">Get all Git repo&rsquo;s</h3>
 <p>Now that all the project information is available, it is possible to dig a little deeper and retrieve git repositories from one or even from all of the retrieved projects. To keep the showcase simple the following snippet gets the repos of a single project, namely; MyHealthClinic. First I call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get?view=azure-devops-rest-4.1&amp;viewFallbackFrom=azure-devops-rest-6.0" target="_blank" rel="noopener noreffer">Repositories - Get</a>
  API to get metadata about all the repositories present within this project. Then it is just a matter of iterating trough the response and executing a <code>git clone</code> command fo each repo. Most interesting part here was composing the <code>@gitUrl</code> variable value. As it is needed for input when calling the <code>git clone</code> command. To achieve this I was able to reuse the <code>$(System.AccessToken)</code> as a credentials object when using the &lsquo;git clone&rsquo; command.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.ps1"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.ps1"></script>
 
 <h4 id="putting-the-git-api-call-to-practice">Putting the Git API call to practice</h4>
 <p>When everything is put together, the pipeline is as show in the following snippet.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.yml"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.yml"></script>
 
 <p>When executed, the pipeline should result in all the present Git repositories within the project cloned to the working directory specified by the <code>$reposDir</code> variable. Check the following image for the result.</p>
 <figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" title="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-sub-html="<h2>Hack get all git repos</h2>">
@@ -310,11 +311,11 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <h3 id="get-all-variable-values">Get all variable values</h3>
 <p>With the project information still available it is also possible to get additional data for each of the projects. Personally next to actually cloning the repositories I found that the possibility to actually get variable data the most <em>&lsquo;interesting&rsquo;</em> find. So first a call to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-6.1" target="_blank" rel="noopener noreffer">Variablegroups - Get Variable Groups</a>
  API. This API expects a groupName (documentation states it does not, but it does!) so to get all the groups I simply tried: <code>groupName=*</code>. It actually worked!</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.ps1"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.ps1"></script>
 
 <h4 id="putting-the-variable-groups-api-call-to-practice">Putting the variable groups API call to practice</h4>
 <p>When everything is put together, the pipeline is as show in the following snippet.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.yml"></script>
+<script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.yml"></script>
 
 <p>When executed, the pipeline should return the variables as a json object. It appears that the variables returned including the actual values as long as they are not marked as secrets. For variables which are marked as secrets the value is set to <code>null</code>. Check the following image.</p>
 <figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" title="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-sub-html="<h2>Result of get variables API</h2>">

@@ -7,13 +7,14 @@
         <title>Your service connection credentials are mine - </title><meta name="Description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline"><meta property="og:title" content="Your service connection credentials are mine" />
 <meta property="og:description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-12T21:00:00+01:00" />
 <meta property="article:modified_time" content="2022-03-12T21:00:00+01:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg"/>
-<meta name="twitter:title" content="Your service connection credentials are mine"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/featured-image.jpg" /><meta name="twitter:title" content="Your service connection credentials are mine"/>
 <meta name="twitter:description" content="A demonstration of service connection credentials exfiltration through an Azure DevOps pipeline"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -252,7 +253,7 @@ The clue lies within the warning that is given when using the <code>Connect-AzAc
         </div>
     </div>
 <p>It tells us that when logging in using an App registration with a secret this secret is stored inside a file on the system. This file can be retrieved and parsed. The following script does exactly that.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-1.ps1"></script>
+<script src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-1.ps1"></script>
 
 <p>Take a closer look at the file we just retrieved, you will notice that each context is stored under its own name. We can get the name of our current context by simply using <code>\$contextName = \$(Get-AzContext).Name</code> command. With the context name sorted its simply down to sifting through the json properties. And the ones we where interested in are as follows.</p>
 <ul>
@@ -261,7 +262,7 @@ The clue lies within the warning that is given when using the <code>Connect-AzAc
 <li>The tenant Id is retrieved by <code>\$azureRmContextJson.Contexts.$contextName.Tenant.Id</code></li>
 </ul>
 <p>The full script combined with the yaml task is as follows.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-2.ps1"></script>
+<script src="https://gist.github.com/devjevnl/d7d48e8989a6438b60bd6759aac24fa6.js?file=snippet-2.ps1"></script>
 
 <p>When the above task is executed in a pipeline the pipeline output will contain the Base64 encoded strings for each of the variable values. As show in the following clipping.</p>
 <figure><a class="lightgallery" href="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" title="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" data-thumbnail="/posts/2022/your-service-connection-credentials-are-mine/9-pipeline-result.svg" data-sub-html="<h2>Pipeline result</h2>">

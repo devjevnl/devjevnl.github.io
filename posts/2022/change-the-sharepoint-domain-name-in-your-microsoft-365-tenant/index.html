@@ -7,13 +7,14 @@
         <title>Change the SharePoint domain name in your Microsoft 365 Tenant - </title><meta name="Description" content="How to rename your SharePoint Online url"><meta property="og:title" content="Change the SharePoint domain name in your Microsoft 365 Tenant" />
 <meta property="og:description" content="How to rename your SharePoint Online url" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/featured-image.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-30T22:42:00+02:00" />
 <meta property="article:modified_time" content="2022-03-30T22:42:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/featured-image.jpg"/>
-<meta name="twitter:title" content="Change the SharePoint domain name in your Microsoft 365 Tenant"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/featured-image.jpg" /><meta name="twitter:title" content="Change the SharePoint domain name in your Microsoft 365 Tenant"/>
 <meta name="twitter:description" content="How to rename your SharePoint Online url"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -212,7 +213,7 @@ Having said that, lets go!</p>
 <ol start="6">
 <li>Open a PowerShell 5.1 window and connect using the newly downloaded and installed SharePoint Management Shell by using the <code>Connect-SPOService</code> command using your current SharePoint domain. Depicted from my own rename in the following PowerShell snippet.</li>
 </ol>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/b95d3bf53dc8e6cf539caf9c975d95e6.js?file=connect-sposervice.ps1"></script>
+<script src="https://gist.github.com/devjevnl/b95d3bf53dc8e6cf539caf9c975d95e6.js?file=connect-sposervice.ps1"></script>
 
 <ol start="7">
 <li>A log-in prompt will be shown, use a <em>Global Administrator</em> account to complete this log-in. As again shown in the following image.</li>
@@ -230,7 +231,7 @@ Having said that, lets go!</p>
 <ol start="8">
 <li>The last remaining step is to queue the rename. Since the rename must take place at least 24h in the future I decided to add a timespan of 24 hours and 10 minutes to the current date &amp; time. The combined commands are shown in the following PowerShell snippet.</li>
 </ol>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/b95d3bf53dc8e6cf539caf9c975d95e6.js?file=check-rename-status.ps1"></script>
+<script src="https://gist.github.com/devjevnl/b95d3bf53dc8e6cf539caf9c975d95e6.js?file=check-rename-status.ps1"></script>
 
 <p>Example of the script outputs:
 <figure><a class="lightgallery" href="/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/img-7.jpg" title="/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/img-7.jpg" data-thumbnail="/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/img-7.jpg" data-sub-html="<h2>Check rename status script output</h2>">

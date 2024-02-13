@@ -7,13 +7,14 @@
         <title>Git gud with branch naming - </title><meta name="Description" content="A Git branch naming convention"><meta property="og:title" content="Git gud with branch naming" />
 <meta property="og:description" content="A Git branch naming convention" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/feature-branch-names-example.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/feature-branch-names-example.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-06-29T16:42:15+02:00" />
 <meta property="article:modified_time" content="2022-06-29T16:42:15+02:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/feature-branch-names-example.png"/>
-<meta name="twitter:title" content="Git gud with branch naming"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/feature-branch-names-example.png" /><meta name="twitter:title" content="Git gud with branch naming"/>
 <meta name="twitter:description" content="A Git branch naming convention"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -146,8 +147,7 @@
 </li>
 <li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
 </li>
-</ul>
-</div>
+</ul></div>
         </div>
     </div>
 <p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
@@ -178,19 +178,19 @@ Let&rsquo;s apply this on the above mentioned branches.</p>
 <h2 id="hotfix-branch">Hotfix branch</h2>
 <p>Hotfix branches are always prefixed by &lsquo;hotfix&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the hotfix identifier. The hotfix identifier should <strong>always</strong> correspond to a backlog item number of the bug or hotfix in question. If the team prefers a more descriptive approach the name of the hotfix can be used as a suffix. However I am against just using the name without any identifier as teh name of a backlog item can be subjected to change</p>
 <p>An example:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=hotfix-branch.txt"></script>
+<script src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=hotfix-branch.txt"></script>
 
 <h2 id="feature-branch">Feature branch</h2>
 <p>Feature branches are always prefixed by &lsquo;feature&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the feature identifier. Similar to the hotfix branch the feature identifier should <strong>always</strong> correspond to a backlog item number. And based on the teams preference a descriptive suffix can be added.</p>
 <p>An example:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=feature-branch.txt"></script>
+<script src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=feature-branch.txt"></script>
 
 <p><strong>Note:</strong> <code>The backlog item does not have to be of type feature as it is not a direct correlation to a backlog item of the type feature but a reference to a functionality feature. So it can be of any type e.g. task, user story or even a subtask.</code></p>
 <h2 id="release-branch">Release branch</h2>
 <p>Release branches are always prefixed by &lsquo;release&rsquo; followed  by a forward slash &lsquo;/&rsquo; and finally the release version number. As a fan of the <a href="https://semver.org/" target="_blank" rel="noopener noreffer">semantic versioning approach</a>
  I like to use it when requirements and constraints allow for it.</p>
 <p>An example:</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=release-branch.txt"></script>
+<script src="https://gist.github.com/devjevnl/50dc47e75c31e6c1988958e8c434e93b.js?file=release-branch.txt"></script>
 
 <h2 id="wrapping-up">Wrapping up</h2>
 <p>And that is all I have to share on this topic.

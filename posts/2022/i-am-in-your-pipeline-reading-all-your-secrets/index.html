@@ -7,13 +7,14 @@
         <title>I am in your pipeline reading all your secrets! - </title><meta name="Description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important"><meta property="og:title" content="I am in your pipeline reading all your secrets!" />
 <meta property="og:description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><meta property="og:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-30T08:00:00+01:00" />
 <meta property="article:modified_time" content="2022-01-30T08:00:00+01:00" /><meta property="og:site_name" content="DevJev.NL" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg"/>
-<meta name="twitter:title" content="I am in your pipeline reading all your secrets!"/>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg" /><meta name="twitter:title" content="I am in your pipeline reading all your secrets!"/>
 <meta name="twitter:description" content="Demo of how a pipeline can be abused to exfiltrate secrets from variables and why variable groups and pipeline security is important"/>
+<meta name="twitter:site" content="@DevJevNL"/>
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -226,7 +227,7 @@
     </a><figcaption class="image-caption">Variable groups permission</figcaption>
     </figure>
 <p>So from a <em>project contributor</em> perspective prior to be able to read any variables we need to first find out which groups with which variables are present within the project. This can be done by calling the Azure DevOps API from within a pipeline as within the pipeline we can use the <code>SYSTEM_ACCESSTOKEN</code> of the project or even the project collection Build Service. This service is used during pipeline runtime so by default it has quite a large number of permissions. The script to get what we need looks als following.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=variable-group-secrets.ps1"></script>
+<script src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=variable-group-secrets.ps1"></script>
 
 <p>Result of this script looks as follows.</p>
 <figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/all_variable_groups.svg" data-sub-html="<h2>All variable group secrets</h2>">
@@ -252,10 +253,10 @@
 <p>To retrieve the marked as secret (&ldquo;isSecret&rdquo;: true) values we must make sure that the variable groups are referenced inside the pipeline. Then its simply just converting the values to Base64 encoded strings to bypass the pipeline output GUI and doing a write-output on each of them. It would of course also be possible to send the values to other places like an API or a storage account directly from the pipeline.</p>
 <p>First add both variable groups to the pipeline in question</p>
 <p>Then add the following two lines for each variable into an in-line PowerShell pipeline task.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=convert-to-base64.ps1"></script>
+<script src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=convert-to-base64.ps1"></script>
 
 <p>Final result of a full pipeline would look as follows.</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=full-pipeline.yml"></script>
+<script src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=full-pipeline.yml"></script>
 
 <p>When the above pipeline is executed the pipeline output will contain the Base64 encoded strings for each of the variable values. As show in the following clipping.</p>
 <figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/pipeline_output.svg" data-sub-html="<h2>Pipeline output</h2>">
@@ -269,7 +270,7 @@
     </a><figcaption class="image-caption">Pipeline output</figcaption>
     </figure>
 <p>The only thing that remains is to convert the Base64 encoded strings back to see the values. This can be done using the following PowerShell script</p>
-<script type="application/javascript" src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=decode-from-base64.ps1"></script>
+<script src="https://gist.github.com/devjevnl/cc6362b5ba18b629f2d82369b2ce0d62.js?file=decode-from-base64.ps1"></script>
 
 <p>Looking at the following image with the decoded results the secured / marked as secret variable values and of course regular variable values to which developers don&rsquo;t have access to can still be retrieved by combining pipeline access with 50ish lines of PowerShell.</p>
 <figure><a class="lightgallery" href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" title="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" data-thumbnail="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/decoded_result.svg" data-sub-html="<h2>Decoded results</h2>">
