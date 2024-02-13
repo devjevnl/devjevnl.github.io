@@ -9,7 +9,7 @@
     <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</guid>
-    <description><![CDATA[Did you know that you can run your Azure DevOps jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.
+    <description><![CDATA[Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.
 What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft.]]></description>
 </item>
 </channel>
