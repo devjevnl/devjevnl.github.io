@@ -3,84 +3,84 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>Best of Both Worlds</title>
-    <link>https://www.devjev.nl/tags/best-of-both-worlds/</link>
-    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Container Registry</title>
+    <link>https://www.devjev.nl/tags/azure-container-registry/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/best-of-both-worlds/</guid>
+    <guid>https://www.devjev.nl/tags/azure-container-registry/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure DevOps</title>
+    <link>https://www.devjev.nl/tags/azure-devops/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Bicep</title>
+    <link>https://www.devjev.nl/tags/bicep/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/bicep/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Chocolatey</title>
+    <link>https://www.devjev.nl/tags/chocolatey/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/chocolatey/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Container Jobs</title>
     <link>https://www.devjev.nl/tags/container-jobs/</link>
-    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/container-jobs/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
+    <title>Containers</title>
+    <link>https://www.devjev.nl/tags/containers/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/containers/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Docker</title>
+    <link>https://www.devjev.nl/tags/docker/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Microsoft Hosted Agents</title>
     <link>https://www.devjev.nl/tags/microsoft-hosted-agents/</link>
-    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/microsoft-hosted-agents/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Self-Hosted Agents</title>
-    <link>https://www.devjev.nl/tags/self-hosted-agents/</link>
-    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <title>Packer</title>
+    <link>https://www.devjev.nl/tags/packer/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/self-hosted-agents/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>.FullName</title>
-    <link>https://www.devjev.nl/tags/.fullname/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/.fullname/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Get-Member</title>
-    <link>https://www.devjev.nl/tags/get-member/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/get-member/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Need to know</title>
-    <link>https://www.devjev.nl/tags/need-to-know/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/need-to-know/</guid>
+    <guid>https://www.devjev.nl/tags/packer/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>PowerShell</title>
     <link>https://www.devjev.nl/tags/powershell/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/powershell/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Select-Object</title>
-    <link>https://www.devjev.nl/tags/select-object/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/select-object/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Type Accelerators</title>
-    <link>https://www.devjev.nl/tags/type-accelerators/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/type-accelerators/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

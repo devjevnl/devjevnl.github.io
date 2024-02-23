@@ -3,7 +3,25 @@
         <title>Azure DevOps - Tag - </title>
         <link>https://www.devjev.nl/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+    <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
+    <link>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
+    <description><![CDATA[In my previous post 🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!
+Target set-up Lets start by having a look at the target set-up.]]></description>
+</item>
+<item>
+    <title>🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&#39;s the Best of Both Worlds! 🌐🛠️</title>
+    <link>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</link>
+    <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</guid>
+    <description><![CDATA[Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.
+What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft.]]></description>
+</item>
+<item>
     <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
@@ -77,24 +95,6 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <description><![CDATA[With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
 Tip Check out the full naming convention series :
 The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.]]></description>
-</item>
-<item>
-    <title>Your service connection credentials are mine</title>
-    <link>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</link>
-    <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
-    <description><![CDATA[Like with the two previous posts Hacking Azure DevOps and I am in your pipeline reading all your secrets! I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.
-In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime.]]></description>
-</item>
-<item>
-    <title>Hacking Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
-    <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
-So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
 </item>
 </channel>
 </rss>

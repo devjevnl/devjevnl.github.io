@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Azure Container Registry - Tag - </title>
+        <link>https://www.devjev.nl/tags/azure-container-registry/</link>
+        <description>Azure Container Registry - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-container-registry/" rel="self" type="application/rss+xml" /><item>
+    <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
+    <link>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</link>
+    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
+    <description><![CDATA[In my previous post 🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!
+Target set-up Lets start by having a look at the target set-up.]]></description>
+</item>
+</channel>
+</rss>
