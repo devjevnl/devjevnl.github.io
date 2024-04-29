@@ -2,12 +2,23 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/exchange-online/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/exchange-online/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/microsoft-365/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/microsoft-365/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/outlook/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/outlook/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/troubleshooting/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/troubleshooting/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-container-registry/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-devops/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-devops/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/bicep/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/chocolatey/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/container-jobs/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/container-jobs/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
@@ -16,10 +27,8 @@
             <loc>https://www.devjev.nl/tags/docker/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/microsoft-hosted-agents/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/packer/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/powershell/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/self-hosted-agents/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/terraform/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</loc><lastmod>2024-02-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</loc><lastmod>2024-02-13T02:00:00&#43;02:00</lastmod></url><url>
@@ -103,7 +112,6 @@
             <loc>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/domain/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/m365/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/microsoft-365/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/office-365/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/rename/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/root-url/</loc><lastmod>2022-03-30T22:42:00&#43;02:00</lastmod></url><url>

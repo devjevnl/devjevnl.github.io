@@ -3,7 +3,16 @@
         <title>Microsoft 365 - Category - </title>
         <link>https://www.devjev.nl/categories/microsoft-365/</link>
         <description>Microsoft 365 - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/microsoft-365/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/microsoft-365/" rel="self" type="application/rss+xml" /><item>
+    <title>🚫 400 Bad Request. Access to Outlook on the web has been blocked by your organization 🛑✉️🔒</title>
+    <link>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</link>
+    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</guid>
+    <description><![CDATA[While this post is outside of my usual topics, I would like to share a solution for an error message which returns just a single search result on Google. I want to share it because it took me some time to figure out what was going on. So in case someone else runs into this issue this post might be helpful.
+The Issue It all started after the network team updated the network to a new public IP.]]></description>
+</item>
+<item>
     <title>Change the SharePoint domain name in your Microsoft 365 Tenant</title>
     <link>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</link>
     <pubDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</pubDate>

@@ -3,7 +3,39 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Exchange Online</title>
+    <link>https://www.devjev.nl/tags/exchange-online/</link>
+    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/exchange-online/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft 365</title>
+    <link>https://www.devjev.nl/tags/microsoft-365/</link>
+    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/microsoft-365/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Outlook</title>
+    <link>https://www.devjev.nl/tags/outlook/</link>
+    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/outlook/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Troubleshooting</title>
+    <link>https://www.devjev.nl/tags/troubleshooting/</link>
+    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/troubleshooting/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure Container Registry</title>
     <link>https://www.devjev.nl/tags/azure-container-registry/</link>
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
@@ -49,38 +81,6 @@
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/containers/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Docker</title>
-    <link>https://www.devjev.nl/tags/docker/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/docker/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft Hosted Agents</title>
-    <link>https://www.devjev.nl/tags/microsoft-hosted-agents/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/microsoft-hosted-agents/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Packer</title>
-    <link>https://www.devjev.nl/tags/packer/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/packer/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>PowerShell</title>
-    <link>https://www.devjev.nl/tags/powershell/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/powershell/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
