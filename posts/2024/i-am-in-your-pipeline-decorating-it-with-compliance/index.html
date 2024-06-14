@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒 - </title><meta name="Description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"><meta property="og:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒" />
+<meta property="og:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/" /><meta property="og:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-06-14T02:00:00+02:00" />
+<meta property="article:modified_time" content="2024-06-14T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png" /><meta name="twitter:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒"/>
+<meta name="twitter:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"/>
+<meta name="twitter:site" content="@DevJevNL"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/" /><link rel="prev" href="https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2024\/i-am-in-your-pipeline-decorating-it-with-compliance\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2024\/i-am-in-your-pipeline-decorating-it-with-compliance\/featured-image.png",
+                            "width":  800 ,
+                            "height":  800 
+                        }],"genre": "posts","keywords": "Azure DevOps, Azure, Compliance, Pipelines, Pipeline Decorators, Microsoft Security DevOps extension","wordcount":  1998 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2024\/i-am-in-your-pipeline-decorating-it-with-compliance\/","datePublished": "2024-06-14T02:00:00+02:00","dateModified": "2024-06-14T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/security-compliance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security & Compliance</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-14">2024-06-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1998 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png"
+        data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png"
+        title="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-are-pipeline-decorators">What are pipeline decorators?</a></li>
+    <li><a href="#pipeline-decorators-types">Pipeline Decorators types</a></li>
+    <li><a href="#decomposing-a-pipeline">Decomposing a pipeline</a></li>
+    <li><a href="#injection-options">Injection options</a></li>
+    <li><a href="#lets-decorate-your-pipelines">Lets decorate your pipelines</a>
+      <ul>
+        <li><a href="#create-the-decorator-extension">Create the decorator extension</a></li>
+        <li><a href="#package-and-publish-the-decorator-extension">Package and publish the decorator extension</a></li>
+        <li><a href="#dissecting-the-run-microsoft-security-devopsyml">Dissecting the run-microsoft-security-devops.yml</a></li>
+        <li><a href="#test-drive-the-decorator">Test drive the decorator</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
+ about how secrets can be leaked in <code>Azure Pipelines</code>.
+I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
+ can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
+.</p>
+<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
+<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>
+<p>If <code>Pipeline Decorators</code> are so awesome why isn&rsquo;t everyone using them and why isn&rsquo;t this feature widespread in the community?
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png" data-sub-html="<h2>Be honest,&hellip;</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/be-honest.png" width="732" height="907" />
+    </a><figcaption class="image-caption">Be honest,&hellip;</figcaption>
+    </figure></p>
+<p>But don&rsquo;t worry, we got this! Trough this blog post we will learn in a step by step manner how to create and publish our own pipeline decorator using the <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/azure-devops-extension?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft Security DevOps Task</a>
+. This free to use task is a collection of static analysis tools aimed at enhancing the code quality, security and compliance of the development lifecycle. So to double down on the earlier given example we are going to implement it as part of our Pipeline Decorator.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png" data-sub-html="<h2>We got this!</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/i-got-this.png" width="368" height="465" />
+    </a><figcaption class="image-caption">We got this!</figcaption>
+    </figure></p>
+<h2 id="pipeline-decorators-types">Pipeline Decorators types</h2>
+<p>There are two types of pipeline decorators:</p>
+<ul>
+<li>Build Decorators</li>
+<li>Release Decorators</li>
+</ul>
+<p>The Build Decorators apply to Classic Build Pipelines and to the newer <code>YAML Multistage Pipelines</code>.
+The Release Decorators, instead, apply <strong>ONLY</strong> to the Classic Release Pipelines.
+Since the <code>Classic Release Pipelines</code> are being deprecated, we will focus on the Build Decorators and <strong>consider the Release decorators out of scope</strong>.</p>
+<h2 id="decomposing-a-pipeline">Decomposing a pipeline</h2>
+<p>To make sure everyone is on the same page let&rsquo;s quickly recap the <code>YAML Multistage Pipelines</code> composition.
+As show in the following image, a <code>YAML Multistage Pipeline</code> is composed of one or more stages, each stage is composed of one or more jobs (jobs are executed on an agent), a job contains steps and each step is composed of tasks.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg" data-sub-html="<h2>Pipeline Decomposition</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition.jpg" width="1234" height="634" />
+    </a><figcaption class="image-caption">Pipeline Decomposition</figcaption>
+    </figure>
+<h2 id="injection-options">Injection options</h2>
+<p>Pipeline decorators inject steps to the beginning, the end of every pipeline job and before and after a certain task. The injection point is defined by the <code>target</code> property in the decorator configuration.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png" data-sub-html="<h2>Take a closer look!</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/right-option.png" width="694" height="439" />
+    </a><figcaption class="image-caption">Take a closer look!</figcaption>
+    </figure>
+<p>The following targets are supported for <code>YAML Multistage Pipeline</code>:</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg" data-sub-html="<h2>Decorator Injection options</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/pipeline-composition-decorated.jpg" width="3164" height="2812" />
+    </a><figcaption class="image-caption">Decorator Injection options</figcaption>
+    </figure>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ms.azure-pipelines-agent-job.pre-job-tasks</code></td>
+<td>Run before other tasks in a classic build or YAML pipeline.</td>
+</tr>
+<tr>
+<td><code>ms.azure-pipelines-agent-job.post-checkout-tasks</code></td>
+<td>Run after the last checkout task in a classic build or YAML pipeline.</td>
+</tr>
+<tr>
+<td><code>ms.azure-pipelines-agent-job.post-job-tasks</code></td>
+<td>Run after other tasks in a classic build or YAML pipeline.</td>
+</tr>
+<tr>
+<td><code>ms.azure-pipelines-agent-job.pre-task-tasks</code></td>
+<td>Run before specified task in a classic build or YAML pipeline.</td>
+</tr>
+<tr>
+<td><code>ms.azure-pipelines-agent-job.post-task-tasks</code></td>
+<td>Run after specified task in a classic build or YAML pipeline.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#targets&amp;DT-MVP-5005327" target="_blank" rel="noopener noreffer">Source</a>
+</p>
+<h2 id="lets-decorate-your-pipelines">Lets decorate your pipelines</h2>
+<p>First lets make sure we are all set by checking the following prerequisites.</p>
+<ul>
+<li>Get our VS Code or any other code editor ready and create a new folder. Preferable one that is source controlled!</li>
+<li>Make sure the identity we are using is a member of the <code>Project Collection Administrators</code> in our <code>Azure DevOps Organization</code>.</li>
+<li>Make sure we have the <a href="https://marketplace.visualstudio.com/items?itemName=ms-securitydevops.microsoft-security-devops-azdevops" target="_blank" rel="noopener noreffer">Microsoft Security DevOps extension</a>
+ installed in our <code>Azure DevOps Organization</code>.</li>
+<li>Make sure we have <a href="https://nodejs.org/" target="_blank" rel="noopener noreffer">Node.js</a>
+ installed on our machines.</li>
+<li>Install the packaging tool (TFX) by running this command: <code>npm install -g tfx-cli</code></li>
+</ul>
+<h3 id="create-the-decorator-extension">Create the decorator extension</h3>
+<ol>
+<li>
+<p>In the folder we created as part of the prerequisites initialize a new npm package manifest by running hte following command.
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=npm-init.txt"></script>
+
+A <code>package.json</code> file has been created in your directory, it describes the libraries required by the extension.</p>
+</li>
+<li>
+<p>Install the Microsoft VSS Web Extension SDK package and save it to our npm package manifest by running hte following command.
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=npm-install.txt"></script>
+
+The <code>vss-web-extension-sdk</code> package is now installed inside the node_modules subdirectory. This SDK includes a JavaScript library that provides APIs required for communicating with the page our extension is embedded in.</p>
+</li>
+<li>
+<p>Inside the folder we created as part of the prerequisites we create a file named <code>vss-extension.json</code>. Next we copy the following content into this file.
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=vss-extention.json"></script>
+</p>
+</li>
+<li>
+<p>Now we replace the placeholders in the <code>vss-extension.json</code> file with your own values, we can use the example values provided in the table for our lab. Full details on all available attributes can be found at the <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/manifest?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&amp;view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Extension manifest reference</a>
+.</p>
+<table>
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UNIQUE_ID_OF_YOUR_EXTENSION</td>
+<td>This is the unique id of your extension, typically a string consisting of lowercase letters, numbers, and hyphens. For example: microsoft-security-devops-decorator</td>
+</tr>
+<tr>
+<td>OUR_PUBLISHER_ID</td>
+<td>Our publisher ID of the Visual Studio Marketplace Publishing Portal. Leave it empty for now as we will create it later on</td>
+</tr>
+<tr>
+<td>NAME_OF_OUR_EXTENSION</td>
+<td>The name of our extension. For example: Microsoft Security DevOps Decorator</td>
+</tr>
+<tr>
+<td>DESCRIPTION_OF_OUR_EXTENSION</td>
+<td>A brief description of what the extension does.</td>
+</tr>
+<tr>
+<td>UNIQUE_ID_OF_OUR_CONTRIBUTION</td>
+<td>Contribution id, typically a string composed of lowercase letters, numbers, and hyphens. It must be unique within the scope of the extension.For example: microsoft-security-devops-decorator-task.</td>
+</tr>
+<tr>
+<td>OUR_YAML_TEMPLATE_FILE_NAME.yml</td>
+<td>The name of the YAML pipeline file that contains the decorator itself. For example: run-microsoft-security-devops.yml.</td>
+</tr>
+</tbody>
+</table>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Warning<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The attribute <code>public</code> must be set for <strong>false</strong> for extensions containing decorators. Otherwise the extension wont function.</div>
+        </div>
+    </div>
+</li>
+<li>
+<p>Lets create a new file in the same folder named <code>run-microsoft-security-devops.yml</code>. We need to make sure the name aligns with the <code>OUR_YAML_TEMPLATE_FILE_NAME.yml</code> placeholder you replaced in the <code>vss-extension.json</code> file.
+Copy the following content into this file. This is the actual decorator that will be injected into all pipelines. We will cover it in more detail in the following chapters.
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=run-microsoft-security-devops.yml"></script>
+</p>
+</li>
+</ol>
+<h3 id="package-and-publish-the-decorator-extension">Package and publish the decorator extension</h3>
+<p>Since the only way to deploy a Pipeline Decorator is by packaging it as an extension and publishing it to the Visual Studio Marketplace a publisher account is required. This is part of our next steps.</p>
+<ol>
+<li>
+<p>We start with creating a publisher by signing in with a Microsoft identity to <a href="https://marketplace.visualstudio.com/manage/createpublisher?managePageRedirect=true" target="_blank" rel="noopener noreffer">Visual Studio Marketplace Publishing Portal</a>
+
+At the very minimum we need to provide a Name and an ID, which is sufficient for a lab set-up. When we are creating this for production scenario&rsquo;s populating all the fields including a logo is strongly recommended.<br>
+The ID must be unique across the whole Marketplace. Note the ID down as it&rsquo;s going to be needed next. Have a look at the following image for an example.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png" data-sub-html="<h2>Create your publisher example</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/create-publisher.png" width="823" height="802" />
+       </a><figcaption class="image-caption">Create your publisher example</figcaption>
+       </figure>
+</li>
+<li>
+<p>Open the <code>vss-extension.json</code> and replace the <code>OUR_PUBLISHER_ID</code> placeholder with the ID from the previous step.</p>
+</li>
+<li>
+<p>Package the extension by running the following command from the folder you created as part of the prerequisites. If no errors are shown you should see the included output.
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=tfx-package"></script>
+
+A new file should have been created in the folder with the extension <code>.vsix</code>. This is the file that needs to be uploaded to the Visual Studio Marketplace.</p>
+<script src="https://gist.github.com/devjevnl/05c839bd85433e46583306b1cf9133cb.js?file=tfx-package.txt"></script>
+
+</li>
+<li>
+<p>Navigate to the <a href="https://marketplace.visualstudio.com/manage" target="_blank" rel="noopener noreffer">management</a>
+ page of the Visual Studio Marketplace Publishing Portal</p>
+</li>
+<li>
+<p>On the top horizontal bar, select <code>New extension</code> &gt; <code>Azure DevOps</code>. The following pop-up will appear.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png" data-sub-html="<h2>Upload the extension</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/upload-file.png" width="507" height="254" />
+       </a><figcaption class="image-caption">Upload the extension</figcaption>
+       </figure>
+</li>
+<li>
+<p>Drag and drop your file or select it to find your <code>.vsix</code> file, which you created in the previous packaging step, and then choose Upload.
+A validation process will start, if everything is correct you will see a green checkmark and the option to save the extension.<br>
+At this point, your extension isn&rsquo;t visible to any accounts and can&rsquo;t be installed until you share it.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png" data-sub-html="<h2>Extension ready for sharing</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/uploaded-file.png" width="945" height="206" />
+       </a><figcaption class="image-caption">Extension ready for sharing</figcaption>
+       </figure>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Microsoft runs a virus scan on each new and updated extension package published. Until the scan is all clear, we cant publish the extension in the Marketplace for public usage. This way Microsoft also avoids surfacing inappropriate or offensive content on the Marketplace pages.</div>
+        </div>
+    </div>
+</li>
+<li>
+<p>Now lets share our extension with our organization. Select the extension we just uploaded uploaded. Click on the &hellip; located just behind the name of the extension and select <code>Share/Unshare</code>.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png" data-sub-html="<h2>Share extension</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-file.png" width="913" height="373" />
+       </a><figcaption class="image-caption">Share extension</figcaption>
+       </figure></p>
+</li>
+<li>
+<p>Click on the <code>+ Organization</code> and fill in our <code>Azure DevOps Organization</code> name. As show in the following image.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png" data-sub-html="<h2>Share the extension with our organization</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/share-with-organization.png" width="578" height="387" />
+       </a><figcaption class="image-caption">Share the extension with our organization</figcaption>
+       </figure></p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The extension is shared with our organization and our organization only. Meaning in can only be installed into our root organization and not in any other organization.
+It&rsquo;s possible ot share it with additional organizations by repeating this step.</div>
+        </div>
+    </div>
+</li>
+<li>
+<p>Next lets click again on the &hellip; located just behind the name of the extension but this time select the <code>View Extension</code> option.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png" data-sub-html="<h2>View the extension</h2>">
+           <img
+               class="lazyload"
+               src="/svg/loading.min.svg"
+               data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png"
+               data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png 2x"
+               data-sizes="auto"
+               alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/view-extension.png" width="933" height="377" />
+       </a><figcaption class="image-caption">View the extension</figcaption>
+       </figure></p>
+</li>
+<li>
+<p>Click on the <code>Get it free</code> button to install the extension in our <code>Azure DevOps Organization</code>.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png" data-sub-html="<h2>Install the extension</h2>">
+            <img
+                class="lazyload"
+                src="/svg/loading.min.svg"
+                data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png"
+                data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png 2x"
+                data-sizes="auto"
+                alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/install-extension.png" width="1169" height="433" />
+        </a><figcaption class="image-caption">Install the extension</figcaption>
+        </figure></p>
+</li>
+<li>
+<p>Lets verify our results by navigating to the <code>Organization Settings</code> &gt; <code>Extensions</code> and verify that the extension is installed.
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png" data-sub-html="<h2>Success</h2>">
+            <img
+                class="lazyload"
+                src="/svg/loading.min.svg"
+                data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png"
+                data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png 2x"
+                data-sizes="auto"
+                alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/success-extension.png" width="1026" height="556" />
+        </a><figcaption class="image-caption">Success</figcaption>
+        </figure></p>
+</li>
+</ol>
+<p>Now that everything is in place, we can test drive the decorator by creating a new pipeline and see the decorator in action. However to fully understand it&rsquo;s inner workings we need dissect the <code>run-microsoft-security-devops.yml</code> file.</p>
+<h3 id="dissecting-the-run-microsoft-security-devopsyml">Dissecting the run-microsoft-security-devops.yml</h3>
+<p>The <code>run-microsoft-security-devops.yml</code> file is a <code>YAML</code> file that contains the decorator itself. Since a decorator injects a task this is exactly what we see defined in the file. In our case we inject the execution of the <code>Microsoft Security DevOps</code> task we go from the Visual Studio Marketplace. However any type of task can be injected, including a Bash or a PowerShell script task. And injecting a combination of tasks is also possible.</p>
+<p>Perhaps the most interesting thing to note is the conditional statement on line 2. This statement checks if the executing pipeline instance already has a Microsoft Security DevOps task declared. Only when it is missing it is injected into the pipeline. This is a great way to ensure that the decorator is only injected once into a pipeline.</p>
+<p>To implement such a condition the ID of the task is required. These can be found in the sources of the task in question, inside the <code>task.json</code> file.
+The sources of the Microsoft Azure DevOps build-in tasks are located <a href="https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks" target="_blank" rel="noopener noreffer">here</a>
+. The <code>Microsoft Security DevOps</code> task sources are located <a href="https://github.com/microsoft/security-devops-azdevops/tree/main/src/MicrosoftSecurityDevOps/v1" target="_blank" rel="noopener noreffer">here</a>
+</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png" data-sub-html="<h2>run-microsoft-security-devops.yml</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/run-microsoft-security-devops.png" width="1050" height="373" />
+    </a><figcaption class="image-caption">run-microsoft-security-devops.yml</figcaption>
+    </figure>
+<h3 id="test-drive-the-decorator">Test drive the decorator</h3>
+<p>To test drive the decorator, we simply create a Hello World pipeline and run it. See following image as an example, it contains a PowerShell task that echos <code>$PSVersionTable</code>. When this pipeline is run we can see
+the decorator in the task list on the left hand side &lsquo;Injected - Run Microsoft Security DevOps&rsquo;. Note that the task fails this is means that the decorator is doing it&rsquo;s job,
+the repo where this pipeline is part of contains hardcoded secrets.</p>
+<p>There are more examples of Pipeline Decorators available at the <a href="https://github.com/thecloudexplorers/simply-scripted/tree/feature/azure-pipeline-decorators" target="_blank" rel="noopener noreffer">simply-scripted</a>
+ repo part of the <a href="https://github.com/thecloudexplorers" target="_blank" rel="noopener noreffer">The Cloud Explorers</a>
+ GitHub organization.</p>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png" data-sub-html="<h2>Hello World pipeline</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/test-drive-decorator.png" width="1509" height="1064" />
+    </a><figcaption class="image-caption">Hello World pipeline</figcaption>
+    </figure>
+<h2 id="conclusion">Conclusion</h2>
+<figure><a class="lightgallery" href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png" title="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png" data-thumbnail="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png" data-sub-html="<h2>Use cases everywhere</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png"
+            data-srcset="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png 1.5x, /posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/use-cases.png" width="630" height="429" />
+    </a><figcaption class="image-caption">Use cases everywhere</figcaption>
+    </figure>
+<p>There is a wide variety of the applications for pipeline decorators. They can be used to enforce compliance, security, or quality standards across all pipelines in an <code>Azure DevOps Organization</code>. This is a powerful feature that can save a lot of time and effort for the organization&rsquo;s administrators and developers. There are however three major downsides to using this feature which attribute to the lack of adoption by the community.</p>
+<ul>
+<li>The lack of visibility of the decorators in the Azure DevOps UI (not counting the Extensions view).</li>
+<li>The cumbersome way of creating and managing decorators.</li>
+<li>Decorators are publicly viewable on the Visual Studio Marketplace which could be a security concern even though without permissions they are not installable.</li>
+</ul>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>And that&rsquo;s all folks! I hope you found this post educational. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#targets&amp;DT-MVP-5005327" target="_blank" rel="noopener noreffer">Author a pipeline decorator</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/extend/publish/overview?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Package and publish extensions</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/extend/get-started/node?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&amp;view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Develop a web extension</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/manifest?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&amp;view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Extension manifest reference</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/azure-devops-extension?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft Security DevOps extension</a>
+</li>
+<li><a href="https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks" target="_blank" rel="noopener noreffer">GitHub Microsoft Azure DevOps extensions sources</a>
+</li>
+<li><a href="https://github.com/microsoft/security-devops-azdevops/tree/main/src/MicrosoftSecurityDevOps/v1" target="_blank" rel="noopener noreffer">GitHub Microsoft Security DevOps extension sources</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-06-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/compliance/">Compliance</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/pipeline-decorators/">Pipeline Decorators</a>,&nbsp;<a href="/tags/microsoft-security-devops-extension/">Microsoft Security DevOps extension</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/" class="prev" rel="prev" title="🚫 400 Bad Request. Access to Outlook on the web has been blocked by your organization 🛑✉️🔒"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>🚫 400 Bad Request. Access to Outlook on the web has been blocked by your organization 🛑✉️🔒</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

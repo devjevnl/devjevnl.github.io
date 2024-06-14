@@ -3,7 +3,55 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure</title>
+    <link>https://www.devjev.nl/tags/azure/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure DevOps</title>
+    <link>https://www.devjev.nl/tags/azure-devops/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Compliance</title>
+    <link>https://www.devjev.nl/tags/compliance/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/compliance/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft Security DevOps extension</title>
+    <link>https://www.devjev.nl/tags/microsoft-security-devops-extension/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/microsoft-security-devops-extension/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Pipeline Decorators</title>
+    <link>https://www.devjev.nl/tags/pipeline-decorators/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/pipeline-decorators/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Pipelines</title>
+    <link>https://www.devjev.nl/tags/pipelines/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/pipelines/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Exchange Online</title>
     <link>https://www.devjev.nl/tags/exchange-online/</link>
     <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
@@ -33,54 +81,6 @@
     <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/troubleshooting/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Container Registry</title>
-    <link>https://www.devjev.nl/tags/azure-container-registry/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-container-registry/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps</title>
-    <link>https://www.devjev.nl/tags/azure-devops/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-devops/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Bicep</title>
-    <link>https://www.devjev.nl/tags/bicep/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/bicep/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Chocolatey</title>
-    <link>https://www.devjev.nl/tags/chocolatey/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/chocolatey/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Container Jobs</title>
-    <link>https://www.devjev.nl/tags/container-jobs/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/container-jobs/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Containers</title>
-    <link>https://www.devjev.nl/tags/containers/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/containers/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

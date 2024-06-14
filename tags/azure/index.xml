@@ -3,7 +3,16 @@
         <title>Azure - Tag - </title>
         <link>https://www.devjev.nl/tags/azure/</link>
         <description>Azure - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
+    <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
+    <description><![CDATA[Back in 2022 I wrote a blog post I am in your pipeline reading all your secrets! about how secrets can be leaked in Azure Pipelines. I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single Azure DevOps Project can be achieved. This is done by using a feature called Pipeline Decorators .
+What are pipeline decorators? In most organizations there are certain required compliance and security policies.]]></description>
+</item>
+<item>
     <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
     <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
     <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>

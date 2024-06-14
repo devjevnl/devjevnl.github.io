@@ -3,7 +3,16 @@
         <title>All Posts - </title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
+    <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
+    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
+    <description><![CDATA[Back in 2022 I wrote a blog post I am in your pipeline reading all your secrets! about how secrets can be leaked in Azure Pipelines. I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single Azure DevOps Project can be achieved. This is done by using a feature called Pipeline Decorators .
+What are pipeline decorators? In most organizations there are certain required compliance and security policies.]]></description>
+</item>
+<item>
     <title>🚫 400 Bad Request. Access to Outlook on the web has been blocked by your organization 🛑✉️🔒</title>
     <link>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</link>
     <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
@@ -81,15 +90,6 @@ Modules explained Since this approach to Secrets Management depends on the two j
     <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
     <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
 Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
-</item>
-<item>
-    <title>How to use Library for Azure Pipelines 📗</title>
-    <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
-    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
-    <description><![CDATA[This is the 6th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to use Library for Azure Pipelines.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
 </item>
 </channel>
 </rss>
