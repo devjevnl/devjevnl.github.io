@@ -3,7 +3,31 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Architecture</title>
+    <link>https://www.devjev.nl/categories/architecture/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/architecture/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Computing</title>
+    <link>https://www.devjev.nl/categories/cloud-computing/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/cloud-computing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft Azure</title>
+    <link>https://www.devjev.nl/categories/microsoft-azure/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/microsoft-azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/categories/azure-devops/</link>
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
@@ -57,30 +81,6 @@
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/container-jobs/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Containers</title>
-    <link>https://www.devjev.nl/categories/containers/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/containers/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>PowerShell</title>
-    <link>https://www.devjev.nl/categories/powershell/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/powershell/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure</title>
-    <link>https://www.devjev.nl/categories/azure/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/azure/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -3,9 +3,17 @@
         <title></title>
         <link>https://www.devjev.nl/</link>
         <description>Jev Suchoi&#39;s personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
+    <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
+    <description><![CDATA[The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.]]></description>
+</item>
+<item>
     <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
     <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
@@ -83,15 +91,6 @@ Last year I wrote a series of posts covering the naming convention topic. The pe
     <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
     <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
 Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
-</item>
-<item>
-    <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
-    <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
-    <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
-Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
 </item>
 </channel>
 </rss>

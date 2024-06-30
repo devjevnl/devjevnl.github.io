@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️ - </title><meta name="Description" content="Unravel the complexities of Microsoft Azure by exploring key concepts like platforms, landing zones, workloads, and essential utilities."><meta property="og:title" content="🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️" />
+<meta property="og:description" content="Unravel the complexities of Microsoft Azure by exploring key concepts like platforms, landing zones, workloads, and essential utilities." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/" /><meta property="og:image" content="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-06-30T02:00:00+02:00" />
+<meta property="article:modified_time" content="2024-06-30T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg" /><meta name="twitter:title" content="🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️"/>
+<meta name="twitter:description" content="Unravel the complexities of Microsoft Azure by exploring key concepts like platforms, landing zones, workloads, and essential utilities."/>
+<meta name="twitter:site" content="@DevJevNL"/>
+<meta name="application-name" content="">
+<meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/" /><link rel="prev" href="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2024\/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2024\/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities\/featured-image.jpg",
+                            "width":  800 ,
+                            "height":  800 
+                        }],"genre": "posts","keywords": "Microsoft Azure, Azure Guide, Landing Zones, Azure Workloads, Cloud Infrastructure, Cloud Adoption Framework","wordcount":  967 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2024\/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities\/","datePublished": "2024-06-30T02:00:00+02:00","dateModified": "2024-06-30T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Unravel the complexities of Microsoft Azure by exploring key concepts like platforms, landing zones, workloads, and essential utilities."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">DevJev.NL</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">DevJev.NL</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/microsoft-azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Microsoft Azure</a>&nbsp;<a href="/categories/architecture/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Architecture</a>&nbsp;<a href="/categories/cloud-computing/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Computing</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-30">2024-06-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;967 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg"
+        data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/featured-image.jpg"
+        title="Unravel the complexities of Microsoft Azure by exploring key concepts like platforms, landing zones, workloads, and essential utilities." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#decoding-key-components-of-microsoft-azure">Decoding key components of Microsoft Azure</a></li>
+        <li><a href="#cloud-platform">Cloud Platform</a></li>
+        <li><a href="#platform--foundation-utilities">Platform / Foundation Utilities</a></li>
+        <li><a href="#landing-zone">Landing Zone</a></li>
+        <li><a href="#landing-zone-utilities">Landing Zone Utilities</a></li>
+        <li><a href="#workloads">Workloads</a></li>
+        <li><a href="#workload--agile-team">Workload / Agile Team</a></li>
+      </ul>
+    </li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.</p>
+<h3 id="decoding-key-components-of-microsoft-azure">Decoding key components of Microsoft Azure</h3>
+<p>Lets assume this AI generated house represents Microsoft Azure and start decoding the key components while mapping them to this house.
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg" data-sub-html="<h2>Microsoft Azure - The House</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-00.jpg" width="731" height="731" />
+    </a><figcaption class="image-caption">Microsoft Azure - The House</figcaption>
+    </figure></p>
+<h3 id="cloud-platform">Cloud Platform</h3>
+<p>The platform is the neighborhood where the house is located. It provides the necessary infrastructure, services, and tools that support the house and its residents.</p>
+<p>The Platform is a foundational layer managed by a dedicated platform team. This layer encompasses the logical structure, core infrastructure, services, and tools that are shared across an organization&rsquo;s cloud landscape. The platform is a shared foundation that enables workload teams to focus on application-specific tasks while benefiting from the robust, secure, and efficient environment maintained by the platform team.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png" data-sub-html="<h2>Platform - The neighborhood</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-01.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Platform - The neighborhood</figcaption>
+    </figure>
+<h3 id="platform--foundation-utilities">Platform / Foundation Utilities</h3>
+<p>Platform utilities are the roads, streets, electricity, and other essential services that support the neighborhood. They are the backbone of the platform, providing the necessary infrastructure and resources to ensure the smooth operation of the neighborhood.</p>
+<p>Platform / Foundation utilities are services which are piped into each landing zone as a set of utility services. Separating platform utilities from the landing zones maximizes consistency and economy of scale. These utilities also create clear distinctions between platform managed responsibilities and workload level responsibilities.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png" data-sub-html="<h2>Platform - Roads, streets, electricity, etc&hellip;</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-02.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Platform - Roads, streets, electricity, etc&hellip;</figcaption>
+    </figure>
+<h3 id="landing-zone">Landing Zone</h3>
+<p>The house itself is the landing zone. It is a pre-configured space that is ready to host workloads securely and efficiently. The house is designed to meet the specific needs of the residents, providing a safe and reliable environment for them to live and work.</p>
+<p>A Landing Zone is a pre-configured enclosure within Microsoft Azure that is designed to host workloads securely and efficiently. It&rsquo;s a customizable foundation complete with best practices for security, compliance, and scalability already in place. This means that when the workload team is ready to deploy a workload, the team can do so with the confidence that it&rsquo;s in a well-organized, managed space that follows guidelines for a reliable and secure Cloud experience. The Landing Zone includes among others, network configurations, identity services, and compliance policies that support the specific organization needs, making it easy and quick to get up and running while maintaining high standards for security, compliance and governance. Basically a Landing Zone is the blueprint for organizing workloads in Azure.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png" data-sub-html="<h2>Platform - The house itself</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-03.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Platform - The house itself</figcaption>
+    </figure>
+<h3 id="landing-zone-utilities">Landing Zone Utilities</h3>
+<p>The amenities within the house represent the Landing Zone Utilities. These are the essential features and services that enhance the living experience, making the house more functional, comfortable, and efficient.</p>
+<p>Landing Zone Utilities are a set of integrated services and tools that are pre-configured and available within the Landing Zone. These utilities include monitoring, logging, backup, and disaster recovery services, which are crucial for maintaining the health and performance of workloads. By incorporating these utilities, the Landing Zone ensures that workloads have the necessary support to operate smoothly and securely. By having these utilities in place, organizations can maintain high standards of operational excellence, security, and compliance, ensuring that workloads are well-supported and resilient. The separation of these utilities from the core platform services allows for better manageability and scalability, providing a robust foundation for the workloads hosted within the Landing Zone.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png" data-sub-html="<h2>Platform - Amenities</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-04.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Platform - Amenities</figcaption>
+    </figure>
+<h3 id="workloads">Workloads</h3>
+<p>The rooms in the house represent workloads. Each room is designed to serve a specific purpose, such as sleeping, cooking, or working.</p>
+<p>Similarly a workload is a specific application, service, or set of related tasks that run on a Cloud platform. Workloads are designed to support business processes and are composed of various components and resources, such as compute, storage, networking, and software. Workloads can also depend on other shared assets or workloads. A workload consists of multiple environments or stages, such as development (dev), testing (test), user acceptance testing (UAT), and production (prod), to ensure a smooth and reliable deployment lifecycle.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png" data-sub-html="<h2>Workloads - The rooms, the furniture</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-05.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Workloads - The rooms, the furniture</figcaption>
+    </figure>
+<h3 id="workload--agile-team">Workload / Agile Team</h3>
+<p>The team that keeps the house in order represents the Workload or Agile Team. They are the skilled professionals responsible for maintaining, managing, and improving the various rooms and amenities within the house to ensure a harmonious living environment.</p>
+<p>A Workload or Agile Team is a cross-functional group of individuals who collaborate to manage and optimize specific workloads within the Cloud platform. This team typically includes developers, operations engineers, security experts, and other stakeholders who work together using Agile methodologies to deliver continuous improvements and maintain the workload lifecycle.
+Additionally, the Workload Team collaborates closely with the Platform Team to leverage shared services and utilities, ensuring that workloads are deployed in a consistent, secure, and efficient manner. They also engage in regular reviews and retrospectives to identify areas for improvement.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png" data-sub-html="<h2>Workload Team - The team that keeps the house in order</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/block-06.png" width="1125" height="731" />
+    </a><figcaption class="image-caption">Workload Team - The team that keeps the house in order</figcaption>
+    </figure>
+<p>Combining all the components together we get the Cloud building blocks as show in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg" title="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg" data-thumbnail="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg" data-sub-html="<h2>Cloud building blocks</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg"
+            data-srcset="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg 1.5x, /posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/cloud-building-blocks.jpg" width="1864" height="671" />
+    </a><figcaption class="image-caption">Cloud building blocks</figcaption>
+    </figure>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>And that&rsquo;s all folks! I hope you found this post educational. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">What is an Azure landing zone?</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/operating-model/compare?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Review and compare common cloud operating models</a>
+</li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-06-30</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/microsoft-azure/">Microsoft Azure</a>,&nbsp;<a href="/tags/azure-guide/">Azure Guide</a>,&nbsp;<a href="/tags/landing-zones/">Landing Zones</a>,&nbsp;<a href="/tags/azure-workloads/">Azure Workloads</a>,&nbsp;<a href="/tags/cloud-infrastructure/">Cloud Infrastructure</a>,&nbsp;<a href="/tags/cloud-adoption-framework/">Cloud Adoption Framework</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/" class="prev" rel="prev" title="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

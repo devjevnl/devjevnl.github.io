@@ -3,7 +3,55 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Guide</title>
+    <link>https://www.devjev.nl/tags/azure-guide/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-guide/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Workloads</title>
+    <link>https://www.devjev.nl/tags/azure-workloads/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-workloads/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Adoption Framework</title>
+    <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/cloud-adoption-framework/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Infrastructure</title>
+    <link>https://www.devjev.nl/tags/cloud-infrastructure/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/cloud-infrastructure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Landing Zones</title>
+    <link>https://www.devjev.nl/tags/landing-zones/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/landing-zones/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft Azure</title>
+    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
+    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/microsoft-azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure</title>
     <link>https://www.devjev.nl/tags/azure/</link>
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
@@ -33,54 +81,6 @@
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/microsoft-security-devops-extension/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Pipeline Decorators</title>
-    <link>https://www.devjev.nl/tags/pipeline-decorators/</link>
-    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/pipeline-decorators/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Pipelines</title>
-    <link>https://www.devjev.nl/tags/pipelines/</link>
-    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/pipelines/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Exchange Online</title>
-    <link>https://www.devjev.nl/tags/exchange-online/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/exchange-online/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft 365</title>
-    <link>https://www.devjev.nl/tags/microsoft-365/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/microsoft-365/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Outlook</title>
-    <link>https://www.devjev.nl/tags/outlook/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/outlook/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Troubleshooting</title>
-    <link>https://www.devjev.nl/tags/troubleshooting/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/troubleshooting/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
