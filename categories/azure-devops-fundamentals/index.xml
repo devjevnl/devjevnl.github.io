@@ -3,7 +3,16 @@
         <title>Azure DevOps Fundamentals - Category - </title>
         <link>https://www.devjev.nl/categories/azure-devops-fundamentals/</link>
         <description>Azure DevOps Fundamentals - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure-devops-fundamentals/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure-devops-fundamentals/" rel="self" type="application/rss+xml" /><item>
+    <title>🚀 Quickly Find Your Azure DevOps Project Id 🔍</title>
+    <link>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</link>
+    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
+    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
+The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+</item>
+<item>
     <title>How to use Library for Azure Pipelines 📗</title>
     <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
     <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>

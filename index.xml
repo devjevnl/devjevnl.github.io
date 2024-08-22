@@ -3,9 +3,18 @@
         <title></title>
         <link>https://www.devjev.nl/</link>
         <description>Jev Suchoi&#39;s personal blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🚀 Quickly Find Your Azure DevOps Project Id 🔍</title>
+    <link>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</link>
+    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
+    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
+The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+</item>
+<item>
     <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
     <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
     <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
@@ -82,15 +91,6 @@ Last year I wrote a series of posts covering the naming convention topic. The pe
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
     <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
-</item>
-<item>
-    <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
-    <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
-    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
-    <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
-Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
 </item>
 </channel>
 </rss>
