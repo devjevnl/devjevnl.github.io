@@ -9,8 +9,10 @@
     <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
-So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/" target="_blank" rel="noopener noreffer">devblogs.microsoft.com</a>
+ back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
+<p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>]]></description>
 </item>
 </channel>
 </rss>

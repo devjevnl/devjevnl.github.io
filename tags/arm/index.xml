@@ -9,7 +9,8 @@
     <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
-    <description><![CDATA[With this post I want to share my new GitHub repository -&gt; Starter Kit for an Azure IaC repository . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.]]></description>
+    <description><![CDATA[<p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
+. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>]]></description>
 </item>
 </channel>
 </rss>

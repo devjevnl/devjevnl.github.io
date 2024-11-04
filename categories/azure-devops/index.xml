@@ -9,8 +9,11 @@
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
-    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
-The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+    <description><![CDATA[<p>With this post I want to share a lazy and a hacky way for finding the Azure DevOps <code>Project Id</code> of any project in your Azure DevOps Organization.</p>
+<h2 id="the-lazy-api-query">The lazy API query</h2>
+<p>It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using
+your favorite browser.
+To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p>]]></description>
 </item>
 <item>
     <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
@@ -18,8 +21,13 @@ The lazy API query It can feel a bit daunting to start using Azure DevOps API. B
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-    <description><![CDATA[Back in 2022 I wrote a blog post I am in your pipeline reading all your secrets! about how secrets can be leaked in Azure Pipelines. I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single Azure DevOps Project can be achieved. This is done by using a feature called Pipeline Decorators .
-What are pipeline decorators? In most organizations there are certain required compliance and security policies.]]></description>
+    <description><![CDATA[<p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
+ about how secrets can be leaked in <code>Azure Pipelines</code>.
+I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
+ can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
+.</p>
+<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
+<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
 </item>
 <item>
     <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
@@ -27,8 +35,10 @@ What are pipeline decorators? In most organizations there are certain required c
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
-    <description><![CDATA[In my previous post 🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!
-Target set-up Lets start by having a look at the target set-up.]]></description>
+    <description><![CDATA[<p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
+ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
+<h2 id="target-set-up">Target set-up</h2>
+<p>Lets start by having a look at the target set-up.</p>]]></description>
 </item>
 <item>
     <title>🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&#39;s the Best of Both Worlds! 🌐🛠️</title>
@@ -36,8 +46,9 @@ Target set-up Lets start by having a look at the target set-up.]]></description>
     <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</guid>
-    <description><![CDATA[Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.
-What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft.]]></description>
+    <description><![CDATA[<p>Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.</p>
+<h2 id="what-are-microsoft-hosted-agents">What are Microsoft Hosted Agents</h2>
+<p>Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft. These agents are pre-configured with certain software depending upon the type of agent (Windows, macOS, or Linux) which can run jobs targeting different platforms. With Microsoft Hosted Agents you trade off control for convenience as they are an excellent choice if you need to quickly scale your operations without worrying about the underlying infrastructure management.</p>]]></description>
 </item>
 <item>
     <title>Your service connection credentials are mine</title>
@@ -45,8 +56,11 @@ What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in 
     <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
-    <description><![CDATA[Like with the two previous posts Hacking Azure DevOps and I am in your pipeline reading all your secrets! I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.
-In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime.]]></description>
+    <description><![CDATA[<p>Like with the two previous posts <a href="/posts/2022/hacking-azure-devops" rel="">Hacking Azure DevOps</a>
+ and <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets" rel="">I am in your pipeline reading all your secrets!</a>
+ I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.<br>
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.<br>
+Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.</p>]]></description>
 </item>
 <item>
     <title>I am in your pipeline reading all your secrets!</title>
@@ -54,8 +68,9 @@ In this post I want to show how an Azure Resource Manager service connection con
     <pubDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
-    <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
-Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.</p>
+<p>Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines. And why in some cases it&rsquo;s better to set-up private build agents.</p>]]></description>
 </item>
 <item>
     <title>Hacking Azure DevOps</title>
@@ -63,8 +78,10 @@ Lets move ahead to create different types of variables and try to retrieve their
     <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
-So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/" target="_blank" rel="noopener noreffer">devblogs.microsoft.com</a>
+ back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
+<p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>]]></description>
 </item>
 <item>
     <title>GitHub vs Azure DevOps</title>
@@ -72,8 +89,9 @@ So in this post I want to showcase how a possible attacker can use a compromised
     <pubDate>Fri, 06 Nov 2020 13:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2020/github-vs-ado/</guid>
-    <description><![CDATA[Introduction Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.
-Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.</p>
+<p>Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.</p>]]></description>
 </item>
 <item>
     <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
@@ -81,7 +99,8 @@ Keep in mind that this is not a full in depth comparison of both products but mo
     <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
-    <description><![CDATA[Introduction I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.</p>]]></description>
 </item>
 </channel>
 </rss>

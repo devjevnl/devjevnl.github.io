@@ -9,8 +9,10 @@
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
-    <description><![CDATA[In my previous post 🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!
-Target set-up Lets start by having a look at the target set-up.]]></description>
+    <description><![CDATA[<p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
+ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
+<h2 id="target-set-up">Target set-up</h2>
+<p>Lets start by having a look at the target set-up.</p>]]></description>
 </item>
 </channel>
 </rss>

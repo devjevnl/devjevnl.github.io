@@ -1,15 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>About me - Tag - </title>
+        <title>About Me - Tag - </title>
         <link>https://www.devjev.nl/tags/about-me/</link>
-        <description>About me - Tag - </description>
+        <description>About Me - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://www.devjev.nl/tags/about-me/" rel="self" type="application/rss+xml" /><item>
     <title>About</title>
     <link>https://www.devjev.nl/about/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/about/</guid>
-    <description><![CDATA[Experience As a Cloud Architect with a hands-on approach, my journey started in childhood, taking apart toys with my dad’s tools to uncover the secrets of their inner workings. This early curiosity has developed into a professional passion to explore and deconstruct Cloud technology, ensuring a deep understanding of its core aspects to tailor solutions for diverse companies and organizations. Always keeping pace with the latest Microsoft technologies to deliver bleeding-edge solutions.]]></description>
+    <description><![CDATA[<h2 id="experience">Experience</h2>
+<p>As a Cloud Architect with a hands-on approach, my journey started in childhood, taking apart toys with my dad’s tools to uncover the secrets of their inner workings. This early curiosity has developed into a professional passion to explore and deconstruct Cloud technology, ensuring a deep understanding of its core aspects to tailor solutions for diverse companies and organizations. Always keeping pace with the latest Microsoft technologies to deliver bleeding-edge solutions.</p>]]></description>
 </item>
 </channel>
 </rss>

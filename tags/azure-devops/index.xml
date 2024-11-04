@@ -9,8 +9,11 @@
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
-    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
-The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+    <description><![CDATA[<p>With this post I want to share a lazy and a hacky way for finding the Azure DevOps <code>Project Id</code> of any project in your Azure DevOps Organization.</p>
+<h2 id="the-lazy-api-query">The lazy API query</h2>
+<p>It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using
+your favorite browser.
+To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p>]]></description>
 </item>
 <item>
     <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
@@ -18,8 +21,13 @@ The lazy API query It can feel a bit daunting to start using Azure DevOps API. B
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-    <description><![CDATA[Back in 2022 I wrote a blog post I am in your pipeline reading all your secrets! about how secrets can be leaked in Azure Pipelines. I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single Azure DevOps Project can be achieved. This is done by using a feature called Pipeline Decorators .
-What are pipeline decorators? In most organizations there are certain required compliance and security policies.]]></description>
+    <description><![CDATA[<p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
+ about how secrets can be leaked in <code>Azure Pipelines</code>.
+I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
+ can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
+.</p>
+<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
+<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
 </item>
 <item>
     <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
@@ -27,8 +35,10 @@ What are pipeline decorators? In most organizations there are certain required c
     <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
-    <description><![CDATA[In my previous post 🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!
-Target set-up Lets start by having a look at the target set-up.]]></description>
+    <description><![CDATA[<p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
+ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
+<h2 id="target-set-up">Target set-up</h2>
+<p>Lets start by having a look at the target set-up.</p>]]></description>
 </item>
 <item>
     <title>🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&#39;s the Best of Both Worlds! 🌐🛠️</title>
@@ -36,8 +46,9 @@ Target set-up Lets start by having a look at the target set-up.]]></description>
     <pubDate>Tue, 13 Feb 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/</guid>
-    <description><![CDATA[Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.
-What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft.]]></description>
+    <description><![CDATA[<p>Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.</p>
+<h2 id="what-are-microsoft-hosted-agents">What are Microsoft Hosted Agents</h2>
+<p>Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft. These agents are pre-configured with certain software depending upon the type of agent (Windows, macOS, or Linux) which can run jobs targeting different platforms. With Microsoft Hosted Agents you trade off control for convenience as they are an excellent choice if you need to quickly scale your operations without worrying about the underlying infrastructure management.</p>]]></description>
 </item>
 <item>
     <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
@@ -45,7 +56,11 @@ What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in 
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
-    <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
+    <description><![CDATA[<p>The <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
+ is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.
+As an attempt to offset the complexity I created a ready to use quick start backlog for the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas" target="_blank" rel="noopener noreffer">Design Areas</a>
+ sub-section of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
+. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p>]]></description>
 </item>
 <item>
     <title>How to use Library for Azure Pipelines 📗</title>
@@ -53,8 +68,13 @@ What are Microsoft Hosted Agents Microsoft Hosted Agents are a type of agent in 
     <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
-    <description><![CDATA[This is the 6th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to use Library for Azure Pipelines.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+
+In this post the I will show how to use <code>Library for Azure Pipelines</code>.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
 </item>
 <item>
     <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</title>
@@ -62,8 +82,13 @@ Since it much more fun to do research and play with technology in collaboration 
     <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</guid>
-    <description><![CDATA[This is the 5th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will introduce you to the Azure DevOps Demo Generator tool by using it to create a new Project in Azure DevOps.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+    <description><![CDATA[<p>This is the 5th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+
+In this post the I will introduce you to the <code>Azure DevOps Demo Generator</code> tool by using it to create a new Project in Azure DevOps.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
 </item>
 <item>
     <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
@@ -71,8 +96,12 @@ Since it much more fun to do research and play with technology in collaboration 
     <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
-    <description><![CDATA[This is the 4th post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps . In this post the I will demonstrate how to create an Azure Service Connection in an Azure DevOps Project.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+    <description><![CDATA[<p>This is the 4th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+. In this post the I will demonstrate how to create an <code>Azure Service Connection</code> in an Azure DevOps Project.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
 </item>
 <item>
     <title>How to create a new Project in Azure DevOps</title>
@@ -80,8 +109,13 @@ Since it much more fun to do research and play with technology in collaboration 
     <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</guid>
-    <description><![CDATA[This is the 2nd post in the category Azure DevOps Fundamentals of the blog post series on working with Azure DevOps In this post the I will show how to create a new Project in Azure DevOps.
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+    <description><![CDATA[<p>This is the 2nd post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+
+In this post the I will show how to create a new <code>Project</code> in Azure DevOps.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
 </item>
 <item>
     <title>How to create an Organization in Azure DevOps</title>
@@ -89,10 +123,20 @@ Since it much more fun to do research and play with technology in collaboration 
     <pubDate>Sun, 06 Nov 2022 21:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</guid>
-    <description><![CDATA[With this post am kicking off a blog post series on working with Azure DevOps . The subjects covered by this series are organized into three categories:
-Azure DevOps Fundamentals Azure DevOps Advanced Azure DevOps Expert Starting with the basic of basics of Azure DevOps Fundamentals :
-How to create an Organization in Azure DevOps?
-Since it much more fun to do research and play with technology in collaboration with others, Wesley Camargo will be covering some of the topics on he&rsquo;s blog , while other topics are covered by my here.]]></description>
+    <description><![CDATA[<p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+. The subjects covered by this series are organized into three categories:</p>
+<ul>
+<li><a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+</li>
+<li>Azure DevOps Advanced</li>
+<li>Azure DevOps Expert</li>
+</ul>
+<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+:</p>
+<p><code>How to create an Organization in Azure DevOps?</code></p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
+ will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
+, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -9,8 +9,9 @@
     <pubDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
-    <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
-Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.</p>
+<p>Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines. And why in some cases it&rsquo;s better to set-up private build agents.</p>]]></description>
 </item>
 </channel>
 </rss>

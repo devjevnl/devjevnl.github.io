@@ -4,17 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒 - </title><meta name="Description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"><meta property="og:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒" />
-<meta property="og:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/" /><meta property="og:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-06-14T02:00:00+02:00" />
-<meta property="article:modified_time" content="2024-06-14T02:00:00+02:00" /><meta property="og:site_name" content="DevJev.NL" />
+        <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒 - </title><meta name="Description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"><meta property="og:url" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/">
+  <meta property="og:site_name" content="DevJev.NL">
+  <meta property="og:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒">
+  <meta property="og:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-14T02:00:00+02:00">
+    <meta property="article:modified_time" content="2024-06-14T02:00:00+02:00">
+    <meta property="article:tag" content="Azure DevOps">
+    <meta property="article:tag" content="Azure">
+    <meta property="article:tag" content="Compliance">
+    <meta property="article:tag" content="Pipelines">
+    <meta property="article:tag" content="Pipeline Decorators">
+    <meta property="article:tag" content="Microsoft Security DevOps Extension">
+    <meta property="og:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png">
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png" /><meta name="twitter:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒"/>
-<meta name="twitter:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization"/>
-<meta name="twitter:site" content="@DevJevNL"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/featured-image.png">
+  <meta name="twitter:title" content="🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒">
+  <meta name="twitter:description" content="Hands-on guide of how add compliance to all pipelines within an Azure DevOps organization">
+      <meta name="twitter:site" content="@DevJevNL">
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -107,8 +118,8 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/security-compliance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security & Compliance</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-14">2024-06-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1998 words&nbsp;
+</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href=""><i class="far fa-folder fa-fw" aria-hidden="true"></i></a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-06-14">2024-06-14</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1998 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -216,34 +227,34 @@ As show in the following image, a <code>YAML Multistage Pipeline</code> is compo
     </a><figcaption class="image-caption">Decorator Injection options</figcaption>
     </figure>
 <table>
-<thead>
-<tr>
-<th>Target</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>ms.azure-pipelines-agent-job.pre-job-tasks</code></td>
-<td>Run before other tasks in a classic build or YAML pipeline.</td>
-</tr>
-<tr>
-<td><code>ms.azure-pipelines-agent-job.post-checkout-tasks</code></td>
-<td>Run after the last checkout task in a classic build or YAML pipeline.</td>
-</tr>
-<tr>
-<td><code>ms.azure-pipelines-agent-job.post-job-tasks</code></td>
-<td>Run after other tasks in a classic build or YAML pipeline.</td>
-</tr>
-<tr>
-<td><code>ms.azure-pipelines-agent-job.pre-task-tasks</code></td>
-<td>Run before specified task in a classic build or YAML pipeline.</td>
-</tr>
-<tr>
-<td><code>ms.azure-pipelines-agent-job.post-task-tasks</code></td>
-<td>Run after specified task in a classic build or YAML pipeline.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Target</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>ms.azure-pipelines-agent-job.pre-job-tasks</code></td>
+          <td style="text-align: left">Run before other tasks in a classic build or YAML pipeline.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ms.azure-pipelines-agent-job.post-checkout-tasks</code></td>
+          <td style="text-align: left">Run after the last checkout task in a classic build or YAML pipeline.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ms.azure-pipelines-agent-job.post-job-tasks</code></td>
+          <td style="text-align: left">Run after other tasks in a classic build or YAML pipeline.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ms.azure-pipelines-agent-job.pre-task-tasks</code></td>
+          <td style="text-align: left">Run before specified task in a classic build or YAML pipeline.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ms.azure-pipelines-agent-job.post-task-tasks</code></td>
+          <td style="text-align: left">Run after specified task in a classic build or YAML pipeline.</td>
+      </tr>
+  </tbody>
 </table>
 <p><a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops#targets&amp;DT-MVP-5005327" target="_blank" rel="noopener noreffer">Source</a>
 </p>
@@ -281,38 +292,38 @@ The <code>vss-web-extension-sdk</code> package is now installed inside the node_
 <p>Now we replace the placeholders in the <code>vss-extension.json</code> file with your own values, we can use the example values provided in the table for our lab. Full details on all available attributes can be found at the <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/manifest?toc=%2Fazure%2Fdevops%2Fmarketplace-extensibility%2Ftoc.json&amp;view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Extension manifest reference</a>
 .</p>
 <table>
-<thead>
-<tr>
-<th>Placeholder</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UNIQUE_ID_OF_YOUR_EXTENSION</td>
-<td>This is the unique id of your extension, typically a string consisting of lowercase letters, numbers, and hyphens. For example: microsoft-security-devops-decorator</td>
-</tr>
-<tr>
-<td>OUR_PUBLISHER_ID</td>
-<td>Our publisher ID of the Visual Studio Marketplace Publishing Portal. Leave it empty for now as we will create it later on</td>
-</tr>
-<tr>
-<td>NAME_OF_OUR_EXTENSION</td>
-<td>The name of our extension. For example: Microsoft Security DevOps Decorator</td>
-</tr>
-<tr>
-<td>DESCRIPTION_OF_OUR_EXTENSION</td>
-<td>A brief description of what the extension does.</td>
-</tr>
-<tr>
-<td>UNIQUE_ID_OF_OUR_CONTRIBUTION</td>
-<td>Contribution id, typically a string composed of lowercase letters, numbers, and hyphens. It must be unique within the scope of the extension.For example: microsoft-security-devops-decorator-task.</td>
-</tr>
-<tr>
-<td>OUR_YAML_TEMPLATE_FILE_NAME.yml</td>
-<td>The name of the YAML pipeline file that contains the decorator itself. For example: run-microsoft-security-devops.yml.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Placeholder</th>
+          <th style="text-align: left">Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">UNIQUE_ID_OF_YOUR_EXTENSION</td>
+          <td style="text-align: left">This is the unique id of your extension, typically a string consisting of lowercase letters, numbers, and hyphens. For example: microsoft-security-devops-decorator</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">OUR_PUBLISHER_ID</td>
+          <td style="text-align: left">Our publisher ID of the Visual Studio Marketplace Publishing Portal. Leave it empty for now as we will create it later on</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">NAME_OF_OUR_EXTENSION</td>
+          <td style="text-align: left">The name of our extension. For example: Microsoft Security DevOps Decorator</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">DESCRIPTION_OF_OUR_EXTENSION</td>
+          <td style="text-align: left">A brief description of what the extension does.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">UNIQUE_ID_OF_OUR_CONTRIBUTION</td>
+          <td style="text-align: left">Contribution id, typically a string composed of lowercase letters, numbers, and hyphens. It must be unique within the scope of the extension.For example: microsoft-security-devops-decorator-task.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">OUR_YAML_TEMPLATE_FILE_NAME.yml</td>
+          <td style="text-align: left">The name of the YAML pipeline file that contains the decorator itself. For example: run-microsoft-security-devops.yml.</td>
+      </tr>
+  </tbody>
 </table>
 <div class="details admonition warning open">
         <div class="details-summary admonition-title">
@@ -562,7 +573,7 @@ the repo where this pipeline is part of contains hardcoded secrets.</p>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/compliance/">Compliance</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/pipeline-decorators/">Pipeline Decorators</a>,&nbsp;<a href="/tags/microsoft-security-devops-extension/">Microsoft Security DevOps extension</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/compliance/">Compliance</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/pipeline-decorators/">Pipeline Decorators</a>,&nbsp;<a href="/tags/microsoft-security-devops-extension/">Microsoft Security DevOps Extension</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

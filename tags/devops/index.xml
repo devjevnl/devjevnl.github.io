@@ -9,9 +9,29 @@
     <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
-    <description><![CDATA[With this post I want to share my approach to Git branch naming. This is the 4th and final post in the naming convention series .
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity.]]></description>
+    <description><![CDATA[<p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
+The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
+However teams that do not have these tools available to them would need to rely on just the naming convention to
+help organizing and ordering branches.</p>]]></description>
 </item>
 <item>
     <title>A naming convention to bring order to variable groups</title>
@@ -19,9 +39,28 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</guid>
-    <description><![CDATA[With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.]]></description>
+    <description><![CDATA[<p>With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<h2 id="the-naming-convention">The naming convention</h2>
+<p>In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging. This changes the approach to naming to focus much more on meaningful and descriptive naming within the context of the Azure DevOps project. Therefore a truly holistic naming of variable groups is challenging to achieve. But abiding the <a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+ should still be feasible.</p>]]></description>
 </item>
 </channel>
 </rss>

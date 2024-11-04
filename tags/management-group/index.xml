@@ -9,9 +9,32 @@
     <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
-    <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
-Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming What are Management groups and theirs limits If you are wondering about reasons for this approach to naming please have a look at the Naming convention background chapter of the The perfect azure naming convention .]]></description>
+    <description><![CDATA[<p>A new post and a new addition to the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+. With this post I want to share my approach to naming <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">Azure Management groups</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<h2 id="what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</h2>
+<p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
+ chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+. With that out of the way lets dig in.</p>]]></description>
 </item>
 </channel>
 </rss>

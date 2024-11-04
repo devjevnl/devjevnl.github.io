@@ -1,16 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>development box setup - Tag - </title>
+        <title>Development Box Setup - Tag - </title>
         <link>https://www.devjev.nl/tags/development-box-setup/</link>
-        <description>development box setup - Tag - </description>
+        <description>Development Box Setup - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/development-box-setup/" rel="self" type="application/rss+xml" /><item>
     <title>Getting along with winget - advanced package installation</title>
     <link>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</link>
     <pubDate>Tue, 30 Aug 2022 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/</guid>
-    <description><![CDATA[In my previous post I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.
-Winget Advanced installation, the override command The winget install documentation shows that an --override option is available, with an input &ldquo;A string that will be passed directly to the installer&rdquo;.]]></description>
+    <description><![CDATA[<p>In my previous <a href="/getting-along-with-winget-basic-commands" rel="">post</a>
+ I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
+<h2 id="winget-advanced-installation-the-override-command">Winget Advanced installation, the override command</h2>
+<p>The <code>winget install</code> documentation shows that an <code>--override</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>]]></description>
 </item>
 <item>
     <title>Getting along with winget - basic packed management</title>
@@ -18,7 +20,9 @@ Winget Advanced installation, the override command The winget install documentat
     <pubDate>Mon, 22 Aug 2022 07:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/</guid>
-    <description><![CDATA[During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell. As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into winget . I hope you will enjoy both the basics and the advanced configuration experience shared via this post.]]></description>
+    <description><![CDATA[<p>During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell.
+As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into <a href="https://docs.microsoft.com/en-us/windows/package-manager/" target="_blank" rel="noopener noreffer">winget</a>
+. I hope you will enjoy both the basics and the advanced configuration experience shared via this post.</p>]]></description>
 </item>
 </channel>
 </rss>

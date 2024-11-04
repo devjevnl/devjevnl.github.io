@@ -9,8 +9,9 @@
     <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</guid>
-    <description><![CDATA[While this post is outside of my usual topics, I would like to share a solution for an error message which returns just a single search result on Google. I want to share it because it took me some time to figure out what was going on. So in case someone else runs into this issue this post might be helpful.
-The Issue It all started after the network team updated the network to a new public IP.]]></description>
+    <description><![CDATA[<p>While this post is outside of my usual topics, I would like to share a solution for an error message which returns just a single search result on Google. I want to share it because it took me some time to figure out what was going on. So in case someone else runs into this issue this post might be helpful.</p>
+<h2 id="the-issue">The Issue</h2>
+<p>It all started after the network team updated the network to a new public IP. Right after this change all users started to get the error message <code>400 Bad Request. QWNjZXNzIHRvIE91dGxvb2sgb24gdGhlIHdlYiBoYXMgYmVlbiBibG9ja2VkIGJ5 IHlvdXIgb3JnYW5pemF0aW9uLiA8QlI+PEJSPkNsaWNrIDxhIGhyZWY9Ii9vd2Ev bG9nb2ZmLm93YSI+aGVyZTwvYT4gdG8gc2lnbiBvdXQu (Base64)</code> when trying to access Outlook on the web (OWA) in Microsoft 365.</p>]]></description>
 </item>
 </channel>
 </rss>

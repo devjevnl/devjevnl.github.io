@@ -9,8 +9,11 @@
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
-    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
-The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+    <description><![CDATA[<p>With this post I want to share a lazy and a hacky way for finding the Azure DevOps <code>Project Id</code> of any project in your Azure DevOps Organization.</p>
+<h2 id="the-lazy-api-query">The lazy API query</h2>
+<p>It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using
+your favorite browser.
+To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p>]]></description>
 </item>
 </channel>
 </rss>

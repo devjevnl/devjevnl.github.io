@@ -9,8 +9,13 @@
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-    <description><![CDATA[Back in 2022 I wrote a blog post I am in your pipeline reading all your secrets! about how secrets can be leaked in Azure Pipelines. I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single Azure DevOps Project can be achieved. This is done by using a feature called Pipeline Decorators .
-What are pipeline decorators? In most organizations there are certain required compliance and security policies.]]></description>
+    <description><![CDATA[<p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
+ about how secrets can be leaked in <code>Azure Pipelines</code>.
+I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
+ can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
+.</p>
+<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
+<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
 </item>
 <item>
     <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
@@ -18,7 +23,8 @@ What are pipeline decorators? In most organizations there are certain required c
     <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
-    <description><![CDATA[With this post I want to share my new GitHub repository -&gt; Starter Kit for an Azure IaC repository . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.]]></description>
+    <description><![CDATA[<p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
+. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>]]></description>
 </item>
 <item>
     <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨</title>
@@ -26,8 +32,11 @@ What are pipeline decorators? In most organizations there are certain required c
     <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
-Last year I wrote a series of posts covering the naming convention topic. The perfect azure naming convention covered the Azure resources.]]></description>
+    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
+<p>Last year I wrote a <a href="/categories/naming-conventions/" rel="">series</a>
+ of posts covering the <a href="/categories/naming-conventions/" rel="">naming convention</a>
+ topic. <a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+ covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.</p>]]></description>
 </item>
 <item>
     <title>The ideal Management group naming convention</title>
@@ -35,9 +44,32 @@ Last year I wrote a series of posts covering the naming convention topic. The pe
     <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
-    <description><![CDATA[A new post and a new addition to the naming convention series . With this post I want to share my approach to naming Azure Management groups .
-Tip If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups Git gud with branch naming What are Management groups and theirs limits If you are wondering about reasons for this approach to naming please have a look at the Naming convention background chapter of the The perfect azure naming convention .]]></description>
+    <description><![CDATA[<p>A new post and a new addition to the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+. With this post I want to share my approach to naming <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">Azure Management groups</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<h2 id="what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</h2>
+<p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
+ chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+. With that out of the way lets dig in.</p>]]></description>
 </item>
 <item>
     <title>The perfect Azure naming convention</title>
@@ -45,9 +77,16 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
     <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
-    <description><![CDATA[This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.]]></description>
+    <description><![CDATA[<p>This post is the 2nd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">previous post</a>
+. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>]]></description>
 </item>
 <item>
     <title>The 10 commandments for Azure naming conventions</title>
@@ -55,7 +94,8 @@ The 10 commandments for Azure naming conventions A naming convention to bring or
     <pubDate>Mon, 25 Apr 2022 10:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
-    <description><![CDATA[There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small series of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.]]></description>
+    <description><![CDATA[<p>There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small <a href="/categories/naming-conventions/" rel="">series</a>
+ of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.</p>]]></description>
 </item>
 </channel>
 </rss>

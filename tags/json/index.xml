@@ -9,8 +9,9 @@
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
-Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
+    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
+<h2 id="use-case">Use Case</h2>
+<p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p>]]></description>
 </item>
 </channel>
 </rss>

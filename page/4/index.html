@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.121.2">
+	<meta name="generator" content="Hugo 0.134.3">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title></title><meta name="Description" content="Jev Suchoi&#39;s personal blog"><meta property="og:title" content="" />
-<meta property="og:description" content="Jev Suchoi&#39;s personal blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.devjev.nl/" /><meta property="og:image" content="https://www.devjev.nl/logo.png" /><meta property="og:site_name" content="DevJev.NL" />
+        <title></title><meta name="Description" content="Jev Suchoi&#39;s personal blog"><meta property="og:url" content="https://www.devjev.nl/">
+  <meta property="og:site_name" content="DevJev.NL">
+  <meta property="og:title" content="DevJev.NL">
+  <meta property="og:description" content="Jev Suchoi&#39;s personal blog">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.devjev.nl/logo.png">
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.devjev.nl/logo.png" /><meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Jev Suchoi&#39;s personal blog"/>
-<meta name="twitter:site" content="@DevJevNL"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.devjev.nl/logo.png">
+  <meta name="twitter:title" content="DevJev.NL">
+  <meta name="twitter:description" content="Jev Suchoi&#39;s personal blog">
+      <meta name="twitter:site" content="@DevJevNL">
 <meta name="application-name" content="">
 <meta name="apple-mobile-web-app-title" content=""><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -114,10 +118,12 @@
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/getting-along-with-winget-advanced-installation/">Getting along with winget - advanced package installation</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-30">2022-08-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/tooling/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tooling</a></span></div><div class="content">In my previous post I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.
-Winget Advanced installation, the override command The winget install documentation shows that an --override option is available, with an input &ldquo;A string that will be passed directly to the installer&rdquo;.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-30">2022-08-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/tooling/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tooling</a></span></div><div class="content"><p>In my previous <a href="/getting-along-with-winget-basic-commands" rel="">post</a>
+ I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
+<h2 id="winget-advanced-installation-the-override-command">Winget Advanced installation, the override command</h2>
+<p>The <code>winget install</code> documentation shows that an <code>--override</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p></div><div class="post-footer">
         <a href="/posts/2022/getting-along-with-winget-advanced-installation/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/winget/">winget</a>,&nbsp;<a href="/tags/package-management/">package management</a>,&nbsp;<a href="/tags/development-box-setup/">development box setup</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/winget/">Winget</a>,&nbsp;<a href="/tags/package-management/">Package Management</a>,&nbsp;<a href="/tags/development-box-setup/">Development Box Setup</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/getting-along-with-winget-basic-commands/"><img
         class="lazyload"
@@ -130,9 +136,11 @@ Winget Advanced installation, the override command The winget install documentat
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/getting-along-with-winget-basic-commands/">Getting along with winget - basic packed management</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-22">2022-08-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/tooling/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tooling</a></span></div><div class="content">During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell. As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into winget . I hope you will enjoy both the basics and the advanced configuration experience shared via this post.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-22">2022-08-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/tooling/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tooling</a></span></div><div class="content"><p>During my summer holiday I had a one day break from sunny weather so I decided to use the family tablet to fiddle with some PowerShell.
+As expected only the standard software was installed on the tablet. I could either start installing everything I need manually or use this opportunity dig a bit into <a href="https://docs.microsoft.com/en-us/windows/package-manager/" target="_blank" rel="noopener noreffer">winget</a>
+. I hope you will enjoy both the basics and the advanced configuration experience shared via this post.</p></div><div class="post-footer">
         <a href="/posts/2022/getting-along-with-winget-basic-commands/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/winget/">winget</a>,&nbsp;<a href="/tags/package-management/">package management</a>,&nbsp;<a href="/tags/development-box-setup/">development box setup</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/winget/">Winget</a>,&nbsp;<a href="/tags/package-management/">Package Management</a>,&nbsp;<a href="/tags/development-box-setup/">Development Box Setup</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/git-gud-with-branch-naming/"><img
         class="lazyload"
@@ -145,11 +153,31 @@ Winget Advanced installation, the override command The winget install documentat
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/git-gud-with-branch-naming/">Git gud with branch naming</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-29">2022-06-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content">With this post I want to share my approach to Git branch naming. This is the 4th and final post in the naming convention series .
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention A naming convention to bring order to variable groups When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-29">2022-06-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content"><p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
+The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
+However teams that do not have these tools available to them would need to rely on just the naming convention to
+help organizing and ordering branches.</p></div><div class="post-footer">
         <a href="/posts/2022/git-gud-with-branch-naming/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/devops/">DevOps</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/branch/">Branch</a>,&nbsp;<a href="/tags/branching/">Branching</a>,&nbsp;<a href="/tags/git/">Git</a>,&nbsp;<a href="/tags/github/">GitHub</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/devops/">DevOps</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/branch/">Branch</a>,&nbsp;<a href="/tags/branching/">Branching</a>,&nbsp;<a href="/tags/git/">Git</a>,&nbsp;<a href="/tags/github/">Github</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/"><img
         class="lazyload"
@@ -162,11 +190,30 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/">A naming convention to bring order to variable groups</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-15">2022-06-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content">With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the naming convention series .
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions The perfect azure naming convention Git gud with branch naming The naming convention In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-15">2022-06-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content"><p>With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p>
+<ul>
+<li><a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+</li>
+<li><a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
+</li>
+<li><a href="/posts/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
+</li>
+</ul></div>
+        </div>
+    </div>
+<h2 id="the-naming-convention">The naming convention</h2>
+<p>In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging. This changes the approach to naming to focus much more on meaningful and descriptive naming within the context of the Azure DevOps project. Therefore a truly holistic naming of variable groups is challenging to achieve. But abiding the <a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
+ should still be feasible.</p></div><div class="post-footer">
         <a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming/">Naming</a>,&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/devops/">DevOps</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/variable-group/">Variable group</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming/">Naming</a>,&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/devops/">DevOps</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/variable-group/">Variable Group</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/the-perfect-azure-naming-convention/"><img
         class="lazyload"
@@ -179,11 +226,18 @@ The 10 commandments for Azure naming conventions The perfect azure naming conven
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/the-perfect-azure-naming-convention/">The perfect Azure naming convention</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-10">2022-05-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div><div class="content">This post is the 2nd in the naming convention series . With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my previous post . However I do believe that some background is required to understand this approach. So, lets dig in.
-Tip Check out the full naming convention series :
-The 10 commandments for Azure naming conventions A naming convention to bring order to variable groups Git gud with branch naming Naming convention background A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as cattle and not as pets.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-10">2022-05-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div><div class="content"><p>This post is the 2nd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">previous post</a>
+. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
+:</p></div><div class="post-footer">
         <a href="/posts/2022/the-perfect-azure-naming-convention/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource naming</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource Naming</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions/"><img
         class="lazyload"
@@ -196,9 +250,10 @@ The 10 commandments for Azure naming conventions A naming convention to bring or
         </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions/">The 10 commandments for Azure naming conventions</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-25">2022-04-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content">There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small series of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.</div><div class="post-footer">
+</span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-25">2022-04-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content"><p>There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small <a href="/categories/naming-conventions/" rel="">series</a>
+ of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.</p></div><div class="post-footer">
         <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource naming</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource Naming</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

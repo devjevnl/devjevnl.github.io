@@ -9,8 +9,11 @@
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
-    <description><![CDATA[With this post I want to share a lazy and a hacky way for finding the Azure DevOps Project Id of any project in your Azure DevOps Organization.
-The lazy API query It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using your favorite browser. To get the Project Id we can do this with the projects LIST and GET API&rsquo;s.]]></description>
+    <description><![CDATA[<p>With this post I want to share a lazy and a hacky way for finding the Azure DevOps <code>Project Id</code> of any project in your Azure DevOps Organization.</p>
+<h2 id="the-lazy-api-query">The lazy API query</h2>
+<p>It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using
+your favorite browser.
+To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p>]]></description>
 </item>
 <item>
     <title>Your service connection credentials are mine</title>
@@ -18,8 +21,11 @@ The lazy API query It can feel a bit daunting to start using Azure DevOps API. B
     <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
-    <description><![CDATA[Like with the two previous posts Hacking Azure DevOps and I am in your pipeline reading all your secrets! I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.
-In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime.]]></description>
+    <description><![CDATA[<p>Like with the two previous posts <a href="/posts/2022/hacking-azure-devops" rel="">Hacking Azure DevOps</a>
+ and <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets" rel="">I am in your pipeline reading all your secrets!</a>
+ I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.<br>
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.<br>
+Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.</p>]]></description>
 </item>
 <item>
     <title>I am in your pipeline reading all your secrets!</title>
@@ -27,8 +33,9 @@ In this post I want to show how an Azure Resource Manager service connection con
     <pubDate>Sun, 30 Jan 2022 08:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/</guid>
-    <description><![CDATA[Introduction With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.
-Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.</p>
+<p>Lets move ahead to create different types of variables and try to retrieve their values. By doing so at the end of this blog post it will be clear why it&rsquo;s not very sensible to give all project team members full access to pipelines. And why in some cases it&rsquo;s better to set-up private build agents.</p>]]></description>
 </item>
 <item>
     <title>Hacking Azure DevOps</title>
@@ -36,8 +43,10 @@ Lets move ahead to create different types of variables and try to retrieve their
     <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[Introduction While this case is not a particularly new one and has been posted by Matt Cooper on devblogs.microsoft.com back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.
-So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization.]]></description>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/" target="_blank" rel="noopener noreffer">devblogs.microsoft.com</a>
+ back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
+<p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,16 +1,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Service connection - Tag - </title>
+        <title>Service Connection - Tag - </title>
         <link>https://www.devjev.nl/tags/service-connection/</link>
-        <description>Service connection - Tag - </description>
+        <description>Service Connection - Tag - </description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</lastBuildDate><atom:link href="https://www.devjev.nl/tags/service-connection/" rel="self" type="application/rss+xml" /><item>
     <title>Your service connection credentials are mine</title>
     <link>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</link>
     <pubDate>Sat, 12 Mar 2022 21:00:00 &#43;0100</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
-    <description><![CDATA[Like with the two previous posts Hacking Azure DevOps and I am in your pipeline reading all your secrets! I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.
-In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime.]]></description>
+    <description><![CDATA[<p>Like with the two previous posts <a href="/posts/2022/hacking-azure-devops" rel="">Hacking Azure DevOps</a>
+ and <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets" rel="">I am in your pipeline reading all your secrets!</a>
+ I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.<br>
+In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.<br>
+Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.</p>]]></description>
 </item>
 </channel>
 </rss>

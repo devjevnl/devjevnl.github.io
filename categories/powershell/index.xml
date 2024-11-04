@@ -9,8 +9,10 @@
     <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
-    <description><![CDATA[Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.
-Unveiling Object Properties and Methods with Get-Member The official documentation states: The Get-Member cmdlet gets the members, the properties and methods, of objects. Making it the Swiss army knife for exploring the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.]]></description>
+    <description><![CDATA[<p>Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.</p>
+<h2 id="unveiling-object-properties-and-methods-with-get-member">Unveiling Object Properties and Methods with Get-Member</h2>
+<p>The official documentation states: <em>The Get-Member cmdlet gets the members, the properties and methods, of objects.</em> Making it the Swiss army knife for exploring
+the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.</p>]]></description>
 </item>
 <item>
     <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
@@ -18,8 +20,12 @@ Unveiling Object Properties and Methods with Get-Member The official documentati
     <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
-    <description><![CDATA[In the previous post Sleep Worry-Free: The best tips for Local Secrets Management I shared the best tips for managing local secrets. In this post I will take Secrets Management to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using PowerShell SecretManagement and PowerShell SecretStore modules.
-Modules explained Since this approach to Secrets Management depends on the two just mentioned modules the purpose of each of the modules is explained next.]]></description>
+    <description><![CDATA[<p>In the previous post <a href="/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management" rel="">Sleep Worry-Free: The best tips for Local Secrets Management</a>
+ I shared the best tips for managing local secrets. In this post I will take <code>Secrets Management</code> to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretManagement</a>
+ and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretStore</a>
+ modules.</p>
+<h2 id="modules-explained">Modules explained</h2>
+<p>Since this approach to <code>Secrets Management</code> depends on the two just mentioned modules the purpose of each of the modules is explained next.</p>]]></description>
 </item>
 <item>
     <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
@@ -27,8 +33,9 @@ Modules explained Since this approach to Secrets Management depends on the two j
     <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[In this post I will share a couple of tips with regards to Secrets Management in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.
-Use Case When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment.]]></description>
+    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
+<h2 id="use-case">Use Case</h2>
+<p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p>]]></description>
 </item>
 </channel>
 </rss>

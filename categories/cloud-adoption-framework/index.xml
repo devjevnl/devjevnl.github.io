@@ -9,7 +9,11 @@
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
-    <description><![CDATA[The Microsoft Cloud Adoption Framework is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise. As an attempt to offset the complexity I created a ready to use quick start backlog for the Design Areas sub-section of the Microsoft Cloud Adoption Framework . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.]]></description>
+    <description><![CDATA[<p>The <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
+ is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.
+As an attempt to offset the complexity I created a ready to use quick start backlog for the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas" target="_blank" rel="noopener noreffer">Design Areas</a>
+ sub-section of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
+. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p>]]></description>
 </item>
 </channel>
 </rss>
