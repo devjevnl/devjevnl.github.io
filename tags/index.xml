@@ -3,7 +3,47 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Bastion</title>
+    <link>https://www.devjev.nl/tags/azure-bastion/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/azure-bastion/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Developer SKU</title>
+    <link>https://www.devjev.nl/tags/developer-sku/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/developer-sku/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft Azure</title>
+    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/microsoft-azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Secure Access</title>
+    <link>https://www.devjev.nl/tags/secure-access/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/secure-access/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Virtual Machines</title>
+    <link>https://www.devjev.nl/tags/virtual-machines/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/tags/virtual-machines/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/tags/azure-devops/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
@@ -41,46 +81,6 @@
     <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/tags/azure-guide/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Workloads</title>
-    <link>https://www.devjev.nl/tags/azure-workloads/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-workloads/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Adoption Framework</title>
-    <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/cloud-adoption-framework/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Infrastructure</title>
-    <link>https://www.devjev.nl/tags/cloud-infrastructure/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/cloud-infrastructure/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Landing Zones</title>
-    <link>https://www.devjev.nl/tags/landing-zones/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/landing-zones/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft Azure</title>
-    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/microsoft-azure/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

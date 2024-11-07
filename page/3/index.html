@@ -107,6 +107,23 @@
 <a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a>
 </div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png"
+        data-srcset="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png, /posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png 1.5x, /posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/featured-image.png"
+        title="Sleep Worry-Free: The best tips for Local Secrets Management" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/">Sleep Worry-Free: The best tips for Local Secrets Management 💤</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-19">2023-06-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/secure-development/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Secure Development</a>&nbsp;<a href="/categories/powershell/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>PowerShell</a></span></div><div class="content"><p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
+<h2 id="use-case">Use Case</h2>
+<p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p></div><div class="post-footer">
+        <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud-security/">Cloud Security</a>,&nbsp;<a href="/tags/cloud-automation/">Cloud Automation</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/json/">Json</a>,&nbsp;<a href="/tags/way-of-working/">Way of Working</a>,&nbsp;<a href="/tags/local-dev/">Local Dev</a>,&nbsp;<a href="/tags/security-hygiene/">Security Hygiene</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/how-to-use-library-for-azure-pipelines/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -217,46 +234,6 @@ In this post the I will show how to create a new <code>Project</code> in Azure D
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
         <a href="/posts/2022/how-to-create-an-organization-in-azure-devops/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-organization/">New Organization</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/2022/the-ideal-management-group-naming-convention/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/the-ideal-management-group-naming-convention/featured-image-preview.png"
-        data-srcset="/posts/2022/the-ideal-management-group-naming-convention/featured-image-preview.png, /posts/2022/the-ideal-management-group-naming-convention/featured-image-preview.png 1.5x, /posts/2022/the-ideal-management-group-naming-convention/featured-image-preview.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/the-ideal-management-group-naming-convention/featured-image-preview.png"
-        title="Azure management group naming convention" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2022/the-ideal-management-group-naming-convention/">The ideal Management group naming convention</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-26">2022-09-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a></span></div><div class="content"><p>A new post and a new addition to the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-. With this post I want to share my approach to naming <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">Azure Management groups</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<h2 id="what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</h2>
-<p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
- chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-. With that out of the way lets dig in.</p></div><div class="post-footer">
-        <a href="/posts/2022/the-ideal-management-group-naming-convention/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/management-group/">Management Group</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource Naming</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -276,6 +253,10 @@ In this post the I will show how to create a new <code>Project</code> in Azure D
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/5/">5</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/6/">6</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

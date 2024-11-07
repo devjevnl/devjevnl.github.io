@@ -3,7 +3,47 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure</title>
+    <link>https://www.devjev.nl/categories/azure/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Bastion</title>
+    <link>https://www.devjev.nl/categories/azure-bastion/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/azure-bastion/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Security</title>
+    <link>https://www.devjev.nl/categories/azure-security/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/azure-security/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>How To</title>
+    <link>https://www.devjev.nl/categories/how-to/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/how-to/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Quickstart</title>
+    <link>https://www.devjev.nl/categories/quickstart/</link>
+    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev Suchoi</author>
+    <guid>https://www.devjev.nl/categories/quickstart/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/categories/azure-devops/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
@@ -17,14 +57,6 @@
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>How To</title>
-    <link>https://www.devjev.nl/categories/how-to/</link>
-    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/how-to/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -49,38 +81,6 @@
     <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev Suchoi</author>
     <guid>https://www.devjev.nl/categories/microsoft-azure/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Security &amp; Compliance</title>
-    <link>https://www.devjev.nl/categories/security--compliance/</link>
-    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/security--compliance/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Exchange Online</title>
-    <link>https://www.devjev.nl/categories/exchange-online/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/exchange-online/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft 365</title>
-    <link>https://www.devjev.nl/categories/microsoft-365/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/microsoft-365/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Outlook</title>
-    <link>https://www.devjev.nl/categories/outlook/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/outlook/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
