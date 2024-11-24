@@ -3,7 +3,17 @@
         <title>Azure - Category - </title>
         <link>https://www.devjev.nl/categories/azure/</link>
         <description>Azure - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure/" rel="self" type="application/rss+xml" /><item>
+    <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
+    <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
+    <description><![CDATA[<p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
+<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
+<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>]]></description>
+</item>
+<item>
     <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
     <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>

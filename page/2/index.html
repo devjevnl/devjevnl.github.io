@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.138.0">
+	<meta name="generator" content="Hugo 0.139.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -26,10 +26,7 @@
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","author": {
-                "@type": "Person",
-                "name": "Jev Suchoi"
-            },"description": "Jev Suchoi's personal blog","name": ""
+        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","description": "Jev Suchoi's personal blog","name": ""
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -107,6 +104,25 @@
 <a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a>
 </div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg"
+        data-srcset="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg, /posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg 1.5x, /posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg"
+        title="How to create your own container to use in container jobs?" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/">🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-23">2024-02-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/container-jobs/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Container Jobs</a>&nbsp;<a href="/categories/containers/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Containers</a></span></div><div class="content"><p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
+ you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
+<h2 id="target-set-up">Target set-up</h2>
+<p>Lets start by having a look at the target set-up.</p></div><div class="post-footer">
+        <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/container-jobs/">Container Jobs</a>,&nbsp;<a href="/tags/containers/">Containers</a>,&nbsp;<a href="/tags/microsoft-hosted-agents/">Microsoft Hosted Agents</a>,&nbsp;<a href="/tags/self-hosted-agents/">Self-Hosted Agents</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure-container-registry/">Azure Container Registry</a>,&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/packer/">Packer</a>,&nbsp;<a href="/tags/terraform/">Terraform</a>,&nbsp;<a href="/tags/chocolatey/">Chocolatey</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -123,7 +139,8 @@
 <p>Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft. These agents are pre-configured with certain software depending upon the type of agent (Windows, macOS, or Linux) which can run jobs targeting different platforms. With Microsoft Hosted Agents you trade off control for convenience as they are an excellent choice if you need to quickly scale your operations without worrying about the underlying infrastructure management.</p></div><div class="post-footer">
         <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/container-jobs/">Container Jobs</a>,&nbsp;<a href="/tags/best-of-both-worlds/">Best of Both Worlds</a>,&nbsp;<a href="/tags/microsoft-hosted-agents/">Microsoft Hosted Agents</a>,&nbsp;<a href="/tags/self-hosted-agents/">Self-Hosted Agents</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -141,7 +158,8 @@
 the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.</p></div><div class="post-footer">
         <a href="/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/need-to-know/">Need to Know</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/get-member/">Get-Member</a>,&nbsp;<a href="/tags/select-object/">Select-Object</a>,&nbsp;<a href="/tags/type-accelerators/">Type Accelerators</a>,&nbsp;<a href="/tags/.fullname/">.FullName</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -157,7 +175,8 @@ the properties and methods of any object in PowerShell and thus indispensable fo
 . This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p></div><div class="post-footer">
         <a href="/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/template/">Template</a>,&nbsp;<a href="/tags/starter-kit/">Starter Kit</a>,&nbsp;<a href="/tags/git-repository/">Git Repository</a>,&nbsp;<a href="/tags/iac/">IaC</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/terraform/">Terraform</a>,&nbsp;<a href="/tags/arm/">ARM</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/infrastructure-as-code/">Infrastructure as Code</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -176,7 +195,8 @@ the properties and methods of any object in PowerShell and thus indispensable fo
  covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.</p></div><div class="post-footer">
         <a href="/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource Naming</a>,&nbsp;<a href="/tags/resource-display-name/">Resource Display Name</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -195,27 +215,8 @@ As an attempt to offset the complexity I created a ready to use quick start back
 . Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p></div><div class="post-footer">
         <a href="/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/microsoft/">Microsoft</a>,&nbsp;<a href="/tags/cloud-adoption-framework/">Cloud Adoption Framework</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure-devops-demo-generator/">Azure DevOps Demo Generator</a>,&nbsp;<a href="/tags/azure-migration-and-modernization/">Azure Migration and Modernization</a>,&nbsp;<a href="/tags/template/">Template</a>,&nbsp;<a href="/tags/backlog/">Backlog</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"
-        data-srcset="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png, /posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png 1.5x, /posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"
-        title="Don&#39;t spill the beans - keep your secrets secure" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/">Don&#39;t spill the beans - keep your secrets secure 🤫</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-26">2023-06-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/secure-development/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Secure Development</a>&nbsp;<a href="/categories/powershell/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>PowerShell</a></span></div><div class="content"><p>In the previous post <a href="/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management" rel="">Sleep Worry-Free: The best tips for Local Secrets Management</a>
- I shared the best tips for managing local secrets. In this post I will take <code>Secrets Management</code> to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretManagement</a>
- and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretStore</a>
- modules.</p>
-<h2 id="modules-explained">Modules explained</h2>
-<p>Since this approach to <code>Secrets Management</code> depends on the two just mentioned modules the purpose of each of the modules is explained next.</p></div><div class="post-footer">
-        <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud-security/">Cloud Security</a>,&nbsp;<a href="/tags/cloud-automation/">Cloud Automation</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/way-of-working/">Way of Working</a>,&nbsp;<a href="/tags/local-dev/">Local Dev</a>,&nbsp;<a href="/tags/security-hygiene/">Security Hygiene</a>,&nbsp;<a href="/tags/secretmanagement/">SecretManagement</a>,&nbsp;<a href="/tags/secretstore/">SecretStore</a></div></div>
-</article><ul class="pagination"><li class="page-item ">
+</article>
+<ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
                     </span>
@@ -239,7 +240,7 @@ As an attempt to offset the complexity I created a ready to use quick start back
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 

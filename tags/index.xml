@@ -3,11 +3,51 @@
         <title>Tags - Tag - </title>
         <link>https://www.devjev.nl/tags/</link>
         <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure Sentinel</title>
+    <link>https://www.devjev.nl/tags/azure-sentinel/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/azure-sentinel/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Bicep</title>
+    <link>https://www.devjev.nl/tags/bicep/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/bicep/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Security</title>
+    <link>https://www.devjev.nl/tags/cloud-security/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/cloud-security/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Log Analytics</title>
+    <link>https://www.devjev.nl/tags/log-analytics/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/log-analytics/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Microsoft Azure</title>
+    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/microsoft-azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure Bastion</title>
     <link>https://www.devjev.nl/tags/azure-bastion/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/tags/azure-bastion/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -15,23 +55,15 @@
     <title>Developer SKU</title>
     <link>https://www.devjev.nl/tags/developer-sku/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/tags/developer-sku/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft Azure</title>
-    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/microsoft-azure/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Secure Access</title>
     <link>https://www.devjev.nl/tags/secure-access/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/tags/secure-access/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -39,7 +71,7 @@
     <title>Virtual Machines</title>
     <link>https://www.devjev.nl/tags/virtual-machines/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/tags/virtual-machines/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -47,40 +79,8 @@
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/tags/azure-devops/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/tags/azure-devops/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Hack</title>
-    <link>https://www.devjev.nl/tags/hack/</link>
-    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/hack/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Project Id</title>
-    <link>https://www.devjev.nl/tags/project-id/</link>
-    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/project-id/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>System.TeamProjectId</title>
-    <link>https://www.devjev.nl/tags/system.teamprojectid/</link>
-    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/system.teamprojectid/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Guide</title>
-    <link>https://www.devjev.nl/tags/azure-guide/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/tags/azure-guide/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

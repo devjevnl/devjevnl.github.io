@@ -3,43 +3,51 @@
         <title>Categories - Category - </title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
     <title>Azure</title>
     <link>https://www.devjev.nl/categories/azure/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Security</title>
+    <link>https://www.devjev.nl/categories/azure-security/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/azure-security/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure Sentinel</title>
+    <link>https://www.devjev.nl/categories/azure-sentinel/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/azure-sentinel/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>How To</title>
+    <link>https://www.devjev.nl/categories/how-to/</link>
+    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/how-to/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Azure Bastion</title>
     <link>https://www.devjev.nl/categories/azure-bastion/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure-bastion/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Security</title>
-    <link>https://www.devjev.nl/categories/azure-security/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/azure-security/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>How To</title>
-    <link>https://www.devjev.nl/categories/how-to/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/how-to/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Quickstart</title>
     <link>https://www.devjev.nl/categories/quickstart/</link>
     <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/quickstart/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -47,7 +55,7 @@
     <title>Azure DevOps</title>
     <link>https://www.devjev.nl/categories/azure-devops/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure-devops/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -55,7 +63,7 @@
     <title>Azure DevOps Fundamentals</title>
     <link>https://www.devjev.nl/categories/azure-devops-fundamentals/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -63,7 +71,7 @@
     <title>Architecture</title>
     <link>https://www.devjev.nl/categories/architecture/</link>
     <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/architecture/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -71,16 +79,8 @@
     <title>Cloud Computing</title>
     <link>https://www.devjev.nl/categories/cloud-computing/</link>
     <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
+    <author>Author</author>
     <guid>https://www.devjev.nl/categories/cloud-computing/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Microsoft Azure</title>
-    <link>https://www.devjev.nl/categories/microsoft-azure/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev Suchoi</author>
-    <guid>https://www.devjev.nl/categories/microsoft-azure/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

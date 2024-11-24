@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.138.0">
+	<meta name="generator" content="Hugo 0.139.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -26,10 +26,7 @@
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","author": {
-                "@type": "Person",
-                "name": "Jev Suchoi"
-            },"description": "Jev Suchoi's personal blog","name": ""
+        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","description": "Jev Suchoi's personal blog","name": ""
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -107,6 +104,24 @@
 <a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a>
 </div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image-preview.png"
+        data-srcset="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image-preview.png, /posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image-preview.png 1.5x, /posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image-preview.png 2x"
+        data-sizes="auto"
+        alt="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image-preview.png"
+        title="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup." /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/">🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2024-11-24">2024-11-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a>&nbsp;<a href="/categories/azure-sentinel/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Sentinel</a>&nbsp;<a href="/categories/azure-security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Security</a>&nbsp;<a href="/categories/how-to/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>How To</a></span></div><div class="content"><p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
+<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
+<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p></div><div class="post-footer">
+        <a href="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-sentinel/">Azure Sentinel</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/log-analytics/">Log Analytics</a>,&nbsp;<a href="/tags/microsoft-azure/">Microsoft Azure</a>,&nbsp;<a href="/tags/cloud-security/">Cloud Security</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -123,7 +138,8 @@
 <p>Let&rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.</p></div><div class="post-footer">
         <a href="/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-bastion/">Azure Bastion</a>,&nbsp;<a href="/tags/developer-sku/">Developer SKU</a>,&nbsp;<a href="/tags/virtual-machines/">Virtual Machines</a>,&nbsp;<a href="/tags/secure-access/">Secure Access</a>,&nbsp;<a href="/tags/microsoft-azure/">Microsoft Azure</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/quickly-find-your-azure-devops-project-id/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -142,7 +158,8 @@ your favorite browser.
 To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p></div><div class="post-footer">
         <a href="/posts/2024/quickly-find-your-azure-devops-project-id/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/project-id/">Project Id</a>,&nbsp;<a href="/tags/system.teamprojectid/">System.TeamProjectId</a>,&nbsp;<a href="/tags/hack/">Hack</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -157,7 +174,8 @@ To get the <code>Project Id</code> we can do this with the projects <code>LIST</
 </span>&nbsp;<span class="post-publish">published on <time datetime="2024-06-30">2024-06-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/microsoft-azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Microsoft Azure</a>&nbsp;<a href="/categories/architecture/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Architecture</a>&nbsp;<a href="/categories/cloud-computing/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Computing</a></span></div><div class="content"><p>The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.</p></div><div class="post-footer">
         <a href="/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/microsoft-azure/">Microsoft Azure</a>,&nbsp;<a href="/tags/azure-guide/">Azure Guide</a>,&nbsp;<a href="/tags/landing-zones/">Landing Zones</a>,&nbsp;<a href="/tags/azure-workloads/">Azure Workloads</a>,&nbsp;<a href="/tags/cloud-infrastructure/">Cloud Infrastructure</a>,&nbsp;<a href="/tags/cloud-adoption-framework/">Cloud Adoption Framework</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -178,7 +196,8 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
 <p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p></div><div class="post-footer">
         <a href="/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/compliance/">Compliance</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/pipeline-decorators/">Pipeline Decorators</a>,&nbsp;<a href="/tags/microsoft-security-devops-extension/">Microsoft Security DevOps Extension</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -195,25 +214,8 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
 <p>It all started after the network team updated the network to a new public IP. Right after this change all users started to get the error message <code>400 Bad Request. QWNjZXNzIHRvIE91dGxvb2sgb24gdGhlIHdlYiBoYXMgYmVlbiBibG9ja2VkIGJ5 IHlvdXIgb3JnYW5pemF0aW9uLiA8QlI+PEJSPkNsaWNrIDxhIGhyZWY9Ii9vd2Ev bG9nb2ZmLm93YSI+aGVyZTwvYT4gdG8gc2lnbiBvdXQu (Base64)</code> when trying to access Outlook on the web (OWA) in Microsoft 365.</p></div><div class="post-footer">
         <a href="/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/exchange-online/">Exchange Online</a>,&nbsp;<a href="/tags/outlook/">Outlook</a>,&nbsp;<a href="/tags/microsoft-365/">Microsoft 365</a>,&nbsp;<a href="/tags/troubleshooting/">Troubleshooting</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg"
-        data-srcset="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg, /posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg 1.5x, /posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg 2x"
-        data-sizes="auto"
-        alt="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/featured-image-preview.jpg"
-        title="How to create your own container to use in container jobs?" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/">🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-23">2024-02-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a>&nbsp;<a href="/categories/container-jobs/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Container Jobs</a>&nbsp;<a href="/categories/containers/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Containers</a></span></div><div class="content"><p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
- you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
-<h2 id="target-set-up">Target set-up</h2>
-<p>Lets start by having a look at the target set-up.</p></div><div class="post-footer">
-        <a href="/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/container-jobs/">Container Jobs</a>,&nbsp;<a href="/tags/containers/">Containers</a>,&nbsp;<a href="/tags/microsoft-hosted-agents/">Microsoft Hosted Agents</a>,&nbsp;<a href="/tags/self-hosted-agents/">Self-Hosted Agents</a>,&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/azure-container-registry/">Azure Container Registry</a>,&nbsp;<a href="/tags/docker/">Docker</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/packer/">Packer</a>,&nbsp;<a href="/tags/terraform/">Terraform</a>,&nbsp;<a href="/tags/chocolatey/">Chocolatey</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a></div></div>
-</article><ul class="pagination"><li class="page-item active">
+</article>
+<ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
                     </span>
@@ -233,7 +235,7 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.138.0">
+	<meta name="generator" content="Hugo 0.139.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -26,10 +26,7 @@
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","author": {
-                "@type": "Person",
-                "name": "Jev Suchoi"
-            },"description": "Jev Suchoi's personal blog","name": ""
+        "url": "https:\/\/www.devjev.nl\/","inLanguage": "en","description": "Jev Suchoi's personal blog","name": ""
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -107,6 +104,27 @@
 <a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a>
 </div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"
+        data-srcset="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png, /posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png 1.5x, /posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/featured-image.png"
+        title="Don&#39;t spill the beans - keep your secrets secure" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/">Don&#39;t spill the beans - keep your secrets secure 🤫</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-26">2023-06-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/secure-development/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Secure Development</a>&nbsp;<a href="/categories/powershell/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>PowerShell</a></span></div><div class="content"><p>In the previous post <a href="/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management" rel="">Sleep Worry-Free: The best tips for Local Secrets Management</a>
+ I shared the best tips for managing local secrets. In this post I will take <code>Secrets Management</code> to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretManagement</a>
+ and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretStore</a>
+ modules.</p>
+<h2 id="modules-explained">Modules explained</h2>
+<p>Since this approach to <code>Secrets Management</code> depends on the two just mentioned modules the purpose of each of the modules is explained next.</p></div><div class="post-footer">
+        <a href="/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud-security/">Cloud Security</a>,&nbsp;<a href="/tags/cloud-automation/">Cloud Automation</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/way-of-working/">Way of Working</a>,&nbsp;<a href="/tags/local-dev/">Local Dev</a>,&nbsp;<a href="/tags/security-hygiene/">Security Hygiene</a>,&nbsp;<a href="/tags/secretmanagement/">SecretManagement</a>,&nbsp;<a href="/tags/secretstore/">SecretStore</a></div></div>
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -123,7 +141,8 @@
 <p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p></div><div class="post-footer">
         <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cloud-security/">Cloud Security</a>,&nbsp;<a href="/tags/cloud-automation/">Cloud Automation</a>,&nbsp;<a href="/tags/powershell/">PowerShell</a>,&nbsp;<a href="/tags/json/">Json</a>,&nbsp;<a href="/tags/way-of-working/">Way of Working</a>,&nbsp;<a href="/tags/local-dev/">Local Dev</a>,&nbsp;<a href="/tags/security-hygiene/">Security Hygiene</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/how-to-use-library-for-azure-pipelines/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -144,7 +163,8 @@ In this post the I will show how to use <code>Library for Azure Pipelines</code>
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
         <a href="/posts/2023/how-to-use-library-for-azure-pipelines/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/library-for-azure-pipelines/">Library for Azure Pipelines</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -165,7 +185,8 @@ In this post the I will introduce you to the <code>Azure DevOps Demo Generator</
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
         <a href="/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-project/">New Project</a>,&nbsp;<a href="/tags/azure-devops-demo-generator/">Azure DevOps Demo Generator</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -185,7 +206,8 @@ In this post the I will introduce you to the <code>Azure DevOps Demo Generator</
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
         <a href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-service-connection/">New Service Connection</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+</article>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/posts/2022/how-to-create-a-new-project-in-azure-devops/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -206,35 +228,8 @@ In this post the I will show how to create a new <code>Project</code> in Azure D
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
         <a href="/posts/2022/how-to-create-a-new-project-in-azure-devops/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-project/">New Project</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/posts/2022/how-to-create-an-organization-in-azure-devops/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png"
-        data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png, /posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png"
-        title="How to create an Organization in Azure DevOps" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/2022/how-to-create-an-organization-in-azure-devops/">How to create an Organization in Azure DevOps</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-publish">published on <time datetime="2022-11-06">2022-11-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div><div class="content"><p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-. The subjects covered by this series are organized into three categories:</p>
-<ul>
-<li><a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-</li>
-<li>Azure DevOps Advanced</li>
-<li>Azure DevOps Expert</li>
-</ul>
-<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-:</p>
-<p><code>How to create an Organization in Azure DevOps?</code></p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p></div><div class="post-footer">
-        <a href="/posts/2022/how-to-create-an-organization-in-azure-devops/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-organization/">New Organization</a></div></div>
-</article><ul class="pagination"><li class="page-item ">
+</article>
+<ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
                     </span>
@@ -260,7 +255,7 @@ In this post the I will show how to create a new <code>Project</code> in Azure D
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Jev Suchoi</a></span></div>
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
