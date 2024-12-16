@@ -3,10 +3,21 @@
         <title>Microsoft Azure - Tag - </title>
         <link>https://www.devjev.nl/tags/microsoft-azure/</link>
         <description>Microsoft Azure - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/microsoft-azure/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/microsoft-azure/" rel="self" type="application/rss+xml" /><item>
+    <title> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬</title>
+    <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</link>
+    <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</guid>
+    <description><![CDATA[<p>In my previous <em><strong>Decoding Microsoft Azure</strong></em> post, <a href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/" target="_blank" rel="noopener noreffer">🔍 <em>Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</em></a>
+, I introduced <em><strong>the house analogy</strong></em> to conceptually explain <a href="https://azure.microsoft.com/en-us/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft Azure</a>
+. Part of this analogy covered the <strong>Application Landing Zone</strong> and the <strong>Platform Landing Zone</strong>.</p>
+<p>In this post, I&rsquo;ll take a deeper dive into Landing Zones. We&rsquo;ll explore what they are, how they&rsquo;re defined by Microsoft, and how I believe we can improve upon the concept. By the end, you&rsquo;ll have a clearer understanding of Azure Landing Zones and how they fit into a broader cloud adoption strategy.</p>]]></description>
+</item>
+<item>
     <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
     <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
-    <pubDate>Sun, 24 Nov 2024 02:00:00 &#43;0200</pubDate>
+    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
     <description><![CDATA[<p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
