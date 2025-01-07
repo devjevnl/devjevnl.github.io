@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Simplify Azure Management Group Setup using Bicep Vending - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Streamline your Azure environment with a reusable Bicep solution that deploys hierarchical management groups based on the Cloud Adoption Framework (CAF). Includes step-by-step guidance and code examples."><meta property="og:url" content="https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/">
+  <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
+  <meta property="og:title" content="Simplify Azure Management Group Setup using Bicep Vending">
+  <meta property="og:description" content="Streamline your Azure environment with a reusable Bicep solution that deploys hierarchical management groups based on the Cloud Adoption Framework (CAF). Includes step-by-step guidance and code examples.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-07T02:00:00+02:00">
+    <meta property="article:modified_time" content="2025-01-07T02:00:00+02:00">
+    <meta property="article:tag" content="Azure">
+    <meta property="article:tag" content="Bicep">
+    <meta property="article:tag" content="Cloud Adoption Framework">
+    <meta property="article:tag" content="Management Groups">
+    <meta property="og:image" content="https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png">
+  <meta name="twitter:title" content="Simplify Azure Management Group Setup using Bicep Vending">
+  <meta name="twitter:description" content="Streamline your Azure environment with a reusable Bicep solution that deploys hierarchical management groups based on the Cloud Adoption Framework (CAF). Includes step-by-step guidance and code examples.">
+      <meta name="twitter:site" content="@DevJevNL">
+<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
+<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/" /><link rel="prev" href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Simplify Azure Management Group Setup using Bicep Vending",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.devjev.nl\/posts\/2025\/simplify-azure-management-group-setup-using-bicep-vending\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/www.devjev.nl\/posts\/2025\/simplify-azure-management-group-setup-using-bicep-vending\/featured-image.png",
+                            "width":  1024 ,
+                            "height":  669 
+                        }],"genre": "posts","keywords": "Azure, Bicep, Cloud Adoption Framework, Management Groups","wordcount":  974 ,
+        "url": "https:\/\/www.devjev.nl\/posts\/2025\/simplify-azure-management-group-setup-using-bicep-vending\/","datePublished": "2025-01-07T02:00:00+02:00","dateModified": "2025-01-07T02:00:00+02:00","publisher": {
+            "@type": "Organization",
+            "name": "Jev"},"author": {
+                "@type": "Person",
+                "name": "Jev"
+            },"description": "Streamline your Azure environment with a reusable Bicep solution that deploys hierarchical management groups based on the Cloud Adoption Framework (CAF). Includes step-by-step guidance and code examples."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Simplify Azure Management Group Setup using Bicep Vending</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Governance</a>&nbsp;<a href="/categories/azure-bicep/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Bicep</a>&nbsp;<a href="/categories/how-to/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>How To</a>&nbsp;<a href="/categories/tenant-landing-zone/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tenant Landing Zone</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-01-07">2025-01-07</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;974 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png"
+        data-srcset="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png 1.5x, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/featured-image.png"
+        title="Streamline your Azure environment with a reusable Bicep solution that deploys hierarchical management groups based on the Cloud Adoption Framework (CAF). Includes step-by-step guidance and code examples." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</a></li>
+    <li><a href="#design-for-vending">Design for Vending</a></li>
+    <li><a href="#build-the-management-group-vending-bicep-solution">Build the Management Group Vending Bicep Solution</a>
+      <ul>
+        <li><a href="#resource-module">Resource Module</a></li>
+        <li><a href="#solution-bicep-file">Solution Bicep File</a></li>
+        <li><a href="#parameters-file">Parameters File</a></li>
+        <li><a href="#deploy-your-management-group-structure">Deploy Your Management Group Structure</a></li>
+        <li><a href="#key-considerations">Key Considerations</a></li>
+      </ul>
+    </li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
+<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
+This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
+. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>
+<h2 id="design-for-vending">Design for Vending</h2>
+<p>As of writing this post the maximum depth limit for management groups is 6 levels. This limitation is very helpful it means that out scope is limited to 6 levels.
+So we can slice any kind of Management Group structure into a maximum of 6 levels or as I like to call them tiers. As an practice example lets use this approach on the management group
+structure as show in the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/media/azure-landing-zone-architecture-diagram-hub-spoke.svg?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Azure landing zone conceptual architecture</a>
+ part of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Cloud Adoption Framework (CAF)</a>
+.
+The CAF conceptual architecture serves as a solid foundation for designing management group hierarchies, as it reflects industry best practices for organizing Azure resources.</p>
+<p>Slicing this management groups structure into tiers would have the following structure:</p>
+<ul>
+<li><strong>Tier 0:</strong> <code>Contoso</code> <em>(Corporate Root)</em></li>
+<li><strong>Tier 1:</strong> <code>Platform</code>, <code>Landing Zones</code>, <code>Decommissioned</code>, <code>Sandbox</code></li>
+<li><strong>Tier 2:</strong> <code>Management</code>, <code>Identity</code>, <code>Connectivity</code>, <code>Corp</code>, <code>Online</code></li>
+<li><strong>Tier 3:</strong> <em>Unused</em></li>
+<li><strong>Tier 4:</strong> <em>Unused</em></li>
+<li><strong>Tier 5:</strong> <em>Unused</em></li>
+</ul>
+<p>And visualized as follows:</p>
+<figure><a class="lightgallery" href="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png" title="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png" data-thumbnail="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png" data-sub-html="<h2>Management Group Vending applied to Microsoft Enterprise Landing Zone</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png"
+            data-srcset="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png 1.5x, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png 2x"
+            data-sizes="auto"
+            alt="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/caf-management-groups.png" width="1591" height="632" />
+    </a><figcaption class="image-caption">Management Group Vending applied to Microsoft Enterprise Landing Zone</figcaption>
+    </figure>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Why start at zero?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">The first tier represents the corporate root management group, which is a single entity. Starting at zero emphasizes its uniqueness compared to subsequent tiers, which are collections. This approach improves both readability and maintainability.</div>
+        </div>
+    </div>
+<p>Now that the tier model is clear lets compose the solution which implements this model.
+First we have to have a solution bicep file. This is the main execution file which will be executed to deploy the vending solution. This file will contain the logic to deploy the management groups in the correct order and depth.
+Next we need a bicep resource module. This module will contain the logic to deploy a single management group, hence the resource module. This module is called by the solution bicep file for each management group in a tier. Finally
+we need a parameter file which provides the collections of management groups to be deployed. On the back of an envelope design would looks something like this:</p>
+<figure><a class="lightgallery" href="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png" title="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png" data-thumbnail="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png" data-sub-html="<h2>Management Group Vending Structure</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png"
+            data-srcset="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png 1.5x, /posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png 2x"
+            data-sizes="auto"
+            alt="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/management-group-vending-structure.png" width="1115" height="982" />
+    </a><figcaption class="image-caption">Management Group Vending Structure</figcaption>
+    </figure>
+<h2 id="build-the-management-group-vending-bicep-solution">Build the Management Group Vending Bicep Solution</h2>
+<p>The solution is composed of three main components:</p>
+<h3 id="resource-module">Resource Module</h3>
+<p>The resource module is the core building block of the solution. It leverages the <code>Microsoft.Management/managementGroups@2021-04-01</code> namespace to create individual management groups. The key aspect here is the <code>targetScope = 'managementGroup'</code> property, which allows the deployment of management groups within the correct scope.</p>
+<p>This module handles the creation of a single management group, including setting its ID, display name, and parent ID. This modular design ensures reusability and keeps the logic for creating management groups isolated.</p>
+<p>Below is an example of a simple resource module:</p>
+<script src="https://gist.github.com/devjevnl/e105714f7e921eac62296a80256fdac8.js?file=resourceModule.bicep"></script>
+
+<h3 id="solution-bicep-file">Solution Bicep File</h3>
+<p>The solution Bicep file acts as the orchestrator. It consumes the resource module to deploy the management group hierarchy tier by tier. Each tier is represented as a collection of management groups, except for Tier 0, which is the single <code>corporate root management group</code>.</p>
+<p>Key highlights of the solution file include:</p>
+<ul>
+<li><strong>Tier Dependencies</strong>: Each tier depends on the successful creation of its parent tier. This ensures management groups are deployed in the correct order and hierarchy.</li>
+<li><strong>Default Management Group</strong>: Optionally, you can set a default management group for new subscriptions using the <code>IdOfDefaultManagementGroupForNewSubscriptions</code> parameter.</li>
+<li><strong>Permission Settings</strong>: The solution allows you to configure whether permissions are required for creating new management groups via the <code>RequireWritePermissionsForNewManagementGroupCreation</code> parameter.</li>
+</ul>
+<p>Here is an example of a solution Bicep file:</p>
+<script src="https://gist.github.com/devjevnl/e105714f7e921eac62296a80256fdac8.js?file=solutionModule.bicep"></script>
+
+<h3 id="parameters-file">Parameters File</h3>
+<p>The parameter file defines the hierarchy of management groups in a JSON format. Each tier is represented as an object containing the management groups within that tier, along with their IDs, display names, and parent IDs.</p>
+<p>For example, here is an <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/media/azure-landing-zone-architecture-diagram-hub-spoke.svg?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Azure landing zone conceptual architecture</a>
+ populated parameter file:</p>
+<script src="https://gist.github.com/devjevnl/e105714f7e921eac62296a80256fdac8.js?file=managementGroupParameter.json"></script>
+
+<h4 id="management-group-naming-convention">Management group naming convention</h4>
+<p>For anything Infrastructure as Code related a strong naming convention is a crucial cornerstone. Luckily I already have a strong naming convention for management groups, which I have written about in a previous post <a href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" target="_blank" rel="noopener noreffer">The ideal Management group naming convention</a>
+.</p>
+<h3 id="deploy-your-management-group-structure">Deploy Your Management Group Structure</h3>
+<p>To deploy the management group structure, you need to perform a tenant-level deployment. This is required because management groups are tenant-level resources. The solution&rsquo;s Bicep file specifies <code>targetScope = 'tenant'</code> to accommodate this.</p>
+<h4 id="deployment-steps">Deployment Steps</h4>
+<ol>
+<li>
+<p>Ensure Permissions: Tenant-level deployments require elevated access. Even the <code>Global Administrator</code> role does not have these permissions by default. You can grant the necessary permissions by following these guides:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant?tabs=azure-cli#required-access?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Required Access</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin?WT.mc_id=DT-MVP-5004039&amp;tabs=azure-portal?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Elevate Access for Global Admins</a>
+</li>
+</ul>
+</li>
+<li>
+<p>Run the Deployment: Use the following PowerShell snippet to initiate the deployment:</p>
+</li>
+</ol>
+<script src="https://gist.github.com/devjevnl/e105714f7e921eac62296a80256fdac8.js?file=tenantLevelDeployment.ps1"></script>
+
+<h3 id="key-considerations">Key Considerations</h3>
+<ul>
+<li><strong>Deployment Order</strong>: Ensure the parameter file is correctly structured to reflect the hierarchy and tier dependencies.</li>
+<li><strong>Validation</strong>: Always test the deployment in a canary/sandbox environment before applying it to your production tenant.</li>
+</ul>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>And that&rsquo;s a wrap, folks! I hope it provided you with a clear and practical approach to automating your Azure management group structures. If you found this post useful, be sure to explore the reference materials that inspired this solution:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/media/azure-landing-zone-architecture-diagram-hub-spoke.svg?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Azure landing zone conceptual architecture</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Cloud Adoption Framework (CAF)</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-tenant?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Tenant deployments with ARM templates</a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin?WT.mc_id=DT-MVP-5004039&amp;tabs=azure-portal?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Elevate access to manage all Azure subscriptions and management groups</a>
+</li>
+<li><a href="https://blog.tyang.org/2022/02/27/management-group-bicep-module" target="_blank" rel="noopener noreffer">Azure Bicep Module for Management Group Hierarchy</a>
+</li>
+<li><a href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" target="_blank" rel="noopener noreffer">The ideal Management group naming convention</a>
+</li>
+</ul>
+<p><strong>Thank you</strong> so much for taking the time to read this post. If you enjoyed it or learned something new, don’t hesitate to check out my other <a href="/posts" rel="">posts</a>
+.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-01-07</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/cloud-adoption-framework/">Cloud Adoption Framework</a>,&nbsp;<a href="/tags/management-groups/">Management Groups</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/2024/decoding-microsoft-azure-landing-zones-explained/" class="prev" rel="prev" title=" 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-J3E897NYLC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>

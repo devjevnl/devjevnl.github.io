@@ -1,9 +1,41 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - </title>
+        <title>Tags - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/</link>
-        <description>Tags - Tag - </description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+        <description>Tags - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Azure</title>
+    <link>https://www.devjev.nl/tags/azure/</link>
+    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/azure/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Bicep</title>
+    <link>https://www.devjev.nl/tags/bicep/</link>
+    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/bicep/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Adoption Framework</title>
+    <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
+    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/cloud-adoption-framework/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Management Groups</title>
+    <link>https://www.devjev.nl/tags/management-groups/</link>
+    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/tags/management-groups/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Application Landing Zone</title>
     <link>https://www.devjev.nl/tags/application-landing-zone/</link>
     <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
@@ -49,38 +81,6 @@
     <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://www.devjev.nl/tags/tenant-landing-zone/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Sentinel</title>
-    <link>https://www.devjev.nl/tags/azure-sentinel/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/tags/azure-sentinel/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Bicep</title>
-    <link>https://www.devjev.nl/tags/bicep/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/tags/bicep/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Security</title>
-    <link>https://www.devjev.nl/tags/cloud-security/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/tags/cloud-security/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Log Analytics</title>
-    <link>https://www.devjev.nl/tags/log-analytics/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/tags/log-analytics/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

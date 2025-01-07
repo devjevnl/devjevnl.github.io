@@ -2,26 +2,33 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.devjev.nl/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/posts/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure-bicep/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure-governance/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/bicep/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/cloud-adoption-framework/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/how-to/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/management-groups/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/tags/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/tenant-landing-zone/</loc><lastmod>2025-01-07T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/application-landing-zone/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-landing-zones/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-landing-zones/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/cloud-infrastructure/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/cloud-infrastructure/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/microsoft-azure/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/platform-landing-zone/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/tenant-landing-zone/</loc><lastmod>2024-12-23T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-security/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-sentinel/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/azure-sentinel/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/bicep/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/cloud-security/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/how-to/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/log-analytics/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</loc><lastmod>2024-11-25T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</loc><lastmod>2024-11-07T02:00:00&#43;02:00</lastmod></url><url>
@@ -42,17 +49,18 @@
             <loc>https://www.devjev.nl/categories/architecture/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-guide/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/azure-workloads/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/cloud-adoption-framework/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/cloud-computing/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/landing-zones/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/microsoft-azure/</loc><lastmod>2024-06-30T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/tags/azure/</loc><lastmod>2024-10-24T13:42:15&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/automation/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/azure-devops-governance/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/cloud-compliance/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/compliance/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/microsoft-security-devops-extension/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/pipeline-decorators/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/pipelines/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/security--compliance/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
+            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2024-06-14T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/exchange-online/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/categories/exchange-online/</loc><lastmod>2024-04-29T02:00:00&#43;02:00</lastmod></url><url>
@@ -80,7 +88,6 @@
             <loc>https://www.devjev.nl/tags/.fullname/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/get-member/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/need-to-know/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
-            <loc>https://www.devjev.nl/categories/powershell/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/select-object/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>
             <loc>https://www.devjev.nl/tags/type-accelerators/</loc><lastmod>2023-10-29T02:00:00&#43;02:00</lastmod></url><url>

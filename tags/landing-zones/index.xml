@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Landing Zones - Tag - </title>
+        <title>Landing Zones - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/landing-zones/</link>
-        <description>Landing Zones - Tag - </description>
+        <description>Landing Zones - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/landing-zones/" rel="self" type="application/rss+xml" /><item>
     <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
     <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>

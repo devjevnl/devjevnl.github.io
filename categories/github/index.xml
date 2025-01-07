@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>GitHub - Category - </title>
+        <title>GitHub - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/github/</link>
-        <description>GitHub - Category - </description>
+        <description>GitHub - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 06 Nov 2020 13:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/github/" rel="self" type="application/rss+xml" /><item>
     <title>GitHub vs Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2020/github-vs-ado/</link>

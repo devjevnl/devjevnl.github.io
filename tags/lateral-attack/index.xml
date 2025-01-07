@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Lateral Attack - Tag - </title>
+        <title>Lateral Attack - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/lateral-attack/</link>
-        <description>Lateral Attack - Tag - </description>
+        <description>Lateral Attack - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 May 2021 12:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/lateral-attack/" rel="self" type="application/rss+xml" /><item>
     <title>Hacking Azure DevOps</title>
     <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>

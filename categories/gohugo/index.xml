@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>GoHugo - Category - </title>
+        <title>GoHugo - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/gohugo/</link>
-        <description>GoHugo - Category - </description>
+        <description>GoHugo - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/gohugo/" rel="self" type="application/rss+xml" /><item>
     <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
     <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>

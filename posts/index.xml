@@ -1,9 +1,20 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - </title>
+        <title>All Posts - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/posts/</link>
-        <description>All Posts | </description>
+        <description>All Posts | DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Jul 2025 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Simplify Azure Management Group Setup using Bicep Vending</title>
+    <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
+    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
+    <description><![CDATA[<h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
+<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
+This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
+. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>]]></description>
+</item>
+<item>
     <title> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬</title>
     <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</link>
     <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
@@ -98,17 +109,6 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
     <description><![CDATA[<p>Did you know that you can run your Azure DevOps pipeline jobs in a container? It&rsquo;s a great way to combine the benefits of Microsoft Hosted Agents and Self-Hosted Agents. In this post, I will explain what Azure DevOps Container Jobs are and how you can use them to your advantage. But first, a recap of Microsoft Hosted Agents and Self-Hosted Agents.</p>
 <h2 id="what-are-microsoft-hosted-agents">What are Microsoft Hosted Agents</h2>
 <p>Microsoft Hosted Agents are a type of agent in Azure DevOps that are hosted and managed by Microsoft. These agents are pre-configured with certain software depending upon the type of agent (Windows, macOS, or Linux) which can run jobs targeting different platforms. With Microsoft Hosted Agents you trade off control for convenience as they are an excellent choice if you need to quickly scale your operations without worrying about the underlying infrastructure management.</p>]]></description>
-</item>
-<item>
-    <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
-    <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
-    <description><![CDATA[<p>Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.</p>
-<h2 id="unveiling-object-properties-and-methods-with-get-member">Unveiling Object Properties and Methods with Get-Member</h2>
-<p>The official documentation states: <em>The Get-Member cmdlet gets the members, the properties and methods, of objects.</em> Making it the Swiss army knife for exploring
-the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.</p>]]></description>
 </item>
 </channel>
 </rss>

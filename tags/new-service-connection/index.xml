@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>New Service Connection - Tag - </title>
+        <title>New Service Connection - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/new-service-connection/</link>
-        <description>New Service Connection - Tag - </description>
+        <description>New Service Connection - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/new-service-connection/" rel="self" type="application/rss+xml" /><item>
     <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
     <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>

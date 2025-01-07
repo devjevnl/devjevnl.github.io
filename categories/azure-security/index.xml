@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Azure Security - Category - </title>
+        <title>Azure Security - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/azure-security/</link>
-        <description>Azure Security - Category - </description>
+        <description>Azure Security - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/azure-security/" rel="self" type="application/rss+xml" /><item>
     <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
     <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>

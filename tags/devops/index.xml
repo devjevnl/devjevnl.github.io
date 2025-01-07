@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>DevOps - Tag - </title>
+        <title>DevOps - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/devops/</link>
-        <description>DevOps - Tag - </description>
+        <description>DevOps - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/devops/" rel="self" type="application/rss+xml" /><item>
     <title>Git gud with branch naming</title>
     <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
