@@ -3,7 +3,17 @@
         <title>Automation - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/automation/</link>
         <description>Automation - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/automation/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/automation/" rel="self" type="application/rss+xml" /><item>
+    <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
+    <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.</p>
+<p>In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!</p>]]></description>
+</item>
+<item>
     <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
     <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
     <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>

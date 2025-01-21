@@ -3,7 +3,17 @@
         <title>Azure DevOps - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/tags/azure-devops/</link>
         <description>Azure DevOps - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/azure-devops/" rel="self" type="application/rss+xml" /><item>
+    <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
+    <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.</p>
+<p>In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!</p>]]></description>
+</item>
+<item>
     <title>🚀 Quickly Find Your Azure DevOps Project Id 🔍</title>
     <link>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</link>
     <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
@@ -113,27 +123,6 @@ In this post the I will introduce you to the <code>Azure DevOps Demo Generator</
  of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
 
 In this post the I will show how to create a new <code>Project</code> in Azure DevOps.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-<item>
-    <title>How to create an Organization in Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</link>
-    <pubDate>Sun, 06 Nov 2022 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</guid>
-    <description><![CDATA[<p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-. The subjects covered by this series are organized into three categories:</p>
-<ul>
-<li><a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-</li>
-<li>Azure DevOps Advanced</li>
-<li>Azure DevOps Expert</li>
-</ul>
-<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-:</p>
-<p><code>How to create an Organization in Azure DevOps?</code></p>
 <p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
  will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
 , while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>

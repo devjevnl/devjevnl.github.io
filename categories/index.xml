@@ -3,7 +3,39 @@
         <title>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Automation</title>
+    <link>https://www.devjev.nl/categories/automation/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/automation/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Azure DevOps Governance</title>
+    <link>https://www.devjev.nl/categories/azure-devops-governance/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/azure-devops-governance/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Compliance</title>
+    <link>https://www.devjev.nl/categories/cloud-compliance/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/cloud-compliance/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>PowerShell</title>
+    <link>https://www.devjev.nl/categories/powershell/</link>
+    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/powershell/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Azure Bicep</title>
     <link>https://www.devjev.nl/categories/azure-bicep/</link>
     <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
@@ -49,38 +81,6 @@
     <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure-landing-zones/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Infrastructure</title>
-    <link>https://www.devjev.nl/categories/cloud-infrastructure/</link>
-    <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-infrastructure/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Security</title>
-    <link>https://www.devjev.nl/categories/azure-security/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/azure-security/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Sentinel</title>
-    <link>https://www.devjev.nl/categories/azure-sentinel/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/azure-sentinel/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure Bastion</title>
-    <link>https://www.devjev.nl/categories/azure-bastion/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/azure-bastion/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
