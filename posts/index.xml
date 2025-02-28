@@ -3,7 +3,29 @@
         <title>All Posts - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Jul 2025 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 21 Jul 2027 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
+    <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
+    <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
+    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working
+with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+.</p>
+<p>In this post, I will break down <strong>Work Items</strong> in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and
+understanding them is crucial for effectively managing projects. We will explore:</p>
+<ul>
+<li>The different types of Work Items.</li>
+<li>How Work Items tie into the Work Item Process.</li>
+<li>The hierarchy of Work Items.</li>
+<li>Where and how Work Items can be created.</li>
+<li>Ownership and refinement responsibilities for each Work Item level.</li>
+<li>Additional useful Work Item features.</li>
+</ul>
+<p>Let&rsquo;s dive in!</p>]]></description>
+</item>
+<item>
     <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
     <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
     <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
@@ -98,17 +120,6 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
     <description><![CDATA[<p>While this post is outside of my usual topics, I would like to share a solution for an error message which returns just a single search result on Google. I want to share it because it took me some time to figure out what was going on. So in case someone else runs into this issue this post might be helpful.</p>
 <h2 id="the-issue">The Issue</h2>
 <p>It all started after the network team updated the network to a new public IP. Right after this change all users started to get the error message <code>400 Bad Request. QWNjZXNzIHRvIE91dGxvb2sgb24gdGhlIHdlYiBoYXMgYmVlbiBibG9ja2VkIGJ5 IHlvdXIgb3JnYW5pemF0aW9uLiA8QlI+PEJSPkNsaWNrIDxhIGhyZWY9Ii9vd2Ev bG9nb2ZmLm93YSI+aGVyZTwvYT4gdG8gc2lnbiBvdXQu (Base64)</code> when trying to access Outlook on the web (OWA) in Microsoft 365.</p>]]></description>
-</item>
-<item>
-    <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
-    <link>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
-    <description><![CDATA[<p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
- you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
-<h2 id="target-set-up">Target set-up</h2>
-<p>Lets start by having a look at the target set-up.</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Work Items - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+        <link>https://www.devjev.nl/tags/work-items/</link>
+        <description>Work Items - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/work-items/" rel="self" type="application/rss+xml" /><item>
+    <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
+    <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
+    <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
+    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
+ of the blog post series on working
+with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
+.</p>
+<p>In this post, I will break down <strong>Work Items</strong> in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and
+understanding them is crucial for effectively managing projects. We will explore:</p>
+<ul>
+<li>The different types of Work Items.</li>
+<li>How Work Items tie into the Work Item Process.</li>
+<li>The hierarchy of Work Items.</li>
+<li>Where and how Work Items can be created.</li>
+<li>Ownership and refinement responsibilities for each Work Item level.</li>
+<li>Additional useful Work Item features.</li>
+</ul>
+<p>Let&rsquo;s dive in!</p>]]></description>
+</item>
+</channel>
+</rss>

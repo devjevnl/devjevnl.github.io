@@ -1,0 +1,112 @@
+# 📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🗉️🎯
+
+This is the 6th post in the category [Azure DevOps Fundamentals](/categories/azure-devops-fundamentals/) of the blog post series on working with [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/#overview).
+
+In this post, I will break down **Work Items** in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and understanding them is crucial for effectively managing projects. We will explore:
+
+- The different types of Work Items.
+- How Work Items tie into the Work Item Process.
+- The hierarchy of Work Items.
+- Where and how Work Items can be created.
+- Ownership and refinement responsibilities for each Work Item level.
+- Additional useful Work Item features.
+
+Let's dive in!
+
+## What Are Work Items in Azure DevOps?
+
+A **Work Item** in Azure DevOps represents any unit of work that needs to be tracked. Whether it's a feature request, a task, a bug, or an overarching epic, Work Items help teams stay organized and aligned with their goals. Work Items exist within a **Work Item Process**, which dictates how they behave and relate to each other.
+
+## Work Item Types and Processes
+
+Azure DevOps supports different Work Item types based on the process used in the project. The available Work Item types depend on the chosen Work Item Process:
+
+### Work Item Processes in Azure DevOps
+
+Azure DevOps provides four default Work Item Processes:
+
+1. **Basic** – A simple process with only three Work Item types: Epics, Issues, and Tasks.
+2. **Agile** – Designed for Agile methodologies, including Epics, Features, User Stories, and Tasks.
+3. **Scrum** – A process tailored for Scrum teams, featuring Epics, Features, Product Backlog Items (PBIs), and Tasks.
+4. **CMMI** – For Capability Maturity Model Integration (CMMI) workflows, including Epics, Features, Requirements, Change Requests, and Tasks.
+
+Each process determines the structure and relationships between Work Items. For example, in Scrum, a **Product Backlog Item (PBI)** is used instead of a **User Story**, which is the equivalent term in the Agile process.
+
+## Work Item Hierarchy and Responsibilities
+
+Work Items follow a hierarchy that organizes work into manageable levels. Understanding this structure is key to effectively managing Azure DevOps projects.
+
+| Level      | Agile Process | Scrum Process              | Suggested Duration | Owned By           | Refinement Responsibility       |
+| ---------- | ------------- | -------------------------- | ------------------ | ------------------ | ------------------------------- |
+| 1. Epic    | Epic          | Epic                       | Several months     | Product Management | Product Management, Architects  |
+| 2. Feature | Feature       | Feature                    | 4-8 weeks          | Product Owner      | Product Owner, Architects       |
+| 3. Story   | User Story    | Product Backlog Item (PBI) | < 2 weeks          | Scrum Team         | Product Owner, Development Team |
+| 4. Task    | Task          | Task                       | < 1 day            | Developers         | Developers                      |
+| (Bug)      | Bug           | Bug                        | Varies             | Developers/Testers | Developers/Testers              |
+
+### Explanation of Ownership and Refinement Responsibilities
+
+- **Epics**: Owned by Product Management, refined collaboratively with Architects to align with strategic goals.
+- **Features**: Managed by the Product Owner with input from Architects to ensure alignment with technical and business priorities.
+- **User Stories/PBIs**: Created and refined by the Product Owner with support from the Development Team to ensure feasibility and clarity.
+- **Tasks**: Owned by Developers and refined collaboratively by the Development Team during Sprint Planning or daily stand-ups.
+- **Bugs**: Managed by Developers and Testers, refinement depends on severity and impact.
+
+## Key Fields for Work Items
+
+Several key fields exist across different Work Item types in Azure Boards. Understanding their purpose and applicability helps teams prioritize, estimate, and track work effectively. Below is an overview of important fields and how they apply to each Work Item type.
+
+### Priority
+
+- **Available in:** Epics, Features, PBIs, User Stories, Bugs, and Tasks.
+- **Usage:** Indicates the importance of the Work Item relative to others. Higher priority items should be addressed first.
+- **Example:** A Feature with a priority of 1 should be developed before a priority 3 Feature.
+
+### Risk
+
+- **Available in:** Epics, Features, PBIs, and User Stories.
+- **Usage:** Assesses potential risk associated with the Work Item. High-risk items may require additional oversight or mitigation strategies.
+- **Example:** A Feature that introduces significant architectural changes may be marked as high-risk.
+
+### Effort
+
+- **Available in:** Features, PBIs, User Stories, and Tasks.
+- **Usage:** Represents the estimated amount of work required to complete the Work Item. Helps in sprint and capacity planning.
+- **Example:** A User Story estimated at 5 effort points indicates it requires more work than one estimated at 2 points.
+
+### Business Value
+
+- **Available in:** Epics, Features, PBIs, and User Stories.
+- **Usage:** Helps determine the value delivered to the business. Higher values should generally be prioritized.
+- **Example:** A Feature that enables a key customer-facing functionality may be given a business value of 10.
+
+### Start Date & Target Date
+
+- **Available in:** Epics, Features, PBIs, and User Stories.
+- **Usage:** Provides scheduling details to track when work is expected to begin and be completed.
+- **Example:** An Epic planned for Q2 may have a Start Date of April 1st and a Target Date of June 30th.
+
+### Modifying Dropdown Values
+
+Several of these fields, such as **Priority, Risk, Business Value, and Classification**, use dropdown lists for selection. The values available in these dropdown lists can be modified in Azure DevOps by navigating to:
+
+- **Project Settings > Process**
+- Select the process used by your project (e.g., Agile, Scrum, etc.).
+- Under **Work Item Types**, select the relevant Work Item.
+- Modify the allowed values for the desired field.
+
+This customization allows teams to tailor Azure Boards to their specific needs and workflows.
+
+## Where to Create Work Items
+
+Work Items can be created in multiple areas within Azure DevOps, depending on the context:
+
+- **Boards**: Click the "New Work Item" button on a Kanban board to create tasks, bugs, or stories directly within the workflow.
+- **Backlogs**: Navigate to the backlog view and use the "New Work Item" option to prioritize and plan work before assigning it to a sprint.
+- **Sprints**: Inside an active sprint, create tasks and bugs directly linked to planned backlog items to track committed work.
+- **Work Item Queries**: Use the Queries section to define custom filters and bulk-create or edit Work Items.
+- **Azure DevOps API**: Leverage automation scripts to generate Work Items programmatically, useful for integration with CI/CD pipelines or external tools.
+
+## Conclusion
+
+Work Items form the backbone of project tracking in Azure DevOps. By understanding the different types, key fields, and customization options, teams can optimize their workflow for maximum efficiency. Whether refining an Epic or creating a Task, mastering Work Items is essential to successful project execution!
