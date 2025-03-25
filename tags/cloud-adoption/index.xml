@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cloud Adoption - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+        <link>https://www.devjev.nl/tags/cloud-adoption/</link>
+        <description>Cloud Adoption - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/cloud-adoption/" rel="self" type="application/rss+xml" /><item>
+    <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
+    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
+    <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft&rsquo;s Cloud Adoption Framework</a>
+ primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.</p>]]></description>
+</item>
+</channel>
+</rss>

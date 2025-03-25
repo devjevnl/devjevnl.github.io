@@ -6,6 +6,16 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 21 Jul 2027 21:00:00 &#43;0200</lastBuildDate>
             <atom:link href="https://www.devjev.nl/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
+    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
+    <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft&rsquo;s Cloud Adoption Framework</a>
+ primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.</p>]]></description>
+</item>
+<item>
     <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
     <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
     <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
@@ -112,16 +122,6 @@ I think it&rsquo;s time to offset that blog post and have a look at how complian
 .</p>
 <h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
 <p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
-</item>
-<item>
-    <title>🚫 400 Bad Request. Access to Outlook on the web has been blocked by your organization 🛑✉️🔒</title>
-    <link>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</link>
-    <pubDate>Mon, 29 Apr 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/400-bad-request-access-to-outlook-on-the-web-has-been-blocked-by-your-organization/</guid>
-    <description><![CDATA[<p>While this post is outside of my usual topics, I would like to share a solution for an error message which returns just a single search result on Google. I want to share it because it took me some time to figure out what was going on. So in case someone else runs into this issue this post might be helpful.</p>
-<h2 id="the-issue">The Issue</h2>
-<p>It all started after the network team updated the network to a new public IP. Right after this change all users started to get the error message <code>400 Bad Request. QWNjZXNzIHRvIE91dGxvb2sgb24gdGhlIHdlYiBoYXMgYmVlbiBibG9ja2VkIGJ5 IHlvdXIgb3JnYW5pemF0aW9uLiA8QlI+PEJSPkNsaWNrIDxhIGhyZWY9Ii9vd2Ev bG9nb2ZmLm93YSI+aGVyZTwvYT4gdG8gc2lnbiBvdXQu (Base64)</code> when trying to access Outlook on the web (OWA) in Microsoft 365.</p>]]></description>
 </item>
 </channel>
 </rss>

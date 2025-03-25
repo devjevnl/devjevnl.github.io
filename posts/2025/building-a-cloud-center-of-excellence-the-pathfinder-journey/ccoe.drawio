@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="JR3_6sApZVk-1FY2mm0N">
+    <mxGraphModel dx="2285" dy="1099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-17" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="190" width="1400" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="HOhB8FH9BhJnCuof4_gV-1" value="Quartering / Pathfinders Phase" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="-235" y="280" width="1010" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-15" value="Envision Stage" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="-326" y="509" width="320" height="301" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-16" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Assemble the pathfinder team&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Set the stage&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Organizational structure&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Market standard best practices&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Elaborate on the three pillars&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;The three CCoE pillars of Gartner&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Enhanced&lt;/span&gt;&lt;br style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Organizational Strategy Framework Pyramid&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Explain the CCoE Teams&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Explain the CCoE Roles&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Share referenced sources&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Share Academic principles, market standard, best practices and practical examples&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Explain Cloud fundamentals&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-326" y="543" width="320" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-20" value="Launch Stage" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="354" y="661" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-21" value="Scale Stage" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="689" y="663" width="320" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-22" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Pre-mortem, launching the CCoE&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Backlog define workshop&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Refinement workshop&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Planning workshop&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Kick-off CCoE sprint 1&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="354" y="694" width="320" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-23" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Catalist&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Consolidation&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Post-mortem, the CCoE launch&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Validate and apply upstream first&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Rinse and repeat&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="689" y="696" width="320" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-1" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 18px;&quot;&gt;Envision Stage&lt;/span&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-2" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 18px;&quot;&gt;Align Stage&lt;/span&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-3" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 18px;&quot;&gt;Launch Stage&lt;/span&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="280" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-4" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 18px;&quot;&gt;Scale Stage&lt;/span&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-5" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="253.75" y="-248.75" width="33" height="1007.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-7" value="&lt;font face=&quot;Architects Daughter&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Operating the CCoE&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="727.63" y="210" width="304.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-9" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 20px;&quot;&gt;Execution Phase&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="280" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="864.63" y="175.63" width="33" height="158.75" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-11" value="&lt;span style=&quot;font-family: &amp;quot;Architects Daughter&amp;quot;; font-size: 20px;&quot;&gt;The Process of establishing a CCoE&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="89.06" y="210" width="362.38" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tYmFgq-P25sUhlP-6qnQ-13" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;strokeWidth=2;shape=mxgraph.lean_mapping.physical_pull;pointerEvents=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="841.13" y="316" width="80" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-17" value="Align Stage" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=18;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="14" y="580" width="320" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="Qu0CVvwa8pxE8gBhFTIW-18" value="&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Establish CCoE Teams with members and representatives&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Map the Three Pillars capabilities to the CCoE teams&lt;/font&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Define the CCoE&amp;nbsp;&lt;/span&gt;in&lt;br&gt;context of the Organization&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Align the CCoE framework&amp;nbsp;&lt;/span&gt;with&lt;br&gt;the Organizational context&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Establish a&amp;nbsp;Definition&lt;br&gt;of Ready&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;Document the outcomes&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="14" y="613" width="320" height="198" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
