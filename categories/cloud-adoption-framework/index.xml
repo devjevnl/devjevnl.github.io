@@ -3,7 +3,29 @@
         <title>Cloud Adoption Framework - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
         <description>Cloud Adoption Framework - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/cloud-adoption-framework/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/cloud-adoption-framework/" rel="self" type="application/rss+xml" /><item>
+    <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
+    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
+    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
+    <description><![CDATA[<h1 id="envision-stage">Envision Stage</h1>
+<p>In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE’s purpose, structure, and alignment within the organization. If you haven&rsquo;t read the introduction to this series, check out the first post: Building a <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel="">Cloud Center of Excellence: The Pathfinder Journey</a>
+.</p>
+<h2 id="assembling-the-pathfinder-team">Assembling the Pathfinder Team</h2>
+<p>Before the actual CCoE is established, a <strong>Pathfinder Team</strong> is formed. This team is responsible &amp; accountable for implementing the <strong>Pathfinder Roadmap</strong>, a framework designed to guide organizations through cloud adoption and governance. It&rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.</p>]]></description>
+</item>
+<item>
+    <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
+    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
+    <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
+    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft&rsquo;s Cloud Adoption Framework</a>
+ primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.</p>]]></description>
+</item>
+<item>
     <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
     <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
     <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>

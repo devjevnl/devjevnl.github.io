@@ -4,6 +4,18 @@
         <link>https://www.devjev.nl/posts/</link>
         <description>All Posts | DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 21 Jul 2027 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
+    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
+    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Jev</author>
+    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
+    <description><![CDATA[<h1 id="envision-stage">Envision Stage</h1>
+<p>In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE’s purpose, structure, and alignment within the organization. If you haven&rsquo;t read the introduction to this series, check out the first post: Building a <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel="">Cloud Center of Excellence: The Pathfinder Journey</a>
+.</p>
+<h2 id="assembling-the-pathfinder-team">Assembling the Pathfinder Team</h2>
+<p>Before the actual CCoE is established, a <strong>Pathfinder Team</strong> is formed. This team is responsible &amp; accountable for implementing the <strong>Pathfinder Roadmap</strong>, a framework designed to guide organizations through cloud adoption and governance. It&rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.</p>]]></description>
+</item>
+<item>
     <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
     <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
     <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
@@ -106,20 +118,6 @@ To get the <code>Project Id</code> we can do this with the projects <code>LIST</
     <author>Jev</author>
     <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
     <description><![CDATA[<p>The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.</p>]]></description>
-</item>
-<item>
-    <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
-    <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
-    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-    <description><![CDATA[<p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
- about how secrets can be leaked in <code>Azure Pipelines</code>.
-I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
- can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
-.</p>
-<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
-<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
 </item>
 </channel>
 </rss>
