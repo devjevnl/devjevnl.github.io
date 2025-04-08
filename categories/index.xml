@@ -3,7 +3,39 @@
         <title>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
         <link>https://www.devjev.nl/categories/</link>
         <description>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>CCoE</title>
+    <link>https://www.devjev.nl/categories/ccoe/</link>
+    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/ccoe/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Operating Model</title>
+    <link>https://www.devjev.nl/categories/cloud-operating-model/</link>
+    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/cloud-operating-model/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Cloud Transformation</title>
+    <link>https://www.devjev.nl/categories/cloud-transformation/</link>
+    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/cloud-transformation/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>How To</title>
+    <link>https://www.devjev.nl/categories/how-to/</link>
+    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://www.devjev.nl/categories/how-to/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Cloud Adoption Framework</title>
     <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
     <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
@@ -49,38 +81,6 @@
     <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Automation</title>
-    <link>https://www.devjev.nl/categories/automation/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/automation/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps Governance</title>
-    <link>https://www.devjev.nl/categories/azure-devops-governance/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/azure-devops-governance/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Compliance</title>
-    <link>https://www.devjev.nl/categories/cloud-compliance/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-compliance/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>PowerShell</title>
-    <link>https://www.devjev.nl/categories/powershell/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/powershell/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>
