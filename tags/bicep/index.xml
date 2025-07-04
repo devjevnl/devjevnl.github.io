@@ -1,58 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Bicep - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/bicep/</link>
-        <description>Bicep - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/bicep/" rel="self" type="application/rss+xml" /><item>
-    <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
-    <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.</p>
-<p>In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!</p>]]></description>
-</item>
-<item>
-    <title>Simplify Azure Management Group Setup using Bicep Vending</title>
-    <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
-    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
-    <description><![CDATA[<h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
-<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
-This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
-. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>]]></description>
-</item>
-<item>
-    <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
-    <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
-    <description><![CDATA[<p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
-<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
-<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>]]></description>
-</item>
-<item>
-    <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
-    <link>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</link>
-    <pubDate>Fri, 23 Feb 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
-    <description><![CDATA[<p>In my previous post <a href="/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds" rel="">🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&rsquo;s the Best of Both Worlds! 🌐🛠️</a>
- you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&rsquo;s get started!</p>
-<h2 id="target-set-up">Target set-up</h2>
-<p>Lets start by having a look at the target set-up.</p>]]></description>
-</item>
-<item>
-    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
-    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
-    <description><![CDATA[<p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
-. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bicep on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/bicep/</link>
+    <description>Recent content in Bicep on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Jan 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/bicep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
+      <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simplify Azure Management Group Setup using Bicep Vending</title>
+      <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
+      <description>&lt;h2 id=&#34;understanding-the-need-for-management-group-automation&#34;&gt;Understanding the Need for Management Group Automation&lt;/h2&gt;&#xA;&lt;p&gt;Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.&#xA;This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&amp;rsquo;s &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Subscription Vending&lt;/a&gt;&#xA;. This solution enables you to deploy any management group hierarchy, considering Azure&amp;rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
+      <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
+      <pubDate>Mon, 25 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
+      <description>&lt;p&gt;In this post, I&amp;rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&amp;rsquo;re an experienced cloud professional or new to Azure.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-microsoft-sentinel&#34;&gt;What is Microsoft Sentinel?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re new to Microsoft Sentinel, here&amp;rsquo;s a brief introduction. Feel free to skip this section if you&amp;rsquo;re already familiar with it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🛠️ How to Build and Use Your Own Container with Azure DevOps Container Jobs 🚀📦</title>
+      <link>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</link>
+      <pubDate>Fri, 23 Feb 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/how-to-build-and-use-your-own-container-with-azure-devops-container-jobs/</guid>
+      <description>&lt;p&gt;In my previous post &lt;a href=&#34;https://www.devjev.nl/posts/2024/azure-devops-container-jobs-when-microsoft-and-self-hosted-agents-meet-its-the-best-of-both-worlds&#34; rel=&#34;&#34;&gt;🚀 Azure DevOps Container Jobs: When Microsoft and Self-Hosted Agents meet, It&amp;rsquo;s the Best of Both Worlds! 🌐🛠️&lt;/a&gt;&#xA; you where able experience Azure DevOps container jobs. In this post I am delivering on my promise and explain set-by-step how to build and use your own container with Azure DevOps Container Jobs. Buckle up, and let&amp;rsquo;s get started!&lt;/p&gt;&#xA;&lt;h2 id=&#34;target-set-up&#34;&gt;Target set-up&lt;/h2&gt;&#xA;&lt;p&gt;Lets start by having a look at the target set-up.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+      <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+      <description>&lt;p&gt;With this post I want to share my new GitHub repository -&amp;gt; &lt;a href=&#34;https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Starter Kit for an Azure IaC repository&lt;/a&gt;&#xA;. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

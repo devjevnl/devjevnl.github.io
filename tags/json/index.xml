@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Json - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/json/</link>
-        <description>Json - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/json/" rel="self" type="application/rss+xml" /><item>
-    <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
-    <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
-    <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
-<h2 id="use-case">Use Case</h2>
-<p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/json/</link>
+    <description>Recent content in Json on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Jun 2023 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
+      <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
+      <pubDate>Mon, 19 Jun 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
+      <description>&lt;p&gt;In this post I will share a couple of tips with regards to &lt;code&gt;Secrets Management&lt;/code&gt; in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.&lt;/p&gt;&#xA;&lt;h2 id=&#34;use-case&#34;&gt;Use Case&lt;/h2&gt;&#xA;&lt;p&gt;When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

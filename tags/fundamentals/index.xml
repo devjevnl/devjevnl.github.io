@@ -1,105 +1,54 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Fundamentals - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/fundamentals/</link>
-        <description>Fundamentals - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/fundamentals/" rel="self" type="application/rss+xml" /><item>
-    <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
-    <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
-    <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
-    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working
-with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-.</p>
-<p>In this post, I will break down <strong>Work Items</strong> in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and
-understanding them is crucial for effectively managing projects. We will explore:</p>
-<ul>
-<li>The different types of Work Items.</li>
-<li>How Work Items tie into the Work Item Process.</li>
-<li>The hierarchy of Work Items.</li>
-<li>Where and how Work Items can be created.</li>
-<li>Ownership and refinement responsibilities for each Work Item level.</li>
-<li>Additional useful Work Item features.</li>
-</ul>
-<p>Let&rsquo;s dive in!</p>]]></description>
-</item>
-<item>
-    <title>How to use Library for Azure Pipelines 📗</title>
-    <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
-    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
-    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
-In this post the I will show how to use <code>Library for Azure Pipelines</code>.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-<item>
-    <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</title>
-    <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
-    <pubDate>Wed, 15 Feb 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</guid>
-    <description><![CDATA[<p>This is the 5th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
-In this post the I will introduce you to the <code>Azure DevOps Demo Generator</code> tool by using it to create a new Project in Azure DevOps.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-<item>
-    <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
-    <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
-    <pubDate>Fri, 20 Jan 2023 08:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
-    <description><![CDATA[<p>This is the 4th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-. In this post the I will demonstrate how to create an <code>Azure Service Connection</code> in an Azure DevOps Project.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-<item>
-    <title>How to create a new Project in Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
-    <pubDate>Tue, 15 Nov 2022 10:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</guid>
-    <description><![CDATA[<p>This is the 2nd post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
-In this post the I will show how to create a new <code>Project</code> in Azure DevOps.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-<item>
-    <title>How to create an Organization in Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</link>
-    <pubDate>Sun, 06 Nov 2022 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</guid>
-    <description><![CDATA[<p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-. The subjects covered by this series are organized into three categories:</p>
-<ul>
-<li><a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-</li>
-<li>Azure DevOps Advanced</li>
-<li>Azure DevOps Expert</li>
-</ul>
-<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-:</p>
-<p><code>How to create an Organization in Azure DevOps?</code></p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fundamentals on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/fundamentals/</link>
+    <description>Recent content in Fundamentals on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Feb 2025 21:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
+      <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
+      <pubDate>Thu, 27 Feb 2025 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
+      <description>&lt;p&gt;This is the 6th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working&#xA;with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;In this post, I will break down &lt;strong&gt;Work Items&lt;/strong&gt; in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and&#xA;understanding them is crucial for effectively managing projects. We will explore:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The different types of Work Items.&lt;/li&gt;&#xA;&lt;li&gt;How Work Items tie into the Work Item Process.&lt;/li&gt;&#xA;&lt;li&gt;The hierarchy of Work Items.&lt;/li&gt;&#xA;&lt;li&gt;Where and how Work Items can be created.&lt;/li&gt;&#xA;&lt;li&gt;Ownership and refinement responsibilities for each Work Item level.&lt;/li&gt;&#xA;&lt;li&gt;Additional useful Work Item features.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to use Library for Azure Pipelines 📗</title>
+      <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
+      <pubDate>Tue, 21 Mar 2023 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
+      <description>&lt;p&gt;This is the 6th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;&#xA;In this post the I will show how to use &lt;code&gt;Library for Azure Pipelines&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</title>
+      <link>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</link>
+      <pubDate>Wed, 15 Feb 2023 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/</guid>
+      <description>&lt;p&gt;This is the 5th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;&#xA;In this post the I will introduce you to the &lt;code&gt;Azure DevOps Demo Generator&lt;/code&gt; tool by using it to create a new Project in Azure DevOps.&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to create a new Azure Service Connection in Azure DevOps 📘</title>
+      <link>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</link>
+      <pubDate>Fri, 20 Jan 2023 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/</guid>
+      <description>&lt;p&gt;This is the 4th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;. In this post the I will demonstrate how to create an &lt;code&gt;Azure Service Connection&lt;/code&gt; in an Azure DevOps Project.&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to create a new Project in Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</link>
+      <pubDate>Tue, 15 Nov 2022 10:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/</guid>
+      <description>&lt;p&gt;This is the 2nd post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;&#xA;In this post the I will show how to create a new &lt;code&gt;Project&lt;/code&gt; in Azure DevOps.&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to create an Organization in Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</link>
+      <pubDate>Sun, 06 Nov 2022 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/</guid>
+      <description>&lt;p&gt;With this post am kicking off a blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;. The subjects covered by this series are organized into three categories:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Azure DevOps Advanced&lt;/li&gt;&#xA;&lt;li&gt;Azure DevOps Expert&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Starting with the basic of basics of &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;How to create an Organization in Azure DevOps?&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

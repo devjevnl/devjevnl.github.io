@@ -1,72 +1,54 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Cloud Governance - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/cloud-governance/</link>
-        <description>Cloud Governance - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/cloud-governance/" rel="self" type="application/rss+xml" /><item>
-    <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
-    <description><![CDATA[<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve covered the groundwork:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/" rel=""><strong>The Align Stage</strong></a>
-, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.</li>
-</ul>
-<p>We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&rsquo;s time to light the engines.</p>]]></description>
-</item>
-<item>
-    <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
-    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
-    <description><![CDATA[<blockquote>
-<p><em>&ldquo;You can&rsquo;t move fast if no one&rsquo;s steering in the same direction.&rdquo;</em></p>
-</blockquote>
-<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve explored the big picture:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-</ul>
-<p>Now it&rsquo;s time to shift gears. The vision is clear, but <strong>alignment</strong> is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.</p>]]></description>
-</item>
-<item>
-    <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
-    <description><![CDATA[<p>In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE&rsquo;s purpose, structure, and alignment within the organization. If you haven&rsquo;t read the introduction to this series, check out the first post: Building a <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel="">Cloud Center of Excellence: The Pathfinder Journey</a>
-.</p>
-<h2 id="assembling-the-pathfinder-team">Assembling the Pathfinder Team</h2>
-<p>Before the actual CCoE is established, a <strong>Pathfinder Team</strong> is formed. This team is responsible &amp; accountable for implementing the <strong>Pathfinder Roadmap</strong>, a framework designed to guide organizations through cloud adoption and governance. It&rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.</p>]]></description>
-</item>
-<item>
-    <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
-    <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
-    <description><![CDATA[<p>The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft&rsquo;s Cloud Adoption Framework</a>
- primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.</p>]]></description>
-</item>
-<item>
-    <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
-    <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.</p>
-<p>In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Governance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/cloud-governance/</link>
+    <description>Recent content in Cloud Governance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/cloud-governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📈🔁 Building a Cloud Center of Excellence: The Scale Stage 🧱🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</guid>
+      <description>In the Scale Stage, validated practices become reusable building blocks. Discover how to turn one-off wins into an organizational platform through standardization, inner-source, and a relentless PDCA improvement loop.</description>
+    </item>
+    <item>
+      <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
+      <pubDate>Tue, 29 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
+      <description>&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve covered the groundwork:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Align Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&amp;rsquo;s time to light the engines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
+      <pubDate>Mon, 07 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;You can&amp;rsquo;t move fast if no one&amp;rsquo;s steering in the same direction.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve explored the big picture:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Now it&amp;rsquo;s time to shift gears. The vision is clear, but &lt;strong&gt;alignment&lt;/strong&gt; is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
+      <pubDate>Tue, 01 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
+      <description>&lt;p&gt;In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE&amp;rsquo;s purpose, structure, and alignment within the organization. If you haven&amp;rsquo;t read the introduction to this series, check out the first post: Building a &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;Cloud Center of Excellence: The Pathfinder Journey&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;assembling-the-pathfinder-team&#34;&gt;Assembling the Pathfinder Team&lt;/h2&gt;&#xA;&lt;p&gt;Before the actual CCoE is established, a &lt;strong&gt;Pathfinder Team&lt;/strong&gt; is formed. This team is responsible &amp;amp; accountable for implementing the &lt;strong&gt;Pathfinder Roadmap&lt;/strong&gt;, a framework designed to guide organizations through cloud adoption and governance. It&amp;rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
+      <pubDate>Tue, 25 Mar 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
+      <description>&lt;p&gt;The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft&amp;rsquo;s Cloud Adoption Framework&lt;/a&gt;&#xA; primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
+      <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

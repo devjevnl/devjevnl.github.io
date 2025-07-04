@@ -1,65 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>PowerShell - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/powershell/</link>
-        <description>PowerShell - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/powershell/" rel="self" type="application/rss+xml" /><item>
-    <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
-    <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
-    <pubDate>Tue, 21 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.</p>
-<p>In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!</p>]]></description>
-</item>
-<item>
-    <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
-    <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
-    <pubDate>Fri, 14 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-    <description><![CDATA[<p>Back in 2022 I wrote a blog post <a href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" target="_blank" rel="noopener noreffer">I am in your pipeline reading all your secrets!</a>
- about how secrets can be leaked in <code>Azure Pipelines</code>.
-I think it&rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Azure DevOps Project</a>
- can be achieved. This is done by using a feature called <a href="https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Pipeline Decorators</a>
-.</p>
-<h2 id="what-are-pipeline-decorators">What are pipeline decorators?</h2>
-<p>In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&rsquo;t need to remember to add that step. We as <code>Azure DevOps Organization</code> owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an <code>Azure DevOps Organization</code> level that all pipelines are compliant with our organization&rsquo;s policies.</p>]]></description>
-</item>
-<item>
-    <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
-    <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
-    <pubDate>Sun, 29 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
-    <description><![CDATA[<p>Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.</p>
-<h2 id="unveiling-object-properties-and-methods-with-get-member">Unveiling Object Properties and Methods with Get-Member</h2>
-<p>The official documentation states: <em>The Get-Member cmdlet gets the members, the properties and methods, of objects.</em> Making it the Swiss army knife for exploring
-the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.</p>]]></description>
-</item>
-<item>
-    <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
-    <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
-    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
-    <description><![CDATA[<p>In the previous post <a href="/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management" rel="">Sleep Worry-Free: The best tips for Local Secrets Management</a>
- I shared the best tips for managing local secrets. In this post I will take <code>Secrets Management</code> to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretManagement</a>
- and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretStore</a>
- modules.</p>
-<h2 id="modules-explained">Modules explained</h2>
-<p>Since this approach to <code>Secrets Management</code> depends on the two just mentioned modules the purpose of each of the modules is explained next.</p>]]></description>
-</item>
-<item>
-    <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
-    <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
-    <pubDate>Mon, 19 Jun 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
-    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
-<h2 id="use-case">Use Case</h2>
-<p>When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/powershell/</link>
+    <description>Recent content in PowerShell on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Jan 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</title>
+      <link>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing compliance and governance in the cloud can be challenging, especially when it comes to an often overlooked yet critical system: your Azure DevOps organization. Ensuring proper auditing with securely stored logs in a centralized location is vital. Audit streams address this need by enabling you to send audit logs to a Log Analytics Workspace for detailed analysis and monitoring.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we’ll explore how to automate the configuration of Azure DevOps audit streams using PowerShell. We’ll focus on using a fully working script that not only automates the setup process but also ensures drift control. This guarantees that audit logs are consistently sent to your desired Log Analytics Workspace without the need for manual intervention. Let’s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🚀✨ I am in your pipeline, decorating it with compliance 🛠️🔒</title>
+      <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
+      <pubDate>Fri, 14 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
+      <description>&lt;p&gt;Back in 2022 I wrote a blog post &lt;a href=&#34;https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;I am in your pipeline reading all your secrets!&lt;/a&gt;&#xA; about how secrets can be leaked in &lt;code&gt;Azure Pipelines&lt;/code&gt;.&#xA;I think it&amp;rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;amp;tabs=browser&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps Project&lt;/a&gt;&#xA; can be achieved. This is done by using a feature called &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;amp;wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Pipeline Decorators&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-pipeline-decorators&#34;&gt;What are pipeline decorators?&lt;/h2&gt;&#xA;&lt;p&gt;In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&amp;rsquo;t need to remember to add that step. We as &lt;code&gt;Azure DevOps Organization&lt;/code&gt; owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an &lt;code&gt;Azure DevOps Organization&lt;/code&gt; level that all pipelines are compliant with our organization&amp;rsquo;s policies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell Prowess: The 3 commands you need to know 👈</title>
+      <link>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</link>
+      <pubDate>Sun, 29 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/powershell-prowess-the-3-commands-you-need-to-know/</guid>
+      <description>&lt;p&gt;Next to the Get-Command and hte Get-Help cmdlets, there are 3 other cmdlets that are essential for any PowerShell user. In this blog post I will explain my view on why they are essential and provide hands-on examples on how to use them.&lt;/p&gt;&#xA;&lt;h2 id=&#34;unveiling-object-properties-and-methods-with-get-member&#34;&gt;Unveiling Object Properties and Methods with Get-Member&lt;/h2&gt;&#xA;&lt;p&gt;The official documentation states: &lt;em&gt;The Get-Member cmdlet gets the members, the properties and methods, of objects.&lt;/em&gt; Making it the Swiss army knife for exploring&#xA;the properties and methods of any object in PowerShell and thus indispensable for any PowerShell user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
+      <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
+      <pubDate>Mon, 26 Jun 2023 05:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
+      <description>&lt;p&gt;In the previous post &lt;a href=&#34;https://www.devjev.nl/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management&#34; rel=&#34;&#34;&gt;Sleep Worry-Free: The best tips for Local Secrets Management&lt;/a&gt;&#xA; I shared the best tips for managing local secrets. In this post I will take &lt;code&gt;Secrets Management&lt;/code&gt; to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell SecretManagement&lt;/a&gt;&#xA; and &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell SecretStore&lt;/a&gt;&#xA; modules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;modules-explained&#34;&gt;Modules explained&lt;/h2&gt;&#xA;&lt;p&gt;Since this approach to &lt;code&gt;Secrets Management&lt;/code&gt; depends on the two just mentioned modules the purpose of each of the modules is explained next.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sleep Worry-Free: The best tips for Local Secrets Management 💤</title>
+      <link>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</link>
+      <pubDate>Mon, 19 Jun 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/</guid>
+      <description>&lt;p&gt;In this post I will share a couple of tips with regards to &lt;code&gt;Secrets Management&lt;/code&gt; in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.&lt;/p&gt;&#xA;&lt;h2 id=&#34;use-case&#34;&gt;Use Case&lt;/h2&gt;&#xA;&lt;p&gt;When you are either building new Azure Infrastructure or debugging an existing configuration you will eventually need to use a secret or a password on you local (dev) environment. The most straightforward approach that is often used is to create a new variable and add the secret as a value to this variable. Effectively (temporarily) hardcoding the secret value into whatever you are working on. The following example sows such an approach, it should be quite familiar to everyone who worked with Azure and PowerShell in the past.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

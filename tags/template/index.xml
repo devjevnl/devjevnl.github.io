@@ -1,28 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Template - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/template/</link>
-        <description>Template - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/template/" rel="self" type="application/rss+xml" /><item>
-    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
-    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
-    <description><![CDATA[<p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
-. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>]]></description>
-</item>
-<item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
-    <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
-    <description><![CDATA[<p>The <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
- is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.
-As an attempt to offset the complexity I created a ready to use quick start backlog for the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas" target="_blank" rel="noopener noreffer">Design Areas</a>
- sub-section of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
-. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Template on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/template/</link>
+    <description>Recent content in Template on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Oct 2023 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/template/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+      <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+      <description>&lt;p&gt;With this post I want to share my new GitHub repository -&amp;gt; &lt;a href=&#34;https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Starter Kit for an Azure IaC repository&lt;/a&gt;&#xA;. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
+      <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
+      <pubDate>Mon, 31 Jul 2023 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA; is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.&#xA;As an attempt to offset the complexity I created a ready to use quick start backlog for the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Design Areas&lt;/a&gt;&#xA; sub-section of the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA;. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

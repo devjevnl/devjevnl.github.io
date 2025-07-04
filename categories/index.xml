@@ -1,87 +1,313 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/</link>
-        <description>Categories - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>CCoE</title>
-    <link>https://www.devjev.nl/categories/ccoe/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/ccoe/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Operating Model</title>
-    <link>https://www.devjev.nl/categories/cloud-operating-model/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-operating-model/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Transformation</title>
-    <link>https://www.devjev.nl/categories/cloud-transformation/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-transformation/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>How To</title>
-    <link>https://www.devjev.nl/categories/how-to/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/how-to/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Adoption Framework</title>
-    <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-adoption-framework/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Center of Excellence</title>
-    <link>https://www.devjev.nl/categories/cloud-center-of-excellence/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-center-of-excellence/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Governance</title>
-    <link>https://www.devjev.nl/categories/cloud-governance/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-governance/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cloud Strategy</title>
-    <link>https://www.devjev.nl/categories/cloud-strategy/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/cloud-strategy/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Digital Transformation</title>
-    <link>https://www.devjev.nl/categories/digital-transformation/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/digital-transformation/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Azure DevOps Fundamentals</title>
-    <link>https://www.devjev.nl/categories/azure-devops-fundamentals/</link>
-    <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
-    <description><![CDATA[]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/</link>
+    <description>Recent content in Categories on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Adoption Framework</title>
+      <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-adoption-framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Center of Excellence</title>
+      <link>https://www.devjev.nl/categories/cloud-center-of-excellence/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-center-of-excellence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Governance</title>
+      <link>https://www.devjev.nl/categories/cloud-governance/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Strategy</title>
+      <link>https://www.devjev.nl/categories/cloud-strategy/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Transformation</title>
+      <link>https://www.devjev.nl/categories/digital-transformation/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/digital-transformation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pathfinder Phase</title>
+      <link>https://www.devjev.nl/categories/pathfinder-phase/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/pathfinder-phase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure DevOps Fundamentals</title>
+      <link>https://www.devjev.nl/categories/azure-devops-fundamentals/</link>
+      <pubDate>Thu, 27 Feb 2025 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-devops-fundamentals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://www.devjev.nl/categories/automation/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure DevOps Governance</title>
+      <link>https://www.devjev.nl/categories/azure-devops-governance/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-devops-governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Compliance</title>
+      <link>https://www.devjev.nl/categories/cloud-compliance/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-compliance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://www.devjev.nl/categories/powershell/</link>
+      <pubDate>Tue, 21 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Bicep</title>
+      <link>https://www.devjev.nl/categories/azure-bicep/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-bicep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Governance</title>
+      <link>https://www.devjev.nl/categories/azure-governance/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How To</title>
+      <link>https://www.devjev.nl/categories/how-to/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tenant Landing Zone</title>
+      <link>https://www.devjev.nl/categories/tenant-landing-zone/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/tenant-landing-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>https://www.devjev.nl/categories/azure/</link>
+      <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Landing Zones</title>
+      <link>https://www.devjev.nl/categories/azure-landing-zones/</link>
+      <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-landing-zones/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Infrastructure</title>
+      <link>https://www.devjev.nl/categories/cloud-infrastructure/</link>
+      <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Security</title>
+      <link>https://www.devjev.nl/categories/azure-security/</link>
+      <pubDate>Mon, 25 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Sentinel</title>
+      <link>https://www.devjev.nl/categories/azure-sentinel/</link>
+      <pubDate>Mon, 25 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-sentinel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Bastion</title>
+      <link>https://www.devjev.nl/categories/azure-bastion/</link>
+      <pubDate>Thu, 07 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-bastion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quickstart</title>
+      <link>https://www.devjev.nl/categories/quickstart/</link>
+      <pubDate>Thu, 07 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/quickstart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure DevOps</title>
+      <link>https://www.devjev.nl/categories/azure-devops/</link>
+      <pubDate>Thu, 22 Aug 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://www.devjev.nl/categories/architecture/</link>
+      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>https://www.devjev.nl/categories/cloud-computing/</link>
+      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/cloud-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Azure</title>
+      <link>https://www.devjev.nl/categories/microsoft-azure/</link>
+      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/microsoft-azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exchange Online</title>
+      <link>https://www.devjev.nl/categories/exchange-online/</link>
+      <pubDate>Mon, 29 Apr 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/exchange-online/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft 365</title>
+      <link>https://www.devjev.nl/categories/microsoft-365/</link>
+      <pubDate>Mon, 29 Apr 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/microsoft-365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outlook</title>
+      <link>https://www.devjev.nl/categories/outlook/</link>
+      <pubDate>Mon, 29 Apr 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/outlook/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://www.devjev.nl/categories/troubleshooting/</link>
+      <pubDate>Mon, 29 Apr 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/troubleshooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container Jobs</title>
+      <link>https://www.devjev.nl/categories/container-jobs/</link>
+      <pubDate>Fri, 23 Feb 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/container-jobs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://www.devjev.nl/categories/containers/</link>
+      <pubDate>Fri, 23 Feb 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://www.devjev.nl/categories/git/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>https://www.devjev.nl/categories/infrastructure-as-code/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/infrastructure-as-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Starter Kit</title>
+      <link>https://www.devjev.nl/categories/starter-kit/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/starter-kit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naming Conventions</title>
+      <link>https://www.devjev.nl/categories/naming-conventions/</link>
+      <pubDate>Tue, 29 Aug 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/naming-conventions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Migration and Modernization</title>
+      <link>https://www.devjev.nl/categories/azure-migration-and-modernization/</link>
+      <pubDate>Mon, 31 Jul 2023 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure-migration-and-modernization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secure Development</title>
+      <link>https://www.devjev.nl/categories/secure-development/</link>
+      <pubDate>Mon, 26 Jun 2023 05:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/secure-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tooling</title>
+      <link>https://www.devjev.nl/categories/tooling/</link>
+      <pubDate>Tue, 30 Aug 2022 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/tooling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://www.devjev.nl/categories/security/</link>
+      <pubDate>Sat, 12 Mar 2022 21:00:00 +0100</pubDate>
+      <guid>https://www.devjev.nl/categories/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparison</title>
+      <link>https://www.devjev.nl/categories/comparison/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://www.devjev.nl/categories/github/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GoHugo</title>
+      <link>https://www.devjev.nl/categories/gohugo/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/gohugo/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

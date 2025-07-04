@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Starter Kit - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/starter-kit/</link>
-        <description>Starter Kit - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/starter-kit/" rel="self" type="application/rss+xml" /><item>
-    <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
-    <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
-    <pubDate>Sun, 15 Oct 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
-    <description><![CDATA[<p>With this post I want to share my new GitHub repository -&gt; <a href="https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository" target="_blank" rel="noopener noreffer">Starter Kit for an Azure IaC repository</a>
-. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Starter Kit on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/starter-kit/</link>
+    <description>Recent content in Starter Kit on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Oct 2023 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/starter-kit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chaos to Order: Structuring IaC repository Like a Boss! 👑</title>
+      <link>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</link>
+      <pubDate>Sun, 15 Oct 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/chaos-to-order-structuring-iac-repository-like-a-boss/</guid>
+      <description>&lt;p&gt;With this post I want to share my new GitHub repository -&amp;gt; &lt;a href=&#34;https://github.com/thecloudexplorers/starter-kit-for-an-azure-iac-repository&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Starter Kit for an Azure IaC repository&lt;/a&gt;&#xA;. This starter kit is based on best practices, personal experiences, and guidelines for creating and organizing code and resources tailored for Azure infrastructure deployment. While the example itself is based on a combination of Azure DevOps, Bicep and PowerShell, the concepts are applicable to any IaC language and tool combination.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

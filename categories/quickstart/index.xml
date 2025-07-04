@@ -1,17 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Quickstart - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/quickstart/</link>
-        <description>Quickstart - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/quickstart/" rel="self" type="application/rss+xml" /><item>
-    <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
-    <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
-    <description><![CDATA[<p>In today&rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&rsquo;s free? 🎉 In this post, we&rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &ldquo;<strong>security is everyone&rsquo;s responsibility</strong>&rdquo; mindset as we go.</p>
-<h2 id="what-is-azure-bastion">What is Azure Bastion?</h2>
-<p>Let&rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quickstart on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/quickstart/</link>
+    <description>Recent content in Quickstart on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Nov 2024 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/quickstart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
+      <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
+      <pubDate>Thu, 07 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
+      <description>&lt;p&gt;In today&amp;rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&amp;rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&amp;rsquo;s free? 🎉 In this post, we&amp;rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &amp;ldquo;&lt;strong&gt;security is everyone&amp;rsquo;s responsibility&lt;/strong&gt;&amp;rdquo; mindset as we go.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-azure-bastion&#34;&gt;What is Azure Bastion?&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

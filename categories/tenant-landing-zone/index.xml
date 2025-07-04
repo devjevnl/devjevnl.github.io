@@ -1,18 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tenant Landing Zone - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/tenant-landing-zone/</link>
-        <description>Tenant Landing Zone - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/tenant-landing-zone/" rel="self" type="application/rss+xml" /><item>
-    <title>Simplify Azure Management Group Setup using Bicep Vending</title>
-    <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
-    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
-    <description><![CDATA[<h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
-<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
-This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
-. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tenant Landing Zone on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/tenant-landing-zone/</link>
+    <description>Recent content in Tenant Landing Zone on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/tenant-landing-zone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simplify Azure Management Group Setup using Bicep Vending</title>
+      <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
+      <description>&lt;h2 id=&#34;understanding-the-need-for-management-group-automation&#34;&gt;Understanding the Need for Management Group Automation&lt;/h2&gt;&#xA;&lt;p&gt;Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.&#xA;This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&amp;rsquo;s &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Subscription Vending&lt;/a&gt;&#xA;. This solution enables you to deploy any management group hierarchy, considering Azure&amp;rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

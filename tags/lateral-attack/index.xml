@@ -1,18 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Lateral Attack - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/lateral-attack/</link>
-        <description>Lateral Attack - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 May 2021 12:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/lateral-attack/" rel="self" type="application/rss+xml" /><item>
-    <title>Hacking Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
-    <pubDate>Wed, 19 May 2021 12:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/" target="_blank" rel="noopener noreffer">devblogs.microsoft.com</a>
- back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
-<p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lateral Attack on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/lateral-attack/</link>
+    <description>Recent content in Lateral Attack on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 May 2021 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/lateral-attack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hacking Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/2021/hacking-azure-devops/</link>
+      <pubDate>Wed, 19 May 2021 12:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2021/hacking-azure-devops/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;While this case is not a particularly new one and has been posted by Matt Cooper on &lt;a href=&#34;https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;devblogs.microsoft.com&lt;/a&gt;&#xA; back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.&lt;/p&gt;&#xA;&lt;p&gt;So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

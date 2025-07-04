@@ -1,37 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Git - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/git/</link>
-        <description>Git - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/git/" rel="self" type="application/rss+xml" /><item>
-    <title>Git gud with branch naming</title>
-    <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
-    <description><![CDATA[<p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
-The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
-However teams that do not have these tools available to them would need to rely on just the naming convention to
-help organizing and ordering branches.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/git/</link>
+    <description>Recent content in Git on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jun 2022 16:42:15 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git gud with branch naming</title>
+      <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
+      <pubDate>Wed, 29 Jun 2022 16:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
+      <description>&lt;p&gt;With this post I want to share my approach to Git branch naming. This is the 4th and final post in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Check out the full &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups&#34; rel=&#34;&#34;&gt;A naming convention to bring order to variable groups&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;p&gt;When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.&lt;br&gt;&#xA;The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&amp;rsquo;s by implementing a proper branch naming convention.&lt;br&gt;&#xA;However teams that do not have these tools available to them would need to rely on just the naming convention to&#xA;help organizing and ordering branches.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

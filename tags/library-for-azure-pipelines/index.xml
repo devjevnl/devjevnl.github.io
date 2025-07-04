@@ -1,21 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Library for Azure Pipelines - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/library-for-azure-pipelines/</link>
-        <description>Library for Azure Pipelines - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/library-for-azure-pipelines/" rel="self" type="application/rss+xml" /><item>
-    <title>How to use Library for Azure Pipelines 📗</title>
-    <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
-    <pubDate>Tue, 21 Mar 2023 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
-    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
-In this post the I will show how to use <code>Library for Azure Pipelines</code>.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library for Azure Pipelines on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/library-for-azure-pipelines/</link>
+    <description>Recent content in Library for Azure Pipelines on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Mar 2023 21:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/library-for-azure-pipelines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use Library for Azure Pipelines 📗</title>
+      <link>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</link>
+      <pubDate>Tue, 21 Mar 2023 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/</guid>
+      <description>&lt;p&gt;This is the 6th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;&#xA;In this post the I will show how to use &lt;code&gt;Library for Azure Pipelines&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Since it much more fun to do research and play with technology in collaboration with others, &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Wesley Camargo&lt;/a&gt;&#xA; will be covering some of the topics on he&amp;rsquo;s &lt;a href=&#34;https://camargo-wes.medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;blog&lt;/a&gt;&#xA;, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,16 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Update - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/update/</link>
-        <description>Update - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/update/" rel="self" type="application/rss+xml" /><item>
-    <title>Change the SharePoint domain name in your Microsoft 365 Tenant</title>
-    <link>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</link>
-    <pubDate>Wed, 30 Mar 2022 22:42:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</guid>
-    <description><![CDATA[<p>Back when all the Cloud and SaaS offerings where a brand new concept most IT administrators ended up choosing the domain name of a tenant. This choice would be then reflected in the SharePoint Online url and the only way to change it was to create brand new tenant. Either due to the somewhat poor choice from the IT administrators, due to mergers, rebranding or acquisitions some organization ended up with lets say less desirable domain name for their SharePoint URL.<br>
-Responding to clients with a &ldquo;no it is not possible to change that&rdquo; always bothered me back then. So when I learned that this option is now available (in preview) I immediately decided to try it. Via this post I want to share what I learned testing this option.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/update/</link>
+    <description>Recent content in Update on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Mar 2022 22:42:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change the SharePoint domain name in your Microsoft 365 Tenant</title>
+      <link>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</link>
+      <pubDate>Wed, 30 Mar 2022 22:42:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/change-the-sharepoint-domain-name-in-your-microsoft-365-tenant/</guid>
+      <description>&lt;p&gt;Back when all the Cloud and SaaS offerings where a brand new concept most IT administrators ended up choosing the domain name of a tenant. This choice would be then reflected in the SharePoint Online url and the only way to change it was to create brand new tenant. Either due to the somewhat poor choice from the IT administrators, due to mergers, rebranding or acquisitions some organization ended up with lets say less desirable domain name for their SharePoint URL.&lt;br&gt;&#xA;Responding to clients with a &amp;ldquo;no it is not possible to change that&amp;rdquo; always bothered me back then. So when I learned that this option is now available (in preview) I immediately decided to try it. Via this post I want to share what I learned testing this option.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

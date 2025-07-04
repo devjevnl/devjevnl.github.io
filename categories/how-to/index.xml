@@ -1,94 +1,47 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>How To - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/how-to/</link>
-        <description>How To - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/how-to/" rel="self" type="application/rss+xml" /><item>
-    <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
-    <description><![CDATA[<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve covered the groundwork:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/" rel=""><strong>The Align Stage</strong></a>
-, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.</li>
-</ul>
-<p>We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&rsquo;s time to light the engines.</p>]]></description>
-</item>
-<item>
-    <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
-    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
-    <description><![CDATA[<blockquote>
-<p><em>&ldquo;You can&rsquo;t move fast if no one&rsquo;s steering in the same direction.&rdquo;</em></p>
-</blockquote>
-<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve explored the big picture:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-</ul>
-<p>Now it&rsquo;s time to shift gears. The vision is clear, but <strong>alignment</strong> is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.</p>]]></description>
-</item>
-<item>
-    <title>Simplify Azure Management Group Setup using Bicep Vending</title>
-    <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
-    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
-    <description><![CDATA[<h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
-<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
-This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
-. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>]]></description>
-</item>
-<item>
-    <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
-    <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
-    <description><![CDATA[<p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
-<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
-<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>]]></description>
-</item>
-<item>
-    <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
-    <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
-    <description><![CDATA[<p>In today&rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&rsquo;s free? 🎉 In this post, we&rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &ldquo;<strong>security is everyone&rsquo;s responsibility</strong>&rdquo; mindset as we go.</p>
-<h2 id="what-is-azure-bastion">What is Azure Bastion?</h2>
-<p>Let&rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.</p>]]></description>
-</item>
-<item>
-    <title>🚀 Quickly Find Your Azure DevOps Project Id 🔍</title>
-    <link>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</link>
-    <pubDate>Thu, 22 Aug 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
-    <description><![CDATA[<p>With this post I want to share a lazy and a hacky way for finding the Azure DevOps <code>Project Id</code> of any project in your Azure DevOps Organization.</p>
-<h2 id="the-lazy-api-query">The lazy API query</h2>
-<p>It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&rsquo;s can be queried using
-your favorite browser.
-To get the <code>Project Id</code> we can do this with the projects <code>LIST</code> and <code>GET</code> API&rsquo;s.</p>]]></description>
-</item>
-<item>
-    <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
-    <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
-    <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How To on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/how-to/</link>
+    <description>Recent content in How To on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simplify Azure Management Group Setup using Bicep Vending</title>
+      <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
+      <description>&lt;h2 id=&#34;understanding-the-need-for-management-group-automation&#34;&gt;Understanding the Need for Management Group Automation&lt;/h2&gt;&#xA;&lt;p&gt;Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.&#xA;This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&amp;rsquo;s &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Subscription Vending&lt;/a&gt;&#xA;. This solution enables you to deploy any management group hierarchy, considering Azure&amp;rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
+      <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
+      <pubDate>Mon, 25 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
+      <description>&lt;p&gt;In this post, I&amp;rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&amp;rsquo;re an experienced cloud professional or new to Azure.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-microsoft-sentinel&#34;&gt;What is Microsoft Sentinel?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re new to Microsoft Sentinel, here&amp;rsquo;s a brief introduction. Feel free to skip this section if you&amp;rsquo;re already familiar with it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
+      <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
+      <pubDate>Thu, 07 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
+      <description>&lt;p&gt;In today&amp;rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&amp;rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&amp;rsquo;s free? 🎉 In this post, we&amp;rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &amp;ldquo;&lt;strong&gt;security is everyone&amp;rsquo;s responsibility&lt;/strong&gt;&amp;rdquo; mindset as we go.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-azure-bastion&#34;&gt;What is Azure Bastion?&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🚀 Quickly Find Your Azure DevOps Project Id 🔍</title>
+      <link>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</link>
+      <pubDate>Thu, 22 Aug 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/quickly-find-your-azure-devops-project-id/</guid>
+      <description>&lt;p&gt;With this post I want to share a lazy and a hacky way for finding the Azure DevOps &lt;code&gt;Project Id&lt;/code&gt; of any project in your Azure DevOps Organization.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-lazy-api-query&#34;&gt;The lazy API query&lt;/h2&gt;&#xA;&lt;p&gt;It can feel a bit daunting to start using Azure DevOps API. But what most folks are not aware of is that data retrieval API&amp;rsquo;s can be queried using&#xA;your favorite browser.&#xA;To get the &lt;code&gt;Project Id&lt;/code&gt; we can do this with the projects &lt;code&gt;LIST&lt;/code&gt; and &lt;code&gt;GET&lt;/code&gt; API&amp;rsquo;s.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
+      <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&amp;rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

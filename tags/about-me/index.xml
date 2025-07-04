@@ -1,16 +1,18 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>About Me - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/about-me/</link>
-        <description>About Me - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://www.devjev.nl/tags/about-me/" rel="self" type="application/rss+xml" /><item>
-    <title>About</title>
-    <link>https://www.devjev.nl/about/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/about/</guid>
-    <description><![CDATA[<h2 id="experience">Experience</h2>
-<p>As a Cloud Architect with a hands-on approach, my journey started in childhood, taking apart toys with my dad’s tools to uncover the secrets of their inner workings. This early curiosity has developed into a professional passion to explore and deconstruct Cloud technology, ensuring a deep understanding of its core aspects to tailor solutions for diverse companies and organizations. Always keeping pace with the latest Microsoft technologies to deliver bleeding-edge solutions.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/about-me/</link>
+    <description>Recent content in About Me on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.devjev.nl/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://www.devjev.nl/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.devjev.nl/about/</guid>
+      <description>&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;p&gt;As a Cloud Architect with a hands-on approach, my journey started in childhood, taking apart toys with my dad’s tools to uncover the secrets of their inner workings. This early curiosity has developed into a professional passion to explore and deconstruct Cloud technology, ensuring a deep understanding of its core aspects to tailor solutions for diverse companies and organizations. Always keeping pace with the latest Microsoft technologies to deliver bleeding-edge solutions.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

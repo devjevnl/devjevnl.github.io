@@ -1,157 +1,89 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Cloud Governance - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/categories/cloud-governance/</link>
-        <description>Cloud Governance - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/categories/cloud-governance/" rel="self" type="application/rss+xml" /><item>
-    <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
-    <pubDate>Tue, 01 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
-    <description><![CDATA[<p>In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE&rsquo;s purpose, structure, and alignment within the organization. If you haven&rsquo;t read the introduction to this series, check out the first post: Building a <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel="">Cloud Center of Excellence: The Pathfinder Journey</a>
-.</p>
-<h2 id="assembling-the-pathfinder-team">Assembling the Pathfinder Team</h2>
-<p>Before the actual CCoE is established, a <strong>Pathfinder Team</strong> is formed. This team is responsible &amp; accountable for implementing the <strong>Pathfinder Roadmap</strong>, a framework designed to guide organizations through cloud adoption and governance. It&rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.</p>]]></description>
-</item>
-<item>
-    <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
-    <pubDate>Tue, 25 Mar 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
-    <description><![CDATA[<p>The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft&rsquo;s Cloud Adoption Framework</a>
- primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.</p>]]></description>
-</item>
-<item>
-    <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨</title>
-    <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
-    <pubDate>Tue, 29 Aug 2023 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
-    <description><![CDATA[<p>In this post I will share a couple of tips with regards to <code>Secrets Management</code> in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.</p>
-<p>Last year I wrote a <a href="/categories/naming-conventions/" rel="">series</a>
- of posts covering the <a href="/categories/naming-conventions/" rel="">naming convention</a>
- topic. <a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
- covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.</p>]]></description>
-</item>
-<item>
-    <title>The ideal Management group naming convention</title>
-    <link>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</link>
-    <pubDate>Mon, 26 Sep 2022 06:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
-    <description><![CDATA[<p>A new post and a new addition to the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-. With this post I want to share my approach to naming <a href="https://learn.microsoft.com/en-us/azure/governance/management-groups/overview" target="_blank" rel="noopener noreffer">Azure Management groups</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>If you haven&rsquo;t already, don&rsquo;t forget to check out the other topics in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<h2 id="what-are-management-groups-and-theirs-limits">What are Management groups and theirs limits</h2>
-<p>If you are wondering about reasons for this approach to naming please have a look at the <a href="/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background" rel="">Naming convention background</a>
- chapter of the <a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-. With that out of the way lets dig in.</p>]]></description>
-</item>
-<item>
-    <title>Git gud with branch naming</title>
-    <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
-    <description><![CDATA[<p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
-The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
-However teams that do not have these tools available to them would need to rely on just the naming convention to
-help organizing and ordering branches.</p>]]></description>
-</item>
-<item>
-    <title>A naming convention to bring order to variable groups</title>
-    <link>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</link>
-    <pubDate>Wed, 15 Jun 2022 18:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</guid>
-    <description><![CDATA[<p>With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<h2 id="the-naming-convention">The naming convention</h2>
-<p>In my experience there are a lot of different way&rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&rsquo;t possess an ability to hold additional metadata like tagging. This changes the approach to naming to focus much more on meaningful and descriptive naming within the context of the Azure DevOps project. Therefore a truly holistic naming of variable groups is challenging to achieve. But abiding the <a href="/posts/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
- should still be feasible.</p>]]></description>
-</item>
-<item>
-    <title>The perfect Azure naming convention</title>
-    <link>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</link>
-    <pubDate>Tue, 10 May 2022 06:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
-    <description><![CDATA[<p>This post is the 2nd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">previous post</a>
-. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>]]></description>
-</item>
-<item>
-    <title>The 10 commandments for Azure naming conventions</title>
-    <link>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</link>
-    <pubDate>Mon, 25 Apr 2022 10:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
-    <description><![CDATA[<p>There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small <a href="/categories/naming-conventions/" rel="">series</a>
- of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Governance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/cloud-governance/</link>
+    <description>Recent content in Cloud Governance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/cloud-governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📈🔁 Building a Cloud Center of Excellence: The Scale Stage 🧱🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</link>
+      <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</guid>
+      <description>In the Scale Stage, validated practices become reusable building blocks. Discover how to turn one-off wins into an organizational platform through standardization, inner-source, and a relentless PDCA improvement loop.</description>
+    </item>
+    <item>
+      <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
+      <pubDate>Tue, 29 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
+      <description>&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve covered the groundwork:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Align Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&amp;rsquo;s time to light the engines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
+      <pubDate>Mon, 07 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;You can&amp;rsquo;t move fast if no one&amp;rsquo;s steering in the same direction.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve explored the big picture:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Now it&amp;rsquo;s time to shift gears. The vision is clear, but &lt;strong&gt;alignment&lt;/strong&gt; is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🌐🏗️ Building a Cloud Center of Excellence: The Envision Stage 💡🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</link>
+      <pubDate>Tue, 01 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/</guid>
+      <description>&lt;p&gt;In our Pathfinder journey to establish a Cloud Center of Excellence (CCoE), we begin with the Envision Stage—the first of the stages. This stage creates a common frame of reference for your organization to define the CCoE&amp;rsquo;s purpose, structure, and alignment within the organization. If you haven&amp;rsquo;t read the introduction to this series, check out the first post: Building a &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;Cloud Center of Excellence: The Pathfinder Journey&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;assembling-the-pathfinder-team&#34;&gt;Assembling the Pathfinder Team&lt;/h2&gt;&#xA;&lt;p&gt;Before the actual CCoE is established, a &lt;strong&gt;Pathfinder Team&lt;/strong&gt; is formed. This team is responsible &amp;amp; accountable for implementing the &lt;strong&gt;Pathfinder Roadmap&lt;/strong&gt;, a framework designed to guide organizations through cloud adoption and governance. It&amp;rsquo;s important to note that the Pathfinder Team is separate from the eventual CCoE members—it plays a critical role in shaping the foundational elements of the CCoE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</link>
+      <pubDate>Tue, 25 Mar 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/</guid>
+      <description>&lt;p&gt;The concept of a Cloud Center of Excellence (CCoE) is well-documented, and many organizations recognize its added value in driving innovation and operational efficiency. However, while there is a wealth of information on what a CCoE is, practical guidance on how to effectively implement one is often lacking, leaving organizations with more questions than answers. Even comprehensive resources like &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-center-of-excellence?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft&amp;rsquo;s Cloud Adoption Framework&lt;/a&gt;&#xA; primarily focus on the functions of a CCoE in its end-state without delving into the intricacies of its establishment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A quick and Easy Way to Add Renamable Display Names to Azure Resources 💨</title>
+      <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
+      <pubDate>Tue, 29 Aug 2023 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
+      <description>&lt;p&gt;In this post I will share a couple of tips with regards to &lt;code&gt;Secrets Management&lt;/code&gt; in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.&lt;/p&gt;&#xA;&lt;p&gt;Last year I wrote a &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;series&lt;/a&gt;&#xA; of posts covering the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention&lt;/a&gt;&#xA; topic. &lt;a href=&#34;https://www.devjev.nl/posts/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA; covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&amp;rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The ideal Management group naming convention</title>
+      <link>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</link>
+      <pubDate>Mon, 26 Sep 2022 06:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/</guid>
+      <description>&lt;p&gt;A new post and a new addition to the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;. With this post I want to share my approach to naming &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/governance/management-groups/overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure Management groups&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;If you haven&amp;rsquo;t already, don&amp;rsquo;t forget to check out the other topics in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups&#34; rel=&#34;&#34;&gt;A naming convention to bring order to variable groups&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/git-gud-with-branch-naming&#34; rel=&#34;&#34;&gt;Git gud with branch naming&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;h2 id=&#34;what-are-management-groups-and-theirs-limits&#34;&gt;What are Management groups and theirs limits&lt;/h2&gt;&#xA;&lt;p&gt;If you are wondering about reasons for this approach to naming please have a look at the &lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/#naming-convention-background&#34; rel=&#34;&#34;&gt;Naming convention background&lt;/a&gt;&#xA; chapter of the &lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;. With that out of the way lets dig in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git gud with branch naming</title>
+      <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
+      <pubDate>Wed, 29 Jun 2022 16:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
+      <description>&lt;p&gt;With this post I want to share my approach to Git branch naming. This is the 4th and final post in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Check out the full &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups&#34; rel=&#34;&#34;&gt;A naming convention to bring order to variable groups&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;p&gt;When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.&lt;br&gt;&#xA;The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&amp;rsquo;s by implementing a proper branch naming convention.&lt;br&gt;&#xA;However teams that do not have these tools available to them would need to rely on just the naming convention to&#xA;help organizing and ordering branches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A naming convention to bring order to variable groups</title>
+      <link>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</link>
+      <pubDate>Wed, 15 Jun 2022 18:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/</guid>
+      <description>&lt;p&gt;With this post I want to share my approach to naming Azure DevOps variable groups. This post is the 3rd in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Check out the full &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/git-gud-with-branch-naming&#34; rel=&#34;&#34;&gt;Git gud with branch naming&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;h2 id=&#34;the-naming-convention&#34;&gt;The naming convention&lt;/h2&gt;&#xA;&lt;p&gt;In my experience there are a lot of different way&amp;rsquo;s Azure DevOps projects are organized. Also in contrary to the Azure resource naming variable groups are renamable and don&amp;rsquo;t possess an ability to hold additional metadata like tagging. This changes the approach to naming to focus much more on meaningful and descriptive naming within the context of the Azure DevOps project. Therefore a truly holistic naming of variable groups is challenging to achieve. But abiding the &lt;a href=&#34;https://www.devjev.nl/posts/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA; should still be feasible.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The perfect Azure naming convention</title>
+      <link>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</link>
+      <pubDate>Tue, 10 May 2022 06:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/</guid>
+      <description>&lt;p&gt;This post is the 2nd in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my &lt;a href=&#34;https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;previous post&lt;/a&gt;&#xA;. However I do believe that some background is required to understand this approach. So, lets dig in.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Check out the full &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The 10 commandments for Azure naming conventions</title>
+      <link>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</link>
+      <pubDate>Mon, 25 Apr 2022 10:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/</guid>
+      <description>&lt;p&gt;There are many Azure related naming conventions guides but this one is mine! For every 10 engineers and architects asked you will get 10 different replies on such a topic as naming conventions. With this blog post I would like to kick-off a small &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;series&lt;/a&gt;&#xA; of blog posts sharing my view points about Azure related naming conventions. In this post starting with why a proper naming convention is important and the 10 commandments I generally follow when working on a naming convention.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,42 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Enablement - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/enablement/</link>
-        <description>Enablement - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/enablement/" rel="self" type="application/rss+xml" /><item>
-    <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
-    <pubDate>Tue, 29 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
-    <description><![CDATA[<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve covered the groundwork:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/" rel=""><strong>The Align Stage</strong></a>
-, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.</li>
-</ul>
-<p>We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&rsquo;s time to light the engines.</p>]]></description>
-</item>
-<item>
-    <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
-    <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
-    <pubDate>Mon, 07 Apr 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
-    <description><![CDATA[<blockquote>
-<p><em>&ldquo;You can&rsquo;t move fast if no one&rsquo;s steering in the same direction.&rdquo;</em></p>
-</blockquote>
-<p>So far in our <em>Building a Cloud Center of Excellence</em> series, we&rsquo;ve explored the big picture:</p>
-<ul>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" rel=""><strong>The Pathfinder Journey</strong></a>
-, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.</li>
-<li>In <a href="/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/" rel=""><strong>The Envision Stage</strong></a>
-, we defined the <em>why</em> behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.</li>
-</ul>
-<p>Now it&rsquo;s time to shift gears. The vision is clear, but <strong>alignment</strong> is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enablement on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/enablement/</link>
+    <description>Recent content in Enablement on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Apr 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/enablement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🚀 Building a Cloud Center of Excellence: The Launch Stage 🔧📦</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</link>
+      <pubDate>Tue, 29 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-launch-stage/</guid>
+      <description>&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve covered the groundwork:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Align Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we tuned the instruments and synchronized the team—establishing clear accountabilities, shaping enablers, and aligning delivery around a common tempo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We have envisioned where we want to go. We have aligned our stakeholders, mapped out the big rocks, and secured leadership buy-in. Now it&amp;rsquo;s time to light the engines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🧩🚦 Building a Cloud Center of Excellence: The Align Stage ⚙️🔧</title>
+      <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</link>
+      <pubDate>Mon, 07 Apr 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-align-stage/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;You can&amp;rsquo;t move fast if no one&amp;rsquo;s steering in the same direction.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;So far in our &lt;em&gt;Building a Cloud Center of Excellence&lt;/em&gt; series, we&amp;rsquo;ve explored the big picture:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Pathfinder Journey&lt;/strong&gt;&lt;/a&gt;&#xA;, we set the stage for the transformation ahead, breaking down the roadmap to cloud maturity.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;a href=&#34;https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-envision-stage/&#34; rel=&#34;&#34;&gt;&lt;strong&gt;The Envision Stage&lt;/strong&gt;&lt;/a&gt;&#xA;, we defined the &lt;em&gt;why&lt;/em&gt; behind the CCoE, clarifying the vision, building a common frame of reference, and securing leadership buy-in.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Now it&amp;rsquo;s time to shift gears. The vision is clear, but &lt;strong&gt;alignment&lt;/strong&gt; is what turns that vision into an actionable strategy. This is where planning gets real, responsibilities take shape, and the CCoE begins to operate as more than just an idea.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

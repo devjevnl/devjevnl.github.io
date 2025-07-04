@@ -1,38 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Cloud Adoption Framework - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
-        <description>Cloud Adoption Framework - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/cloud-adoption-framework/" rel="self" type="application/rss+xml" /><item>
-    <title>Simplify Azure Management Group Setup using Bicep Vending</title>
-    <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
-    <pubDate>Tue, 07 Jan 2025 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
-    <description><![CDATA[<h2 id="understanding-the-need-for-management-group-automation">Understanding the Need for Management Group Automation</h2>
-<p>Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.
-This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&rsquo;s <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Subscription Vending</a>
-. This solution enables you to deploy any management group hierarchy, considering Azure&rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.</p>]]></description>
-</item>
-<item>
-    <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
-    <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
-    <description><![CDATA[<p>The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.</p>]]></description>
-</item>
-<item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
-    <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
-    <description><![CDATA[<p>The <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
- is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.
-As an attempt to offset the complexity I created a ready to use quick start backlog for the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas" target="_blank" rel="noopener noreffer">Design Areas</a>
- sub-section of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
-. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Adoption Framework on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/cloud-adoption-framework/</link>
+    <description>Recent content in Cloud Adoption Framework on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/cloud-adoption-framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simplify Azure Management Group Setup using Bicep Vending</title>
+      <link>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</link>
+      <pubDate>Tue, 07 Jan 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/</guid>
+      <description>&lt;h2 id=&#34;understanding-the-need-for-management-group-automation&#34;&gt;Understanding the Need for Management Group Automation&lt;/h2&gt;&#xA;&lt;p&gt;Managing Azure subscriptions at scale can become challenging. Management groups provide a powerful way to organize and govern resources, but manually configuring them introduces inefficiencies and risks. A common pitfall is hardcoding management group structures into deployment code, which reduces flexibility and can compromise governance.&#xA;This post introduces Management Group Vending, a reusable Bicep solution inspired by Microsoft&amp;rsquo;s &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Subscription Vending&lt;/a&gt;&#xA;. This solution enables you to deploy any management group hierarchy, considering Azure&amp;rsquo;s limitations while adhering to Cloud Adoption Framework (CAF) principles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
+      <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
+      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
+      <description>&lt;p&gt;The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
+      <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
+      <pubDate>Mon, 31 Jul 2023 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA; is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.&#xA;As an attempt to offset the complexity I created a ready to use quick start backlog for the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Design Areas&lt;/a&gt;&#xA; sub-section of the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA;. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

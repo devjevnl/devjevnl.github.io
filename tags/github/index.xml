@@ -1,56 +1,33 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Github - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/github/</link>
-        <description>Github - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/github/" rel="self" type="application/rss+xml" /><item>
-    <title>Git gud with branch naming</title>
-    <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
-    <pubDate>Wed, 29 Jun 2022 16:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
-    <description><![CDATA[<p>With this post I want to share my approach to Git branch naming. This is the 4th and final post in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-.</p>
-<div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
-<ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/the-perfect-azure-naming-convention" rel="">The perfect azure naming convention</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-</ul></div>
-        </div>
-    </div>
-<p>When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.<br>
-The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&rsquo;s by implementing a proper branch naming convention.<br>
-However teams that do not have these tools available to them would need to rely on just the naming convention to
-help organizing and ordering branches.</p>]]></description>
-</item>
-<item>
-    <title>GitHub vs Azure DevOps</title>
-    <link>https://www.devjev.nl/posts/2020/github-vs-ado/</link>
-    <pubDate>Fri, 06 Nov 2020 13:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2020/github-vs-ado/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.</p>
-<p>Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.</p>]]></description>
-</item>
-<item>
-    <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
-    <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
-    <pubDate>Thu, 10 Sep 2020 18:42:15 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
-    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/github/</link>
+    <description>Recent content in Github on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jun 2022 16:42:15 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git gud with branch naming</title>
+      <link>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</link>
+      <pubDate>Wed, 29 Jun 2022 16:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2022/git-gud-with-branch-naming/</guid>
+      <description>&lt;p&gt;With this post I want to share my approach to Git branch naming. This is the 4th and final post in the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;div class=&#34;details admonition tip open&#34;&gt;&#xA;        &lt;div class=&#34;details-summary admonition-title&#34;&gt;&#xA;            &lt;i class=&#34;icon fas fa-lightbulb fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;Tip&lt;i class=&#34;details-icon fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;details-content&#34;&gt;&#xA;            &lt;div class=&#34;admonition-content&#34;&gt;&lt;p&gt;Check out the full &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention series&lt;/a&gt;&#xA;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions&#34; rel=&#34;&#34;&gt;The 10 commandments for Azure naming conventions&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups&#34; rel=&#34;&#34;&gt;A naming convention to bring order to variable groups&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&lt;p&gt;When working in large teams, managing branches can quickly become a hassle. Comparing branches to figure out their feature set, is a time consuming and error prone activity. This should be avoided as it significantly increases the chance of releasing wrong or even broken functionality.&lt;br&gt;&#xA;The most ideal solution here would be to use a backlog tool (for example Azure Boards with Azure Repos or with Github) where the branches can be directly linked to backlog items and visa versa. And dotting it i&amp;rsquo;s by implementing a proper branch naming convention.&lt;br&gt;&#xA;However teams that do not have these tools available to them would need to rely on just the naming convention to&#xA;help organizing and ordering branches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub vs Azure DevOps</title>
+      <link>https://www.devjev.nl/posts/2020/github-vs-ado/</link>
+      <pubDate>Fri, 06 Nov 2020 13:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2020/github-vs-ado/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Recently one of our clients has asked if it might be worthwhile to look into GitHub. They are currently using Azure DevOps and are as far as I understand quite happy with it. So, I drew up a short summary of pro&amp;rsquo;s and cons about GitHub vs Azure DevOps. The response that I got was very enthusiastic. And because of it I decided to share this information here.&lt;/p&gt;&#xA;&lt;p&gt;Keep in mind that this is not a full in depth comparison of both products but more of a management summary intended to decide if it would be valuable to look into what GitHub can offer a company that is currently using Azure DevOps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Set by step guide for a free and easy way to set up a low maintenance blog</title>
+      <link>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</link>
+      <pubDate>Thu, 10 Sep 2020 18:42:15 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2020/free-blog-with-ado-and-github-pages/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I always struggled with the following; when I find a solution for a certain problem and months down the line I run into a similar problem and try to remember how I solved the previous one. Cursing at myself: Why didn&amp;rsquo;t I write this down!? Like many other IT professionals I created a blog (years ago) to write those solutions down for myself and anyone who stumbles upon the blog. But unfortunately my blog at that time has followed the trend of the general population of IT related blogs. It withered away due to the lack of attention from yours truly.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,20 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>SecretStore - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/secretstore/</link>
-        <description>SecretStore - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/secretstore/" rel="self" type="application/rss+xml" /><item>
-    <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
-    <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
-    <pubDate>Mon, 26 Jun 2023 05:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
-    <description><![CDATA[<p>In the previous post <a href="/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management" rel="">Sleep Worry-Free: The best tips for Local Secrets Management</a>
- I shared the best tips for managing local secrets. In this post I will take <code>Secrets Management</code> to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretManagement</a>
- and <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules" target="_blank" rel="noopener noreffer">PowerShell SecretStore</a>
- modules.</p>
-<h2 id="modules-explained">Modules explained</h2>
-<p>Since this approach to <code>Secrets Management</code> depends on the two just mentioned modules the purpose of each of the modules is explained next.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SecretStore on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/secretstore/</link>
+    <description>Recent content in SecretStore on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Jun 2023 05:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/secretstore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t spill the beans - keep your secrets secure 🤫</title>
+      <link>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</link>
+      <pubDate>Mon, 26 Jun 2023 05:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/dont-spill-the-beans-keep-your-secrets-secure/</guid>
+      <description>&lt;p&gt;In the previous post &lt;a href=&#34;https://www.devjev.nl/posts/2023//sleep-worry-free-the-best-tips-for-local-secrets-management&#34; rel=&#34;&#34;&gt;Sleep Worry-Free: The best tips for Local Secrets Management&lt;/a&gt;&#xA; I shared the best tips for managing local secrets. In this post I will take &lt;code&gt;Secrets Management&lt;/code&gt; to the next level by showing you how to create manage and use secrets securely by setting up a local secure store using &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell SecretManagement&lt;/a&gt;&#xA; and &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretstore/?view=ps-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;PowerShell SecretStore&lt;/a&gt;&#xA; modules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;modules-explained&#34;&gt;Modules explained&lt;/h2&gt;&#xA;&lt;p&gt;Since this approach to &lt;code&gt;Secrets Management&lt;/code&gt; depends on the two just mentioned modules the purpose of each of the modules is explained next.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

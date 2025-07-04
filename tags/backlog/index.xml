@@ -1,41 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Backlog - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/backlog/</link>
-        <description>Backlog - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/backlog/" rel="self" type="application/rss+xml" /><item>
-    <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
-    <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
-    <pubDate>Thu, 27 Feb 2025 21:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
-    <description><![CDATA[<p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working
-with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-.</p>
-<p>In this post, I will break down <strong>Work Items</strong> in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and
-understanding them is crucial for effectively managing projects. We will explore:</p>
-<ul>
-<li>The different types of Work Items.</li>
-<li>How Work Items tie into the Work Item Process.</li>
-<li>The hierarchy of Work Items.</li>
-<li>Where and how Work Items can be created.</li>
-<li>Ownership and refinement responsibilities for each Work Item level.</li>
-<li>Additional useful Work Item features.</li>
-</ul>
-<p>Let&rsquo;s dive in!</p>]]></description>
-</item>
-<item>
-    <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
-    <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
-    <pubDate>Mon, 31 Jul 2023 08:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
-    <description><![CDATA[<p>The <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
- is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.
-As an attempt to offset the complexity I created a ready to use quick start backlog for the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas" target="_blank" rel="noopener noreffer">Design Areas</a>
- sub-section of the <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/" target="_blank" rel="noopener noreffer">Microsoft Cloud Adoption Framework</a>
-. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backlog on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/backlog/</link>
+    <description>Recent content in Backlog on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Feb 2025 21:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/backlog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</title>
+      <link>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</link>
+      <pubDate>Thu, 27 Feb 2025 21:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/</guid>
+      <description>&lt;p&gt;This is the 6th post in the category &lt;a href=&#34;https://www.devjev.nl/categories/azure-devops-fundamentals/&#34; rel=&#34;&#34;&gt;Azure DevOps Fundamentals&lt;/a&gt;&#xA; of the blog post series on working&#xA;with &lt;a href=&#34;https://azure.microsoft.com/en-us/products/devops/#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;In this post, I will break down &lt;strong&gt;Work Items&lt;/strong&gt; in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and&#xA;understanding them is crucial for effectively managing projects. We will explore:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The different types of Work Items.&lt;/li&gt;&#xA;&lt;li&gt;How Work Items tie into the Work Item Process.&lt;/li&gt;&#xA;&lt;li&gt;The hierarchy of Work Items.&lt;/li&gt;&#xA;&lt;li&gt;Where and how Work Items can be created.&lt;/li&gt;&#xA;&lt;li&gt;Ownership and refinement responsibilities for each Work Item level.&lt;/li&gt;&#xA;&lt;li&gt;Additional useful Work Item features.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastering Cloud Adoption Framework: Quick Start Backlog essentials 💪</title>
+      <link>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</link>
+      <pubDate>Mon, 31 Jul 2023 08:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2023/mastering-cloud-adoption-framework-quick-start-backlog-essentials/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA; is a comprehensive set of guidelines, best practices, tools, and documentation. But, this comprehensiveness can render the framework complex and potentially overwhelming for individuals and organizations, most notably for those with limited cloud expertise.&#xA;As an attempt to offset the complexity I created a ready to use quick start backlog for the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-areas&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Design Areas&lt;/a&gt;&#xA; sub-section of the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Cloud Adoption Framework&lt;/a&gt;&#xA;. Via this blog post I want to share it, explain the composition and guide you on how import it into your own Azure DevOps organization within minutes.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,46 +1,40 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Microsoft Azure - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
-        <link>https://www.devjev.nl/tags/microsoft-azure/</link>
-        <description>Microsoft Azure - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</lastBuildDate><atom:link href="https://www.devjev.nl/tags/microsoft-azure/" rel="self" type="application/rss+xml" /><item>
-    <title> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬</title>
-    <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</link>
-    <pubDate>Mon, 16 Dec 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</guid>
-    <description><![CDATA[<p>In my previous <em><strong>Decoding Microsoft Azure</strong></em> post, <a href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/" target="_blank" rel="noopener noreffer">🔍 <em>Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</em></a>
-, I introduced <em><strong>the house analogy</strong></em> to conceptually explain <a href="https://azure.microsoft.com/en-us/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft Azure</a>
-. Part of this analogy covered the <strong>Application Landing Zone</strong> and the <strong>Platform Landing Zone</strong>.</p>
-<p>In this post, I&rsquo;ll take a deeper dive into Landing Zones. We&rsquo;ll explore what they are, how they&rsquo;re defined by Microsoft, and how I believe we can improve upon the concept. By the end, you&rsquo;ll have a clearer understanding of Azure Landing Zones and how they fit into a broader cloud adoption strategy.</p>]]></description>
-</item>
-<item>
-    <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
-    <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
-    <pubDate>Mon, 25 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
-    <description><![CDATA[<p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
-<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
-<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>]]></description>
-</item>
-<item>
-    <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
-    <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
-    <pubDate>Thu, 07 Nov 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
-    <description><![CDATA[<p>In today&rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&rsquo;s free? 🎉 In this post, we&rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &ldquo;<strong>security is everyone&rsquo;s responsibility</strong>&rdquo; mindset as we go.</p>
-<h2 id="what-is-azure-bastion">What is Azure Bastion?</h2>
-<p>Let&rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.</p>]]></description>
-</item>
-<item>
-    <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
-    <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
-    <pubDate>Sun, 30 Jun 2024 02:00:00 &#43;0200</pubDate>
-    <author>Jev</author>
-    <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
-    <description><![CDATA[<p>The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.</p>]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft Azure on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/tags/microsoft-azure/</link>
+    <description>Recent content in Microsoft Azure on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Dec 2024 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/tags/microsoft-azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬</title>
+      <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</link>
+      <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</guid>
+      <description>&lt;p&gt;In my previous &lt;em&gt;&lt;strong&gt;Decoding Microsoft Azure&lt;/strong&gt;&lt;/em&gt; post, &lt;a href=&#34;https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;🔍 &lt;em&gt;Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️&lt;/em&gt;&lt;/a&gt;&#xA;, I introduced &lt;em&gt;&lt;strong&gt;the house analogy&lt;/strong&gt;&lt;/em&gt; to conceptually explain &lt;a href=&#34;https://azure.microsoft.com/en-us/?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Azure&lt;/a&gt;&#xA;. Part of this analogy covered the &lt;strong&gt;Application Landing Zone&lt;/strong&gt; and the &lt;strong&gt;Platform Landing Zone&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In this post, I&amp;rsquo;ll take a deeper dive into Landing Zones. We&amp;rsquo;ll explore what they are, how they&amp;rsquo;re defined by Microsoft, and how I believe we can improve upon the concept. By the end, you&amp;rsquo;ll have a clearer understanding of Azure Landing Zones and how they fit into a broader cloud adoption strategy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</title>
+      <link>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</link>
+      <pubDate>Mon, 25 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/</guid>
+      <description>&lt;p&gt;In this post, I&amp;rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&amp;rsquo;re an experienced cloud professional or new to Azure.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-microsoft-sentinel&#34;&gt;What is Microsoft Sentinel?&lt;/h2&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re new to Microsoft Sentinel, here&amp;rsquo;s a brief introduction. Feel free to skip this section if you&amp;rsquo;re already familiar with it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</title>
+      <link>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</link>
+      <pubDate>Thu, 07 Nov 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/</guid>
+      <description>&lt;p&gt;In today&amp;rsquo;s cloud-driven landscape, security is a shared responsibility for developers and engineers alike. Azure Bastion&amp;rsquo;s Developer SKU offers a lightweight way to securely connect to virtual machines—and did I mention it&amp;rsquo;s free? 🎉 In this post, we&amp;rsquo;ll walk through setting up Azure Bastion Developer SKU using Bicep Infrastructure as Code, fostering a &amp;ldquo;&lt;strong&gt;security is everyone&amp;rsquo;s responsibility&lt;/strong&gt;&amp;rdquo; mindset as we go.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-azure-bastion&#34;&gt;What is Azure Bastion?&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with a quick recap for those who are unfamiliar with Azure Bastion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🔍 Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️</title>
+      <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
+      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
+      <description>&lt;p&gt;The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
