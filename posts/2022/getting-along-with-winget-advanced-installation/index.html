@@ -10,7 +10,7 @@
   <meta itemprop="description" content="Using Winget to install my favorite software.">
   <meta itemprop="datePublished" content="2022-08-30T08:00:00+02:00">
   <meta itemprop="dateModified" content="2022-08-30T08:00:00+02:00">
-  <meta itemprop="wordCount" content="650">
+  <meta itemprop="wordCount" content="658">
   <meta itemprop="image" content="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png">
   <meta itemprop="keywords" content="Winget,Package Management,Development Box Setup"><meta property="og:url" content="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
@@ -50,7 +50,7 @@
               "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/featured-image.png",
               "width":  655 ,
               "height":  368 
-            }],"genre": "posts","keywords": "winget, package management, development box setup","wordcount":  650 ,
+            }],"genre": "posts","keywords": "winget, package management, development box setup","wordcount":  658 ,
     "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/","datePublished": "2022-08-30T08:00:00+02:00","dateModified": "2022-08-30T08:00:00+02:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -126,7 +126,7 @@
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Getting Along With Winget - Advanced Package Installation</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
-      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/tooling/" class="post-category" title="Category - Tooling"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tooling</a></span></div><div class="post-meta-line"><span title="published on 2022-08-30 08:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-08-30">2022-08-30</time></span>&nbsp;<span title="650 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 700 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/tooling/" class="post-category" title="Category - Tooling"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tooling</a></span></div><div class="post-meta-line"><span title="published on 2022-08-30 08:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-08-30">2022-08-30</time></span>&nbsp;<span title="658 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 700 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
     </div><div class="featured-image"><img src='/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -139,7 +139,7 @@
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><p>In my previous <a href="/getting-along-with-winget-basic-commands">post</a> I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
+      </div><div class="content" id="content"><p>In my previous post <a href="/posts/2022/getting-along-with-winget-basic-commands">Getting Along With Winget - Basic Packed Management</a> I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
 <h2 class="heading-element" id="winget-advanced-installation-the-override-command"><span>Winget Advanced installation, the override command</span>
   <a href="#winget-advanced-installation-the-override-command" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
