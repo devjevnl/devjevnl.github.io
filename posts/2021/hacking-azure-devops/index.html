@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>Hacking Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"><meta property="og:url" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Hacking Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"><meta name="keywords" content='Azure DevOps, Pipelines, Hack, Security, Lateral Attack, Unconventional'>
+  <meta itemprop="name" content="Hacking Azure DevOps">
+  <meta itemprop="description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization">
+  <meta itemprop="datePublished" content="2021-05-19T12:00:00+02:00">
+  <meta itemprop="dateModified" content="2021-05-19T12:00:00+02:00">
+  <meta itemprop="wordCount" content="1886">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/featured-image.jpg">
+  <meta itemprop="keywords" content="Azure DevOps,Pipelines,Hack,Security,Lateral Attack,Unconventional"><meta property="og:url" content="https://www.devjev.nl/posts/2021/hacking-azure-devops/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="Hacking Azure DevOps">
   <meta property="og:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization">
@@ -26,114 +34,108 @@
   <meta name="twitter:title" content="Hacking Azure DevOps">
   <meta name="twitter:description" content="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2021/hacking-azure-devops/" /><link rel="prev" href="https://www.devjev.nl/posts/2020/github-vs-ado/" /><link rel="next" href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Hacking Azure DevOps",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/featured-image.jpg",
-                            "width":  1327 ,
-                            "height":  496 
-                        }],"genre": "posts","keywords": "Azure DevOps, Pipelines, Hack, Security, Lateral Attack, Unconventional","wordcount":  1888 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/","datePublished": "2021-05-19T12:00:00+02:00","dateModified": "2021-05-19T12:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "Demo of a rather unconventional \u0026 unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2021/hacking-azure-devops/" title="Hacking Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2020/github-vs-ado/" title="GitHub vs Azure DevOps" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" title="I am in your pipeline reading all your secrets!" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Hacking Azure DevOps",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/featured-image.jpg",
+              "width":  1327 ,
+              "height":  496 
+            }],"genre": "posts","keywords": "Azure DevOps, Pipelines, Hack, Security, Lateral Attack, Unconventional","wordcount":  1886 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2021\/hacking-azure-devops\/","datePublished": "2021-05-19T12:00:00+02:00","dateModified": "2021-05-19T12:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Demo of a rather unconventional \u0026 unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hacking Azure DevOps</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Security</a>&nbsp;<a href="/categories/azure-devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2021-05-19">2021-05-19</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1888 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2021/hacking-azure-devops/featured-image.jpg"
-        data-srcset="/posts/2021/hacking-azure-devops/featured-image.jpg, /posts/2021/hacking-azure-devops/featured-image.jpg 1.5x, /posts/2021/hacking-azure-devops/featured-image.jpg 2x"
-        data-sizes="auto"
-        alt="/posts/2021/hacking-azure-devops/featured-image.jpg"
-        title="Demo of a rather unconventional &amp; unexpected Lateral Movement Attack which utilizes a possible configuration vulnerability in an Azure DevOps Organization" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Hacking Azure DevOps</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/security/" class="post-category" title="Category - Security"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Security</a>&ensp;<a href="/categories/azure-devops/" class="post-category" title="Category - Azure DevOps"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps</a></span></div><div class="post-meta-line"><span title="published on 2021-05-19 12:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2021-05-19">2021-05-19</time></span>&nbsp;<span title="1886 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1900 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>9 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2021/hacking-azure-devops/featured-image.jpg' alt="/posts/2021/hacking-azure-devops/featured-image.jpg"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#goal">Goal</a></li>
@@ -147,9 +149,21 @@
     <li><a href="#the-hack">The hack</a>
       <ul>
         <li><a href="#authentication-header">Authentication header</a></li>
-        <li><a href="#list-all-azure-devops-projects">List all Azure DevOps projects</a></li>
-        <li><a href="#get-all-git-repos">Get all Git repo&rsquo;s</a></li>
-        <li><a href="#get-all-variable-values">Get all variable values</a></li>
+        <li><a href="#list-all-azure-devops-projects">List all Azure DevOps projects</a>
+          <ul>
+            <li><a href="#putting-the-projects-api-call-to-practice">Putting the projects API call to practice</a></li>
+          </ul>
+        </li>
+        <li><a href="#get-all-git-repos">Get all Git repo&rsquo;s</a>
+          <ul>
+            <li><a href="#putting-the-git-api-call-to-practice">Putting the Git API call to practice</a></li>
+          </ul>
+        </li>
+        <li><a href="#get-all-variable-values">Get all variable values</a>
+          <ul>
+            <li><a href="#putting-the-variable-groups-api-call-to-practice">Putting the variable groups API call to practice</a></li>
+          </ul>
+        </li>
         <li><a href="#whats-the-vulnerability">What&rsquo;s the vulnerability?</a></li>
       </ul>
     </li>
@@ -161,36 +175,33 @@
     <li><a href="#the-good-the-bad--the-ugly">The Good, The Bad &amp; The Ugly</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
-<p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/" target="_blank" rel="noopener noreffer">devblogs.microsoft.com</a>
- back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
+      </div><div class="content" id="content"><h2 class="heading-element" id="introduction"><span>Introduction</span>
+  <a href="#introduction" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>While this case is not a particularly new one and has been posted by Matt Cooper on <a href="https://devblogs.microsoft.com/devops/pipeline-stealing-another-repo/"target="_blank" rel="external nofollow noopener noreferrer">devblogs.microsoft.com</a> back in August 2020. I still feel that in relation to the possible data spillage it has not received sufficient exposure and the correct amount of awareness I would have expected. I actually stumbled upon this case by accident when playing with the Azure DevOps Library variables API.</p>
 <p>So in this post I want to showcase how a possible attacker can use a compromised developers environment to gain access to almost all the data present in an Azure DevOps Organization. While access of the developers environment in question is limited to just a single Azure DevOps Project.</p>
 <div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><em>This showcase assumes that the Azure DevOps organization has been created prior to May 2020 and that the administrators of the Azure DevOps Organization in question have not enabled the settings which resolve this issue. So you have probably have nothing to worry about if your Azure DevOps organization is from after May 2020 or if your admins already enabled the fix</em></div>
-        </div>
-    </div>
-<h2 id="goal">Goal</h2>
-<p><strong>So what&rsquo;s the goal of this post?</strong><br>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true"></i>Note<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><em>This showcase assumes that the Azure DevOps organization has been created prior to May 2020 and that the administrators of the Azure DevOps Organization in question have not enabled the settings which resolve this issue. So you have probably have nothing to worry about if your Azure DevOps organization is from after May 2020 or if your admins already enabled the fix</em></div>
+  </div>
+</div>
+<h2 class="heading-element" id="goal"><span>Goal</span>
+  <a href="#goal" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><strong>So what&rsquo;s the goal of this post?</strong><br>
 The goal of this post is to emphasize the <em>importance</em> of <strong>zero trust</strong> and <strong>least privilege</strong>. And create awareness that security is everyone’s job.</p>
 <p><strong>How am I going to achieve this goal?</strong><br>
-By demonstrating a rather unconventional &amp; unexpected <em><a href="https://en.wikipedia.org/wiki/Network_Lateral_Movement" target="_blank" rel="noopener noreffer">Lateral Movement Attack</a>
-</em> which utilizes a possible configuration vulnerability in an Azure DevOps Organization.</p>
-<h2 id="current-situation">Current situation</h2>
-<p>For this showcase I have created an example Azure DevOps Organization called DemoJev. This organization is currently populated by 5 projects. As shown in the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" title="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" data-sub-html="<h2>Example ADO organization</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/example_ado_organization.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/example_ado_organization.jpg, /posts/2021/hacking-azure-devops/example_ado_organization.jpg 1.5x, /posts/2021/hacking-azure-devops/example_ado_organization.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" width="1959" height="466" />
-    </a><figcaption class="image-caption">Example ADO organization</figcaption>
-    </figure>
+By demonstrating a rather unconventional &amp; unexpected <em><a href="https://en.wikipedia.org/wiki/Network_Lateral_Movement"target="_blank" rel="external nofollow noopener noreferrer">Lateral Movement Attack</a></em> which utilizes a possible configuration vulnerability in an Azure DevOps Organization.</p>
+<h2 class="heading-element" id="current-situation"><span>Current situation</span>
+  <a href="#current-situation" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>For this showcase I have created an example Azure DevOps Organization called DemoJev. This organization is currently populated by 5 projects. As shown in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" title="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" data-sub-html="<h2>Example ADO organization</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/example_ado_organization.jpg' alt="/posts/2021/hacking-azure-devops/example_ado_organization.jpg" height="466" width="1959"></a><figcaption class="image-caption">Example ADO organization</figcaption>
+  </figure>
 <p>Lets assume that there are 3 developers Jan, Abdul and Henk who are working on the <em>My Shuttle Project</em>. They have access to:</p>
 <ul>
 <li>The project</li>
@@ -199,29 +210,16 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <li>The pipeline(s)</li>
 </ul>
 <p>And indirect access to the Azure resources deployed by the pipelines. The Azure permissions and configuration are actually not relevant within this showcase and are just added to draw a complete picture of a minimalistic set-up for a cloud native application development set-up. The <em>drawn</em> picture is as follows.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/example_ado_project.jpg" title="/posts/2021/hacking-azure-devops/example_ado_project.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/example_ado_project.jpg" data-sub-html="<h2>Example ado project</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/example_ado_project.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/example_ado_project.jpg, /posts/2021/hacking-azure-devops/example_ado_project.jpg 1.5x, /posts/2021/hacking-azure-devops/example_ado_project.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/example_ado_project.jpg" width="1960" height="963" />
-    </a><figcaption class="image-caption">Example ado project</figcaption>
-    </figure>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/example_ado_project.jpg" title="/posts/2021/hacking-azure-devops/example_ado_project.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/example_ado_project.jpg" data-sub-html="<h2>Example ado project</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/example_ado_project.jpg' alt="/posts/2021/hacking-azure-devops/example_ado_project.jpg" height="963" width="1960"></a><figcaption class="image-caption">Example ado project</figcaption>
+  </figure>
 <p>Since it is not the question if an environment is compromised but when. It is possible to assume that the development environment of one of the developers will eventually be compromised. In this showcase the development environment of Henk has been compromised.</p>
-<h2 id="henk-is-hacked">Henk is hacked!</h2>
-<p>It seems he is :-( <br>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" title="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" data-sub-html="<h2>Henk is hacked</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg, /posts/2021/hacking-azure-devops/henk_is_hacked.jpg 1.5x, /posts/2021/hacking-azure-devops/henk_is_hacked.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" width="405" height="312" />
-    </a><figcaption class="image-caption">Henk is hacked</figcaption>
-    </figure></p>
+<h2 class="heading-element" id="henk-is-hacked"><span>Henk is hacked!</span>
+  <a href="#henk-is-hacked" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>It seems he is :-( <br>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" title="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" data-sub-html="<h2>Henk is hacked</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/henk_is_hacked.jpg' alt="/posts/2021/hacking-azure-devops/henk_is_hacked.jpg" height="312" width="405"></a><figcaption class="image-caption">Henk is hacked</figcaption>
+  </figure></p>
 <p>To better understand the implications of the hack lets zoom in on Henk&rsquo;s permissions. Like stated in the previous chapter Jan, Abdul and Henk are all team members on the project and thus it&rsquo;s save to assume that all of them have contributor role within the My Shuttle project. Assuming that out of the box permissions of the Azure DevOps project are present, Henk should at least have the following permissions;</p>
 <ul>
 <li>Modify source code (partially depending on branch policies)</li>
@@ -230,30 +228,20 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <li>Create, delete and update variable groups</li>
 <li>Modify board information</li>
 </ul>
-<h3 id="expected-data-spillage">Expected data spillage</h3>
-<p>Judging from the above noted permissions it is presumable to expect that the attacker acquired the same level of access as Henk has. So letting Azure aside (again, not important for this case) the data spillage should be limited to the <em>MyShuttle</em> Azure DevOps project. As illustrated in the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/expected_spillage.jpg" title="/posts/2021/hacking-azure-devops/expected_spillage.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/expected_spillage.jpg" data-sub-html="<h2>Expected spillage</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/expected_spillage.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/expected_spillage.jpg, /posts/2021/hacking-azure-devops/expected_spillage.jpg 1.5x, /posts/2021/hacking-azure-devops/expected_spillage.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/expected_spillage.jpg" width="1960" height="1061" />
-    </a><figcaption class="image-caption">Expected spillage</figcaption>
-    </figure>
-<h3 id="actual-data-spillage">Actual data spillage</h3>
-<p>Contrary to the expected data spillage the actual data spillage is much larger. By fiddling with som Azure DevOps API&rsquo;s and a bit of PowerShell scripting I was able to produce a data spillage the size of the whole Organization. See following the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/actual_spillage.jpg" title="/posts/2021/hacking-azure-devops/actual_spillage.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/actual_spillage.jpg" data-sub-html="<h2>Actual spillage</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/actual_spillage.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/actual_spillage.jpg, /posts/2021/hacking-azure-devops/actual_spillage.jpg 1.5x, /posts/2021/hacking-azure-devops/actual_spillage.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/actual_spillage.jpg" width="1962" height="1057" />
-    </a><figcaption class="image-caption">Actual spillage</figcaption>
-    </figure>
+<h3 class="heading-element" id="expected-data-spillage"><span>Expected data spillage</span>
+  <a href="#expected-data-spillage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Judging from the above noted permissions it is presumable to expect that the attacker acquired the same level of access as Henk has. So letting Azure aside (again, not important for this case) the data spillage should be limited to the <em>MyShuttle</em> Azure DevOps project. As illustrated in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/expected_spillage.jpg" title="/posts/2021/hacking-azure-devops/expected_spillage.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/expected_spillage.jpg" data-sub-html="<h2>Expected spillage</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/expected_spillage.jpg' alt="/posts/2021/hacking-azure-devops/expected_spillage.jpg" height="1061" width="1960"></a><figcaption class="image-caption">Expected spillage</figcaption>
+  </figure>
+<h3 class="heading-element" id="actual-data-spillage"><span>Actual data spillage</span>
+  <a href="#actual-data-spillage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Contrary to the expected data spillage the actual data spillage is much larger. By fiddling with som Azure DevOps API&rsquo;s and a bit of PowerShell scripting I was able to produce a data spillage the size of the whole Organization. See following the following image.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/actual_spillage.jpg" title="/posts/2021/hacking-azure-devops/actual_spillage.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/actual_spillage.jpg" data-sub-html="<h2>Actual spillage</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/actual_spillage.jpg' alt="/posts/2021/hacking-azure-devops/actual_spillage.jpg" height="1057" width="1962"></a><figcaption class="image-caption">Actual spillage</figcaption>
+  </figure>
 <p>So a knowledgeable attacker can basically gain read access to pretty much all the data stored within the Azure DevOps Organization, including;</p>
 <ul>
 <li>All Azure DevOps projects within the same Organization</li>
@@ -261,112 +249,87 @@ By demonstrating a rather unconventional &amp; unexpected <em><a href="https://e
 <li>All values of the non secret variables in all Azure DevOps projects within the same Organization</li>
 <li>All Artifacts regardless of the streams are private or public</li>
 </ul>
-<h2 id="the-hack">The hack</h2>
-<div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">The code snippets which are part of this chapter are developed to showcase the possible vulnerability and should not be used in any other way!</div>
-        </div>
-    </div>
+<h2 class="heading-element" id="the-hack"><span>The hack</span>
+  <a href="#the-hack" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="details admonition note open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true"></i>Note<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">The code snippets which are part of this chapter are developed to showcase the possible vulnerability and should not be used in any other way!</div>
+  </div>
+</div>
 <p>To explain how this is possible I am going to use an yaml pipeline that will execute a set of PowerShell scripts which will make calls to the Azure DevOps rest API using the pipeline identity.</p>
-<h3 id="authentication-header">Authentication header</h3>
-<p>First lets start by creating an authentication header using this pipeline identity. Azure DevOps pipelines have a set of predefined variables available for use during run-time, these contain all kinds of handy information. One of these is the <code>$(System.AccessToken)</code> or when using PowerShell <code>$($env:SYSTEM_ACCESSTOKEN)</code>. This variable contains the mentioned pipeline identity token. So using this token it is possible to craft an authentication header which will contain the security context of the pipeline identity token. In PowerShell this will look something like shown in the following snippet.</p>
+<h3 class="heading-element" id="authentication-header"><span>Authentication header</span>
+  <a href="#authentication-header" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>First lets start by creating an authentication header using this pipeline identity. Azure DevOps pipelines have a set of predefined variables available for use during run-time, these contain all kinds of handy information. One of these is the <code>$(System.AccessToken)</code> or when using PowerShell <code>$($env:SYSTEM_ACCESSTOKEN)</code>. This variable contains the mentioned pipeline identity token. So using this token it is possible to craft an authentication header which will contain the security context of the pipeline identity token. In PowerShell this will look something like shown in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=authenticate-header-for-ado-api.ps1"></script>
-
-<h3 id="list-all-azure-devops-projects">List all Azure DevOps projects</h3>
-<p>The first step is to list all Azure DevOps projects within the DemoJev Organization. For this I used the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-6.1" target="_blank" rel="noopener noreffer">Projects - List API</a>
-. See following snippet.</p>
+<h3 class="heading-element" id="list-all-azure-devops-projects"><span>List all Azure DevOps projects</span>
+  <a href="#list-all-azure-devops-projects" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The first step is to list all Azure DevOps projects within the DemoJev Organization. For this I used the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/core/projects/list?view=azure-devops-rest-6.1"target="_blank" rel="external nofollow noopener noreferrer">Projects - List API</a>. See following snippet.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.ps1"></script>
-
-<h4 id="putting-the-projects-api-call-to-practice">Putting the projects API call to practice</h4>
-<p>To call the API I have incorporated the authentication header into the API call by simply passing as <code>-Headers $httHeaders</code>. I am not going into details about the yaml pipeline as it should be pretty straight forward. However it is important to note the last two lines of this snippet. These two lines allow for the pipeline identity token to be passed to the task in question. Without this addition the token wont be accessible within the task.</p>
+<h4 class="heading-element" id="putting-the-projects-api-call-to-practice"><span>Putting the projects API call to practice</span>
+  <a href="#putting-the-projects-api-call-to-practice" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>To call the API I have incorporated the authentication header into the API call by simply passing as <code>-Headers $httHeaders</code>. I am not going into details about the yaml pipeline as it should be pretty straight forward. However it is important to note the last two lines of this snippet. These two lines allow for the pipeline identity token to be passed to the task in question. Without this addition the token wont be accessible within the task.</p>
 <p>Making the system token available to a Azure DevOps task.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=system-access-token.yml"></script>
-
 <p>The API call in practice</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=listing-all-devops-projects.yml"></script>
-
 <p>When executed, the pipeline should displaying all Azure DevOps Projects and their ID&rsquo;s. As shown in the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" title="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-sub-html="<h2>Hack listing ado projects</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg, /posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg 1.5x, /posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" width="738" height="985" />
-    </a><figcaption class="image-caption">Hack listing ado projects</figcaption>
-    </figure>
-<h3 id="get-all-git-repos">Get all Git repo&rsquo;s</h3>
-<p>Now that all the project information is available, it is possible to dig a little deeper and retrieve git repositories from one or even from all of the retrieved projects. To keep the showcase simple the following snippet gets the repos of a single project, namely; MyHealthClinic. First I call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get?view=azure-devops-rest-4.1&amp;viewFallbackFrom=azure-devops-rest-6.0" target="_blank" rel="noopener noreffer">Repositories - Get</a>
- API to get metadata about all the repositories present within this project. Then it is just a matter of iterating trough the response and executing a <code>git clone</code> command fo each repo. Most interesting part here was composing the <code>@gitUrl</code> variable value. As it is needed for input when calling the <code>git clone</code> command. To achieve this I was able to reuse the <code>$(System.AccessToken)</code> as a credentials object when using the &lsquo;git clone&rsquo; command.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" title="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" data-sub-html="<h2>Hack listing ado projects</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg' alt="/posts/2021/hacking-azure-devops/hack_list_ado_projects.jpg" height="985" width="738"></a><figcaption class="image-caption">Hack listing ado projects</figcaption>
+  </figure>
+<h3 class="heading-element" id="get-all-git-repos"><span>Get all Git repo&rsquo;s</span>
+  <a href="#get-all-git-repos" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Now that all the project information is available, it is possible to dig a little deeper and retrieve git repositories from one or even from all of the retrieved projects. To keep the showcase simple the following snippet gets the repos of a single project, namely; MyHealthClinic. First I call the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/git/repositories/get?view=azure-devops-rest-4.1&amp;viewFallbackFrom=azure-devops-rest-6.0"target="_blank" rel="external nofollow noopener noreferrer">Repositories - Get</a> API to get metadata about all the repositories present within this project. Then it is just a matter of iterating trough the response and executing a <code>git clone</code> command fo each repo. Most interesting part here was composing the <code>@gitUrl</code> variable value. As it is needed for input when calling the <code>git clone</code> command. To achieve this I was able to reuse the <code>$(System.AccessToken)</code> as a credentials object when using the &lsquo;git clone&rsquo; command.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.ps1"></script>
-
-<h4 id="putting-the-git-api-call-to-practice">Putting the Git API call to practice</h4>
-<p>When everything is put together, the pipeline is as show in the following snippet.</p>
+<h4 class="heading-element" id="putting-the-git-api-call-to-practice"><span>Putting the Git API call to practice</span>
+  <a href="#putting-the-git-api-call-to-practice" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>When everything is put together, the pipeline is as show in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-repos.yml"></script>
-
 <p>When executed, the pipeline should result in all the present Git repositories within the project cloned to the working directory specified by the <code>$reposDir</code> variable. Check the following image for the result.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" title="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-sub-html="<h2>Hack get all git repos</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg, /posts/2021/hacking-azure-devops/hack_get_git_repos.jpg 1.5x, /posts/2021/hacking-azure-devops/hack_get_git_repos.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" width="1337" height="1858" />
-    </a><figcaption class="image-caption">Hack get all git repos</figcaption>
-    </figure>
-<h3 id="get-all-variable-values">Get all variable values</h3>
-<p>With the project information still available it is also possible to get additional data for each of the projects. Personally next to actually cloning the repositories I found that the possibility to actually get variable data the most <em>&lsquo;interesting&rsquo;</em> find. So first a call to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-6.1" target="_blank" rel="noopener noreffer">Variablegroups - Get Variable Groups</a>
- API. This API expects a groupName (documentation states it does not, but it does!) so to get all the groups I simply tried: <code>groupName=*</code>. It actually worked!</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" title="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" data-sub-html="<h2>Hack get all git repos</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg' alt="/posts/2021/hacking-azure-devops/hack_get_git_repos.jpg" height="1858" width="1337"></a><figcaption class="image-caption">Hack get all git repos</figcaption>
+  </figure>
+<h3 class="heading-element" id="get-all-variable-values"><span>Get all variable values</span>
+  <a href="#get-all-variable-values" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>With the project information still available it is also possible to get additional data for each of the projects. Personally next to actually cloning the repositories I found that the possibility to actually get variable data the most <em>&lsquo;interesting&rsquo;</em> find. So first a call to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/get%20variable%20groups?view=azure-devops-rest-6.1"target="_blank" rel="external nofollow noopener noreferrer">Variablegroups - Get Variable Groups</a> API. This API expects a groupName (documentation states it does not, but it does!) so to get all the groups I simply tried: <code>groupName=*</code>. It actually worked!</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.ps1"></script>
-
-<h4 id="putting-the-variable-groups-api-call-to-practice">Putting the variable groups API call to practice</h4>
-<p>When everything is put together, the pipeline is as show in the following snippet.</p>
+<h4 class="heading-element" id="putting-the-variable-groups-api-call-to-practice"><span>Putting the variable groups API call to practice</span>
+  <a href="#putting-the-variable-groups-api-call-to-practice" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>When everything is put together, the pipeline is as show in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/4fdc41adc86692af878be728e4a2db20.js?file=get-all-variable-values.yml"></script>
-
 <p>When executed, the pipeline should return the variables as a json object. It appears that the variables returned including the actual values as long as they are not marked as secrets. For variables which are marked as secrets the value is set to <code>null</code>. Check the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" title="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-sub-html="<h2>Result of get variables API</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg, /posts/2021/hacking-azure-devops/hack_get_all_variables.jpg 1.5x, /posts/2021/hacking-azure-devops/hack_get_all_variables.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" width="1148" height="1650" />
-    </a><figcaption class="image-caption">Result of get variables API</figcaption>
-    </figure>
-<h3 id="whats-the-vulnerability">What&rsquo;s the vulnerability?</h3>
-<p>It turns out that all the pipelines are executed using a single Azure DevOps identity named <code>Project Collection Build Service ({you organization name})</code>. That&rsquo;s right, this identity has read permissions to pretty much everything within all Azure DevOps Projects. The specific permissions of this identity are already covered by <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#manage-build-service-account-permissions" target="_blank" rel="noopener noreffer">Microsoft docs page</a>
- so I am not going to go into details about them.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" title="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" data-sub-html="<h2>Result of get variables API</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg' alt="/posts/2021/hacking-azure-devops/hack_get_all_variables.jpg" height="1650" width="1148"></a><figcaption class="image-caption">Result of get variables API</figcaption>
+  </figure>
+<h3 class="heading-element" id="whats-the-vulnerability"><span>What&rsquo;s the vulnerability?</span>
+  <a href="#whats-the-vulnerability" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>It turns out that all the pipelines are executed using a single Azure DevOps identity named <code>Project Collection Build Service ({you organization name})</code>. That&rsquo;s right, this identity has read permissions to pretty much everything within all Azure DevOps Projects. The specific permissions of this identity are already covered by <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#manage-build-service-account-permissions"target="_blank" rel="external nofollow noopener noreferrer">Microsoft docs page</a> so I am not going to go into details about them.</p>
 <p>To me this implementation is similar to having an application that consists out of multiple services and during installation configuring all the services to share a single service account which also has read permissions to the whole system.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/project_collection_service.jpg" title="/posts/2021/hacking-azure-devops/project_collection_service.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/project_collection_service.jpg" data-sub-html="<h2>Project collection service</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/project_collection_service.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/project_collection_service.jpg, /posts/2021/hacking-azure-devops/project_collection_service.jpg 1.5x, /posts/2021/hacking-azure-devops/project_collection_service.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/project_collection_service.jpg" width="1959" height="532" />
-    </a><figcaption class="image-caption">Project collection service</figcaption>
-    </figure>
-<h2 id="the-fix">The fix</h2>
-<p>Thankfully Microsoft already provided one, it is just not enabled for all Organizations. presumably Microsoft identified this as an issue somewhere in the beginning of 2020 since all the Azure DevOps Organizations created after May 2020 automatically have the fix enabled.</p>
-<p><figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" title="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" data-sub-html="<h2>Note the MS page</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg, /posts/2021/hacking-azure-devops/doc_note_ms_page.jpg 1.5x, /posts/2021/hacking-azure-devops/doc_note_ms_page.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" width="1597" height="200" />
-    </a><figcaption class="image-caption">Note the MS page</figcaption>
-    </figure>
-Source: <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#job-authorization-scope" target="_blank" rel="noopener noreffer">Access repositories, artifacts, and other resources</a>
-.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/project_collection_service.jpg" title="/posts/2021/hacking-azure-devops/project_collection_service.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/project_collection_service.jpg" data-sub-html="<h2>Project collection service</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/project_collection_service.jpg' alt="/posts/2021/hacking-azure-devops/project_collection_service.jpg" height="532" width="1959"></a><figcaption class="image-caption">Project collection service</figcaption>
+  </figure>
+<h2 class="heading-element" id="the-fix"><span>The fix</span>
+  <a href="#the-fix" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Thankfully Microsoft already provided one, it is just not enabled for all Organizations. presumably Microsoft identified this as an issue somewhere in the beginning of 2020 since all the Azure DevOps Organizations created after May 2020 automatically have the fix enabled.</p>
+<p><figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" title="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" data-sub-html="<h2>Note the MS page</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg' alt="/posts/2021/hacking-azure-devops/doc_note_ms_page.jpg" height="200" width="1597"></a><figcaption class="image-caption">Note the MS page</figcaption>
+  </figure>
+Source: <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/access-tokens?view=azure-devops&amp;tabs=yaml#job-authorization-scope"target="_blank" rel="external nofollow noopener noreferrer">Access repositories, artifacts, and other resources</a>.</p>
 <p>The fix is also quite simple when it comes to implementation. A Project Collection Administrator of the Organization in question should simply enable 3 configuration settings by following these steps:</p>
 <ol>
 <li>Open Organization Settings</li>
@@ -381,25 +344,23 @@ Source: <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process
 </ol>
 <p><code>NOTE: There is no save button so the settings are have an immediate effect</code></p>
 <p>The moment these settings are enabled the next pipeline that is started will not use the Project Collection Build Service. Instead each project is provisioned with it&rsquo;s own build service. This service has project scoped permissions and thus when the scripts as described in the <strong>The hack</strong> chapter are executed the information from the project in question is returned and nothing more. Like illustrated in the following image.</p>
-<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/project_build_service.jpg" title="/posts/2021/hacking-azure-devops/project_build_service.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/project_build_service.jpg" data-sub-html="<h2>Project build service</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2021/hacking-azure-devops/project_build_service.jpg"
-            data-srcset="/posts/2021/hacking-azure-devops/project_build_service.jpg, /posts/2021/hacking-azure-devops/project_build_service.jpg 1.5x, /posts/2021/hacking-azure-devops/project_build_service.jpg 2x"
-            data-sizes="auto"
-            alt="/posts/2021/hacking-azure-devops/project_build_service.jpg" width="1959" height="574" />
-    </a><figcaption class="image-caption">Project build service</figcaption>
-    </figure>
-<h3 id="solution-implications">Solution implications</h3>
-<p>While implementing the fix is very straight forward it does have some implications. As of writing this post this is what I have identified as issues and/or side effects.</p>
+<figure><a class="lightgallery" href="/posts/2021/hacking-azure-devops/project_build_service.jpg" title="/posts/2021/hacking-azure-devops/project_build_service.jpg" data-thumbnail="/posts/2021/hacking-azure-devops/project_build_service.jpg" data-sub-html="<h2>Project build service</h2>"><img loading="lazy" src='/posts/2021/hacking-azure-devops/project_build_service.jpg' alt="/posts/2021/hacking-azure-devops/project_build_service.jpg" height="574" width="1959"></a><figcaption class="image-caption">Project build service</figcaption>
+  </figure>
+<h3 class="heading-element" id="solution-implications"><span>Solution implications</span>
+  <a href="#solution-implications" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>While implementing the fix is very straight forward it does have some implications. As of writing this post this is what I have identified as issues and/or side effects.</p>
 <ul>
 <li>If a pipeline references other repositories in addition to the repository where the pipeline resides. The repository owner must provide permissions in the pipeline for each repository in question. Even for repositories that are part of the same Azure DevOps Project.</li>
 <li>Permissions to organization scoped Artifacts feeds must be provided manually for each Project by navigating to the feed in question from within the project in question and clicking the Allow project-scoped build button.</li>
 <li>Any custom permissions which where given to the Project Collection Build Service in any project must now be also given to the individual project build service.</li>
 </ul>
-<h2 id="the-good-the-bad--the-ugly">The Good, The Bad &amp; The Ugly</h2>
-<p>To sum up my take on this subject here is an overview of <em>The Good, The Bad &amp; The Ugly</em>.</p>
+<h2 class="heading-element" id="the-good-the-bad--the-ugly"><span>The Good, The Bad &amp; The Ugly</span>
+  <a href="#the-good-the-bad--the-ugly" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>To sum up my take on this subject here is an overview of <em>The Good, The Bad &amp; The Ugly</em>.</p>
 <table>
   <thead>
       <tr>
@@ -433,42 +394,37 @@ Source: <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process
 </table>
 <p>I hope that you have enjoyed reading the read and perhaps even learned something new. If you have any questions on the subject just reach out to me via twitter on @devjevnl.</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2021-05-19</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2021-05-19 12:00:00">Updated on 2021-05-19&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/pipelines/">Pipelines</a>,&nbsp;<a href="/tags/hack/">Hack</a>,&nbsp;<a href="/tags/security/">Security</a>,&nbsp;<a href="/tags/lateral-attack/">Lateral Attack</a>,&nbsp;<a href="/tags/unconventional/">Unconventional</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2020/github-vs-ado/" class="prev" rel="prev" title="GitHub vs Azure DevOps"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>GitHub vs Azure DevOps</a>
-            <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" class="next" rel="next" title="I am in your pipeline reading all your secrets!">I am in your pipeline reading all your secrets!<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-devops/" class="post-tag" title="Tags - Azure DevOps">Azure DevOps</a><a href="/tags/pipelines/" class="post-tag" title="Tags - Pipelines">Pipelines</a><a href="/tags/hack/" class="post-tag" title="Tags - Hack">Hack</a><a href="/tags/security/" class="post-tag" title="Tags - Security">Security</a><a href="/tags/lateral-attack/" class="post-tag" title="Tags - Lateral Attack">Lateral Attack</a><a href="/tags/unconventional/" class="post-tag" title="Tags - Unconventional">Unconventional</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2020/github-vs-ado/" class="post-nav-item" rel="prev" title="GitHub vs Azure DevOps"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>GitHub vs Azure DevOps</a><a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" class="post-nav-item" rel="next" title="I Am in Your Pipeline Reading All Your Secrets!">I Am in Your Pipeline Reading All Your Secrets!<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2021/hacking-azure-devops/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

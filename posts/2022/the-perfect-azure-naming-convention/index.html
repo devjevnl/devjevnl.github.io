@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>The perfect Azure naming convention - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Azure resource naming convention"><meta property="og:url" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>The Perfect Azure Naming Convention - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Azure resource naming convention"><meta name="keywords" content='Naming convention, Azure, Resources, Cloud, Resource naming'>
+  <meta itemprop="name" content="The perfect Azure naming convention">
+  <meta itemprop="description" content="Azure resource naming convention">
+  <meta itemprop="datePublished" content="2022-05-10T06:42:15+02:00">
+  <meta itemprop="dateModified" content="2024-10-24T13:42:15+02:00">
+  <meta itemprop="wordCount" content="1370">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/featured-image.png">
+  <meta itemprop="keywords" content="Naming Convention,Azure,Resources,Cloud,Resource Naming"><meta property="og:url" content="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="The perfect Azure naming convention">
   <meta property="og:description" content="Azure resource naming convention">
@@ -25,114 +33,108 @@
   <meta name="twitter:title" content="The perfect Azure naming convention">
   <meta name="twitter:description" content="Azure resource naming convention">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/" /><link rel="next" href="https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "The perfect Azure naming convention",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/featured-image.png",
-                            "width":  655 ,
-                            "height":  368 
-                        }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming","wordcount":  1375 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/","datePublished": "2022-05-10T06:42:15+02:00","dateModified": "2024-10-24T13:42:15+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "Azure resource naming convention"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2022/the-perfect-azure-naming-convention/" title="The perfect Azure naming convention - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2022/the-10-commandments-for-azure-naming-conventions/" title="The 10 commandments for Azure naming conventions" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/" title="A naming convention to bring order to variable groups" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The perfect Azure naming convention",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/featured-image.png",
+              "width":  655 ,
+              "height":  368 
+            }],"genre": "posts","keywords": "Naming convention, Azure, Resources, Cloud, Resource naming","wordcount":  1370 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2022\/the-perfect-azure-naming-convention\/","datePublished": "2022-05-10T06:42:15+02:00","dateModified": "2024-10-24T13:42:15+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Azure resource naming convention"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The perfect Azure naming convention</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/cloud-governance/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Cloud Governance</a>&nbsp;<a href="/categories/naming-conventions/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Naming Conventions</a>&nbsp;<a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-10">2022-05-10</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1375 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/the-perfect-azure-naming-convention/featured-image.png"
-        data-srcset="/posts/2022/the-perfect-azure-naming-convention/featured-image.png, /posts/2022/the-perfect-azure-naming-convention/featured-image.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/the-perfect-azure-naming-convention/featured-image.png"
-        title="Azure resource naming convention" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>The Perfect Azure Naming Convention</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/cloud-governance/" class="post-category" title="Category - Cloud Governance"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Cloud Governance</a>&ensp;<a href="/categories/naming-conventions/" class="post-category" title="Category - Naming Conventions"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Naming Conventions</a>&ensp;<a href="/categories/azure/" class="post-category" title="Category - Azure"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure</a></span></div><div class="post-meta-line"><span title="published on 2022-05-10 06:42:15"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-05-10">2022-05-10</time></span>&nbsp;<span title="Updated on 2024-10-24 13:42:15"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-10-24">2024-10-24</time></span>&nbsp;<span title="1370 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1400 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>7 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2022/the-perfect-azure-naming-convention/featured-image.png' alt="/posts/2022/the-perfect-azure-naming-convention/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#naming-convention-background">Naming convention background</a>
       <ul>
@@ -142,7 +144,11 @@
     <li><a href="#naming-convention-explained">Naming convention explained</a></li>
     <li><a href="#workload-naming-convention-in-practice">Workload naming convention in practice</a>
       <ul>
-        <li><a href="#environment-as-the-second-component">Environment as the second component</a></li>
+        <li><a href="#environment-as-the-second-component">Environment as the second component</a>
+          <ul>
+            <li><a href="#additional-examples">Additional examples</a></li>
+          </ul>
+        </li>
         <li><a href="#application-as-the-second-component">Application as the second component</a></li>
       </ul>
     </li>
@@ -150,79 +156,43 @@
     <li><a href="#closing-statement-and-further-reading">Closing statement and further reading</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This post is the 2nd in the <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">previous post</a>
-. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
+      </div><div class="content" id="content"><p>This post is the 2nd in the <a href="/categories/naming-conventions/">naming convention series</a>. With this post I want to share my approach to naming Azure resources. Why a naming convention is important is already covered by my <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions">previous post</a>. However I do believe that some background is required to understand this approach. So, lets dig in.</p>
 <div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/" rel="">naming convention series</a>
-:</p>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true"></i>Tip<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>Check out the full <a href="/categories/naming-conventions/">naming convention series</a>:</p>
 <ul>
-<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">The 10 commandments for Azure naming conventions</a>
-</li>
-<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups" rel="">A naming convention to bring order to variable groups</a>
-</li>
-<li><a href="/posts/2022/git-gud-with-branch-naming" rel="">Git gud with branch naming</a>
-</li>
+<li><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions">The 10 commandments for Azure naming conventions</a></li>
+<li><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups">A naming convention to bring order to variable groups</a></li>
+<li><a href="/posts/2022/git-gud-with-branch-naming">Git gud with branch naming</a></li>
 </ul></div>
-        </div>
-    </div>
-<h2 id="naming-convention-background">Naming convention background</h2>
-<p>A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as <strong>cattle</strong> and <strong>not</strong> as <strong>pets</strong>. Supporting the transition from the traditional approach of treating infrastructure as pets <em>&ldquo;unique snowflakes&rdquo;</em> with names and emotional attachments, to a Cloud native model whereby if a problem with infrastructure is found the infrastructure in question (or its configuration) is &ldquo;simply&rdquo; destroyed and replaced (infrastructure as code). This approach is a must to provision and manage the complex and rather large amount of components &amp; configurations the current day Cloud resources are consisting of.<br>
+  </div>
+</div>
+<h2 class="heading-element" id="naming-convention-background"><span>Naming convention background</span>
+  <a href="#naming-convention-background" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>A proper naming convention is one of the main methods for building and maintaining Cloud infrastructure as <strong>cattle</strong> and <strong>not</strong> as <strong>pets</strong>. Supporting the transition from the traditional approach of treating infrastructure as pets <em>&ldquo;unique snowflakes&rdquo;</em> with names and emotional attachments, to a Cloud native model whereby if a problem with infrastructure is found the infrastructure in question (or its configuration) is &ldquo;simply&rdquo; destroyed and replaced (infrastructure as code). This approach is a must to provision and manage the complex and rather large amount of components &amp; configurations the current day Cloud resources are consisting of.<br>
 In addition Azure resource names are immutable (meaning that they cannot be changed after creation) and in some cases not reusable for a set period of time (purge protection). So it is crucial to name resources with longevity in mind and to avoid extensive rework and downtime in later stages.</p>
 <p>Therefore the purpose of this this naming convention is to ensure resource names reflect a logical structure enabling automation, scripting and Infrastructure as Code to find, read and process this complex and large amount of resources &amp; configurations with as little and simple logic as possible. Ensuring proper performance, low effort maintainability and drift control.</p>
-<h3 id="resource-tagging-a-naming-conventions-best-friend">Resource tagging, a naming conventions best friend</h3>
-<p>By prioritizing automation operators might get into trouble processing resources by their names. Therefore any naming convention should always be implemented in conjunction with a proper <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging" target="_blank" rel="noopener noreffer">tagging strategy</a>
-. Since most resources can be tagged with up to 50 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging" target="_blank" rel="noopener noreffer">resource tags</a>
- which are mutable and are unlike the resource names not subjected to limiting <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules" target="_blank" rel="noopener noreffer">naming rules and restrictions</a>
- an operator is be able to filter, search, find and process resources based on their tags effortlessly (check out the following screenshot examples). Resulting in a best of both worlds scenario. And of course tagging is the first step to implementing cost management but thats a different story :).</p>
+<h3 class="heading-element" id="resource-tagging-a-naming-conventions-best-friend"><span>Resource tagging, a naming conventions best friend</span>
+  <a href="#resource-tagging-a-naming-conventions-best-friend" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>By prioritizing automation operators might get into trouble processing resources by their names. Therefore any naming convention should always be implemented in conjunction with a proper <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging"target="_blank" rel="external nofollow noopener noreferrer">tagging strategy</a>. Since most resources can be tagged with up to 50 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging"target="_blank" rel="external nofollow noopener noreferrer">resource tags</a> which are mutable and are unlike the resource names not subjected to limiting <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules"target="_blank" rel="external nofollow noopener noreferrer">naming rules and restrictions</a> an operator is be able to filter, search, find and process resources based on their tags effortlessly (check out the following screenshot examples). Resulting in a best of both worlds scenario. And of course tagging is the first step to implementing cost management but thats a different story :).</p>
 <p>Example: Filtering resources<br>
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png"
-        data-srcset="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png 1.5x, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png 2x"
-        data-sizes="auto"
-        alt="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png"
-        title="filtering-resources-by-tags" /></p>
+<img loading="lazy" src='https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-resource-group.png' alt="filtering-resources-by-tags"></p>
 <p>Example: Search resources<br>
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png"
-        data-srcset="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png 1.5x, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png 2x"
-        data-sizes="auto"
-        alt="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png"
-        title="search-resources-by-tags" /></p>
+<img loading="lazy" src='https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/filter-simplewinvm.png' alt="search-resources-by-tags"></p>
 <p>Example: Visual summary view<br>
-<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png"
-        data-srcset="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png 1.5x, https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png 2x"
-        data-sizes="auto"
-        alt="https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png"
-        title="visual-summary-view" /></p>
-<h2 id="naming-convention-explained">Naming convention explained</h2>
-<p>Technically this naming convention arranges components <a href="https://en.wiktionary.org/wiki/sizewise" target="_blank" rel="noopener noreffer">sizewise</a>
- which also the approach <a href="https://en.wikipedia.org/wiki/Metric_system" target="_blank" rel="noopener noreffer">the metric system</a>
- uses. To visualize this in a clear way for everyone disregarding individual knowledge of <a href="https://en.wiktionary.org/wiki/sizewise" target="_blank" rel="noopener noreffer">sizewise</a>
- and <a href="https://en.wikipedia.org/wiki/Metric_system" target="_blank" rel="noopener noreffer">the metric system</a>
-, the components are arranged in the form of a stacking doll, a.k.a a <a href="https://en.wikipedia.org/wiki/Matryoshka_doll" target="_blank" rel="noopener noreffer">Matroska</a>
- or stacking dolls. Like the ones shown in the next image.</p>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-sub-html="<h2>Matroska / Stacking dolls</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska.png"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska.png, /posts/2022/the-perfect-azure-naming-convention/matroska.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska.png" width="1059" height="636" />
-    </a><figcaption class="image-caption">Matroska / Stacking dolls</figcaption>
-    </figure>
+<img loading="lazy" src='https://docs.microsoft.com/en-us/azure/azure-portal/media/manage-filter-resource-views/summary-map.png' alt="visual-summary-view"></p>
+<h2 class="heading-element" id="naming-convention-explained"><span>Naming convention explained</span>
+  <a href="#naming-convention-explained" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Technically this naming convention arranges components <a href="https://en.wiktionary.org/wiki/sizewise"target="_blank" rel="external nofollow noopener noreferrer">sizewise</a> which also the approach <a href="https://en.wikipedia.org/wiki/Metric_system"target="_blank" rel="external nofollow noopener noreferrer">the metric system</a> uses. To visualize this in a clear way for everyone disregarding individual knowledge of <a href="https://en.wiktionary.org/wiki/sizewise"target="_blank" rel="external nofollow noopener noreferrer">sizewise</a> and <a href="https://en.wikipedia.org/wiki/Metric_system"target="_blank" rel="external nofollow noopener noreferrer">the metric system</a>, the components are arranged in the form of a stacking doll, a.k.a a <a href="https://en.wikipedia.org/wiki/Matryoshka_doll"target="_blank" rel="external nofollow noopener noreferrer">Matroska</a> or stacking dolls. Like the ones shown in the next image.</p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska.png" data-sub-html="<h2>Matroska / Stacking dolls</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska.png' alt="/posts/2022/the-perfect-azure-naming-convention/matroska.png" height="636" width="1059"></a><figcaption class="image-caption">Matroska / Stacking dolls</figcaption>
+  </figure>
 <p>Starting with the biggest component, and moving to an ever smaller component. Up to the point of the sub-resource as sub-resource is the smallest component for this naming convention.</p>
 <p>Some sub-resource examples:</p>
 <ul>
@@ -231,22 +201,19 @@ In addition Azure resource names are immutable (meaning that they cannot be chan
 <li>A managed identity of a resource</li>
 </ul>
 <div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">As mentioned in the previous chapter the naming convention has longevity of resources in mind. Some resource types can be configured for fail over and be recovered in a different region then the original one.<br>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-pencil-alt" aria-hidden="true"></i>Note<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">As mentioned in the previous chapter the naming convention has longevity of resources in mind. Some resource types can be configured for fail over and be recovered in a different region then the original one.<br>
 Therefore the region (location) of a resource is not included in the naming convention. And, the region is a field that is present in almost all <em>portal.azure.com</em> views as it is one of the default properties of a resource object.<br>
 Simply put: adding the region to the naming convention is overkill.</div>
-        </div>
-    </div>
+  </div>
+</div>
 <p>The order of components (Landing Zone, Solution, workload, application, environment, etc.) and in particular the position of the environment depends on the answers to the following questions.</p>
 <ul>
 <li>What do you consider as a workload?</li>
 <li>What do you consider as an environment?</li>
 <li>What do you consider as a application?</li>
-<li>What is your <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending" target="_blank" rel="noopener noreffer">subscription vending</a>
- strategy?</li>
+<li>What is your <a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending"target="_blank" rel="external nofollow noopener noreferrer">subscription vending</a> strategy?</li>
 </ul>
 <p>How to formulate answers to these questions is topic on its own and deserves a blog post of its own. That said generally speaking there are two common patters;</p>
 <ul>
@@ -255,16 +222,8 @@ Simply put: adding the region to the naming convention is overkill.</div>
 </ul>
 <p>Depending on the scenario either the environment is considered a larger component or the application is considered a larger component. Both are show in more detail in the following sections.</p>
 <p>For example, this is how the <strong>Matroska naming convention</strong> would look like with an environment as the second component in the size wise hierarchy.
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" data-sub-html="<h2>Matroska with environment as the second component</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" width="1144" height="636" />
-    </a><figcaption class="image-caption">Matroska with environment as the second component</figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" data-sub-html="<h2>Matroska with environment as the second component</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second.png" height="636" width="1144"></a><figcaption class="image-caption">Matroska with environment as the second component</figcaption>
+  </figure></p>
 <p>And an implemented example would look like the next image. This image is constructed as follows:</p>
 <ul>
 <li>A workload called <code>Digital Solutions</code></li>
@@ -273,202 +232,133 @@ Simply put: adding the region to the naming convention is overkill.</div>
 <li>Which includes <code>virtual machine</code></li>
 <li>That has a <code>network interface</code> defined.</li>
 </ul>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" data-sub-html="<h2>Example of the Matroska naming convention with a subscription as an environment</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" width="1121" height="636" />
-    </a><figcaption class="image-caption">Example of the <strong>Matroska naming convention</strong> with a subscription as an environment</figcaption>
-    </figure>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" data-sub-html="<h2>Example of the Matroska naming convention with a subscription as an environment</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.png" height="636" width="1121"></a><figcaption class="image-caption">Example of the <strong>Matroska naming convention</strong> with a subscription as an environment</figcaption>
+  </figure>
 <p>Lets go ahead put the above shown example to practice by implementing the <strong>Matroska naming convention</strong>.</p>
-<h2 id="workload-naming-convention-in-practice">Workload naming convention in practice</h2>
-<div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>When using the <strong>Matroska naming convention</strong> always try to keep the following common guidelines in mind:</p>
+<h2 class="heading-element" id="workload-naming-convention-in-practice"><span>Workload naming convention in practice</span>
+  <a href="#workload-naming-convention-in-practice" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="details admonition info open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>When using the <strong>Matroska naming convention</strong> always try to keep the following common guidelines in mind:</p>
 <ul>
 <li>All words must be in lower case</li>
 <li>With the exception of hyphens (-), spaces and special characters are not allowed</li>
-<li>Where possible, <a href="https://en.wikipedia.org/wiki/Letter_case#Kebab_case" target="_blank" rel="noopener noreffer">kebab-case</a>
- should be used. Hyphens can be removed for services where only alphanumeric characters are allowed e.g. Storage Accounts</li>
-<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations" target="_blank" rel="noopener noreffer">Recommended abbreviations for Azure resource types</a>
- should be used for the <code>&lt;service-name-suffix&gt;</code> and <code>&lt;sub-resource-name-suffix&gt;</code></li>
+<li>Where possible, <a href="https://en.wikipedia.org/wiki/Letter_case#Kebab_case"target="_blank" rel="external nofollow noopener noreferrer">kebab-case</a> should be used. Hyphens can be removed for services where only alphanumeric characters are allowed e.g. Storage Accounts</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations"target="_blank" rel="external nofollow noopener noreferrer">Recommended abbreviations for Azure resource types</a> should be used for the <code>&lt;service-name-suffix&gt;</code> and <code>&lt;sub-resource-name-suffix&gt;</code></li>
 </ul></div>
-        </div>
-    </div>
-<h3 id="environment-as-the-second-component">Environment as the second component</h3>
-<p>In this example the <code>&lt;environment&gt;</code> is the second component, so the <strong>Matroska naming convention</strong> definitions is applied as follows:</p>
+  </div>
+</div>
+<h3 class="heading-element" id="environment-as-the-second-component"><span>Environment as the second component</span>
+  <a href="#environment-as-the-second-component" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>In this example the <code>&lt;environment&gt;</code> is the second component, so the <strong>Matroska naming convention</strong> definitions is applied as follows:</p>
 <p><code>&lt;workload-name-affix&gt;-&lt;environment&gt;-&lt;application&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
 <p><strong>Implementation:</strong><br>
 Lets implement this definition step by step. First we note down the definition, then we populate the values in definition and as the last step we convert the values to proper acronyms.
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - environment as the second component</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" width="1721" height="1160" />
-    </a><figcaption class="image-caption">Matroska naming convention implementation - <strong>environment as the second component</strong></figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - environment as the second component</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-implementation.jpeg" height="1160" width="1721"></a><figcaption class="image-caption">Matroska naming convention implementation - <strong>environment as the second component</strong></figcaption>
+  </figure></p>
 <p><strong>Example:</strong><br>
 After completing these steps we can apply it, the result is the example shown in the following image.
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" data-sub-html="<h2>Matroska naming convention example - environment as the second component</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" width="1135" height="1024" />
-    </a><figcaption class="image-caption">Matroska naming convention example - <strong>environment as the second component</strong></figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" data-sub-html="<h2>Matroska naming convention example - environment as the second component</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-environment-second-example.jpeg" height="1024" width="1135"></a><figcaption class="image-caption">Matroska naming convention example - <strong>environment as the second component</strong></figcaption>
+  </figure></p>
 <p><strong>Code snippet:</strong>
-<script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=environment-as-second-component.txt"></script>
-</p>
-<h4 id="additional-examples">Additional examples</h4>
-<p>Here are some additional examples of the most common resources and resource containers with the environment as the second component.</p>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a subscription example</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" width="1135" height="341" />
-    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>subscription</strong> example</figcaption>
-    </figure>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a resource group example</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" width="1135" height="341" />
-    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>resource group</strong> example</figcaption>
-    </figure>
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a vnet example</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" width="1135" height="790" />
-    </a><figcaption class="image-caption">Matroska naming convention naming a <strong>vnet</strong> example</figcaption>
-    </figure>
-<h3 id="application-as-the-second-component">Application as the second component</h3>
-<p>In this example the <code>&lt;application&gt;</code> is the second component so the <strong>Matroska naming convention</strong> definitions is applied as follows:</p>
+<script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=environment-as-second-component.txt"></script></p>
+<h4 class="heading-element" id="additional-examples"><span>Additional examples</span>
+  <a href="#additional-examples" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>Here are some additional examples of the most common resources and resource containers with the environment as the second component.</p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a subscription example</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-subscription-example.jpeg" height="341" width="1135"></a><figcaption class="image-caption">Matroska naming convention naming a <strong>subscription</strong> example</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a resource group example</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-resource-group-example.jpeg" height="341" width="1135"></a><figcaption class="image-caption">Matroska naming convention naming a <strong>resource group</strong> example</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" data-sub-html="<h2>Matroska naming convention naming a vnet example</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-vnet-example.jpeg" height="790" width="1135"></a><figcaption class="image-caption">Matroska naming convention naming a <strong>vnet</strong> example</figcaption>
+  </figure>
+<h3 class="heading-element" id="application-as-the-second-component"><span>Application as the second component</span>
+  <a href="#application-as-the-second-component" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>In this example the <code>&lt;application&gt;</code> is the second component so the <strong>Matroska naming convention</strong> definitions is applied as follows:</p>
 <p><code>&lt;workload-name-affix&gt;-&lt;application-suffix&gt;-&lt;environment&gt;-&lt;service-name-suffix&gt;&lt;instance-number&gt;-&lt;sub-resource-name-suffix&gt;&lt;sub-resource-number&gt;</code></p>
 <p><strong>Implementation:</strong><br>
 Same approach as in the previous example, first we note down the definition, then we populate the values in definition and as the last step we convert the values to proper acronyms. See following image.
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - application as the second component</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" width="1721" height="1160" />
-    </a><figcaption class="image-caption">Matroska naming convention implementation - <strong>application as the second component</strong></figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" data-sub-html="<h2>Matroska naming convention implementation - application as the second component</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-implementation.jpeg" height="1160" width="1721"></a><figcaption class="image-caption">Matroska naming convention implementation - <strong>application as the second component</strong></figcaption>
+  </figure></p>
 <p><strong>Example:</strong><br>
 With the 3 steps done we can take the output from the implementation step and apply it, the result is the example shown in the following image.
-<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" data-sub-html="<h2>Matroska naming convention example - application as the second component</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg"
-            data-srcset="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg, /posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg 1.5x, /posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg 2x"
-            data-sizes="auto"
-            alt="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" width="1135" height="1024" />
-    </a><figcaption class="image-caption">Matroska naming convention example - <strong>application as the second component</strong></figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" title="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" data-thumbnail="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" data-sub-html="<h2>Matroska naming convention example - application as the second component</h2>"><img loading="lazy" src='/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg' alt="/posts/2022/the-perfect-azure-naming-convention/matroska-application-second-example.jpeg" height="1024" width="1135"></a><figcaption class="image-caption">Matroska naming convention example - <strong>application as the second component</strong></figcaption>
+  </figure></p>
 <p><strong>Code snippet:</strong>
-<script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=application-as-second-component.txt"></script>
-</p>
-<h2 id="environment-acronyms">Environment Acronyms</h2>
-<p>To support the above described naming convention the following environment acronym&rsquo;s are available fo use. These are available in two most commonly used versions. A single letter and a 3 letter one.</p>
+<script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=application-as-second-component.txt"></script></p>
+<h2 class="heading-element" id="environment-acronyms"><span>Environment Acronyms</span>
+  <a href="#environment-acronyms" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>To support the above described naming convention the following environment acronym&rsquo;s are available fo use. These are available in two most commonly used versions. A single letter and a 3 letter one.</p>
 <div class="details admonition tip open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">In case other acronyms within the naming convention exceed 3 characters then the single letter acronym for the environment is advised. s we want to keep the name a short as possible.</div>
-        </div>
-    </div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true"></i>Tip<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">In case other acronyms within the naming convention exceed 3 characters then the single letter acronym for the environment is advised. s we want to keep the name a short as possible.</div>
+  </div>
+</div>
 <p>Single letter:</p>
 <script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=single-letter-environment-acronyms.txt"></script>
-
 <p>Three letter:</p>
 <script src="https://gist.github.com/devjevnl/9aeca348c2b1f3e104e98156bbd396da.js?file=three-letter-environment-acronyms.txt"></script>
-
-<div class="details admonition Info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Both the Experimental and the Sandbox environments are mentioned in the list of environments. The difference between these two is that the Sandbox environment is a complete environment targeted to be used by a whole team or even multiple teams while an Experiment environment is a temporary environment set-up for target experiments and individual use.</div>
-        </div>
-    </div>
-<h2 id="closing-statement-and-further-reading">Closing statement and further reading</h2>
-<p>Thanks for reading this post, if you haven&rsquo;t please check out <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions" rel="">previous post</a>
- on this subject and I cant wait to share my next post of this series. If you are interested please check out following documentation from Microsoft on this topic.</p>
+<div class="details admonition info open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Both the Experimental and the Sandbox environments are mentioned in the list of environments. The difference between these two is that the Sandbox environment is a complete environment targeted to be used by a whole team or even multiple teams while an Experiment environment is a temporary environment set-up for target experiments and individual use.</div>
+  </div>
+</div>
+<h2 class="heading-element" id="closing-statement-and-further-reading"><span>Closing statement and further reading</span>
+  <a href="#closing-statement-and-further-reading" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Thanks for reading this post, if you haven&rsquo;t please check out <a href="/posts/2022/the-10-commandments-for-azure-naming-conventions">previous post</a> on this subject and I cant wait to share my next post of this series. If you are interested please check out following documentation from Microsoft on this topic.</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations" target="_blank" rel="noopener noreffer">Resource abbreviations</a>
-</li>
-<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/" target="_blank" rel="noopener noreffer">Resource tagging</a>
-</li>
-<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming" target="_blank" rel="noopener noreffer">Resource naming</a>
- -&gt; In my opinion this example naming convention is outdated but the rest is still relevant</li>
-<li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules" target="_blank" rel="noopener noreffer">Resource naming rules</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending" target="_blank" rel="noopener noreffer">Subscription vending</a>
-</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations"target="_blank" rel="external nofollow noopener noreferrer">Resource abbreviations</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging/"target="_blank" rel="external nofollow noopener noreferrer">Resource tagging</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming"target="_blank" rel="external nofollow noopener noreferrer">Resource naming</a> -&gt; In my opinion this example naming convention is outdated but the rest is still relevant</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules"target="_blank" rel="external nofollow noopener noreferrer">Resource naming rules</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending"target="_blank" rel="external nofollow noopener noreferrer">Subscription vending</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2024-10-24</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2024-10-24 13:42:15">Updated on 2024-10-24&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/naming-convention/">Naming Convention</a>,&nbsp;<a href="/tags/azure/">Azure</a>,&nbsp;<a href="/tags/resources/">Resources</a>,&nbsp;<a href="/tags/cloud/">Cloud</a>,&nbsp;<a href="/tags/resource-naming/">Resource Naming</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions/" class="prev" rel="prev" title="The 10 commandments for Azure naming conventions"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>The 10 commandments for Azure naming conventions</a>
-            <a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/" class="next" rel="next" title="A naming convention to bring order to variable groups">A naming convention to bring order to variable groups<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/naming-convention/" class="post-tag" title="Tags - Naming Convention">Naming Convention</a><a href="/tags/azure/" class="post-tag" title="Tags - Azure">Azure</a><a href="/tags/resources/" class="post-tag" title="Tags - Resources">Resources</a><a href="/tags/cloud/" class="post-tag" title="Tags - Cloud">Cloud</a><a href="/tags/resource-naming/" class="post-tag" title="Tags - Resource Naming">Resource Naming</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2022/the-10-commandments-for-azure-naming-conventions/" class="post-nav-item" rel="prev" title="The 10 Commandments for Azure Naming Conventions"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>The 10 Commandments for Azure Naming Conventions</a><a href="/posts/2022/a-naming-convention-to-bring-order-to-variable-groups/" class="post-nav-item" rel="next" title="A Naming Convention to Bring Order to Variable Groups">A Naming Convention to Bring Order to Variable Groups<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2022/the-perfect-azure-naming-convention/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

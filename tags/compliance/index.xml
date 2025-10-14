@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Compliance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Compliance - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/tags/compliance/</link>
-    <description>Recent content in Compliance on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Fri, 14 Jun 2024 02:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/tags/compliance/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,11 @@
       <link>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</link>
       <pubDate>Fri, 14 Jun 2024 02:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/posts/2024/i-am-in-your-pipeline-decorating-it-with-compliance/</guid>
-      <description>&lt;p&gt;Back in 2022 I wrote a blog post &lt;a href=&#34;https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;I am in your pipeline reading all your secrets!&lt;/a&gt;&#xA; about how secrets can be leaked in &lt;code&gt;Azure Pipelines&lt;/code&gt;.&#xA;I think it&amp;rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;amp;tabs=browser&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Azure DevOps Project&lt;/a&gt;&#xA; can be achieved. This is done by using a feature called &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;amp;wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Pipeline Decorators&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-pipeline-decorators&#34;&gt;What are pipeline decorators?&lt;/h2&gt;&#xA;&lt;p&gt;In most organizations there are certain required compliance and security policies. For example; to be compliant with corporate policies a static code analysis tool must to be executed on all pipelines before executing the actual pipeline tasks. This is where pipeline decorators come in, pipeline authors don&amp;rsquo;t need to remember to add that step. We as &lt;code&gt;Azure DevOps Organization&lt;/code&gt; owners create a decorator that automatically injects the step into all pipelines during their runtime. Ensuring on an &lt;code&gt;Azure DevOps Organization&lt;/code&gt; level that all pipelines are compliant with our organization&amp;rsquo;s policies.&lt;/p&gt;</description>
+      <category domain="https://www.devjev.nl/categories/azure-devops-governance/">Azure DevOps Governance</category>
+      <category domain="https://www.devjev.nl/categories/automation/">Automation</category>
+      <category domain="https://www.devjev.nl/categories/cloud-compliance/">Cloud Compliance</category>
+      <category domain="https://www.devjev.nl/categories/powershell/">PowerShell</category>
+      <description>&lt;p&gt;Back in 2022 I wrote a blog post &lt;a href=&#34;https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;I am in your pipeline reading all your secrets!&lt;/a&gt; about how secrets can be leaked in &lt;code&gt;Azure Pipelines&lt;/code&gt;.&#xA;I think it&amp;rsquo;s time to offset that blog post and have a look at how compliance of all pipelines in a single &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&amp;amp;tabs=browser&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Azure DevOps Project&lt;/a&gt; can be achieved. This is done by using a feature called &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/devops/extend/develop/add-pipeline-decorator?view=azure-devops&amp;amp;wt.mc_id=DT-MVP-5005327&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Pipeline Decorators&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

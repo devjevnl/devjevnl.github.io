@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>How to use Library for Azure Pipelines 📗 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="How to use Library for Azure Pipelines"><meta property="og:url" content="https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>How to Use Library for Azure Pipelines 📗 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="How to use Library for Azure Pipelines"><meta name="keywords" content='Azure DevOps, Fundamentals, Library for Azure Pipelines'>
+  <meta itemprop="name" content="How to use Library for Azure Pipelines 📗">
+  <meta itemprop="description" content="How to use Library for Azure Pipelines">
+  <meta itemprop="datePublished" content="2023-03-21T21:00:00+02:00">
+  <meta itemprop="dateModified" content="2023-03-21T21:00:00+02:00">
+  <meta itemprop="wordCount" content="1093">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png">
+  <meta itemprop="keywords" content="Azure DevOps,Fundamentals,Library for Azure Pipelines"><meta property="og:url" content="https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="How to use Library for Azure Pipelines 📗">
   <meta property="og:description" content="How to use Library for Azure Pipelines">
@@ -23,114 +31,108 @@
   <meta name="twitter:title" content="How to use Library for Azure Pipelines 📗">
   <meta name="twitter:description" content="How to use Library for Azure Pipelines">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/" /><link rel="prev" href="https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/" /><link rel="next" href="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "How to use Library for Azure Pipelines 📗",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/featured-image.png",
-                            "width":  800 ,
-                            "height":  422 
-                        }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, Library for Azure Pipelines","wordcount":  1096 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/","datePublished": "2023-03-21T21:00:00+02:00","dateModified": "2023-03-21T21:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "How to use Library for Azure Pipelines"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2023/how-to-use-library-for-azure-pipelines/" title="How to use Library for Azure Pipelines 📗 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/" title="Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" title="Sleep Worry-Free: The best tips for Local Secrets Management 💤" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to use Library for Azure Pipelines 📗",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/featured-image.png",
+              "width":  800 ,
+              "height":  422 
+            }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, Library for Azure Pipelines","wordcount":  1093 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2023\/how-to-use-library-for-azure-pipelines\/","datePublished": "2023-03-21T21:00:00+02:00","dateModified": "2023-03-21T21:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "How to use Library for Azure Pipelines"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to use Library for Azure Pipelines 📗</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-21">2023-03-21</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1096 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png"
-        data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png, /posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png"
-        title="How to use Library for Azure Pipelines" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>How to Use Library for Azure Pipelines 📗</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure-devops-fundamentals/" class="post-category" title="Category - Azure DevOps Fundamentals"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps Fundamentals</a></span></div><div class="post-meta-line"><span title="published on 2023-03-21 21:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2023-03-21">2023-03-21</time></span>&nbsp;<span title="1093 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1100 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>6 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-a-library-for-azure-pipelines">What is a Library for Azure Pipelines</a></li>
     <li><a href="#how-to-create-a-variable-group">How to create a Variable Group</a>
@@ -141,91 +143,54 @@
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
+      </div><div class="content" id="content"><p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals</a> of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview"target="_blank" rel="external nofollow noopener noreferrer">Azure DevOps</a>
 In this post the I will show how to use <code>Library for Azure Pipelines</code>.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
-<h2 id="what-is-a-library-for-azure-pipelines">What is a Library for Azure Pipelines</h2>
-<p>A Library for Azure Pipelines is an Azure DevOps feature that enables asset management for an Azure DevOps Project. Asset can be either defined in the form of <code>variables</code> which are grouped together in <code>Variable Groups</code> or as so called <code>Secure Files</code>. All defined assets can be used in multiple build and release pipelines of an Azure DevOps Project. Although not really recommended it is also possible to modify permissions to a degree that these asses are accessible by pipelines present in other Azure DevOps Projects within the same Azure DevOps organization.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">Wesley Camargo</a> will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">blog</a>, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
+<h2 class="heading-element" id="what-is-a-library-for-azure-pipelines"><span>What is a Library for Azure Pipelines</span>
+  <a href="#what-is-a-library-for-azure-pipelines" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>A Library for Azure Pipelines is an Azure DevOps feature that enables asset management for an Azure DevOps Project. Asset can be either defined in the form of <code>variables</code> which are grouped together in <code>Variable Groups</code> or as so called <code>Secure Files</code>. All defined assets can be used in multiple build and release pipelines of an Azure DevOps Project. Although not really recommended it is also possible to modify permissions to a degree that these asses are accessible by pipelines present in other Azure DevOps Projects within the same Azure DevOps organization.</p>
 <div class="details admonition warning open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>In Azure DevOps library features like <code>Secure files</code> and <code>Secret variables</code> are secured in the same way as <code>Service connections</code> as all are considered <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources" target="_blank" rel="noopener noreffer">protected resources</a>
-</p>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Note<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>In Azure DevOps library features like <code>Secure files</code> and <code>Secret variables</code> are secured in the same way as <code>Service connections</code> as all are considered <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources"target="_blank" rel="external nofollow noopener noreferrer">protected resources</a></p>
 <p>Secrets are encrypted and stored in the database. The keys to decrypt secrets are stored in Azure Key Vault. The keys are specific to each scale unit. So, two regions don&rsquo;t share the same keys. The keys are also rotated with every deployment of Azure DevOps.</p>
 <p>The rights to retrieve secure keys are only given to the Azure DevOps service principals and (on special occasions) on-demand to diagnose problems. <strong>The secure storage doesn&rsquo;t have any certifications</strong>.</p>
 </div>
-        </div>
-    </div>
-<h2 id="how-to-create-a-variable-group">How to create a Variable Group</h2>
-<p>Variable groups are used to store values in the form of key value pairs where a variable name is used as a key. In addition it is possible to link an Azure Key Vault as variables of a Variable group. Variables groups can be directly referenced in one or more YAML pipelines  in the same project.<br>
-When defining variables in a variable group it is possible to mark multiple variables as a secrets. When done so these variables are then considered by Azure DevOps as <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources" title="as already mentioned in the previous chapter ;-" target="_blank" rel="noopener noreffer">protected resources</a>
-. This allows for various combinations of approvals, checks, and pipeline permissions to be added to limit access to the concerned secrets in a variable group.</p>
+  </div>
+</div>
+<h2 class="heading-element" id="how-to-create-a-variable-group"><span>How to create a Variable Group</span>
+  <a href="#how-to-create-a-variable-group" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Variable groups are used to store values in the form of key value pairs where a variable name is used as a key. In addition it is possible to link an Azure Key Vault as variables of a Variable group. Variables groups can be directly referenced in one or more YAML pipelines  in the same project.<br>
+When defining variables in a variable group it is possible to mark multiple variables as a secrets. When done so these variables are then considered by Azure DevOps as <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources" title="as already mentioned in the previous chapter ;-"target="_blank" rel="external nofollow noopener noreferrer">protected resources</a>. This allows for various combinations of approvals, checks, and pipeline permissions to be added to limit access to the concerned secrets in a variable group.</p>
 <div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.</div>
-        </div>
-    </div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Access to non-secret variables is not limited by approvals, checks, and pipeline permissions.</div>
+  </div>
+</div>
 <p>Lets go ahead an create a couple of variables.</p>
 <ol>
 <li>Assuming you have your Azure DevOps project open, click in the left hand menu on <code>Pipelines</code> then click on <code>Library</code>.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-sub-html="<h2>Library</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_1.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_1.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" width="1060" height="783" />
-       </a><figcaption class="image-caption">Library</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-sub-html="<h2>Library</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" height="783" width="1060"></a><figcaption class="image-caption">Library</figcaption>
+     </figure></li>
 <li>Click on either the <code>+Variable group</code> button in the middle of the screen or the one located in the horizontal menu.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" data-sub-html="<h2>New Variable group</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_2.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_2.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" width="1060" height="783" />
-       </a><figcaption class="image-caption">New Variable group</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" data-sub-html="<h2>New Variable group</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_2.png" height="783" width="1060"></a><figcaption class="image-caption">New Variable group</figcaption>
+     </figure></li>
 <li>Add a <code>Variable group name</code>, and a <code>Description</code>. There are no specific character limitations for the <code>Variable group name</code>, it is not desired but possible to start the name with a # or a @.</li>
 <li>A <code>Variable Group</code> cannot be saved if there are no variables in it. Proceed by adding a new variable by clicking on the <code>+Add</code> button, use a name and value you deem fit. Click the <code>Save</code> button in the horizontal menu. The result should be similar to the following image.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" data-sub-html="<h2>New Variable</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_3.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_3.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" width="958" height="572" />
-       </a><figcaption class="image-caption">New Variable</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" data-sub-html="<h2>New Variable</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_3.png" height="572" width="958"></a><figcaption class="image-caption">New Variable</figcaption>
+     </figure></li>
 <li>Next add an additional variable by clicking on the <code>+Add</code> button. Again use a name and value ad you deem fit. Before saving click on the lock icon on the right side of the new variable to change the type to secret. As show in the following image click the <code>Save</code> button.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" data-sub-html="<h2>New Secret</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_4.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_4.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" width="954" height="602" />
-       </a><figcaption class="image-caption">New Secret</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" data-sub-html="<h2>New Secret</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_4.png" height="602" width="954"></a><figcaption class="image-caption">New Secret</figcaption>
+     </figure></li>
 </ol>
 <p>In the above step I just created a regular variable and one secret. The regular one is straight forward however the secrets are treated differently. The following applies to secrets:</p>
 <ul>
-<li>Secrets are considered <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources" target="_blank" rel="noopener noreffer">protected resources</a>
-</li>
+<li>Secrets are considered <a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources"target="_blank" rel="external nofollow noopener noreferrer">protected resources</a></li>
 <li>Secrets are encrypted at rest with a 2048-bit RSA key</li>
 <li>Secrets are available on the agent for tasks and scripts to use (be careful about who has access to modify pipelines).</li>
 <li>Secrets are unlike regular variables not automatically decrypted into environment variables for scripts.</li>
@@ -233,20 +198,21 @@ When defining variables in a variable group it is possible to mark multiple vari
 <li>Secrets are masked from appearing in Azure Pipeline output</li>
 </ul>
 <div class="details admonition danger open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-skull-crossbones fa-fw" aria-hidden="true"></i>Important<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>Take precautions when handling secrets:</p>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-bolt" aria-hidden="true"></i>Important<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>Take precautions when handling secrets:</p>
 <ul>
 <li>Never echo secrets as output</li>
 <li>Never pass secrets on the command line</li>
 <li>Do not use structured data as secrets as substrings of secrets are not masked. If, for example, &ldquo;{ &ldquo;foo&rdquo;: &ldquo;bar&rdquo; }&rdquo; is set as a secret, &ldquo;bar&rdquo; isn&rsquo;t masked from the logs.</li>
 </ul></div>
-        </div>
-    </div>
-<h3 id="how-to-use-secure-files">How to use Secure Files</h3>
-<p>Secure files is a feature to like the name suggest store secure files. Generally speaking secure files are often used to store files such as:</p>
+  </div>
+</div>
+<h3 class="heading-element" id="how-to-use-secure-files"><span>How to use Secure Files</span>
+  <a href="#how-to-use-secure-files" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Secure files is a feature to like the name suggest store secure files. Generally speaking secure files are often used to store files such as:</p>
 <ul>
 <li>Certificates</li>
 <li>Provisioning files</li>
@@ -256,147 +222,75 @@ When defining variables in a variable group it is possible to mark multiple vari
 <p>Practically speaking, any document can be uploaded to the <code>Secure files</code>. Lets go ahead upload a file.</p>
 <ol>
 <li>Assuming you have your Azure DevOps project open, click in the left hand menu on <code>Pipelines</code> then click on <code>Library</code>.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-sub-html="<h2>Library</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_1.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_1.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" width="1060" height="783" />
-       </a><figcaption class="image-caption">Library</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" data-sub-html="<h2>Library</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_1.png" height="783" width="1060"></a><figcaption class="image-caption">Library</figcaption>
+     </figure></li>
 <li>In the horzontral top menu click on <code>Secure Files</code>.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" data-sub-html="<h2>Secure files</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_5.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_5.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">Secure files</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" data-sub-html="<h2>Secure files</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_5.png" height="791" width="1307"></a><figcaption class="image-caption">Secure files</figcaption>
+     </figure></li>
 <li>Click on either the <code>+Secure file</code> button in the middle of the screen or the one located in the horizontal menu.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" data-sub-html="<h2>Upload file</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_6.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_6.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">Upload file</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" data-sub-html="<h2>Upload file</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_6.png" height="791" width="1307"></a><figcaption class="image-caption">Upload file</figcaption>
+     </figure></li>
 <li>In the new window either drag and drop a file select it using the <code>Browse...</code> button. Only one file at a time cna be uploaded
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" data-sub-html="<h2>Upload file</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_7.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_7.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">Upload file</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" data-sub-html="<h2>Upload file</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_7.png" height="791" width="1307"></a><figcaption class="image-caption">Upload file</figcaption>
+     </figure></li>
 <li>After selecting a file click the <code>OK</code> button to upload the file. If the wrong files has been selected use the <code>remove</code> button to correct it.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" data-sub-html="<h2>File selected</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_8.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_8.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">File selected</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" data-sub-html="<h2>File selected</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_8.png" height="791" width="1307"></a><figcaption class="image-caption">File selected</figcaption>
+     </figure></li>
 <li>The result is as show in the following image. Note that I have actually uploaded a Microsoft Word document to show that there is not restriction on file type.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" data-sub-html="<h2>Secure file uploaded</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_9.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_9.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">Secure file uploaded</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" data-sub-html="<h2>Secure file uploaded</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_9.png" height="791" width="1307"></a><figcaption class="image-caption">Secure file uploaded</figcaption>
+     </figure></li>
 <li>Mouse over the freshly uploaded file and click on the 3 horizontal dots, then select the <code>Edit option</code>
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" data-sub-html="<h2>Edit secure file</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_10.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_10.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" width="1303" height="783" />
-       </a><figcaption class="image-caption">Edit secure file</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" data-sub-html="<h2>Edit secure file</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_10.png" height="783" width="1303"></a><figcaption class="image-caption">Edit secure file</figcaption>
+     </figure></li>
 <li>When in the edit option, the name of the secure file can be adapted but what is more interesting is that additional properties in the form of Key value pairs can be added to further identify a secure file.
-<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" data-sub-html="<h2>Secure file properties</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png"
-               data-srcset="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png, /posts/2023/how-to-use-library-for-azure-pipelines/img_11.png 1.5x, /posts/2023/how-to-use-library-for-azure-pipelines/img_11.png 2x"
-               data-sizes="auto"
-               alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" width="1307" height="791" />
-       </a><figcaption class="image-caption">Secure file properties</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" title="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" data-thumbnail="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" data-sub-html="<h2>Secure file properties</h2>"><img loading="lazy" src='/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png' alt="/posts/2023/how-to-use-library-for-azure-pipelines/img_11.png" height="791" width="1307"></a><figcaption class="image-caption">Secure file properties</figcaption>
+     </figure></li>
 </ol>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>And there you have it, <em>How to use Library for Azure Pipelines</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And there you have it, <em>How to use Library for Azure Pipelines</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops" target="_blank" rel="noopener noreffer">Library of assets</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=yaml%2Cbatch#secret-variables" target="_blank" rel="noopener noreffer">Set secret variables</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml" target="_blank" rel="noopener noreffer">Add &amp; use variable groups</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources" target="_blank" rel="noopener noreffer">Pipeline resources</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops" target="_blank" rel="noopener noreffer">Use secure files</a>
-</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Library of assets</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=yaml%2Cbatch#secret-variables"target="_blank" rel="external nofollow noopener noreferrer">Set secret variables</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&amp;tabs=yaml"target="_blank" rel="external nofollow noopener noreferrer">Add &amp; use variable groups</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources?view=azure-devops#protected-resources"target="_blank" rel="external nofollow noopener noreferrer">Pipeline resources</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Use secure files</a></li>
 </ul>
-<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
-.</p>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts">posts</a>.</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2023-03-21</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2023-03-21 21:00:00">Updated on 2023-03-21&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/library-for-azure-pipelines/">Library for Azure Pipelines</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/" class="prev" rel="prev" title="Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Use Azure DevOps Demo Generator to create a new Project in Azure DevOps 📑</a>
-            <a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" class="next" rel="next" title="Sleep Worry-Free: The best tips for Local Secrets Management 💤">Sleep Worry-Free: The best tips for Local Secrets Management 💤<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-devops/" class="post-tag" title="Tags - Azure DevOps">Azure DevOps</a><a href="/tags/fundamentals/" class="post-tag" title="Tags - Fundamentals">Fundamentals</a><a href="/tags/library-for-azure-pipelines/" class="post-tag" title="Tags - Library for Azure Pipelines">Library for Azure Pipelines</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2023/use-azure-devops-demo-generator-to-create-a-new-project-in-azure-devops/" class="post-nav-item" rel="prev" title="Use Azure DevOps Demo Generator to Create a New Project in Azure DevOps 📑"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Use Azure DevOps Demo Generator to Create a New Project in Azure DevOps 📑</a><a href="/posts/2023/sleep-worry-free-the-best-tips-for-local-secrets-management/" class="post-nav-item" rel="next" title="Sleep Worry-Free: The Best Tips for Local Secrets Management 💤">Sleep Worry-Free: The Best Tips for Local Secrets Management 💤<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2023/how-to-use-library-for-azure-pipelines/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

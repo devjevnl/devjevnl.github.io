@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Using Azure Boards"><meta property="og:url" content="https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Using Azure Boards"><meta name="keywords" content='Azure DevOps, Fundamentals, Azure Boards, Backlog, Work Items'>
+  <meta itemprop="name" content="📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯">
+  <meta itemprop="description" content="Using Azure Boards">
+  <meta itemprop="datePublished" content="2025-02-27T21:00:00+02:00">
+  <meta itemprop="dateModified" content="2025-02-27T21:00:00+02:00">
+  <meta itemprop="wordCount" content="1075">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png">
+  <meta itemprop="keywords" content="Azure DevOps,Fundamentals,Azure Boards,Backlog,Work Items"><meta property="og:url" content="https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯">
   <meta property="og:description" content="Using Azure Boards">
@@ -25,114 +33,108 @@
   <meta name="twitter:title" content="📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯">
   <meta name="twitter:description" content="Using Azure Boards">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/" /><link rel="prev" href="https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/" /><link rel="next" href="https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/featured-image.png",
-                            "width":  800 ,
-                            "height":  422 
-                        }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, Azure Boards, Backlog, Work Items","wordcount":  1079 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/","datePublished": "2025-02-27T21:00:00+02:00","dateModified": "2025-02-27T21:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "Using Azure Boards"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2025/azure-devops-fundamentals-understanding-work-items/" title="📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/" title="📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" title="🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/featured-image.png",
+              "width":  800 ,
+              "height":  422 
+            }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, Azure Boards, Backlog, Work Items","wordcount":  1075 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-devops-fundamentals-understanding-work-items\/","datePublished": "2025-02-27T21:00:00+02:00","dateModified": "2025-02-27T21:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Using Azure Boards"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-02-27">2025-02-27</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1079 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png"
-        data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png"
-        title="Using Azure Boards" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>📚 Azure DevOps Fundamentals: Understanding Work Items in Azure Boards 🖉️🎯</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure-devops-fundamentals/" class="post-category" title="Category - Azure DevOps Fundamentals"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps Fundamentals</a></span></div><div class="post-meta-line"><span title="published on 2025-02-27 21:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2025-02-27">2025-02-27</time></span>&nbsp;<span title="1075 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1100 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>6 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#what-are-work-items-in-azure-devops">What Are Work Items in Azure DevOps?</a></li>
     <li><a href="#work-item-types-and-processes">Work Item Types and Processes</a>
@@ -159,10 +161,8 @@
     <li><a href="#wrapping-up">Wrapping Up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working
-with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-.</p>
+      </div><div class="content" id="content"><p>This is the 6th post in the category <a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals</a> of the blog post series on working
+with <a href="https://azure.microsoft.com/en-us/products/devops/#overview"target="_blank" rel="external nofollow noopener noreferrer">Azure DevOps</a>.</p>
 <p>In this post, I will break down <strong>Work Items</strong> in Azure Boards. Work Items are the foundation of tracking work in Azure DevOps, and
 understanding them is crucial for effectively managing projects. We will explore:</p>
 <ul>
@@ -174,68 +174,47 @@ understanding them is crucial for effectively managing projects. We will explore
 <li>Additional useful Work Item features.</li>
 </ul>
 <p>Let&rsquo;s dive in!</p>
-<h2 id="what-are-work-items-in-azure-devops">What Are Work Items in Azure DevOps?</h2>
-<p>A <strong>Work Item</strong> in Azure DevOps represents any unit of work that needs to be tracked. Whether it&rsquo;s a feature request, a task, a bug, or an overarching
+<h2 class="heading-element" id="what-are-work-items-in-azure-devops"><span>What Are Work Items in Azure DevOps?</span>
+  <a href="#what-are-work-items-in-azure-devops" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>A <strong>Work Item</strong> in Azure DevOps represents any unit of work that needs to be tracked. Whether it&rsquo;s a feature request, a task, a bug, or an overarching
 epic, Work Items help teams stay organized and aligned with their goals. Work Items exist within a <strong>Work Item Process</strong>, which dictates how they behave and relate to each other.</p>
-<h2 id="work-item-types-and-processes">Work Item Types and Processes</h2>
-<p>Azure DevOps supports different Work Item types based on the process used in the project. The available Work Item types depend on the chosen Work Item Process:</p>
-<h3 id="work-item-processes-in-azure-devops">Work Item Processes in Azure DevOps</h3>
-<p>Azure DevOps provides four default <a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Work Item Processes</a>
-:</p>
+<h2 class="heading-element" id="work-item-types-and-processes"><span>Work Item Types and Processes</span>
+  <a href="#work-item-types-and-processes" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Azure DevOps supports different Work Item types based on the process used in the project. The available Work Item types depend on the chosen Work Item Process:</p>
+<h3 class="heading-element" id="work-item-processes-in-azure-devops"><span>Work Item Processes in Azure DevOps</span>
+  <a href="#work-item-processes-in-azure-devops" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Azure DevOps provides four default <a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Work Item Processes</a>:</p>
 <ol>
 <li>
 <p><strong>Basic</strong> – A simple process with only three Work Item types: Epics, Issues, and Tasks.<br>
-<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327"
-            data-srcset="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327, https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 1.5x, https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 2x"
-            data-sizes="auto"
-            alt="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" width="30%" height="30%" />
-    </a></p>
+<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-sub-html="<h2>https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327</h2>"><img loading="lazy" src='https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&wt.mc_id=DT-MVP-5005327' alt="https://learn.microsoft.com/en-us/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" height="30%" width="30%"></a></p>
 </li>
 <li>
 <p><strong>Agile</strong> – Designed for Agile methodologies, including Epics, Features, User Stories, and Tasks.<br>
-<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327"
-            data-srcset="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 1.5x, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 2x"
-            data-sizes="auto"
-            alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" width="47%" height="47%" />
-    </a></p>
+<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-sub-html="<h2>https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327</h2>"><img loading="lazy" src='https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&wt.mc_id=DT-MVP-5005327' alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_agile_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" height="47%" width="47%"></a></p>
 </li>
 <li>
 <p><strong>Scrum</strong> – A process tailored for Scrum teams, featuring Epics, Features, Product Backlog Items (PBIs), and Tasks.<br>
-<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327"
-            data-srcset="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 1.5x, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 2x"
-            data-sizes="auto"
-            alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" width="47%" height="47%" />
-    </a></p>
+<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-sub-html="<h2>https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327</h2>"><img loading="lazy" src='https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&wt.mc_id=DT-MVP-5005327' alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_scrum_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" height="47%" width="47%"></a></p>
 </li>
 <li>
 <p><strong>CMMI</strong> – For Capability Maturity Model Integration (CMMI) workflows, including Epics, Features, Requirements, Change Requests, and Tasks.<br>
-<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327"
-            data-srcset="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 1.5x, https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327 2x"
-            data-sizes="auto"
-            alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" width="47%" height="47%" />
-    </a></p>
+<a class="lightgallery" href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" title="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-thumbnail="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" data-sub-html="<h2>https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327</h2>"><img loading="lazy" src='https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&wt.mc_id=DT-MVP-5005327' alt="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/media/alm_pt_cmmi_wit_artifacts.png?view=azure-devops&amp;wt.mc_id=DT-MVP-5005327" height="47%" width="47%"></a></p>
 </li>
 </ol>
 <p>Each process determines the structure and relationships between Work Items. For example, in Scrum, a <strong>Product Backlog Item (PBI)</strong> is used instead of
 a <strong>User Story</strong>, which is the equivalent term in the Agile process.</p>
-<h2 id="work-item-hierarchy-and-responsibilities">Work Item Hierarchy and Responsibilities</h2>
-<p>Work Items follow a hierarchy that organizes work into manageable levels. Understanding this structure is key to effectively managing Azure DevOps projects.</p>
+<h2 class="heading-element" id="work-item-hierarchy-and-responsibilities"><span>Work Item Hierarchy and Responsibilities</span>
+  <a href="#work-item-hierarchy-and-responsibilities" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Work Items follow a hierarchy that organizes work into manageable levels. Understanding this structure is key to effectively managing Azure DevOps projects.</p>
 <table>
   <thead>
       <tr>
@@ -284,43 +263,64 @@ a <strong>User Story</strong>, which is the equivalent term in the Agile process
       </tr>
   </tbody>
 </table>
-<h3 id="explanation-of-ownership-and-refinement-responsibilities">Explanation of Ownership and Refinement Responsibilities</h3>
-<ul>
+<h3 class="heading-element" id="explanation-of-ownership-and-refinement-responsibilities"><span>Explanation of Ownership and Refinement Responsibilities</span>
+  <a href="#explanation-of-ownership-and-refinement-responsibilities" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li><strong>Epics</strong>: Owned by Product Management, refined collaboratively with Architects to align with strategic goals.</li>
 <li><strong>Features</strong>: Managed by the Product Owner with input from Architects to ensure alignment with technical and business priorities.</li>
 <li><strong>User Stories/PBIs</strong>: Created and refined by the Product Owner with support from the Development Team to ensure feasibility and clarity.</li>
 <li><strong>Tasks</strong>: Owned by Developers and refined collaboratively by the Development Team during Sprint Planning or daily stand-ups.</li>
 <li><strong>Bugs</strong>: Managed by Developers and Testers, refinement depends on severity and impact.</li>
 </ul>
-<h2 id="key-fields-for-work-items">Key Fields for Work Items</h2>
-<p>Several key fields exist across different Work Item types in Azure Boards. Understanding their purpose and applicability helps teams prioritize, estimate,
+<h2 class="heading-element" id="key-fields-for-work-items"><span>Key Fields for Work Items</span>
+  <a href="#key-fields-for-work-items" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Several key fields exist across different Work Item types in Azure Boards. Understanding their purpose and applicability helps teams prioritize, estimate,
 and track work effectively. Below is an overview of important fields and how they apply to each Work Item type.</p>
-<h3 id="priority">Priority</h3>
-<ul>
+<h3 class="heading-element" id="priority"><span>Priority</span>
+  <a href="#priority" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li><strong>Available in:</strong> Epics, Features, PBIs, User Stories, Bugs, and Tasks.</li>
 <li><strong>Usage:</strong> Indicates the importance of the Work Item relative to others. Higher priority items should be addressed first.</li>
 <li><strong>Example:</strong> A Feature with a priority of 1 should be developed before a priority 3 Feature.</li>
 </ul>
-<h3 id="effort">Effort</h3>
-<ul>
+<h3 class="heading-element" id="effort"><span>Effort</span>
+  <a href="#effort" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li><strong>Available in:</strong> Features, PBIs, User Stories, and Tasks.</li>
 <li><strong>Usage:</strong> Represents the estimated amount of work required to complete the Work Item. Helps in sprint and capacity planning.</li>
 <li><strong>Example:</strong> A User Story estimated at 5 effort points indicates it requires more work than one estimated at 2 points.</li>
 </ul>
-<h3 id="business-value">Business Value</h3>
-<ul>
+<h3 class="heading-element" id="business-value"><span>Business Value</span>
+  <a href="#business-value" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li><strong>Available in:</strong> Epics, Features, PBIs, and User Stories.</li>
 <li><strong>Usage:</strong> Helps determine the value delivered to the business. Higher values should generally be prioritized.</li>
 <li><strong>Example:</strong> A Feature that enables a key customer-facing functionality may be given a business value of 10.</li>
 </ul>
-<h3 id="start-date--target-date">Start Date &amp; Target Date</h3>
-<ul>
+<h3 class="heading-element" id="start-date--target-date"><span>Start Date &amp; Target Date</span>
+  <a href="#start-date--target-date" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
 <li><strong>Available in:</strong> Epics, Features, PBIs, and User Stories.</li>
 <li><strong>Usage:</strong> Provides scheduling details to track when work is expected to begin and be completed.</li>
 <li><strong>Example:</strong> An Epic planned for Q2 may have a Start Date of April 1st and a Target Date of June 30th.</li>
 </ul>
-<h3 id="modifying-dropdown-values">Modifying Dropdown Values</h3>
-<p>Several of these fields, such as <strong>Priority, Risk, Business Value, and Classification</strong>, use dropdown lists for selection. The values available in these dropdown
+<h3 class="heading-element" id="modifying-dropdown-values"><span>Modifying Dropdown Values</span>
+  <a href="#modifying-dropdown-values" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Several of these fields, such as <strong>Priority, Risk, Business Value, and Classification</strong>, use dropdown lists for selection. The values available in these dropdown
 lists can be modified in Azure DevOps by navigating to:</p>
 <ul>
 <li><strong>Project Settings &gt; Process</strong></li>
@@ -329,148 +329,91 @@ lists can be modified in Azure DevOps by navigating to:</p>
 <li>Modify the allowed values for the desired field.</li>
 </ul>
 <p>This customization allows teams to tailor Azure Boards to their specific needs and workflows.</p>
-<h2 id="where-to-create-work-items">Where to Create Work Items</h2>
-<p>Work Items can be created in multiple areas within Azure DevOps, depending on the context:</p>
+<h2 class="heading-element" id="where-to-create-work-items"><span>Where to Create Work Items</span>
+  <a href="#where-to-create-work-items" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Work Items can be created in multiple areas within Azure DevOps, depending on the context:</p>
 <ul>
 <li>
 <p><strong>Work Items</strong>: Navigate to the Work items view and click on hte New Work Item button.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_work-items_01.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Boards</strong>: Click the &ldquo;New Work Item&rdquo; button on a Kanban board to create tasks, bugs, or stories directly within the workflow.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_boards_01.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Backlogs</strong>: Navigate to the Backlogs view and use the &ldquo;New Work Item&rdquo; option to prioritize and plan work before assigning it to a sprint.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_01.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Backlogs</strong>: Navigate to the Backlogs view hover over one of the backlog items and click on the + in front of the concerned item.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_backlog_02.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Sprints</strong>: Inside an active sprint, create tasks and bugs directly linked to planned backlog items to track committed work.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_sprints_01.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Queries</strong>: Use the Queries section to define custom filters and bulk-create or edit Work Items.<br>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" width="70%" height="70%" />
-    </a></p>
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_queries_01.png" height="70%" width="70%"></a></p>
 </li>
 <li>
 <p><strong>Azure DevOps API</strong>: Leverage automation scripts to generate Work Items programmatically, useful for integration with CI/CD pipelines or external tools.
-<script src="https://gist.github.com/devjevnl/458aee07d57727f2f9a7f832347c6839.js?file=New-AdoWorkItem.ps1"></script>
-</p>
+<script src="https://gist.github.com/devjevnl/458aee07d57727f2f9a7f832347c6839.js?file=New-AdoWorkItem.ps1"></script></p>
 </li>
 </ul>
-<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png"
-            data-srcset="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png 1.5x, /posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png 2x"
-            data-sizes="auto"
-            alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" width="70%" height="70%" />
-    </a>
-<h2 id="conclusion">Conclusion</h2>
-<p>Work Items form the backbone of project tracking in Azure DevOps. By understanding the different types, key fields, and customization options, teams can optimize their
+<a class="lightgallery" href="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" title="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" data-thumbnail="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" data-sub-html="<h2>/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png</h2>"><img loading="lazy" src='/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png' alt="/posts/2025/azure-devops-fundamentals-understanding-work-items/img_new-task-from-api_01.png" height="70%" width="70%"></a>
+<h2 class="heading-element" id="conclusion"><span>Conclusion</span>
+  <a href="#conclusion" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Work Items form the backbone of project tracking in Azure DevOps. By understanding the different types, key fields, and customization options, teams can optimize their
 workflow for maximum efficiency. Whether refining an Epic or creating a Task, mastering Work Items is essential to successful project execution!</p>
-<h2 id="wrapping-up">Wrapping Up</h2>
-<p>And that&rsquo;s a wrap, folks! If you found this post useful, don’t hesitate to explore the reference materials that inspired this solution:</p>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping Up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And that&rsquo;s a wrap, folks! If you found this post useful, don’t hesitate to explore the reference materials that inspired this solution:</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Default processes and process templates</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/about-work-items?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">About work items and work item types</a>
-</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Default processes and process templates</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/about-work-items?view=azure-devops&amp;tabs=agile-process&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">About work items and work item types</a></li>
 </ul>
-<p><strong>Thank you</strong> so much for taking the time to read this post. If you enjoyed it or learned something new, don’t hesitate to check out my other <a href="/posts" rel="">posts</a>
-.
-If you have questions or feedback, feel free to reach out via <a href="https://www.linkedin.com/in/devjevnl/" target="_blank" rel="noopener noreffer">LinkedIn</a>
-. Until next time, happy automating! ✨</p>
+<p><strong>Thank you</strong> so much for taking the time to read this post. If you enjoyed it or learned something new, don’t hesitate to check out my other <a href="/posts">posts</a>.
+If you have questions or feedback, feel free to reach out via <a href="https://www.linkedin.com/in/devjevnl/"target="_blank" rel="external nofollow noopener noreferrer">LinkedIn</a>. Until next time, happy automating! ✨</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2025-02-27</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2025-02-27 21:00:00">Updated on 2025-02-27&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/azure-boards/">Azure Boards</a>,&nbsp;<a href="/tags/backlog/">Backlog</a>,&nbsp;<a href="/tags/work-items/">Work Items</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/" class="prev" rel="prev" title="📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>📊 Automating Azure DevOps Auditing: Configure Streams with PowerShell</a>
-            <a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" class="next" rel="next" title="🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀">🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-devops/" class="post-tag" title="Tags - Azure DevOps">Azure DevOps</a><a href="/tags/fundamentals/" class="post-tag" title="Tags - Fundamentals">Fundamentals</a><a href="/tags/azure-boards/" class="post-tag" title="Tags - Azure Boards">Azure Boards</a><a href="/tags/backlog/" class="post-tag" title="Tags - Backlog">Backlog</a><a href="/tags/work-items/" class="post-tag" title="Tags - Work Items">Work Items</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2025/automating-azure-devops-auditing-configure-streams-with-powershell/" class="post-nav-item" rel="prev" title="📊 Automating Azure DevOps Auditing: Configure Streams With PowerShell"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>📊 Automating Azure DevOps Auditing: Configure Streams With PowerShell</a><a href="/posts/2025/building-a-cloud-center-of-excellence-the-pathfinder-journey/" class="post-nav-item" rel="next" title="🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀">🌐💼 Building a Cloud Center of Excellence: The Pathfinder Journey 🌟🚀<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2025/azure-devops-fundamentals-understanding-work-items/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup."><meta property="og:url" content="https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup."><meta name="keywords" content='Azure Sentinel, Bicep, Log Analytics, Microsoft Azure, Cloud Security'>
+  <meta itemprop="name" content="🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪">
+  <meta itemprop="description" content="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup.">
+  <meta itemprop="datePublished" content="2024-11-25T02:00:00+02:00">
+  <meta itemprop="dateModified" content="2024-11-25T02:00:00+02:00">
+  <meta itemprop="wordCount" content="583">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png">
+  <meta itemprop="keywords" content="Azure Sentinel,Bicep,Log Analytics,Microsoft Azure,Cloud Security"><meta property="og:url" content="https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪">
   <meta property="og:description" content="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup.">
@@ -25,114 +33,108 @@
   <meta name="twitter:title" content="🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪">
   <meta name="twitter:description" content="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup.">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/" /><link rel="prev" href="https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/" /><link rel="next" href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/featured-image.png",
-                            "width":  900 ,
-                            "height":  456 
-                        }],"genre": "posts","keywords": "Azure Sentinel, Bicep, Log Analytics, Microsoft Azure, Cloud Security","wordcount":  586 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/","datePublished": "2024-11-25T02:00:00+02:00","dateModified": "2024-11-25T02:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup."
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/" title="🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/" title="🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/" title=" 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/featured-image.png",
+              "width":  900 ,
+              "height":  456 
+            }],"genre": "posts","keywords": "Azure Sentinel, Bicep, Log Analytics, Microsoft Azure, Cloud Security","wordcount":  583 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2024\/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy\/","datePublished": "2024-11-25T02:00:00+02:00","dateModified": "2024-11-25T02:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup."
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure</a>&nbsp;<a href="/categories/azure-sentinel/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Sentinel</a>&nbsp;<a href="/categories/azure-security/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure Security</a>&nbsp;<a href="/categories/how-to/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>How To</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-25">2024-11-25</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;586 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png"
-        data-srcset="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png, /posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png 1.5x, /posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png"
-        title="Learn how to deploy Azure Sentinel to an existing Log Analytics workspace using Bicep for a streamlined and efficient setup." /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>🛡️ You Had Me at Bicep: Deploying Microsoft Sentinel Made Easy 💪</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure/" class="post-category" title="Category - Azure"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure</a>&ensp;<a href="/categories/azure-sentinel/" class="post-category" title="Category - Azure Sentinel"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure Sentinel</a>&ensp;<a href="/categories/azure-security/" class="post-category" title="Category - Azure Security"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure Security</a>&ensp;<a href="/categories/how-to/" class="post-category" title="Category - How To"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> How To</a></span></div><div class="post-meta-line"><span title="published on 2024-11-25 02:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-11-25">2024-11-25</time></span>&nbsp;<span title="583 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 600 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>3 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png' alt="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-microsoft-sentinel">What is Microsoft Sentinel?</a></li>
     <li><a href="#deploying-microsoft-sentinel-using-bicep">Deploying Microsoft Sentinel using Bicep</a>
@@ -146,16 +148,23 @@
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
-<h2 id="what-is-microsoft-sentinel">What is Microsoft Sentinel?</h2>
-<p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>
+      </div><div class="content" id="content"><p>In this post, I&rsquo;ll demonstrate how to quickly and easily deploy Microsoft Sentinel to an existing Log Analytics workspace using Bicep. This step-by-step guide simplifies the process, showing that deploying Microsoft Sentinel doesn’t have to be complicated—whether you&rsquo;re an experienced cloud professional or new to Azure.</p>
+<h2 class="heading-element" id="what-is-microsoft-sentinel"><span>What is Microsoft Sentinel?</span>
+  <a href="#what-is-microsoft-sentinel" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>If you&rsquo;re new to Microsoft Sentinel, here&rsquo;s a brief introduction. Feel free to skip this section if you&rsquo;re already familiar with it.</p>
 <p>Microsoft Sentinel is a cloud-native Security Information and Event Management (SIEM) solution that provides intelligent security analytics across your entire enterprise. It helps organizations detect, investigate, and respond to security threats with real-time insights and advanced threat intelligence. By integrating seamlessly with Azure, Microsoft Sentinel offers a scalable platform to monitor, analyze, and protect data across cloud, on-premises, and hybrid environments.</p>
-<p>For more details, check out the <a href="https://learn.microsoft.com/en-us/azure/sentinel?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">official Microsoft Sentinel documentation</a>
-.</p>
-<h2 id="deploying-microsoft-sentinel-using-bicep">Deploying Microsoft Sentinel using Bicep</h2>
-<h3 id="1-gathering-prerequisites-and-creating-parameters">1. Gathering Prerequisites and Creating Parameters</h3>
-<p>Before we start, we need to prepare some input. First, we need the name of the Log Analytics workspace where we want to deploy Microsoft Sentinel. The goal of this post is to maximize modularity and reusability, so we’ll assume that the Log Analytics workspace has already been created. If you need help creating a Log Analytics workspace, check out the <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/learn/quick-create-workspace?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">official documentation</a>
-.</p>
+<p>For more details, check out the <a href="https://learn.microsoft.com/en-us/azure/sentinel?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">official Microsoft Sentinel documentation</a>.</p>
+<h2 class="heading-element" id="deploying-microsoft-sentinel-using-bicep"><span>Deploying Microsoft Sentinel using Bicep</span>
+  <a href="#deploying-microsoft-sentinel-using-bicep" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><h3 class="heading-element" id="1-gathering-prerequisites-and-creating-parameters"><span>1. Gathering Prerequisites and Creating Parameters</span>
+  <a href="#1-gathering-prerequisites-and-creating-parameters" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Before we start, we need to prepare some input. First, we need the name of the Log Analytics workspace where we want to deploy Microsoft Sentinel. The goal of this post is to maximize modularity and reusability, so we’ll assume that the Log Analytics workspace has already been created. If you need help creating a Log Analytics workspace, check out the <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/learn/quick-create-workspace?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">official documentation</a>.</p>
 <p>For the existing workspace, we need the following information:</p>
 <ul>
 <li><strong>Log Analytics Workspace Name</strong>: The name of the Log Analytics workspace where we want to deploy Microsoft Sentinel.</li>
@@ -163,93 +172,87 @@
 </ul>
 <p>With this info ready, we can create the parameters as shown in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/eac76bc4e9ce0c6c0ed30fbafb57245a.js?file=parameters.bicep"></script>
-
-<h3 id="2-get-the-log-analytics-workspace-resource">2. Get the Log Analytics Workspace Resource</h3>
-<p>Next, let&rsquo;s retrieve the Log Analytics workspace resource, as shown in the following snippet.</p>
+<h3 class="heading-element" id="2-get-the-log-analytics-workspace-resource"><span>2. Get the Log Analytics Workspace Resource</span>
+  <a href="#2-get-the-log-analytics-workspace-resource" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Next, let&rsquo;s retrieve the Log Analytics workspace resource, as shown in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/eac76bc4e9ce0c6c0ed30fbafb57245a.js?file=existing-workspace.bicep"></script>
-
-<h3 id="3-deploying-the-microsoft-sentinel-solution">3. Deploying the Microsoft Sentinel Solution</h3>
-<p>Now, let’s deploy the Microsoft Sentinel solution to the Log Analytics workspace, as shown in the following snippet.</p>
+<h3 class="heading-element" id="3-deploying-the-microsoft-sentinel-solution"><span>3. Deploying the Microsoft Sentinel Solution</span>
+  <a href="#3-deploying-the-microsoft-sentinel-solution" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Now, let’s deploy the Microsoft Sentinel solution to the Log Analytics workspace, as shown in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/eac76bc4e9ce0c6c0ed30fbafb57245a.js?file=sentinel-solution.bicep"></script>
-
 <p>It’s important to note that we are deploying a gallery solution here. This solution is a prerequisite for onboarding the Log Analytics workspace to Microsoft Sentinel, which we will do in the next step. Simply deploying this resource won’t be enough for a successful Microsoft Sentinel setup.</p>
 <div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The solution is defined using semi-hardcoded values. Deviating from these values will cause the deployment to fail. This is fundamentally different from how other resource deployments are done in Azure.</p>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>The solution is defined using semi-hardcoded values. Deviating from these values will cause the deployment to fail. This is fundamentally different from how other resource deployments are done in Azure.</p>
 <ul>
 <li>The name must be defined as <code>SecurityInsights(&lt;YourSentinelWorkspaceName&gt;)</code></li>
 <li>The plan name must match exactly as <code>SecurityInsights(&lt;YourSentinelWorkspaceName&gt;)</code></li>
 <li>The publisher must be hardcoded to <code>Microsoft</code>.</li>
 </ul></div>
-        </div>
-    </div>
-<h3 id="4-onboard-the-log-analytics-workspace-to-sentinel">4. Onboard the Log Analytics Workspace to Sentinel</h3>
-<p>Finally, we need to onboard the Log Analytics workspace to Sentinel. This is done by calling the <code>Microsoft.OperationsManagement/solutions/Onboarding</code> resource provider, as shown in the following snippet.</p>
+  </div>
+</div>
+<h3 class="heading-element" id="4-onboard-the-log-analytics-workspace-to-sentinel"><span>4. Onboard the Log Analytics Workspace to Sentinel</span>
+  <a href="#4-onboard-the-log-analytics-workspace-to-sentinel" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>Finally, we need to onboard the Log Analytics workspace to Sentinel. This is done by calling the <code>Microsoft.OperationsManagement/solutions/Onboarding</code> resource provider, as shown in the following snippet.</p>
 <script src="https://gist.github.com/devjevnl/eac76bc4e9ce0c6c0ed30fbafb57245a.js?file=onboard-to-sentinel.bicep"></script>
-
 <p>Without this step, you can view the Log Analytics workspace in Microsoft Sentinel, but the portal will throw errors when you try to interact with various features.</p>
 <div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">The name must be hardcoded to <code>default</code>. Any other value will cause the deployment to fail.</div>
-        </div>
-    </div>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>And that&rsquo;s all folks! We have successfully deployed Microsoft Sentinel to an existing Log Analytics workspace using Bicep. I hope you found this post educational and easy to follow. If you’re interested in the reference material used in this post, please visit the following links:</p>
-<ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/?wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft Sentinel documentation</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/overview?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">What is Microsoft Sentinel?</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/templates/microsoft.operationsmanagement/solutions?pivots=deployment-language-bicep&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Microsoft.OperationsManagement solutions</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/learn/quick-create-workspace?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327" target="_blank" rel="noopener noreffer">Create a Log Analytics workspace</a>
-</li>
-</ul>
-<p>As always, a big <strong>thanks</strong> for reading! If you liked this post, don&rsquo;t be shy—check out my other <a href="/posts" rel="">posts</a>
-.</p>
-</div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2024-11-25</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-sentinel/">Azure Sentinel</a>,&nbsp;<a href="/tags/bicep/">Bicep</a>,&nbsp;<a href="/tags/log-analytics/">Log Analytics</a>,&nbsp;<a href="/tags/microsoft-azure/">Microsoft Azure</a>,&nbsp;<a href="/tags/cloud-security/">Cloud Security</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/" class="prev" rel="prev" title="🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</a>
-            <a href="/posts/2024/decoding-microsoft-azure-landing-zones-explained/" class="next" rel="next" title=" 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬"> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">The name must be hardcoded to <code>default</code>. Any other value will cause the deployment to fail.</div>
+  </div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And that&rsquo;s all folks! We have successfully deployed Microsoft Sentinel to an existing Log Analytics workspace using Bicep. I hope you found this post educational and easy to follow. If you’re interested in the reference material used in this post, please visit the following links:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Microsoft Sentinel documentation</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/overview?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">What is Microsoft Sentinel?</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/templates/microsoft.operationsmanagement/solutions?pivots=deployment-language-bicep&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Microsoft.OperationsManagement solutions</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/learn/quick-create-workspace?tabs=azure-portal&amp;wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Create a Log Analytics workspace</a></li>
+</ul>
+<p>As always, a big <strong>thanks</strong> for reading! If you liked this post, don&rsquo;t be shy—check out my other <a href="/posts">posts</a>.</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2024-11-25 02:00:00">Updated on 2024-11-25&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </footer></div>
+      </div></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-sentinel/" class="post-tag" title="Tags - Azure Sentinel">Azure Sentinel</a><a href="/tags/bicep/" class="post-tag" title="Tags - Bicep">Bicep</a><a href="/tags/log-analytics/" class="post-tag" title="Tags - Log Analytics">Log Analytics</a><a href="/tags/microsoft-azure/" class="post-tag" title="Tags - Microsoft Azure">Microsoft Azure</a><a href="/tags/cloud-security/" class="post-tag" title="Tags - Cloud Security">Cloud Security</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2024/keep-calm-and-use-azure-bastion-developer-sku-for-free/" class="post-nav-item" rel="prev" title="🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>🔒 Keep Calm and Use Azure Bastion Developer SKU for Free 💻</a><a href="/posts/2024/decoding-microsoft-azure-landing-zones-explained/" class="post-nav-item" rel="next" title=" 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬"> 🔍 Decoding Microsoft Azure: Landing Zones Explained 🛬<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2024/you-had-me-at-bicep-deploying-microsoft-sentinel-made-easy/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

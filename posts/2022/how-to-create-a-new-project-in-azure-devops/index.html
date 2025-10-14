@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>How to create a new Project in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="How to create a new Project in Azure devOps"><meta property="og:url" content="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>How to Create a New Project in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="How to create a new Project in Azure devOps"><meta name="keywords" content='Azure DevOps, Fundamentals, New Project'>
+  <meta itemprop="name" content="How to create a new Project in Azure DevOps">
+  <meta itemprop="description" content="How to create a new Project in Azure devOps">
+  <meta itemprop="datePublished" content="2022-11-15T10:00:00+02:00">
+  <meta itemprop="dateModified" content="2022-11-15T10:00:00+02:00">
+  <meta itemprop="wordCount" content="1422">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png">
+  <meta itemprop="keywords" content="Azure DevOps,Fundamentals,New Project"><meta property="og:url" content="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="How to create a new Project in Azure DevOps">
   <meta property="og:description" content="How to create a new Project in Azure devOps">
@@ -23,114 +31,108 @@
   <meta name="twitter:title" content="How to create a new Project in Azure DevOps">
   <meta name="twitter:description" content="How to create a new Project in Azure devOps">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/" /><link rel="next" href="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "How to create a new Project in Azure DevOps",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/featured-image.png",
-                            "width":  800 ,
-                            "height":  422 
-                        }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, New Project","wordcount":  1426 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/","datePublished": "2022-11-15T10:00:00+02:00","dateModified": "2022-11-15T10:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "How to create a new Project in Azure devOps"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/" title="How to create a new Project in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/" title="How to create an Organization in Azure DevOps" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" title="How to create a new Azure Service Connection in Azure DevOps 📘" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to create a new Project in Azure DevOps",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/featured-image.png",
+              "width":  800 ,
+              "height":  422 
+            }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, New Project","wordcount":  1422 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-a-new-project-in-azure-devops\/","datePublished": "2022-11-15T10:00:00+02:00","dateModified": "2022-11-15T10:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "How to create a new Project in Azure devOps"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to create a new Project in Azure DevOps</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-15">2022-11-15</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1426 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png"
-        data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png"
-        title="How to create a new Project in Azure devOps" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>How to Create a New Project in Azure DevOps</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure-devops-fundamentals/" class="post-category" title="Category - Azure DevOps Fundamentals"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps Fundamentals</a></span></div><div class="post-meta-line"><span title="published on 2022-11-15 10:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-11-15">2022-11-15</time></span>&nbsp;<span title="1422 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1500 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>7 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-an-azure-devops-project">What is an Azure DevOps Project</a></li>
     <li><a href="#how-to-create-an-azure-devops-project">How to create an Azure DevOps Project</a>
@@ -145,23 +147,20 @@
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This is the 2nd post in the category <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
- of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-
+      </div><div class="content" id="content"><p>This is the 2nd post in the category <a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals</a> of the blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview"target="_blank" rel="external nofollow noopener noreferrer">Azure DevOps</a>
 In this post the I will show how to create a new <code>Project</code> in Azure DevOps.</p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
-<h2 id="what-is-an-azure-devops-project">What is an Azure DevOps Project</h2>
-<p>A place to establish multiple repositories for source code and to plan, track progress, and collaborate on building solutions with the repositories in question. Basically, a Project represents a fundamental container where you can store data and source code.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">Wesley Camargo</a> will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">blog</a>, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
+<h2 class="heading-element" id="what-is-an-azure-devops-project"><span>What is an Azure DevOps Project</span>
+  <a href="#what-is-an-azure-devops-project" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>A place to establish multiple repositories for source code and to plan, track progress, and collaborate on building solutions with the repositories in question. Basically, a Project represents a fundamental container where you can store data and source code.</p>
 <div class="details admonition failure open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-times-circle fa-fw" aria-hidden="true"></i>Important<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Since a Project serves to isolate data stored within it it isn&rsquo;t easy to to move data from one Project to another. Typically, this would result in loss of history associated with that data.</div>
-        </div>
-    </div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-xmark" aria-hidden="true"></i>Important<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Since a Project serves to isolate data stored within it it isn&rsquo;t easy to to move data from one Project to another. Typically, this would result in loss of history associated with that data.</div>
+  </div>
+</div>
 <p>Now that it&rsquo;s clear what an Azure DevOps Project is, which arguments would support the creation of an Azure DevOps Project?
 While the answer to this question is often specific to the case at hand there are some general arguments arguments for creating a new Azure DevOps Project.</p>
 <ul>
@@ -172,87 +171,51 @@ While the answer to this question is often specific to the case at hand there ar
 <li>To support an open-source software Project</li>
 </ul>
 <div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">When a Project is created, Azure DevOps automatically creates a single team of the same name. This is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects.<br>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">When a Project is created, Azure DevOps automatically creates a single team of the same name. This is sufficient for small organizations. For enterprise-level organizations, it may be necessary to scale up and create more teams and projects.<br>
 A single Azure DevOps Organization can hold up to a 1000 projects.</div>
-        </div>
-    </div>
-<h2 id="how-to-create-an-azure-devops-project">How to create an Azure DevOps Project</h2>
-<div class="details admonition warning open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Prerequisites<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p>The these steps assume that the following prerequisites have been met:</p>
+  </div>
+</div>
+<h2 class="heading-element" id="how-to-create-an-azure-devops-project"><span>How to create an Azure DevOps Project</span>
+  <a href="#how-to-create-an-azure-devops-project" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="details admonition warning open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Prerequisites<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>The these steps assume that the following prerequisites have been met:</p>
 <ul>
-<li>An Azure DevOps organization has already been created, if you haven&rsquo;t create on by following the steps in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization" rel="">How to create an Organization in Azure DevOps</a>
-</li>
+<li>An Azure DevOps organization has already been created, if you haven&rsquo;t create on by following the steps in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization">How to create an Organization in Azure DevOps</a></li>
 <li>The logged in account is a member of the <code>Project Collection Administrators</code> group or have the collection-level <code>Create new projects</code> permission set to <code>Allow</code></li>
 </ul></div>
-        </div>
-    </div>
-<p>If your organization is brand new, like for example one I created in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization" rel="">How to create an Organization in Azure DevOps</a>
- the main page of your Organization will show the Project creation screen. However if you already have one or more Azure DevOps Project present in your Organization you would need to use the New Project button to create even more projects :-). SBoth approaches are depicted in the following images.</p>
-<p><figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" data-sub-html="<h2>No prior Azure DevOps projects present in the Organization</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" width="1406" height="637" />
-    </a><figcaption class="image-caption">No prior Azure DevOps projects present in the Organization</figcaption>
-    </figure>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" data-sub-html="<h2>One Azure DevOps Project already present in the Organization</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" width="1405" height="399" />
-    </a><figcaption class="image-caption">One Azure DevOps Project already present in the Organization</figcaption>
-    </figure></p>
+  </div>
+</div>
+<p>If your organization is brand new, like for example one I created in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization">How to create an Organization in Azure DevOps</a> the main page of your Organization will show the Project creation screen. However if you already have one or more Azure DevOps Project present in your Organization you would need to use the New Project button to create even more projects :-). SBoth approaches are depicted in the following images.</p>
+<p><figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" data-sub-html="<h2>No prior Azure DevOps projects present in the Organization</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_1.png" height="637" width="1406"></a><figcaption class="image-caption">No prior Azure DevOps projects present in the Organization</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" data-sub-html="<h2>One Azure DevOps Project already present in the Organization</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_2.png" height="399" width="1405"></a><figcaption class="image-caption">One Azure DevOps Project already present in the Organization</figcaption>
+  </figure></p>
 <div class="details admonition failure open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-times-circle fa-fw" aria-hidden="true"></i>Important<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">It seems to be a a bug in the user interface when creating the very first Project in a fresh Azure DevOps Organization. The Description field is missing and also the advanced options are not shown. Fortunately this bug can be solved by navigating to any other page within the Organization and then navigating back. For example, simply click on the <code>Organization settings</code> in the bottom left corner and then return to the home page of your Organization. You will notice that the the missing options are now visible. If everything went well the result should be similar to the next image.</div>
-        </div>
-    </div>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" data-sub-html="<h2>Fixed bug with no prior Azure DevOps projects present in the Organization</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" width="1024" height="805" />
-    </a><figcaption class="image-caption">Fixed bug with no prior Azure DevOps projects present in the Organization</figcaption>
-    </figure>
-<p>Since I am picking up where I left off in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization" rel="">How to create an Organization in Azure DevOps</a>
- the following steps will depict the step starting from a fresh Azure DevOps Organization. However before going into the actial steps there are a number 3 subjects that need understating to be able to make the best considered choices during the creation of an Azure DevOps Project. Each topic is described in the following 3 chapters followed by the actual step to created a new Azure DevOps Project.</p>
-<h3 id="azure-devops-project-visibility">Azure DevOps Project Visibility</h3>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" data-sub-html="<h2>Azure DevOps Project Visibility</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" width="1024" height="805" />
-    </a><figcaption class="image-caption">Azure DevOps Project Visibility</figcaption>
-    </figure>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-xmark" aria-hidden="true"></i>Important<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">It seems to be a a bug in the user interface when creating the very first Project in a fresh Azure DevOps Organization. The Description field is missing and also the advanced options are not shown. Fortunately this bug can be solved by navigating to any other page within the Organization and then navigating back. For example, simply click on the <code>Organization settings</code> in the bottom left corner and then return to the home page of your Organization. You will notice that the the missing options are now visible. If everything went well the result should be similar to the next image.</div>
+  </div>
+</div>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" data-sub-html="<h2>Fixed bug with no prior Azure DevOps projects present in the Organization</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_3.png" height="805" width="1024"></a><figcaption class="image-caption">Fixed bug with no prior Azure DevOps projects present in the Organization</figcaption>
+  </figure>
+<p>Since I am picking up where I left off in my previous post <a href="/how-to-create-an-organization-in-azure-devops/#create-an-organization">How to create an Organization in Azure DevOps</a> the following steps will depict the step starting from a fresh Azure DevOps Organization. However before going into the actial steps there are a number 3 subjects that need understating to be able to make the best considered choices during the creation of an Azure DevOps Project. Each topic is described in the following 3 chapters followed by the actual step to created a new Azure DevOps Project.</p>
+<h3 class="heading-element" id="azure-devops-project-visibility"><span>Azure DevOps Project Visibility</span>
+  <a href="#azure-devops-project-visibility" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" data-sub-html="<h2>Azure DevOps Project Visibility</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_4.png" height="805" width="1024"></a><figcaption class="image-caption">Azure DevOps Project Visibility</figcaption>
+  </figure>
 <p>The Azure DevOps Project Visibility choice is actually limited by the out of the box Organization policy. For security reasons it simply does not allow the creation of Public projects. The main difference between the the two visibility modes are noted in the following table.</p>
 <table>
   <thead>
       <tr>
-          <th><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/public/about-public-projects?view=azure-devops" target="_blank" rel="noopener noreffer">Public Projects</a>
-</th>
+          <th><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/public/about-public-projects?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Public Projects</a></th>
           <th>Private Projects</th>
       </tr>
   </thead>
@@ -278,77 +241,36 @@ A single Azure DevOps Organization can hold up to a 1000 projects.</div>
 <p>In case you do need a public Project you are able to enable the creation of Public projects using the following steps the following steps. Just make sure you are a member of the <code>Project Collection Administrators</code> group to have the proper permissions for the job.</p>
 <ol>
 <li>Click on the Organization setting in the bottom left corner
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" data-sub-html="<h2>Azure DevOps Organization settings</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png"
-               data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" width="912" height="923" />
-       </a><figcaption class="image-caption">Azure DevOps Organization settings</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" data-sub-html="<h2>Azure DevOps Organization settings</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_5.png" height="923" width="912"></a><figcaption class="image-caption">Azure DevOps Organization settings</figcaption>
+     </figure></li>
 <li>In the left hand menu under Security click on the <em>Policies</em> option
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" data-sub-html="<h2>Azure DevOps Organization Policies</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png"
-               data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" width="506" height="1061" />
-       </a><figcaption class="image-caption">Azure DevOps Organization Policies</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" data-sub-html="<h2>Azure DevOps Organization Policies</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_6.png" height="1061" width="506"></a><figcaption class="image-caption">Azure DevOps Organization Policies</figcaption>
+     </figure></li>
 <li>On the <em>Policies</em> screen set the <code>Allow public projects</code> slider to on
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" data-sub-html="<h2>Azure DevOps Organization Policies</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png"
-               data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" width="657" height="601" />
-       </a><figcaption class="image-caption">Azure DevOps Organization Policies</figcaption>
-       </figure></li>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" data-sub-html="<h2>Azure DevOps Organization Policies</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_7.png" height="601" width="657"></a><figcaption class="image-caption">Azure DevOps Organization Policies</figcaption>
+     </figure></li>
 </ol>
-<h3 id="azure-devops-project-version-control">Azure DevOps Project Version Control</h3>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-sub-html="<h2>Azure DevOps Project Version Control</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" width="1024" height="805" />
-    </a><figcaption class="image-caption">Azure DevOps Project Version Control</figcaption>
-    </figure>
-<p>The <code>Version control</code> option is the first of the two <code>Advanced</code> options of Project creation. Often the purpose of this option is misinterpreted. As this option actually controls the version control type for only the initial repository. The one that is created by default when the Azure DevOps Project itself is created. For any follow up repositories this option is also available and both type of repositories are supported to be used within the same Azure DevOps Project. As depicted in the following image. Microsoft has a good guide on <a href="https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops" target="_blank" rel="noopener noreffer">choosing the right version control system</a>
-.</p>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-sub-html="<h2>Create a repository</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" width="1024" height="805" />
-    </a><figcaption class="image-caption">Create a repository</figcaption>
-    </figure>
-<h3 id="azure-devops-project-work-item-process">Azure DevOps Project Work Item Process</h3>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" data-sub-html="<h2>Azure DevOps Project Work Item Process</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" width="1024" height="805" />
-    </a><figcaption class="image-caption">Azure DevOps Project Work Item Process</figcaption>
-    </figure>
-<p>The <code>Work item process</code> option is the second of the two <code>Advanced</code> options of Project creation. The process or the process template is based on the available process models in the Organization at hand. While a custom process is possible to implement each Azure DevOps Organization contains 4 process templates out of the box. Namely; Basic, Agile, Scrum, CMMI. The selected process template will define the types of backlog items and states available in the Azure board. Like with the Azure DevOps Project Version Control Microsoft has a good guide that helps <a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process" target="_blank" rel="noopener noreffer">choosing the right process template</a>
-.</p>
-<h3 id="create-the-very-first-azure-devops-project">Create the very first Azure DevOps Project</h3>
-<p>With the 3 consideration topics out of the way it is now time to create the very first Azure DevOps Project.</p>
+<h3 class="heading-element" id="azure-devops-project-version-control"><span>Azure DevOps Project Version Control</span>
+  <a href="#azure-devops-project-version-control" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-sub-html="<h2>Azure DevOps Project Version Control</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" height="805" width="1024"></a><figcaption class="image-caption">Azure DevOps Project Version Control</figcaption>
+  </figure>
+<p>The <code>Version control</code> option is the first of the two <code>Advanced</code> options of Project creation. Often the purpose of this option is misinterpreted. As this option actually controls the version control type for only the initial repository. The one that is created by default when the Azure DevOps Project itself is created. For any follow up repositories this option is also available and both type of repositories are supported to be used within the same Azure DevOps Project. As depicted in the following image. Microsoft has a good guide on <a href="https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">choosing the right version control system</a>.</p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" data-sub-html="<h2>Create a repository</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_8.png" height="805" width="1024"></a><figcaption class="image-caption">Create a repository</figcaption>
+  </figure>
+<h3 class="heading-element" id="azure-devops-project-work-item-process"><span>Azure DevOps Project Work Item Process</span>
+  <a href="#azure-devops-project-work-item-process" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" data-sub-html="<h2>Azure DevOps Project Work Item Process</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_10.png" height="805" width="1024"></a><figcaption class="image-caption">Azure DevOps Project Work Item Process</figcaption>
+  </figure>
+<p>The <code>Work item process</code> option is the second of the two <code>Advanced</code> options of Project creation. The process or the process template is based on the available process models in the Organization at hand. While a custom process is possible to implement each Azure DevOps Organization contains 4 process templates out of the box. Namely; Basic, Agile, Scrum, CMMI. The selected process template will define the types of backlog items and states available in the Azure board. Like with the Azure DevOps Project Version Control Microsoft has a good guide that helps <a href="https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=agile-process"target="_blank" rel="external nofollow noopener noreferrer">choosing the right process template</a>.</p>
+<h3 class="heading-element" id="create-the-very-first-azure-devops-project"><span>Create the very first Azure DevOps Project</span>
+  <a href="#create-the-very-first-azure-devops-project" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>With the 3 consideration topics out of the way it is now time to create the very first Azure DevOps Project.</p>
 <ol>
 <li>Assuming you are already navigated to you Organization simply adapt the following fields
 <ol>
@@ -358,18 +280,13 @@ A single Azure DevOps Organization can hold up to a 1000 projects.</div>
 </li>
 <li>Click the <code>Create</code> button to have the Project created. The result should be similar to the following image</li>
 </ol>
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" data-sub-html="<h2>The Cloud Explorers Project has been created</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png"
-            data-srcset="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png 1.5x, /posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" width="750" height="403" />
-    </a><figcaption class="image-caption">The Cloud Explorers Project has been created</figcaption>
-    </figure>
-<h2 id="get-started-managing-your-azure-devops-project">Get started managing your Azure DevOps Project</h2>
-<p>After creating the first Azure DevOps Organization it is important to consider finalizing the configuration of the following topics:</p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" title="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" data-thumbnail="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" data-sub-html="<h2>The Cloud Explorers Project has been created</h2>"><img loading="lazy" src='/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png' alt="/posts/2022/how-to-create-a-new-project-in-azure-devops/img_11.png" height="403" width="750"></a><figcaption class="image-caption">The Cloud Explorers Project has been created</figcaption>
+  </figure>
+<h2 class="heading-element" id="get-started-managing-your-azure-devops-project"><span>Get started managing your Azure DevOps Project</span>
+  <a href="#get-started-managing-your-azure-devops-project" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>After creating the first Azure DevOps Organization it is important to consider finalizing the configuration of the following topics:</p>
 <ul>
 <li>Update the Summary page</li>
 <li>Invite people to contribute to the Project</li>
@@ -382,57 +299,50 @@ A single Azure DevOps Organization can hold up to a 1000 projects.</div>
 <li>Define or modify notifications</li>
 </ul>
 <p>However, due to the complexity of these topics you can expect more details in a future post part of the Azure DevOps Advanced category.</p>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>And there you have it, <em>How to create a new Project in Azure devOps</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And there you have it, <em>How to create a new Project in Azure devOps</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-Project?view=azure-devops&amp;tabs=browser" target="_blank" rel="noopener noreffer">Create a Project in Azure DevOps</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/about-projects?view=azure-devops" target="_blank" rel="noopener noreffer">About projects and scaling your organization</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/Project-vision-status?view=azure-devops#open-Project-summary" target="_blank" rel="noopener noreffer">Share your Project vision, view Project activity</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/public/create-public-Project?view=azure-devops" target="_blank" rel="noopener noreffer">Create a public Project in your organization</a>
-</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-Project?view=azure-devops&amp;tabs=browser"target="_blank" rel="external nofollow noopener noreferrer">Create a Project in Azure DevOps</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/about-projects?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">About projects and scaling your organization</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/projects/Project-vision-status?view=azure-devops#open-Project-summary"target="_blank" rel="external nofollow noopener noreferrer">Share your Project vision, view Project activity</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/public/create-public-Project?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Create a public Project in your organization</a></li>
 </ul>
-<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
-.</p>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts">posts</a>.</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2022-11-15</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2022-11-15 10:00:00">Updated on 2022-11-15&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-project/">New Project</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2022/how-to-create-an-organization-in-azure-devops/" class="prev" rel="prev" title="How to create an Organization in Azure DevOps"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>How to create an Organization in Azure DevOps</a>
-            <a href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" class="next" rel="next" title="How to create a new Azure Service Connection in Azure DevOps 📘">How to create a new Azure Service Connection in Azure DevOps 📘<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-devops/" class="post-tag" title="Tags - Azure DevOps">Azure DevOps</a><a href="/tags/fundamentals/" class="post-tag" title="Tags - Fundamentals">Fundamentals</a><a href="/tags/new-project/" class="post-tag" title="Tags - New Project">New Project</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2022/how-to-create-an-organization-in-azure-devops/" class="post-nav-item" rel="prev" title="How to Create an Organization in Azure DevOps"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>How to Create an Organization in Azure DevOps</a><a href="/posts/2023/how-to-create-a-new-azure-service-connection-in-azure-devops/" class="post-nav-item" rel="next" title="How to Create a New Azure Service Connection in Azure DevOps 📘">How to Create a New Azure Service Connection in Azure DevOps 📘<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2022/how-to-create-a-new-project-in-azure-devops/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

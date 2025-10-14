@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resource Display Name on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Resource Display Name - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/tags/resource-display-name/</link>
-    <description>Recent content in Resource Display Name on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Thu, 07 Sep 2023 02:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/tags/resource-display-name/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</link>
       <pubDate>Tue, 29 Aug 2023 02:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/posts/2023/a-quick-and-easy-way-to-add-renamable-display-names-to-azure-resources/</guid>
-      <description>&lt;p&gt;In this post I will share a couple of tips with regards to &lt;code&gt;Secrets Management&lt;/code&gt; in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.&lt;/p&gt;&#xA;&lt;p&gt;Last year I wrote a &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;series&lt;/a&gt;&#xA; of posts covering the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34; rel=&#34;&#34;&gt;naming convention&lt;/a&gt;&#xA; topic. &lt;a href=&#34;https://www.devjev.nl/posts/the-perfect-azure-naming-convention&#34; rel=&#34;&#34;&gt;The perfect azure naming convention&lt;/a&gt;&#xA; covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&amp;rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.&lt;/p&gt;</description>
+      <category domain="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</category>
+      <category domain="https://www.devjev.nl/categories/naming-conventions/">Naming Conventions</category>
+      <category domain="https://www.devjev.nl/categories/azure/">Azure</category>
+      <description>&lt;p&gt;In this post I will share a couple of tips with regards to &lt;code&gt;Secrets Management&lt;/code&gt; in your (local) dev environment. Personally I use these to prevent / limit leaking of secrets while developing Azure infrastructure. And I consider them as part of my security hygiene during the development process.&lt;/p&gt;&#xA;&lt;p&gt;Last year I wrote a &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34;&gt;series&lt;/a&gt; of posts covering the &lt;a href=&#34;https://www.devjev.nl/categories/naming-conventions/&#34;&gt;naming convention&lt;/a&gt; topic. &lt;a href=&#34;https://www.devjev.nl/posts/the-perfect-azure-naming-convention&#34;&gt;The perfect azure naming convention&lt;/a&gt; covered the Azure resources. The primary concept for this naming convention is that in fact Azure resource names are actually ID&amp;rsquo;s which cannot be renamed. In this post I want to share a method with which renamable display names can be added.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

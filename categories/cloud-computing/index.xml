@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloud Computing on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Cloud Computing - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/categories/cloud-computing/</link>
-    <description>Recent content in Cloud Computing on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Sun, 30 Jun 2024 02:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/categories/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,9 @@
       <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</link>
       <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/</guid>
+      <category domain="https://www.devjev.nl/categories/microsoft-azure/">Microsoft Azure</category>
+      <category domain="https://www.devjev.nl/categories/architecture/">Architecture</category>
+      <category domain="https://www.devjev.nl/categories/cloud-computing/">Cloud Computing</category>
       <description>&lt;p&gt;The task of explaining concepts of the Microsoft Azure Cloud befalls to us Cloud consultants. Usually we have to explain these concepts to stakeholders with varying levels of technical expertise. So using a simple analogy often helps to clarify complex ideas. In this post I want to share my favorite analogy. The house analogy! I am sure that I am not the first to come up with this analogy, however if you like my variation, feel free to use it in your own presentations or discussions.&lt;/p&gt;</description>
     </item>
   </channel>

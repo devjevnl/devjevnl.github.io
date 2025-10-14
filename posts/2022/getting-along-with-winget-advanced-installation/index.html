@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>Getting along with winget - advanced package installation - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="Using Winget to install my favorite software."><meta property="og:url" content="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Getting Along With Winget - Advanced Package Installation - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Using Winget to install my favorite software."><meta name="keywords" content='winget, package management, development box setup'>
+  <meta itemprop="name" content="Getting along with winget - advanced package installation">
+  <meta itemprop="description" content="Using Winget to install my favorite software.">
+  <meta itemprop="datePublished" content="2022-08-30T08:00:00+02:00">
+  <meta itemprop="dateModified" content="2022-08-30T08:00:00+02:00">
+  <meta itemprop="wordCount" content="650">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png">
+  <meta itemprop="keywords" content="Winget,Package Management,Development Box Setup"><meta property="og:url" content="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="Getting along with winget - advanced package installation">
   <meta property="og:description" content="Using Winget to install my favorite software.">
@@ -23,136 +31,123 @@
   <meta name="twitter:title" content="Getting along with winget - advanced package installation">
   <meta name="twitter:description" content="Using Winget to install my favorite software.">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/" /><link rel="next" href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "Getting along with winget - advanced package installation",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/featured-image.png",
-                            "width":  655 ,
-                            "height":  368 
-                        }],"genre": "posts","keywords": "winget, package management, development box setup","wordcount":  651 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/","datePublished": "2022-08-30T08:00:00+02:00","dateModified": "2022-08-30T08:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "Using Winget to install my favorite software."
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2022/getting-along-with-winget-advanced-installation/" title="Getting along with winget - advanced package installation - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2022/getting-along-with-winget-basic-commands/" title="Getting along with winget - basic packed management" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" title="The ideal Management group naming convention" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Getting along with winget - advanced package installation",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/featured-image.png",
+              "width":  655 ,
+              "height":  368 
+            }],"genre": "posts","keywords": "winget, package management, development box setup","wordcount":  650 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2022\/getting-along-with-winget-advanced-installation\/","datePublished": "2022-08-30T08:00:00+02:00","dateModified": "2022-08-30T08:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Using Winget to install my favorite software."
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Getting along with winget - advanced package installation</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/tooling/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Tooling</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-30">2022-08-30</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;651 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png"
-        data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png, /posts/2022/getting-along-with-winget-advanced-installation/featured-image.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png"
-        title="Using Winget to install my favorite software." /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Getting Along With Winget - Advanced Package Installation</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/tooling/" class="post-category" title="Category - Tooling"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tooling</a></span></div><div class="post-meta-line"><span title="published on 2022-08-30 08:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-08-30">2022-08-30</time></span>&nbsp;<span title="650 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 700 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#winget-advanced-installation-the-override-command">Winget Advanced installation, the override command</a></li>
     <li><a href="#winget-limitations">Winget limitations</a></li>
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>In my previous <a href="/getting-along-with-winget-basic-commands" rel="">post</a>
- I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
-<h2 id="winget-advanced-installation-the-override-command">Winget Advanced installation, the override command</h2>
-<p>The <code>winget install</code> documentation shows that an <code>--override</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>
-<p>Unfortunately getting the the required input options for this command turned out to be lots of interwebs searches, <a href="https://jrsoftware.org/ishelp/" target="_blank" rel="noopener noreffer">Inno Setup</a>
- documentation digging combined with trial and error. So the best approach I discovered so far is to run the installer with <code>/?</code> to get the installer help. As shown for the Git installer in the following image.</p>
-<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" data-sub-html="<h2>Git installer with /? command line parameter result</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/getting-along-with-winget-advanced-installation/img7.png"
-            data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/img7.png, /posts/2022/getting-along-with-winget-advanced-installation/img7.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/img7.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" width="1400" height="1873" />
-    </a><figcaption class="image-caption">Git installer with <code>/?</code> command line parameter result</figcaption>
-    </figure>
+      </div><div class="content" id="content"><p>In my previous <a href="/getting-along-with-winget-basic-commands">post</a> I went trough my experiences with using the basic Winget commands. And mentioned that anyone who needs more control over the installation options will quickly note that when Winget uses the default installation options when installing packages. In this post I would like to share with you how I managed to solve this and get the control I need during the installation process.</p>
+<h2 class="heading-element" id="winget-advanced-installation-the-override-command"><span>Winget Advanced installation, the override command</span>
+  <a href="#winget-advanced-installation-the-override-command" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The <code>winget install</code> documentation shows that an <code>--override</code> option is available, with an input <em>&ldquo;A string that will be passed directly to the installer&rdquo;</em>. Simply said it should allow to override the default installation options with custom ones, similar to the way a regular installer GUI allows to the user to change settings during the installation process. A.k.a. a custom installation and exactly what I need!</p>
+<p>Unfortunately getting the the required input options for this command turned out to be lots of interwebs searches, <a href="https://jrsoftware.org/ishelp/"target="_blank" rel="external nofollow noopener noreferrer">Inno Setup</a> documentation digging combined with trial and error. So the best approach I discovered so far is to run the installer with <code>/?</code> to get the installer help. As shown for the Git installer in the following image.</p>
+<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" data-sub-html="<h2>Git installer with /? command line parameter result</h2>"><img loading="lazy" src='/posts/2022/getting-along-with-winget-advanced-installation/img7.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/img7.png" height="1873" width="1400"></a><figcaption class="image-caption">Git installer with <code>/?</code> command line parameter result</figcaption>
+  </figure>
 <p>And simply going trough the available parameters and identifying the most interesting ones (marked in the above screenshot).</p>
 <ul>
 <li><code>/SILENT</code> Instructs the installer to be silent <em>&lt;- Enables installations that do not require settings to be specified via the installer GUI</em></li>
@@ -162,112 +157,75 @@
 <p>Saving and loading the custom installation options made sense so time to run with these parameters.
 First the save command combined with the Git installer.</p>
 <script src="https://gist.github.com/devjevnl/23818721797acb8941375f0cb640afea.js?file=saveinf-parameter.cmd"></script>
-
 <p>This resulted in the following .inf file.
-<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" data-sub-html="<h2>Content of GitInstallParams.inf</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/getting-along-with-winget-advanced-installation/img8.png"
-            data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/img8.png, /posts/2022/getting-along-with-winget-advanced-installation/img8.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/img8.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" width="1112" height="885" />
-    </a><figcaption class="image-caption">Content of GitInstallParams.inf</figcaption>
-    </figure></p>
-<div class="details admonition Info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">P.S. I went with thew .inf file extension because of the parameters being called <code>/SAFEINF</code> and <code>/LOADINF</code>. But as I understand any file extension should work here.</div>
-        </div>
-    </div>
+<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" data-sub-html="<h2>Content of GitInstallParams.inf</h2>"><img loading="lazy" src='/posts/2022/getting-along-with-winget-advanced-installation/img8.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/img8.png" height="885" width="1112"></a><figcaption class="image-caption">Content of GitInstallParams.inf</figcaption>
+  </figure></p>
+<div class="details admonition info open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">P.S. I went with thew .inf file extension because of the parameters being called <code>/SAFEINF</code> and <code>/LOADINF</code>. But as I understand any file extension should work here.</div>
+  </div>
+</div>
 <p>Since the .inf file looked promising it was time to combine all the parameters into a single command line and running it, Combined command line:</p>
 <script src="https://gist.github.com/devjevnl/23818721797acb8941375f0cb640afea.js?file=loadinf-parameter.cmd"></script>
-
 <p>And as shown in the following screenshots running this command results in a successful installation!
-<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" data-sub-html="<h2>Installation in progress</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/getting-along-with-winget-advanced-installation/img9.png"
-            data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/img9.png, /posts/2022/getting-along-with-winget-advanced-installation/img9.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/img9.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" width="1447" height="879" />
-    </a><figcaption class="image-caption">Installation in progress</figcaption>
-    </figure>
-<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" data-sub-html="<h2>Installation successful</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/getting-along-with-winget-advanced-installation/img10.png"
-            data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/img10.png, /posts/2022/getting-along-with-winget-advanced-installation/img10.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/img10.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" width="1483" height="671" />
-    </a><figcaption class="image-caption">Installation successful</figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" data-sub-html="<h2>Installation in progress</h2>"><img loading="lazy" src='/posts/2022/getting-along-with-winget-advanced-installation/img9.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/img9.png" height="879" width="1447"></a><figcaption class="image-caption">Installation in progress</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" data-sub-html="<h2>Installation successful</h2>"><img loading="lazy" src='/posts/2022/getting-along-with-winget-advanced-installation/img10.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/img10.png" height="671" width="1483"></a><figcaption class="image-caption">Installation successful</figcaption>
+  </figure></p>
 <p>To top it all off a quick check of the git config which seems to confirm a successful installation with the intended installation configuration.
-<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" data-sub-html="<h2>Verying Git installation config using &lsquo;git config &ndash;list&rsquo;</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/posts/2022/getting-along-with-winget-advanced-installation/img11.png"
-            data-srcset="/posts/2022/getting-along-with-winget-advanced-installation/img11.png, /posts/2022/getting-along-with-winget-advanced-installation/img11.png 1.5x, /posts/2022/getting-along-with-winget-advanced-installation/img11.png 2x"
-            data-sizes="auto"
-            alt="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" width="1188" height="675" />
-    </a><figcaption class="image-caption">Verying Git installation config using &lsquo;git config &ndash;list&rsquo;</figcaption>
-    </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" title="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" data-thumbnail="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" data-sub-html="<h2>Verying Git installation config using &lsquo;git config &ndash;list&rsquo;</h2>"><img loading="lazy" src='/posts/2022/getting-along-with-winget-advanced-installation/img11.png' alt="/posts/2022/getting-along-with-winget-advanced-installation/img11.png" height="675" width="1188"></a><figcaption class="image-caption">Verying Git installation config using &lsquo;git config &ndash;list&rsquo;</figcaption>
+  </figure></p>
 <p>Success! I and hopefully whoever reads this post is now able to use Winget and still achieve custom installation configuration.</p>
-<h2 id="winget-limitations">Winget limitations</h2>
-<p>It should come as no surprise there are also downsides to both Winget in general and the explained approach with <code>--override</code> command. This chapter contains a short list of the ones I encountered.</p>
+<h2 class="heading-element" id="winget-limitations"><span>Winget limitations</span>
+  <a href="#winget-limitations" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>It should come as no surprise there are also downsides to both Winget in general and the explained approach with <code>--override</code> command. This chapter contains a short list of the ones I encountered.</p>
 <ul>
 <li>As of writing this post Winget only supports .zip installer in the preview build</li>
 <li>The <code>winget upgrade --all</code> command does not respect the configuration set with the <code>--override</code> (this behavior seems to differ per application)</li>
 <li>The bulk commands <code>winget export</code> and <code>winget import</code> don&rsquo;t offer any support for the  <code>--override</code> input, meaning that bulk installation can only be done with default installation options</li>
-<li>Winget lacks a auto update feature to automatically update all or a selected set of packages. Thankfully someone from the community stepped in and created one <a href="https://github.com/Romanitho/Winget-AutoUpdate" target="_blank" rel="noopener noreffer">Winget-AutoUpdate</a>
-</li>
+<li>Winget lacks a auto update feature to automatically update all or a selected set of packages. Thankfully someone from the community stepped in and created one <a href="https://github.com/Romanitho/Winget-AutoUpdate"target="_blank" rel="external nofollow noopener noreferrer">Winget-AutoUpdate</a></li>
 </ul>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>And this is it for the the advanced installation of packages using Winget. I really love the simplicity, accessibility and the fact that Winget comes pre-installed on recent Windows machines. And it is because of this focus on basic simplicity installing packages using advanced commands feels a bit cumbersome. Compared to the other packge management tools Winget is still relatively new and being actively developed so who knows what upgrades this tool will get.</p>
-<p>Thanks for reading this post and if you liked it don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
-.</p>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And this is it for the the advanced installation of packages using Winget. I really love the simplicity, accessibility and the fact that Winget comes pre-installed on recent Windows machines. And it is because of this focus on basic simplicity installing packages using advanced commands feels a bit cumbersome. Compared to the other packge management tools Winget is still relatively new and being actively developed so who knows what upgrades this tool will get.</p>
+<p>Thanks for reading this post and if you liked it don&rsquo;t be shy and have a look at my other <a href="/posts">posts</a>.</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2022-08-30</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2022-08-30 08:00:00">Updated on 2022-08-30&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/winget/">Winget</a>,&nbsp;<a href="/tags/package-management/">Package Management</a>,&nbsp;<a href="/tags/development-box-setup/">Development Box Setup</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2022/getting-along-with-winget-basic-commands/" class="prev" rel="prev" title="Getting along with winget - basic packed management"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Getting along with winget - basic packed management</a>
-            <a href="/posts/2022/the-ideal-management-group-naming-convention/" class="next" rel="next" title="The ideal Management group naming convention">The ideal Management group naming convention<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/winget/" class="post-tag" title="Tags - Winget">Winget</a><a href="/tags/package-management/" class="post-tag" title="Tags - Package Management">Package Management</a><a href="/tags/development-box-setup/" class="post-tag" title="Tags - Development Box Setup">Development Box Setup</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2022/getting-along-with-winget-basic-commands/" class="post-nav-item" rel="prev" title="Getting Along With Winget - Basic Packed Management"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Getting Along With Winget - Basic Packed Management</a><a href="/posts/2022/the-ideal-management-group-naming-convention/" class="post-nav-item" rel="next" title="The Ideal Management Group Naming Convention">The Ideal Management Group Naming Convention<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2022/getting-along-with-winget-advanced-installation/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

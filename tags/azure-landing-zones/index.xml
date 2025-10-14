@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure Landing Zones on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Azure Landing Zones - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/tags/azure-landing-zones/</link>
-    <description>Recent content in Azure Landing Zones on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Mon, 23 Dec 2024 02:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/tags/azure-landing-zones/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</link>
       <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/posts/2024/decoding-microsoft-azure-landing-zones-explained/</guid>
-      <description>&lt;p&gt;In my previous &lt;em&gt;&lt;strong&gt;Decoding Microsoft Azure&lt;/strong&gt;&lt;/em&gt; post, &lt;a href=&#34;https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;🔍 &lt;em&gt;Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️&lt;/em&gt;&lt;/a&gt;&#xA;, I introduced &lt;em&gt;&lt;strong&gt;the house analogy&lt;/strong&gt;&lt;/em&gt; to conceptually explain &lt;a href=&#34;https://azure.microsoft.com/en-us/?wt.mc_id=DT-MVP-5005327&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Microsoft Azure&lt;/a&gt;&#xA;. Part of this analogy covered the &lt;strong&gt;Application Landing Zone&lt;/strong&gt; and the &lt;strong&gt;Platform Landing Zone&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In this post, I&amp;rsquo;ll take a deeper dive into Landing Zones. We&amp;rsquo;ll explore what they are, how they&amp;rsquo;re defined by Microsoft, and how I believe we can improve upon the concept. By the end, you&amp;rsquo;ll have a clearer understanding of Azure Landing Zones and how they fit into a broader cloud adoption strategy.&lt;/p&gt;</description>
+      <category domain="https://www.devjev.nl/categories/azure/">Azure</category>
+      <category domain="https://www.devjev.nl/categories/azure-landing-zones/">Azure Landing Zones</category>
+      <category domain="https://www.devjev.nl/categories/cloud-infrastructure/">Cloud Infrastructure</category>
+      <description>&lt;p&gt;In my previous &lt;em&gt;&lt;strong&gt;Decoding Microsoft Azure&lt;/strong&gt;&lt;/em&gt; post, &lt;a href=&#34;https://www.devjev.nl/posts/2024/decoding-microsoft-azure-understanding-platform-landing-zones-workloads-and-utilities/&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;🔍 &lt;em&gt;Decoding Microsoft Azure: Understanding Platform, Landing Zones, Workloads, and Utilities ⚙️&lt;/em&gt;&lt;/a&gt;, I introduced &lt;em&gt;&lt;strong&gt;the house analogy&lt;/strong&gt;&lt;/em&gt; to conceptually explain &lt;a href=&#34;https://azure.microsoft.com/en-us/?wt.mc_id=DT-MVP-5005327&#34;target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Microsoft Azure&lt;/a&gt;. Part of this analogy covered the &lt;strong&gt;Application Landing Zone&lt;/strong&gt; and the &lt;strong&gt;Platform Landing Zone&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In this post, I&amp;rsquo;ll take a deeper dive into Landing Zones. We&amp;rsquo;ll explore what they are, how they&amp;rsquo;re defined by Microsoft, and how I believe we can improve upon the concept. By the end, you&amp;rsquo;ll have a clearer understanding of Azure Landing Zones and how they fit into a broader cloud adoption strategy.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

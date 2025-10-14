@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Service Connection on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Service Connection - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/tags/service-connection/</link>
-    <description>Recent content in Service Connection on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Mar 2022 21:00:00 +0100</lastBuildDate>
     <atom:link href="https://www.devjev.nl/tags/service-connection/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</link>
       <pubDate>Sat, 12 Mar 2022 21:00:00 +0100</pubDate>
       <guid>https://www.devjev.nl/posts/2022/your-service-connection-credentials-are-mine/</guid>
-      <description>&lt;p&gt;Like with the two previous posts &lt;a href=&#34;https://www.devjev.nl/posts/2022/hacking-azure-devops&#34; rel=&#34;&#34;&gt;Hacking Azure DevOps&lt;/a&gt;&#xA; and &lt;a href=&#34;https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets&#34; rel=&#34;&#34;&gt;I am in your pipeline reading all your secrets!&lt;/a&gt;&#xA; I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.&lt;br&gt;&#xA;In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.&lt;br&gt;&#xA;Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.&lt;/p&gt;</description>
+      <category domain="https://www.devjev.nl/categories/security/">Security</category>
+      <category domain="https://www.devjev.nl/categories/azure-devops/">Azure DevOps</category>
+      <category domain="https://www.devjev.nl/categories/azure/">Azure</category>
+      <description>&lt;p&gt;Like with the two previous posts &lt;a href=&#34;https://www.devjev.nl/posts/2022/hacking-azure-devops&#34;&gt;Hacking Azure DevOps&lt;/a&gt; and &lt;a href=&#34;https://www.devjev.nl/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets&#34;&gt;I am in your pipeline reading all your secrets!&lt;/a&gt; I want to continue to raise awareness and understanding about pipeline security in Azure DevOps. In the previous post I have explained how secure / marked as secret variables are handled during pipeline runtime.&lt;br&gt;&#xA;In this post I want to show how an Azure Resource Manager service connection configuration is handled during pipeline runtime. And which sensitive information is exposed through this service connection.&lt;br&gt;&#xA;Like I mentioned in the  previous posts, without proper security configuration for pipelines this information could be abused by attackers.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

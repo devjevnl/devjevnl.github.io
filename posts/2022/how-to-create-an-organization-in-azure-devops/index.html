@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>How to create an Organization in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="Description" content="How to create an Organization in Azure DevOps"><meta property="og:url" content="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/">
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>How to Create an Organization in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="How to create an Organization in Azure DevOps"><meta name="keywords" content='Azure DevOps, Fundamentals, New Organization'>
+  <meta itemprop="name" content="How to create an Organization in Azure DevOps">
+  <meta itemprop="description" content="How to create an Organization in Azure DevOps">
+  <meta itemprop="datePublished" content="2022-11-06T21:00:00+02:00">
+  <meta itemprop="dateModified" content="2022-12-15T21:00:00+02:00">
+  <meta itemprop="wordCount" content="748">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png">
+  <meta itemprop="keywords" content="Azure DevOps,Fundamentals,New Organization"><meta property="og:url" content="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta property="og:title" content="How to create an Organization in Azure DevOps">
   <meta property="og:description" content="How to create an Organization in Azure DevOps">
@@ -23,114 +31,108 @@
   <meta name="twitter:title" content="How to create an Organization in Azure DevOps">
   <meta name="twitter:description" content="How to create an Organization in Azure DevOps">
       <meta name="twitter:site" content="@DevJevNL">
-<meta name="application-name" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">
-<meta name="apple-mobile-web-app-title" content="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/" /><link rel="prev" href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" /><link rel="next" href="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "How to create an Organization in Azure DevOps",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/"
-        },"image": [{
-                            "@type": "ImageObject",
-                            "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/featured-image.png",
-                            "width":  800 ,
-                            "height":  422 
-                        }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, New Organization","wordcount":  754 ,
-        "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/","datePublished": "2022-11-06T21:00:00+02:00","dateModified": "2022-12-15T21:00:00+02:00","publisher": {
-            "@type": "Organization",
-            "name": "Jev"},"author": {
-                "@type": "Person",
-                "name": "Jev"
-            },"description": "How to create an Organization in Azure DevOps"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
-
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2022/how-to-create-an-organization-in-azure-devops/" title="How to create an Organization in Azure DevOps - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2022/the-ideal-management-group-naming-convention/" title="The ideal Management group naming convention" /><link rel="next" type="text/html" href="https://www.devjev.nl/posts/2022/how-to-create-a-new-project-in-azure-devops/" title="How to create a new Project in Azure DevOps" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to create an Organization in Azure DevOps",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/featured-image.png",
+              "width":  800 ,
+              "height":  422 
+            }],"genre": "posts","keywords": "Azure DevOps, Fundamentals, New Organization","wordcount":  748 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2022\/how-to-create-an-organization-in-azure-devops\/","datePublished": "2022-11-06T21:00:00+02:00","dateModified": "2022-12-15T21:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "How to create an Organization in Azure DevOps"
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
     <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
-        </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Blog posts"> Posts </a><a class="menu-item" href="/categories/" title="Post categories"> Categories </a><a class="menu-item" href="/tags/" title="Tags used in posts"> Tags </a><a class="menu-item" href="/about/" title="About Me"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals">DevJev.nl</a>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/posts/" title="Blog posts">Posts</a><a class="menu-item" href="/categories/" title="Post categories">Categories</a><a class="menu-item" href="/tags/" title="Tags used in posts">Tags</a><a class="menu-item" href="/about/" title="About Me">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
 </header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to create an Organization in Azure DevOps</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jev</a>
-</span>&nbsp;<span class="post-category">included in <a href="/categories/azure-devops-fundamentals/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Azure DevOps Fundamentals</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-06">2022-11-06</time>&nbsp;&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;754 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
-        </div><div class="featured-image"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png"
-        data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png, /posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png"
-        title="How to create an Organization in Azure DevOps" /></div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>How to Create an Organization in Azure DevOps</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure-devops-fundamentals/" class="post-category" title="Category - Azure DevOps Fundamentals"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps Fundamentals</a></span></div><div class="post-meta-line"><span title="published on 2022-11-06 21:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2022-11-06">2022-11-06</time></span>&nbsp;<span title="Updated on 2022-12-15 21:00:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2022-12-15">2022-12-15</time></span>&nbsp;<span title="748 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 800 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>4 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#what-is-an-azure-devops-organization">What is an Azure DevOps Organization</a></li>
     <li><a href="#create-an-azure-devops-organization">Create an Azure DevOps Organization</a></li>
@@ -138,27 +140,25 @@
     <li><a href="#wrapping-up">Wrapping up</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview" target="_blank" rel="noopener noreffer">Azure DevOps</a>
-. The subjects covered by this series are organized into three categories:</p>
+      </div><div class="content" id="content"><p>With this post am kicking off a blog post series on working with <a href="https://azure.microsoft.com/en-us/products/devops/#overview"target="_blank" rel="external nofollow noopener noreferrer">Azure DevOps</a>. The subjects covered by this series are organized into three categories:</p>
 <ul>
-<li><a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-</li>
+<li><a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals</a></li>
 <li>Azure DevOps Advanced</li>
 <li>Azure DevOps Expert</li>
 </ul>
-<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals</a>
-:</p>
+<p>Starting with the basic of basics of <a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals</a>:</p>
 <p><code>How to create an Organization in Azure DevOps?</code></p>
-<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">Wesley Camargo</a>
- will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/" target="_blank" rel="noopener noreffer">blog</a>
-, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
+<p>Since it much more fun to do research and play with technology in collaboration with others, <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">Wesley Camargo</a> will be covering some of the topics on he&rsquo;s <a href="https://camargo-wes.medium.com/"target="_blank" rel="external nofollow noopener noreferrer">blog</a>, while other topics are covered by my here. Naturally the all related posts will be referenced between the two blogs.</p>
 <p>For a quick guide you can also check out the video version of this post.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/n3lLfdSBgPQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 </p>
-<h2 id="what-is-an-azure-devops-organization">What is an Azure DevOps Organization</h2>
-<p>An Organization within Azure DevOps can be considered a logical container used to organize and group projects. This logical container is the highest level at which the following types of configuration is applied;</p>
+<h2 class="heading-element" id="what-is-an-azure-devops-organization"><span>What is an Azure DevOps Organization</span>
+  <a href="#what-is-an-azure-devops-organization" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>An Organization within Azure DevOps can be considered a logical container used to organize and group projects. This logical container is the highest level at which the following types of configuration is applied;</p>
 <ul>
 <li>Managing projects</li>
 <li>Managing Permissions</li>
@@ -172,127 +172,74 @@
 <li>Global pipeline configuration</li>
 <li>Artifact storage configuration and billing</li>
 </ul>
-<h2 id="create-an-azure-devops-organization">Create an Azure DevOps Organization</h2>
-<p>Prior to jumping ahead and creating an Organization it is strongly advised to consider planning an <a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops" target="_blank" rel="noopener noreffer">organizational structure</a>
- and als to determine <a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops#choose-your-organization-administrator-account-type" target="_blank" rel="noopener noreffer">what type of account is most suitable for your implementation</a>
-.</p>
+<h2 class="heading-element" id="create-an-azure-devops-organization"><span>Create an Azure DevOps Organization</span>
+  <a href="#create-an-azure-devops-organization" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Prior to jumping ahead and creating an Organization it is strongly advised to consider planning an <a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">organizational structure</a> and als to determine <a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops#choose-your-organization-administrator-account-type"target="_blank" rel="external nofollow noopener noreferrer">what type of account is most suitable for your implementation</a>.</p>
 <div class="details admonition info open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">As of writing this post all organizations must be manually created via the web portal. There is no support for automated creation of Azure DevOps organizations.</div>
-        </div>
-    </div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">As of writing this post all organizations must be manually created via the web portal. There is no support for automated creation of Azure DevOps organizations.</div>
+  </div>
+</div>
 <div class="details admonition warning open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Important<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">A Microsoft account (of any type) is required prior to starting with the next steps</div>
-        </div>
-    </div>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Important<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">A Microsoft account (of any type) is required prior to starting with the next steps</div>
+  </div>
+</div>
 <p>With that mentioned, lets start with the hands-on part and walk trough the required steps to create an Azure DevOps organization.</p>
 <ol>
 <li>
-<p>Login into Azure DevOps <a href="https://go.microsoft.com/fwlink/?LinkId=307137" target="_blank" rel="noopener noreffer">https://go.microsoft.com/fwlink/?LinkId=307137</a>
- using a Microsoft account
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" data-sub-html="<h2>Login to Azure DevOps</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" width="449" height="463" />
-       </a><figcaption class="image-caption">Login to Azure DevOps</figcaption>
-       </figure>
+<p>Login into Azure DevOps <a href="https://go.microsoft.com/fwlink/?LinkId=307137"target="_blank" rel="external nofollow noopener noreferrer">https://go.microsoft.com/fwlink/?LinkId=307137</a> using a Microsoft account
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" data-sub-html="<h2>Login to Azure DevOps</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_1.png" height="463" width="449"></a><figcaption class="image-caption">Login to Azure DevOps</figcaption>
+     </figure>
 After a successful login you will be presented with the &lsquo;Get Started with Azure DevOps&rsquo; screen</p>
 </li>
 <li>
 <p>On the &lsquo;Get Started with Azure DevOps&rsquo; screen select your country/region and click the <em>Continue</em> button. This will be used to preselect a Microsoft region which you can change in the following steps.
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" data-sub-html="<h2>Select your country/region</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" width="448" height="467" />
-       </a><figcaption class="image-caption">Select your country/region</figcaption>
-       </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" data-sub-html="<h2>Select your country/region</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_2.png" height="467" width="448"></a><figcaption class="image-caption">Select your country/region</figcaption>
+     </figure></p>
 </li>
 <li>
 <p>On the next screen decide if you desire to receive information tips and offers and again click the <em>Continue</em> button.
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" data-sub-html="<h2>Receive information tips</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" width="445" height="470" />
-       </a><figcaption class="image-caption">Receive information tips</figcaption>
-       </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" data-sub-html="<h2>Receive information tips</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_3.png" height="470" width="445"></a><figcaption class="image-caption">Receive information tips</figcaption>
+     </figure></p>
 </li>
 <li>
 <p>On the &lsquo;Almost done&rsquo; verify and adapt the following fields
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" data-sub-html="<h2>Almost done&hellip;</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" width="453" height="645" />
-       </a><figcaption class="image-caption">Almost done&hellip;</figcaption>
-       </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" data-sub-html="<h2>Almost done&hellip;</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_4.png" height="645" width="453"></a><figcaption class="image-caption">Almost done&hellip;</figcaption>
+     </figure></p>
 <ol>
 <li>The name of the organization. It is possible to change the name at a later stage, however the name is used as part of the URL which could have impact on accessibility.
 <div class="details admonition quote open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-quote-right fa-fw" aria-hidden="true"></i>quote<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Currently, you can only use letters from the English alphabet in the Organization name. Start the Organization name with a letter or number, followed by letters, numbers or hyphens, and the name also must end with a letter or number.</div>
-        </div>
-    </div></li>
-<li>The desired region. Make sure you are aware of any regional data sovereignty that might apply to your Azure DevOps Organization as choosing the the desired region will impact it. In Addition, <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-organization-location?view=azure-devops" target="_blank" rel="noopener noreffer">moving an Organization from one region to another</a>
- is possible but limitations apply</li>
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-quote-right" aria-hidden="true"></i>quote<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Currently, you can only use letters from the English alphabet in the Organization name. Start the Organization name with a letter or number, followed by letters, numbers or hyphens, and the name also must end with a letter or number.</div>
+  </div>
+</div></li>
+<li>The desired region. Make sure you are aware of any regional data sovereignty that might apply to your Azure DevOps Organization as choosing the the desired region will impact it. In Addition, <a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/change-organization-location?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">moving an Organization from one region to another</a> is possible but limitations apply</li>
 <li>Challenge validation<br>
 When done, again press the <em>Continue</em> button</li>
 </ol>
 </li>
 <li>
 <p>The organization will be created, this usually takes a couple of minutes
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" data-sub-html="<h2>Taking you to you DevOps Organization</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" width="451" height="288" />
-       </a><figcaption class="image-caption">Taking you to you DevOps Organization</figcaption>
-       </figure></p>
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" data-sub-html="<h2>Taking you to you DevOps Organization</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_5.png" height="288" width="451"></a><figcaption class="image-caption">Taking you to you DevOps Organization</figcaption>
+     </figure></p>
 </li>
 <li>
-<p>When a new organization is created you are presented with the screen to continue by creating the first project. This is a separate topic which I will handle in the next post of the <a href="/categories/azure-devops-fundamentals/" rel="">Azure DevOps Fundamentals category</a>
-. For the creation of an Azure DevOps Organization all steps are done!!!
-<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" data-sub-html="<h2>Organization DevOps</h2>">
-           <img
-               class="lazyload"
-               src="/svg/loading.min.svg"
-               data-src="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png"
-               data-srcset="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png, /posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png 1.5x, /posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png 2x"
-               data-sizes="auto"
-               alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" width="1130" height="839" />
-       </a><figcaption class="image-caption">Organization DevOps</figcaption>
-       </figure></p>
+<p>When a new organization is created you are presented with the screen to continue by creating the first project. This is a separate topic which I will handle in the next post of the <a href="/categories/azure-devops-fundamentals/">Azure DevOps Fundamentals category</a>. For the creation of an Azure DevOps Organization all steps are done!!!
+<figure><a class="lightgallery" href="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" title="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" data-thumbnail="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" data-sub-html="<h2>Organization DevOps</h2>"><img loading="lazy" src='/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png' alt="/posts/2022/how-to-create-an-organization-in-azure-devops/img_6.png" height="839" width="1130"></a><figcaption class="image-caption">Organization DevOps</figcaption>
+     </figure></p>
 </li>
 </ol>
-<h2 id="get-started-managing-your-azure-devops-organization">Get started managing your Azure DevOps Organization</h2>
-<p>After creating the first Azure DevOps Organization it is important to consider finalizing the configuration of the following topics:</p>
+<h2 class="heading-element" id="get-started-managing-your-azure-devops-organization"><span>Get started managing your Azure DevOps Organization</span>
+  <a href="#get-started-managing-your-azure-devops-organization" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>After creating the first Azure DevOps Organization it is important to consider finalizing the configuration of the following topics:</p>
 <ul>
 <li>Add users to your organization</li>
 <li>Set up billing</li>
@@ -306,55 +253,49 @@ When done, again press the <em>Continue</em> button</li>
 <li>Review and update notifications</li>
 </ul>
 <p>However, due to the complexity of these topics you can expect more details in a future post part of the <em>Azure DevOps Expert</em> category.</p>
-<h2 id="wrapping-up">Wrapping up</h2>
-<p>And there you have it, <em>How to create an Organization in Azure DevOps</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And there you have it, <em>How to create an Organization in Azure DevOps</em>. If you are interested in the reference material used to make this post, please visit the following links.</p>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops" target="_blank" rel="noopener noreffer">Create an organization</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops#mapping-guidance-table" target="_blank" rel="noopener noreffer">Plan your organizational structure</a>
-</li>
-<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/organization-management?view=azure-devops" target="_blank" rel="noopener noreffer">Organization management overview</a>
-</li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Create an organization</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops#mapping-guidance-table"target="_blank" rel="external nofollow noopener noreferrer">Plan your organizational structure</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/organization-management?view=azure-devops"target="_blank" rel="external nofollow noopener noreferrer">Organization management overview</a></li>
 </ul>
-<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts" rel="">posts</a>
-.</p>
+<p>As always, a big <strong>thanks</strong> for reading this post. If you liked it, don&rsquo;t be shy and have a look at my other <a href="/posts">posts</a>.</p>
 </div><div class="post-footer" id="post-footer">
-    <div class="post-info">
-        <div class="post-info-line">
-            <div class="post-info-mod">
-                <span>Updated on 2022-12-15</span>
-            </div></div>
-        <div class="post-info-line">
-            <div class="post-info-md"></div>
-            <div class="post-info-share">
-                <span></span>
-            </div>
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2022-12-15 21:00:00">Updated on 2022-12-15&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
         </div>
-    </div>
+      </div></div>
 
-    <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/azure-devops/">Azure DevOps</a>,&nbsp;<a href="/tags/fundamentals/">Fundamentals</a>,&nbsp;<a href="/tags/new-organization/">New Organization</a></section>
-        <section>
-            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav"><a href="/posts/2022/the-ideal-management-group-naming-convention/" class="prev" rel="prev" title="The ideal Management group naming convention"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>The ideal Management group naming convention</a>
-            <a href="/posts/2022/how-to-create-a-new-project-in-azure-devops/" class="next" rel="next" title="How to create a new Project in Azure DevOps">How to create a new Project in Azure DevOps<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-devops/" class="post-tag" title="Tags - Azure DevOps">Azure DevOps</a><a href="/tags/fundamentals/" class="post-tag" title="Tags - Fundamentals">Fundamentals</a><a href="/tags/new-organization/" class="post-tag" title="Tags - New Organization">New Organization</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2022/the-ideal-management-group-naming-convention/" class="post-nav-item" rel="prev" title="The Ideal Management Group Naming Convention"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>The Ideal Management Group Naming Convention</a><a href="/posts/2022/how-to-create-a-new-project-in-azure-devops/" class="post-nav-item" rel="next" title="How to Create a New Project in Azure DevOps">How to Create a New Project in Azure DevOps<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
-</article></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Let's automate the boring!</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
-        </div>
-    </footer></div>
+</article>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":-1},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
-            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
-            gtag('config', 'G-J3E897NYLC');
-        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2022/how-to-create-an-organization-in-azure-devops/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
 </html>

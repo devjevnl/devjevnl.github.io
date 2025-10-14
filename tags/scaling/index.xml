@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scaling on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <title>Scaling - Tag - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
     <link>https://www.devjev.nl/tags/scaling/</link>
-    <description>Recent content in Scaling on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
-    <generator>Hugo</generator>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
     <language>en</language>
     <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/tags/scaling/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,12 @@
       <link>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</link>
       <pubDate>Fri, 04 Jul 2025 08:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/posts/2025/building-a-cloud-center-of-excellence-the-scale-stage/</guid>
+      <category domain="https://www.devjev.nl/categories/cloud-center-of-excellence/">Cloud Center of Excellence</category>
+      <category domain="https://www.devjev.nl/categories/cloud-strategy/">Cloud Strategy</category>
+      <category domain="https://www.devjev.nl/categories/cloud-governance/">Cloud Governance</category>
+      <category domain="https://www.devjev.nl/categories/cloud-adoption-framework/">Cloud Adoption Framework</category>
+      <category domain="https://www.devjev.nl/categories/digital-transformation/">Digital Transformation</category>
+      <category domain="https://www.devjev.nl/categories/pathfinder-phase/">Pathfinder Phase</category>
       <description>In the Scale Stage, validated practices become reusable building blocks. Discover how to turn one-off wins into an organizational platform through standardization, inner-source, and a relentless PDCA improvement loop.</description>
     </item>
   </channel>
