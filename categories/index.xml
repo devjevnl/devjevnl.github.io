@@ -6,8 +6,29 @@
     <description>Recent content in Categories on DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 02:00:00 +0200</lastBuildDate>
     <atom:link href="https://www.devjev.nl/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://www.devjev.nl/categories/architecture/</link>
+      <pubDate>Tue, 09 Dec 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure</title>
+      <link>https://www.devjev.nl/categories/azure/</link>
+      <pubDate>Tue, 09 Dec 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Governance</title>
+      <link>https://www.devjev.nl/categories/governance/</link>
+      <pubDate>Tue, 09 Dec 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/categories/governance/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cloud Adoption Framework</title>
       <link>https://www.devjev.nl/categories/cloud-adoption-framework/</link>
@@ -114,13 +135,6 @@
       <description></description>
     </item>
     <item>
-      <title>Azure</title>
-      <link>https://www.devjev.nl/categories/azure/</link>
-      <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
-      <guid>https://www.devjev.nl/categories/azure/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Azure Landing Zones</title>
       <link>https://www.devjev.nl/categories/azure-landing-zones/</link>
       <pubDate>Mon, 16 Dec 2024 02:00:00 +0200</pubDate>
@@ -167,13 +181,6 @@
       <link>https://www.devjev.nl/categories/azure-devops/</link>
       <pubDate>Thu, 22 Aug 2024 02:00:00 +0200</pubDate>
       <guid>https://www.devjev.nl/categories/azure-devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Architecture</title>
-      <link>https://www.devjev.nl/categories/architecture/</link>
-      <pubDate>Sun, 30 Jun 2024 02:00:00 +0200</pubDate>
-      <guid>https://www.devjev.nl/categories/architecture/</guid>
       <description></description>
     </item>
     <item>

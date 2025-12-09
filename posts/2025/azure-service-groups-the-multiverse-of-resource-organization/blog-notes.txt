@@ -1,0 +1,68 @@
+Azure Service Groups: a new governance dimension
+Azure Service Groups: The Multiverse of Resource Organization
+
+azure-service-groups-the-multiverse-of-resource-organization
+
+
+The Multiverse of Resource Organization:
+
+Management group:
+Governance, compliance and top level RBAC
+Deployment Scope
+
+
+Subscription: is a natural boundary
+Deployment Scope
+
+Resource Groups groups resources around the resource lifecycle
+Deployment scope
+Run together, get decommissioned together
+
+Tagging: Groups around certain metadata
+
+Resource Graph
+Query based insights
+
+The problem: structure is set and every group in an organization has to work around this set hierarchy
+Cloud adoption grows so does the complexity of the applications
+Often a smudge of creativity is needed to fit all types of application architectures into a The current azure organization structures
+new DIMENTION!
+Technical Application Owner
+How do I manage my application which is stretched over many resources and crosses many boundaries
+End to en view, clarity
+Universal tool
+
+What if we can take all the resources and put them into a separate flexible structure
+The answer is Azure Service Groups
+Generic
+Least privilege
+
+Tenant level resource
+Has a hierarchy
+
+
+Use cases:
+Offering hierarchy
+A Scope for functionality
+Health monitoring
+Inventory management
+Shared workloads -> API Management, AKS Clusters, Service Bus, Redis Cashe, (common management resource like Backup vaults)
+Workload view
+Resource Purpose: Backup and disaster recovery
+
+Az Advisor
+Costmanagement
+
+
+
+Issue: Need to be globally unique per Azure Cloud
+Naming is going to matter a lot!
+
+Permission wise anyone in the tenant can create service groups, they dont do much is this is ok
+
+What can I group:
+Anything with an Azure manager Resource ID
+Exception: Management Groups
+Can group one to many, a resource can be a member of multiple groups
+
+You need write permissions on the resource in question to
