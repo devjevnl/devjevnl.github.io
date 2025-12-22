@@ -10,7 +10,7 @@
 <meta name="description" content="Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.">
   <meta itemprop="name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
   <meta itemprop="description" content="Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.">
-  <meta itemprop="datePublished" content="2025-12-09T02:00:00+02:00">
+  <meta itemprop="datePublished" content="2025-12-19T02:00:00+02:00">
   <meta itemprop="dateModified" content="2027-07-21T21:00:00+02:00">
   <meta itemprop="image" content="https://www.devjev.nl/images/avatar_jev.jpg"><meta property="og:url" content="https://www.devjev.nl/">
   <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
@@ -28,7 +28,7 @@
 <meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
 <meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="alternate" type="application/rss+xml" href="https://www.devjev.nl/index.xml" title="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="alternate" type="application/rss+xml" href="https://www.devjev.nl/index.xml" title="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals"><link rel="search" type="application/json" href="https://www.devjev.nl/search.json" title="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals"><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
   {
@@ -105,6 +105,16 @@
     </a><a href="/index.xml" title="RSS"target="_blank" rel="external nofollow noopener noreferrer me"><i class="fa-solid fa-rss fa-fw" aria-hidden="true"></i>
     </a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+      <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/" aria-label="I am in your pipeline reading all your secrets!"><img loading="eager" src='/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/featured-image.jpg' sizes="(max-width: 680px) 100vw, (max-width: 960px) 80vw, (max-width: 1440px) 56vw, 800px" alt="Featured image for I am in your pipeline reading all your secrets!" height="240" width="800"></a>
+    </div><h2 class="single-title" itemprop="name headline"><a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/">I Am in Your Pipeline Reading All Your Secrets!</a>
+  </h2><div class="post-meta"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span>&nbsp;<span class="post-publish" title='2022-01-30 08:00:00'>published on <time datetime="2022-01-30">2022-01-30</time></span><span class="post-included-in">&nbsp;included in <a href="/categories/security/" class="post-category" title="Category - Security"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Security</a>&ensp;<a href="/categories/azure-devops/" class="post-category" title="Category - Azure DevOps"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure DevOps</a></span></div><div class="content"><h3 class="heading-element" id="introduction"><span>Introduction</span>
+  <a href="#introduction" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>With this blog post I want to raise awareness and understanding on how secure / marked as secret variables are handled during pipeline runtime in Azure DevOps and how these can be potentially exfiltrated. If proper security configuration is not in place this could potentially be abused by attackers.</p></div><div class="post-footer">
+    <a href="/posts/2022/i-am-in-your-pipeline-reading-all-your-secrets/">Read More</a><div class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/pipelines/' class="post-tag">Pipelines</a><a href='/tags/hack/' class="post-tag">Hack</a><a href='/tags/security/' class="post-tag">Security</a><a href='/tags/variable-exfiltration/' class="post-tag">Variable Exfiltration</a><a href='/tags/secret-exfiltration/' class="post-tag">Secret Exfiltration</a><a href='/tags/zero-trust/' class="post-tag">Zero Trust</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
       <a href="/posts/2021/hacking-azure-devops/" aria-label="Hacking Azure DevOps"><img loading="eager" src='/posts/2021/hacking-azure-devops/featured-image.jpg' sizes="(max-width: 680px) 100vw, (max-width: 960px) 80vw, (max-width: 1440px) 56vw, 800px" alt="Featured image for Hacking Azure DevOps" height="240" width="800"></a>
     </div><h2 class="single-title" itemprop="name headline"><a href="/posts/2021/hacking-azure-devops/">Hacking Azure DevOps</a>
   </h2><div class="post-meta"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
@@ -161,7 +171,7 @@
         </div></div><div id="mask"></div><noscript>
     <div class="noscript-warning">This website works best with JavaScript enabled.</div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
       window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
       gtag('config', 'G-J3E897NYLC');
     </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>

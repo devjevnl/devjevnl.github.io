@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Service Groups - Category - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title>
+    <link>https://www.devjev.nl/categories/azure-service-groups/</link>
+    <description>Explore DevJev.nl for expert insights on Azure, Azure DevOps, cloud architecture, automation, and security. Stay updated with practical guides, best practices, and the latest trends in cloud technology.</description>
+    <generator>Hugo 0.151.0 &amp; FixIt v0.4.0-alpha.2-20250919092044-50488dfb</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Dec 2025 02:00:00 +0200</lastBuildDate>
+    <atom:link href="https://www.devjev.nl/categories/azure-service-groups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌</title>
+      <link>https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/</link>
+      <pubDate>Fri, 19 Dec 2025 02:00:00 +0200</pubDate>
+      <guid>https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/</guid>
+      <category domain="https://www.devjev.nl/categories/azure/">Azure</category>
+      <category domain="https://www.devjev.nl/categories/governance/">Governance</category>
+      <category domain="https://www.devjev.nl/categories/infrastructure-as-code/">Infrastructure as Code</category>
+      <category domain="https://www.devjev.nl/categories/azure-service-groups/">Azure Service Groups</category>
+      <description>&lt;p&gt;In my previous post, &lt;a href=&#34;https://www.devjev.nl/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/&#34;&gt;Azure Service Groups: The Multiverse of Resource Organization&lt;/a&gt;, we explored what Azure Service Groups are and why they matter when organizing resources across an Azure tenant. That post also introduced a set of core Service Group fundamentals.&lt;/p&gt;&#xA;&lt;p&gt;While all of those fundamentals are important, &lt;strong&gt;three of them are critical&lt;/strong&gt; when you want to implement Azure Service Groups &lt;strong&gt;at scale&lt;/strong&gt;. In this post, I&amp;rsquo;ll focus on the first of those three and show how to put it into practice using Bicep and Infrastructure as Code (IaC): &lt;strong&gt;standardizing your approach early&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

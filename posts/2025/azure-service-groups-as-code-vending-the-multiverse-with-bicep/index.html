@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>📐 Azure Service Groups as Code: Vending the Multiverse With Bicep 🌌 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals</title><meta name="author" content="Jev">
+<meta name="description" content="Learn how to create and manage Azure Service Groups using Bicep Infrastructure as Code, enabling consistent, repeatable, and auditable resource organization across your tenant."><meta name="keywords" content='Azure Governance, Azure Service Groups, Infrastructure as Code, Bicep, Azure Automation'>
+  <meta itemprop="name" content="📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌">
+  <meta itemprop="description" content="Learn how to create and manage Azure Service Groups using Bicep Infrastructure as Code, enabling consistent, repeatable, and auditable resource organization across your tenant.">
+  <meta itemprop="datePublished" content="2025-12-19T02:00:00+02:00">
+  <meta itemprop="dateModified" content="2025-12-19T02:00:00+02:00">
+  <meta itemprop="wordCount" content="1047">
+  <meta itemprop="image" content="https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/feature-image-notext.jpg">
+  <meta itemprop="keywords" content="Azure Governance,Azure Service Groups,Infrastructure as Code,Bicep,Azure Automation"><meta property="og:url" content="https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/">
+  <meta property="og:site_name" content="DevJev.nl | Azure, Cloud Security & DevOps Insights for IT Professionals">
+  <meta property="og:title" content="📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌">
+  <meta property="og:description" content="Learn how to create and manage Azure Service Groups using Bicep Infrastructure as Code, enabling consistent, repeatable, and auditable resource organization across your tenant.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-19T02:00:00+02:00">
+    <meta property="article:modified_time" content="2025-12-19T02:00:00+02:00">
+    <meta property="article:tag" content="Azure Governance">
+    <meta property="article:tag" content="Azure Service Groups">
+    <meta property="article:tag" content="Infrastructure as Code">
+    <meta property="article:tag" content="Bicep">
+    <meta property="article:tag" content="Azure Automation">
+    <meta property="og:image" content="https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/feature-image-notext.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/feature-image-notext.jpg">
+  <meta name="twitter:title" content="📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌">
+  <meta name="twitter:description" content="Learn how to create and manage Azure Service Groups using Bicep Infrastructure as Code, enabling consistent, repeatable, and auditable resource organization across your tenant.">
+      <meta name="twitter:site" content="@DevJevNL">
+<meta name="twitter:creator" content="@DevJevNL" /><meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://www.devjev.nl/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/" title="📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌 - DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals" /><link rel="prev" type="text/html" href="https://www.devjev.nl/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/" title="🧩 Azure Service Groups: The Multiverse of Resource Organization 🛸" /><link rel="stylesheet" href="/css/config.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "📐 Azure Service Groups as Code: Vending the Multiverse with Bicep 🌌",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/www.devjev.nl\/posts\/2025\/azure-service-groups-as-code-vending-the-multiverse-with-bicep\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-service-groups-as-code-vending-the-multiverse-with-bicep\/featured-image.png",
+              "width":  1600 ,
+              "height":  737 
+            }],"genre": "posts","keywords": "Azure Governance, Azure Service Groups, Infrastructure as Code, Bicep, Azure Automation","wordcount":  1047 ,
+    "url": "https:\/\/www.devjev.nl\/posts\/2025\/azure-service-groups-as-code-vending-the-multiverse-with-bicep\/","datePublished": "2025-12-19T02:00:00+02:00","dateModified": "2025-12-19T02:00:00+02:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Jev"
+      },"description": "Learn how to create and manage Azure Service Groups using Bicep Infrastructure as Code, enabling consistent, repeatable, and auditable resource organization across your tenant."
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="fixed" data-header-mobile="auto"><div class="wrapper" data-page-style="custom"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item">
+              <a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item">
+              <a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="DevJev.nl | Azure, Cloud Security &amp; DevOps Insights for IT Professionals"><span class="header-title-text">DevJev.nl</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li class="menu-item"><a class="menu-link" href="/posts/" title="Blog posts">Posts</a></li><li class="menu-item"><a class="menu-link" href="/categories/" title="Post categories">Categories</a></li><li class="menu-item"><a class="menu-link" href="/tags/" title="Tags used in posts">Tags</a></li><li class="menu-item"><a class="menu-link" href="/about/" title="About Me">About</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>📐 Azure Service Groups as Code: Vending the Multiverse With Bicep 🌌</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Jev</span></span><span class="post-included-in">&nbsp;included in <a href="/categories/azure/" class="post-category" title="Category - Azure"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure</a>&ensp;<a href="/categories/governance/" class="post-category" title="Category - Governance"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Governance</a>&ensp;<a href="/categories/infrastructure-as-code/" class="post-category" title="Category - Infrastructure as Code"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Infrastructure as Code</a>&ensp;<a href="/categories/azure-service-groups/" class="post-category" title="Category - Azure Service Groups"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Azure Service Groups</a></span></div><div class="post-meta-line"><span title="published on 2025-12-19 02:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2025-12-19">2025-12-19</time></span>&nbsp;<span title="1047 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 1100 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>5 minutes</span>&nbsp;</div>
+    </div><div class="featured-image"><img src='/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/featured-image.png' alt="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/featured-image.png"></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#standardize-your-approach-early">Standardize your approach early</a>
+      <ul>
+        <li><a href="#repurposing-the-management-group-vending-pattern">Repurposing the Management Group Vending Pattern</a>
+          <ul>
+            <li><a href="#resource-module">Resource Module</a></li>
+          </ul>
+        </li>
+        <li><a href="#solution-module">Solution Module</a></li>
+        <li><a href="#parameters-file">Parameters File</a></li>
+        <li><a href="#deploy-your-service-groups-hierarchy">Deploy Your Service Groups Hierarchy</a>
+          <ul>
+            <li><a href="#deployment-steps">Deployment Steps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#wrapping-up">Wrapping up</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>In my previous post, <a href="/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/">Azure Service Groups: The Multiverse of Resource Organization</a>, we explored what Azure Service Groups are and why they matter when organizing resources across an Azure tenant. That post also introduced a set of core Service Group fundamentals.</p>
+<p>While all of those fundamentals are important, <strong>three of them are critical</strong> when you want to implement Azure Service Groups <strong>at scale</strong>. In this post, I&rsquo;ll focus on the first of those three and show how to put it into practice using Bicep and Infrastructure as Code (IaC): <strong>standardizing your approach early</strong>.</p>
+<p>The three fundamentals are:</p>
+<ul>
+<li><strong>Standardize your approach early</strong>
+Have the platform team design the initial top-level Service Group hierarchy, including naming, structure, and topology. Ownership of deeper layers can then be delegated to enabling teams and domain experts, allowing them to model according to business needs.</li>
+<li><strong>Shift left through automation</strong>
+Apply Service Group membership at deployment time and treat it as a first-class part of your resource provisioning process, not an afterthought.</li>
+<li><strong>Use Azure Policy for scale</strong>
+Use policy assignments to automate Service Group membership, ensuring consistency, reducing human error, and guaranteeing that new resources always land in the correct logical groups.</li>
+</ul>
+<div class="details admonition warning open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Azure Service Groups are currently in preview<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">At the time of writing, Azure Service Groups are <strong>in public preview</strong>. Treat them accordingly and expect the feature to evolve before it reaches general availability.</div>
+  </div>
+</div>
+<h2 class="heading-element" id="standardize-your-approach-early"><span>Standardize your approach early</span>
+  <a href="#standardize-your-approach-early" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The core non-functional requirements here are <strong>standardization</strong> and <strong>flexibility</strong>. To meet both, we can reuse a familiar and proven approach: the management group vending pattern, as described in <a href="/posts/2025/simplify-azure-management-group-setup-using-bicep-vending/">Simplify Azure Management Group Setup Using Bicep Vending</a>, and apply it to Azure Service Groups.</p>
+<div class="details admonition info open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true"></i>Standardization and flexibility<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Following this pattern, the goal is for the platform team to define and deploy <strong>tier 01</strong> and <strong>tier 02</strong> Service Groups. To ensure the flexibility requirement is met, the vending solution supports a total of <strong>10 tiers</strong>, even though this example only demonstrates up to tier 02. How deep the initial top-level Service Group hierarchy should go depends on your organization&rsquo;s needs and operating model.</div>
+  </div>
+</div>
+<p>As a starting point, let’s reuse the example Service Group hierarchy from the <a href="/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/">Azure Service Groups: The Multiverse of Resource Organization</a> post:</p>
+<figure><a class="lightgallery" href="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure.jpg" title="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure.jpg" data-thumbnail="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure.jpg" data-sub-html="<h2>Service Groups – Example Hierarchy</h2>"><img loading="lazy" src='/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure.jpg' alt="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure.jpg" height="741" width="1407"></a><figcaption class="image-caption">Service Groups – Example Hierarchy</figcaption>
+  </figure>
+<p>Next, we slice this hierarchy into tiers, following the same principles as the management group vending pattern:</p>
+<figure><a class="lightgallery" href="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure-defined.jpg" title="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure-defined.jpg" data-thumbnail="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure-defined.jpg" data-sub-html="<h2>Service Groups – Tiered Pattern</h2>"><img loading="lazy" src='/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure-defined.jpg' alt="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/example-hierarchical-structure-defined.jpg" height="731" width="1702"></a><figcaption class="image-caption">Service Groups – Tiered Pattern</figcaption>
+  </figure>
+<ul>
+<li><strong>Tier 00</strong>
+The root Service Group. This is present by default in every Azure tenant.</li>
+<li><strong>Tier 01</strong>
+The first level of the top-level Service Group hierarchy. Managed by the platform team.</li>
+<li><strong>Tier 02</strong>
+The second level of the top-level Service Group hierarchy. Managed by the platform team.</li>
+<li><strong>Tier 03 – Tier 10</strong>
+Deeper levels of the Service Group hierarchy, owned and managed by enabling teams and domain experts.</li>
+</ul>
+<h3 class="heading-element" id="repurposing-the-management-group-vending-pattern"><span>Repurposing the Management Group Vending Pattern</span>
+  <a href="#repurposing-the-management-group-vending-pattern" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The solution is composed of three building blocks:</p>
+<ul>
+<li>Resource module</li>
+<li>Solution module</li>
+<li>Parameter file</li>
+</ul>
+<h4 class="heading-element" id="resource-module"><span>Resource Module</span>
+  <a href="#resource-module" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><p>The resource module is the core building block of the solution. It uses the <code>Microsoft.Management/serviceGroups@2024-02-01-preview</code> resource type to create a single Service Group. Because Service Groups are tenant-level resources, the module is scoped accordingly using <code>targetScope = 'tenant'</code>.</p>
+<script src="https://gist.github.com/devjevnl/94b89402a83c5edccd3e56bdfc99b32b.js?file=resourceModule.bicep"></script>
+<div class="details admonition tip open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true"></i>Azure Verified Modules<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>The snippet above shows a deliberately simple resource module that creates a single Service Group and is intended for demonstration and learning purposes. For enterprise-grade production environments, it is strongly recommended to use the tested and maintained modules available in the Azure Verified Modules repository.</p>
+<p>For Service Groups, this is the <a href="https://github.com/Azure/bicep-registry-modules/blob/main/avm/res/management/service-group/README.md"target="_blank" rel="external nofollow noopener noreferrer">Azure Verified Module for Service Groups</a>.</p>
+</div>
+  </div>
+</div>
+<h3 class="heading-element" id="solution-module"><span>Solution Module</span>
+  <a href="#solution-module" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The solution module acts as the orchestrator. It consumes the resource module and deploys the Service Group hierarchy <strong>tier by tier</strong>. Each tier is modeled as a collection of Service Groups, with the exception of <strong>Tier 00</strong>, which represents the single root Service Group.</p>
+<p>To guarantee a correct and predictable hierarchy, each tier explicitly depends on the successful deployment of its parent tier. This ensures that parent Service Groups always exist before child Service Groups are created.</p>
+<script src="https://gist.github.com/devjevnl/94b89402a83c5edccd3e56bdfc99b32b.js?file=solutionModule.bicep"></script>
+<div class="details admonition tip open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true"></i>Azure Verified Modules<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content">Rather than referencing a custom resource module, it is recommended to use the official <a href="https://github.com/Azure/bicep-registry-modules/blob/main/avm/res/management/service-group/README.md"target="_blank" rel="external nofollow noopener noreferrer">Azure Verified Module for Service Groups</a> for production-grade implementations.</div>
+  </div>
+</div>
+<h3 class="heading-element" id="parameters-file"><span>Parameters File</span>
+  <a href="#parameters-file" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>The parameter file defines the Service Group hierarchy itself. Each tier is represented as a collection of Service Groups, including their IDs, display names, and parent IDs. This is where the flexibility non functional requirement is met, each tier can be defined and adjusted as needed and in case deeper tiers are needed they can simply be added to the parameter file.</p>
+<p>You might notice that this example uses a JSON parameter file instead of a native Bicep <code>.bicepparam</code> file. In this case, the same parameter file is reused for purposes outside of Bicep deployments. That said, the structure translates cleanly to a Bicep parameter file and can be used there without modification.</p>
+<script src="https://gist.github.com/devjevnl/94b89402a83c5edccd3e56bdfc99b32b.js?file=serviceGroupsHierarchyParameters.jsonc"></script>
+<h3 class="heading-element" id="deploy-your-service-groups-hierarchy"><span>Deploy Your Service Groups Hierarchy</span>
+  <a href="#deploy-your-service-groups-hierarchy" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><div class="details admonition example open">
+  <div class="details-summary admonition-title"><i class="icon fa-fw fa-solid fa-list-ul" aria-hidden="true"></i>Complete vending setup is available on GitHub @TheCloudExplorers<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></div>
+  <div class="details-content">
+    <div class="admonition-content"><p>The complete vending example of the full 10 layers of Service Groups, including all modules, parameter files and documentation, is available in the <a href="https://github.com/thecloudexplorers/simply-scripted"target="_blank" rel="external nofollow noopener noreferrer">TheCloudExplorers/simply-scripted</a> repository.
+Feel free to explore, adapt, and use it as a starting point for your own Azure Service Groups implementations.</p>
+<p>Direct links to the relevant files:</p>
+<ul>
+<li><a href="https://github.com/thecloudexplorers/simply-scripted/blob/master/iac/az-controllers/serviceGroupsHierarchy.md"target="_blank" rel="external nofollow noopener noreferrer">Main readme file - serviceGroupsHierarchy.md</a></li>
+<li><a href="https://github.com/thecloudexplorers/simply-scripted/blob/master/iac/az-modules/Microsoft.Management/serviceGroups/childServiceGroup.bicep"target="_blank" rel="external nofollow noopener noreferrer">Resource module - childServiceGroup.bicep</a></li>
+<li><a href="https://github.com/thecloudexplorers/simply-scripted/blob/master/iac/az-controllers/serviceGroupsHierarchy.bicep"target="_blank" rel="external nofollow noopener noreferrer">Solution module - serviceGroupsHierarchy.bicep</a></li>
+<li><a href="https://github.com/thecloudexplorers/simply-scripted/blob/master/params/serviceGroupsHierarchy.jsonc"target="_blank" rel="external nofollow noopener noreferrer">Parameters file - serviceGroupsHierarchy.jsonc</a></li>
+</ul>
+</div>
+  </div>
+</div>
+<p>Because Service Groups are tenant-level resources, a tenant-level deployment is required.</p>
+<h4 class="heading-element" id="deployment-steps"><span>Deployment Steps</span>
+  <a href="#deployment-steps" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h4><ol>
+<li>Ensure you have the necessary <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/management-and-governance#service-group-administrator?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Service Group Administrator</a> permissions to create Service Groups. This is needed due to vending the top-level Service Groups(s).</li>
+<li>Run the deployment using the following PowerShell snippet:</li>
+</ol>
+<script src="https://gist.github.com/devjevnl/94b89402a83c5edccd3e56bdfc99b32b.js?file=tenantLevelDeployment.ps1"></script>
+<h2 class="heading-element" id="wrapping-up"><span>Wrapping up</span>
+  <a href="#wrapping-up" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>And that&rsquo;s a wrap, folks! I hope it provided you with a clear and practical approach to setting up initial top-level Service Group hierarchy.
+Be sure to check out the previous post, <a href="/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/">Azure Service Groups: The Multiverse of Resource Organization</a>, if you haven&rsquo;t already, as it lays the groundwork for understanding the importance of Service Groups in Azure governance.</p>
+<p>If you found this post useful, be sure to explore the reference materials that inspired this solution:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/templates/microsoft.management/servicegroups?pivots=deployment-language-bicep?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Microsoft Learn - Microsoft.Management serviceGroups</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/governance/service-groups/manage-membership?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">Manage Azure Service Group Membership at scale</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/governance/service-groups/overview?wt.mc_id=DT-MVP-5005327"target="_blank" rel="external nofollow noopener noreferrer">What are Azure Service Groups?</a></li>
+</ul>
+<p><strong>Thank you</strong> so much for taking the time to read this post. If you enjoyed it or learned something new, don’t hesitate to check out my other <a href="/posts">posts</a>.</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="Updated on 2025-12-19 02:00:00">Updated on 2025-12-19&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span></span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/azure-governance/" class="post-tag" title="Tags - Azure Governance">Azure Governance</a><a href="/tags/azure-service-groups/" class="post-tag" title="Tags - Azure Service Groups">Azure Service Groups</a><a href="/tags/infrastructure-as-code/" class="post-tag" title="Tags - Infrastructure as Code">Infrastructure as Code</a><a href="/tags/bicep/" class="post-tag" title="Tags - Bicep">Bicep</a><a href="/tags/azure-automation/" class="post-tag" title="Tags - Azure Automation">Azure Automation</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"><a href="/posts/2025/azure-service-groups-the-multiverse-of-resource-organization/" class="post-nav-item" rel="prev" title="🧩 Azure Service Groups: The Multiverse of Resource Organization 🛸"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>🧩 Azure Service Groups: The Multiverse of Resource Organization 🛸</a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="custom-footer-text">
+  <p>© 2025 Jev Suchoi - Let's automate the boring! </p>
+</div>
+<div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/posts/2025/azure-service-groups-as-code-vending-the-multiverse-with-bicep/config.js" defer></script><script src="/js/theme.min.js" defer></script><script>
+      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+      gtag('config', 'G-J3E897NYLC');
+    </script><script src="https://www.googletagmanager.com/gtag/js?id=G-J3E897NYLC" async></script></body>
+</html>
